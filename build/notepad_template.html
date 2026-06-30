@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cliché Catcher — AI Tell Highlighter</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121723; --panel2:#0e1320; --line:#1f2735;
+    --text:#e6e9ef; --muted:#8a93a6; --accent:#36e0c8;
+    --high:#ff4d6d; --high-bg:rgba(255,77,109,.30);
+    --med:#ff9f1c; --med-bg:rgba(255,159,28,.28);
+    --low:#ffd23f; --low-bg:rgba(255,210,63,.22);
+    --rhyme:#9b7bff; --rhyme-bg:rgba(155,123,255,.28);
+    --font: ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;display:flex;flex-direction:column}
+  header{padding:14px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#101521,#0b0e14)}
+  header h1{margin:0;font-size:18px;letter-spacing:.3px}
+  header h1 .a{color:var(--accent)}
+  header .sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .toolbar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:10px 18px;border-bottom:1px solid var(--line);background:var(--panel2);font-size:13px}
+  .toolbar label{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
+  .toolbar .pill{padding:2px 8px;border-radius:999px;font-weight:600;font-size:11.5px}
+  .pill.h{background:var(--high-bg);color:var(--high)} .pill.m{background:var(--med-bg);color:var(--med)}
+  .pill.l{background:var(--low-bg);color:var(--low)} .pill.r{background:var(--rhyme-bg);color:var(--rhyme)}
+  .pill.p{background:rgba(54,224,200,.18);color:var(--accent)}
+  .toolbar button{background:#1a2233;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer;font-size:12.5px}
+  .toolbar button:hover{border-color:var(--accent)}
+  .toolbar .spacer{flex:1}
+  .stat{color:var(--muted)} .stat b{color:var(--text)}
+  .score{font-weight:700} .score .v{font-size:15px}
+  main{flex:1;display:grid;grid-template-columns:1fr 340px;min-height:0}
+  .editor-col{position:relative;min-height:0;display:flex}
+  .editor-wrap{position:relative;flex:1;margin:0}
+  .backdrop,.editor{
+    margin:0;border:0;width:100%;height:100%;padding:18px 20px;
+    font-family:var(--font);font-size:15px;line-height:1.7;letter-spacing:.1px;
+    white-space:pre-wrap;word-wrap:break-word;overflow:auto;
+  }
+  .backdrop{position:absolute;inset:0;z-index:1;color:transparent;pointer-events:none;background:var(--bg)}
+  .backdrop mark{border-radius:3px;color:transparent;box-shadow:0 0 0 1px rgba(255,255,255,.05) inset}
+  .backdrop mark.s2{background:var(--high-bg)} .backdrop mark.s1{background:var(--med-bg)}
+  .backdrop mark.s0{background:var(--low-bg)} .backdrop mark.sr{background:var(--rhyme-bg)}
+  .backdrop mark.mt{box-shadow:inset 0 -2px 0 rgba(54,224,200,.55)}
+  .editor{position:relative;z-index:2;background:transparent;color:var(--text);resize:none;outline:none;caret-color:var(--accent)}
+  .editor::placeholder{color:#41506b}
+  aside{border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-height:0}
+  aside .ahead{padding:11px 14px;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+  aside .ahead b{color:var(--text)}
+  .findings{overflow:auto;flex:1;padding:6px 0}
+  .finding{padding:9px 14px;border-bottom:1px solid #161d2b;cursor:pointer}
+  .finding:hover{background:#161d2b}
+  .finding .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .finding .term{font-family:var(--font);font-size:13px;font-weight:600}
+  .finding.s2 .term{color:var(--high)} .finding.s1 .term{color:var(--med)}
+  .finding.s0 .term{color:var(--low)} .finding.sr .term{color:var(--rhyme)}
+  .finding .cnt{font-size:11px;color:var(--muted);white-space:nowrap}
+  .finding .why{font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+  .finding .fix{font-size:11.5px;color:var(--accent);margin-top:5px;line-height:1.45;display:none}
+  .finding:hover .fix{display:block}
+  .finding .meta{font-size:10.5px;color:#5b677d;margin-top:3px;text-transform:uppercase;letter-spacing:.4px}
+  .empty{padding:24px 16px;color:var(--muted);font-size:13px;text-align:center;line-height:1.6}
+  .detailbar{border-top:1px solid var(--line);padding:8px 18px;font-size:12.5px;color:var(--muted);min-height:34px;background:var(--panel2)}
+  .detailbar b{color:var(--text)}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);padding:8px 18px;border-top:1px solid var(--line)}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+  @media(max-width:820px){main{grid-template-columns:1fr}aside{display:none}}
+</style>
+</head>
+<body>
+<a href="../index.html" title="Back to the launcher (switch tools)" style="position:fixed;top:9px;right:14px;z-index:60;font-size:11.5px;color:#36e0c8;background:rgba(14,19,32,.92);text-decoration:none;border:1px solid #1f2735;border-radius:8px;padding:5px 11px">&lsaquo; Suite</a>
+<header>
+  <h1><span class="a">Cliché</span> Catcher <span style="color:var(--muted);font-weight:400;font-size:13px">— AI Tell Highlighter</span></h1>
+  <div class="sub" id="subline">loading database…</div>
+</header>
+
+<div class="toolbar">
+  <label><input type="checkbox" id="t2" checked> <span class="pill h">High</span></label>
+  <label><input type="checkbox" id="t1" checked> <span class="pill m">Medium</span></label>
+  <label><input type="checkbox" id="t0" checked> <span class="pill l">Low</span></label>
+  <label><input type="checkbox" id="tr" checked> <span class="pill r">Rhyme pairs</span></label>
+  <label><input type="checkbox" id="tt" checked> <span class="pill p">Patterns</span></label>
+  <div class="spacer"></div>
+  <span class="stat">Words: <b id="wc">0</b></span>
+  <span class="stat">Flags: <b id="fc">0</b></span>
+  <span class="score">AI-tell score: <span class="v" id="score">0</span><span class="stat">/100</span></span>
+  <button id="report">Copy report</button>
+  <button id="sample">Load sample</button>
+  <button id="clear">Clear</button>
+</div>
+
+<main>
+  <div class="editor-col">
+    <div class="editor-wrap">
+      <div class="backdrop" id="backdrop" aria-hidden="true"><div id="highlights"></div></div>
+      <textarea class="editor" id="editor" spellcheck="true"
+        placeholder="Paste or type your lyrics / prose here. Flagged AI clichés light up as you write…"></textarea>
+    </div>
+  </div>
+  <aside>
+    <div class="ahead"><span>Findings <b id="fcount">0</b></span><span id="uniqcount"></span></div>
+    <div class="findings" id="findings"><div class="empty">No clichés yet.<br>Start writing and the tells will appear here.</div></div>
+  </aside>
+</main>
+
+<div class="detailbar" id="detail">Tip: click a finding to jump to it. Hover severity in the toolbar to toggle.</div>
+<div class="legend">
+  <span><i class="sw" style="background:var(--high)"></i> instant tell</span>
+  <span><i class="sw" style="background:var(--med)"></i> common</span>
+  <span><i class="sw" style="background:var(--low)"></i> mild</span>
+  <span><i class="sw" style="background:var(--rhyme)"></i> overused rhyme pair</span>
+  <span id="dbinfo" style="margin-left:auto"></span>
+</div>
+
+<script>
+/* ===== injected data ===== */
+const META = /*__META__*/{};
+const PATTERNS  = /*__PATTERNS__*/[];   // {p, s, t, w}
+const RHYMES    = /*__RHYMES__*/[];     // {a, b, w}
+const TEMPLATES = /*__TEMPLATES__*/[];  // {term, pattern, flags, s, w}
+/* ========================= */
+
+const el = id => document.getElementById(id);
+const editor = el('editor'), backdrop = el('backdrop'), highlights = el('highlights');
+const sevName = ['mild','common','instant tell'];
+
+el('subline').textContent = `${META.uniqueCount} flagged terms · words, phrases, tropes & rhyme pairs the AI crowd calls "dead giveaways" (Suno · Udio · ChatGPT · Gemini)`;
+// precompile regex pattern-detectors (the "mad-lib" AI templates)
+const COMPILED = TEMPLATES.map(t=>{
+  let f = (t.flags||'gi'); if(!f.includes('g')) f+='g';
+  let re=null; try{ re=new RegExp(t.pattern, f); }catch(e){ console.warn('bad pattern',t.term,e); }
+  return { re, sev:t.s, label:t.term, why:t.w };
+}).filter(t=>t.re);
+el('dbinfo').textContent = `${PATTERNS.length} words/phrases · ${RHYMES.length} rhyme pairs · ${COMPILED.length} pattern detectors`;
+
+function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+
+// Build one big alternation regex from active-severity patterns (longest first).
+let activeSev = {2:true,1:true,0:true}, rhymeOn = true, templatesOn = true;
+let bigRe = null, patByPhrase = new Map();
+function buildRegex(){
+  patByPhrase = new Map();
+  const list = PATTERNS.filter(p=>activeSev[p.s]);
+  for(const p of list){ if(!patByPhrase.has(p.p)) patByPhrase.set(p.p,p); }
+  const phrases = [...patByPhrase.keys()].sort((a,b)=>b.length-a.length)
+    .map(p=>reEsc(p).replace(/\s+/g,'\\s+'));
+  bigRe = phrases.length ? new RegExp('\\b(?:'+phrases.join('|')+')\\b','gi') : null;
+}
+
+function wordRe(w){return new RegExp('\\b'+reEsc(w)+'\\b','gi');}
+
+let ranges = [];
+let lastItems = [];
+function analyze(text){
+  const found = [];
+  if(bigRe){
+    bigRe.lastIndex=0; let m;
+    while((m=bigRe.exec(text))){
+      const key=m[0].toLowerCase().replace(/\s+/g,' ');
+      const meta=patByPhrase.get(key)||[...patByPhrase.values()].find(p=>p.p===key)||{s:1,t:'?',w:''};
+      found.push({start:m.index,end:m.index+m[0].length,sev:meta.s,kind:'p',text:m[0],info:meta.w,type:meta.t});
+      if(m.index===bigRe.lastIndex) bigRe.lastIndex++;
+    }
+  }
+  if(rhymeOn){
+    // collect the last word of each line (with its position) — rhymes live at line ends
+    const ends=[]; let off=0;
+    for(const ln of text.split('\n')){
+      const mw=[...ln.matchAll(/[A-Za-z']+/g)];
+      if(mw.length){ const last=mw[mw.length-1];
+        ends.push({w:last[0].toLowerCase().replace(/'/g,''), start:off+last.index, end:off+last.index+last[0].length}); }
+      off += ln.length+1; // +1 for the newline
+    }
+    const endSet=new Set(ends.map(e=>e.w));
+    for(const r of RHYMES){
+      if(endSet.has(r.a) && endSet.has(r.b)){
+        for(const e of ends){ if(e.w===r.a||e.w===r.b){
+          found.push({start:e.start,end:e.end,sev:'r',kind:'r',text:text.slice(e.start,e.end),
+            info:`Overused rhyme pair "${r.a}/${r.b}". ${r.w||''}`,type:'rhyme_pair'});
+        }}
+      }
+    }
+  }
+  if(templatesOn){
+    for(const c of COMPILED){
+      c.re.lastIndex=0; let m;
+      while((m=c.re.exec(text))){
+        if(!m[0]){ c.re.lastIndex++; continue; }
+        found.push({start:m.index,end:m.index+m[0].length,sev:c.sev,kind:'t',text:m[0],info:c.why,type:'template',label:c.label});
+        if(m.index===c.re.lastIndex) c.re.lastIndex++;
+      }
+    }
+    // em-dash tic: only flag when overused (>=3 in the text)
+    const dm=text.match(/[—–]/g);
+    if(dm && dm.length>=3){
+      const re=/[—–]/g; let m;
+      while((m=re.exec(text))) found.push({start:m.index,end:m.index+1,sev:0,kind:'t',text:m[0],
+        info:`Em-dash tic: ${dm.length} in this text — AI overuses the em-dash as a dramatic-pause crutch.`,type:'structure',label:'em-dash overuse'});
+    }
+  }
+  // resolve overlaps: sort by start, then longer first; keep non-overlapping
+  found.sort((a,b)=> a.start-b.start || (b.end-b.start)-(a.end-a.start));
+  const keep=[]; let lastEnd=-1;
+  for(const f of found){ if(f.start>=lastEnd){ keep.push(f); lastEnd=f.end; } }
+  return keep;
+}
+
+function sevClass(sev){ return sev==='r' ? 'sr' : 's'+sev; }
+
+// ---- fix suggestions: turn a flag into an actionable rewrite ----
+const TERM_FIX = {
+  'neon':'Name the real light: a gas-station sign, a cracked phone screen, brake lights in fog.',
+  'shadows':'Say what casts it and where — "the fire escape\'s grid across the bricks."',
+  'whispers':'Use the actual sound: a radiator hiss, a name said too quiet to catch.',
+  'echoes':'Name the space and the sound — "the stairwell ate my footsteps."',
+  'midnight':'Give a real time + detail: 2 a.m., the bus stop\'s dead fluorescent.',
+  'twilight':'Give a real time + detail instead of a mood-word.',
+  'rain':'Make it specific: sleet on a windshield, a leak ticking into a pot.',
+  'soul':'Cut it. Point to the body part or object that actually aches.',
+  'heart':'Replace with a physical act: a held breath, a clenched jaw, a slammed door.',
+  'fire':'Show the heat in a concrete action; don\'t name "fire."',
+  'tapestry':'Cut it. Use a plain noun: a mess, a pile, a map, a list.',
+  'symphony':'Name the real sound, or delete the metaphor.',
+  'embers':'Be literal: a cigarette\'s last orange, a dying burner coil.',
+  'silhouette':'Describe the actual outline against an actual light.',
+  'eternal':'Anchor in real time: "until the rent\'s due," "one more summer."',
+  'forever':'Anchor in real time instead of "forever."',
+  'timeless':'Anchor in a real moment instead of "timeless."',
+  'intertwined':'Say the literal contact: tangled charger cords, knees on a couch.',
+  'grace':'Cut. Show one specific graceful (or clumsy) motion.',
+  'embrace':'Use the literal: arms, a doorframe hug, a too-long handshake.',
+  'rise above':'Drop the uplift; show one small true action of getting through it.',
+  'soar':'Replace with a grounded, specific motion.',
+  'horizon':'Name the real edge: the overpass, the tree line, the last exit.',
+  'stars':'Pick one real light: a satellite, a plane, a porch bulb.',
+  'dreams':'Name the specific want, not "dreams."',
+  'demons':'Name the actual fear or habit, plainly.',
+  'storm':'Use a real weather event, or just the real conflict.',
+  'journey':'Cut. Describe the actual road, step, or day.',
+  'broken':'Show the specific damage instead of "broken."',
+  'shattered':'Show the specific damage instead of "shattered."',
+  'whisper':'Use the actual quiet sound instead of "whisper."'
+};
+const CAT_FIX = [
+  ['atmosphere','Trade the mood-word for one concrete sensory detail tied to a real place.'],
+  ['setting','Trade the mood-word for one concrete sensory detail tied to a real place.'],
+  ['abstract','Swap the abstract noun for a specific physical object or action.'],
+  ['trope','This whole image is a stock beat — replace it with a specific, personal scene.'],
+  ['marketing','Cut the hype; state the plain, specific claim.'],
+  ['prose','Cut the filler; say the plain thing directly.'],
+  ['lyric template','Fill the blank with ONE concrete detail, or cut the frame.']
+];
+function suggest(it){
+  if(it.kind==='r') return 'Overused rhyme — break it: slant-rhyme the vowel only, move the rhyme inside the line, or leave it unrhymed.';
+  if(it.type==='template') return 'Templated phrasing — fill the blank with ONE concrete, specific detail (a real object/place/name), or cut the frame.';
+  if(it.type==='structure') return 'Structural AI tic — vary it or cut it; don\'t repeat the device.';
+  const t=(it.term||'').toLowerCase();
+  if(TERM_FIX[t]) return TERM_FIX[t];
+  for(const k in TERM_FIX){ if(t.includes(k)) return TERM_FIX[k]; }
+  const c=(it.category||'').toLowerCase();
+  for(const [k,v] of CAT_FIX){ if(c.includes(k)) return v; }
+  return 'Replace with a concrete, specific image only this piece could contain.';
+}
+
+function render(){
+  const text = editor.value;
+  ranges = analyze(text);
+  // build backdrop html
+  let html='',i=0;
+  for(const r of ranges){
+    html += esc(text.slice(i,r.start));
+    html += `<mark class="${sevClass(r.sev)}${r.kind==='t'?' mt':''}">`+esc(text.slice(r.start,r.end))+'</mark>';
+    i=r.end;
+  }
+  html += esc(text.slice(i));
+  if(text.endsWith('\n')) html+=' ';
+  highlights.innerHTML = html;
+
+  // stats
+  const words = (text.match(/\b[\w']+\b/g)||[]).length;
+  el('wc').textContent = words;
+  el('fc').textContent = ranges.length;
+  const density = words ? (ranges.length/words*100) : 0;
+  // weighted score: high counts triple, med double, low/rhyme single, scaled by density
+  let weighted=0; for(const r of ranges){ weighted += r.sev===2?3 : r.sev===1?2 : 1; }
+  const score = words ? Math.min(100, Math.round((weighted/words)*100*1.4)) : 0;
+  const grade = score>=45?'F':score>=30?'D':score>=18?'C':score>=6?'B':'A';
+  const sc=el('score'); sc.textContent = score + '  ' + grade;
+  sc.style.color = score>=40?'var(--high)':score>=18?'var(--med)':score>=6?'var(--low)':'var(--accent)';
+
+  renderFindings();
+  syncScroll();
+}
+
+function renderFindings(){
+  const agg=new Map();
+  for(const r of ranges){
+    const key = r.kind==='t' ? 'tpl:'+r.label : (r.kind==='r'?'rhyme:':'')+r.text.toLowerCase();
+    const term = r.kind==='t' ? r.label : r.text;
+    if(!agg.has(key)) agg.set(key,{term:term,sev:r.sev,info:r.info,type:r.type,count:0,first:r.start,end:r.end});
+    const a=agg.get(key); a.count++;
+  }
+  const items=[...agg.values()].sort((a,b)=>{
+    const rank=s=>s==='r'?0.5:s; return rank(b.sev)-rank(a.sev) || b.count-a.count || a.term.localeCompare(b.term);
+  });
+  lastItems = items;
+  el('fcount').textContent = ranges.length;
+  el('uniqcount').textContent = items.length ? `${items.length} unique` : '';
+  const box=el('findings');
+  if(!items.length){ box.innerHTML='<div class="empty">No clichés detected.<br>Clean writing — or keep going.</div>'; return; }
+  box.innerHTML = items.map((it,idx)=>{
+    const cls = it.sev==='r'?'sr':'s'+it.sev;
+    return `<div class="finding ${cls}" data-idx="${idx}" data-start="${it.first}" data-end="${it.end}" title="Click to jump + see the fix">
+      <div class="top"><span class="term">${esc(it.term)}</span><span class="cnt">×${it.count} · ${it.sev==='r'?'rhyme':sevName[it.sev]}</span></div>
+      <div class="why">${esc(it.info||'')}</div>
+      <div class="fix">✎ ${esc(suggest(it))}</div>
+      <div class="meta">${esc(it.type||'')}</div></div>`;
+  }).join('');
+  [...box.querySelectorAll('.finding')].forEach(node=>{
+    node.addEventListener('click',()=>{
+      const it=lastItems[+node.dataset.idx];
+      const s=+node.dataset.start,e=+node.dataset.end;
+      editor.focus(); editor.setSelectionRange(s,e);
+      const ratio=s/Math.max(1,editor.value.length);
+      editor.scrollTop = Math.max(0, ratio*editor.scrollHeight - editor.clientHeight/2);
+      syncScroll();
+      el('detail').innerHTML = `<b>${esc(it.term)}</b> &nbsp;✎ <span style="color:var(--accent)">${esc(suggest(it))}</span>`;
+    });
+  });
+}
+
+function syncScroll(){ backdrop.scrollTop=editor.scrollTop; backdrop.scrollLeft=editor.scrollLeft; }
+
+// caret-in-flag detail
+function showDetailAtCaret(){
+  const pos=editor.selectionStart;
+  const hit=ranges.find(r=>pos>=r.start&&pos<=r.end);
+  const d=el('detail');
+  if(hit){ const fx=suggest({kind:hit.kind,type:hit.type,term:hit.label||hit.text,category:''});
+    d.innerHTML=`<b>${esc(hit.text)}</b> — ${esc(hit.info||'')} &nbsp;✎ <span style="color:var(--accent)">${esc(fx)}</span>`; }
+}
+
+let t=null;
+function schedule(){ clearTimeout(t); t=setTimeout(()=>render(),120); }
+editor.addEventListener('input',schedule);
+editor.addEventListener('scroll',syncScroll);
+editor.addEventListener('keyup',showDetailAtCaret);
+editor.addEventListener('click',showDetailAtCaret);
+
+function setSev(){ activeSev={2:el('t2').checked,1:el('t1').checked,0:el('t0').checked}; rhymeOn=el('tr').checked; templatesOn=el('tt').checked; buildRegex(); render(); }
+['t2','t1','t0','tr','tt'].forEach(id=>el(id).addEventListener('change',setSev));
+el('clear').addEventListener('click',()=>{editor.value='';render();editor.focus();});
+el('sample').addEventListener('click',()=>{editor.value=SAMPLE;render();});
+
+function flash(msg){ el('detail').innerHTML = '<b>'+esc(msg)+'</b>'; }
+function fallbackCopy(t){
+  const ta=document.createElement('textarea'); ta.value=t;
+  ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); flash('Report copied to clipboard.'); }
+  catch(e){ flash('Copy blocked — select the editor text and copy manually.'); }
+  ta.remove();
+}
+function buildReport(){
+  const words=el('wc').textContent, flags=el('fc').textContent, score=el('score').textContent.trim();
+  const L=[`AI-TELL REPORT   score ${score}`, `Words: ${words}  |  Flags: ${flags}  |  Unique: ${lastItems.length}`, '='.repeat(48), ''];
+  for(const it of lastItems){
+    const sev = it.sev==='r'?'rhyme':sevName[it.sev];
+    L.push(`[${sev}]  ${it.term}  x${it.count}`);
+    if(it.info) L.push(`   why: ${it.info.trim()}`);
+    L.push(`   fix: ${suggest(it)}`);
+    L.push('');
+  }
+  return L.join('\n');
+}
+el('report').addEventListener('click',()=>{
+  if(!lastItems.length){ flash('Nothing to report yet — write something first.'); return; }
+  const txt=buildReport();
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(()=>flash(`Report copied (${lastItems.length} findings).`),()=>fallbackCopy(txt));
+  } else fallbackCopy(txt);
+});
+
+const SAMPLE = `In the neon glow I'm chasing dreams tonight,
+two hearts beat as one beneath the pale moonlight.
+With every breath I rise above the pain,
+breaking these chains and dancing in the rain.
+
+It's not just a song, it's a revolution —
+we'll unlock the power and ignite the desire.
+Rising from the ashes with our hearts on fire,
+lost in the moment, climbing ever higher.`;
+
+buildRegex();
+render();
+editor.focus();
+</script>
+</body>
+</html>

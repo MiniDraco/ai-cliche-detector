@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Song Compare — anchor-banded AI ranking</title>
+<style>
+  :root{
+    --bg:#0b0e14;--panel:#121723;--panel2:#0e1320;--line:#1f2735;--text:#e6e9ef;--muted:#8a93a6;--accent:#36e0c8;
+    --human:#36e0c8;--mixed:#ffd23f;--ai:#ff4d6d;--obf:#c78bff;--font:ui-monospace,"Cascadia Code",Consolas,monospace;
+  }
+  *{box-sizing:border-box}html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;display:flex;flex-direction:column}
+  header{padding:13px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#101521,#0b0e14)}
+  header h1{margin:0;font-size:18px}header h1 .a{color:var(--accent)}
+  header .sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+  main{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0}
+  .left{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
+  .lbar{display:flex;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel2);font-size:12.5px;flex-wrap:wrap}
+  .lbar button{background:#1a2233;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer;font-size:12.5px}
+  .lbar button#run{background:var(--accent);color:#06281f;border-color:var(--accent);font-weight:700}
+  .lbar button:hover{border-color:var(--accent)}.lbar .spacer{flex:1}
+  textarea{flex:1;width:100%;border:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.6;padding:14px 16px;resize:none;outline:none;white-space:pre-wrap}
+  textarea::placeholder{color:#41506b}
+  aside{background:var(--panel);display:flex;flex-direction:column;min-height:0;overflow:auto}
+  .scalewrap{padding:16px 18px 8px;border-bottom:1px solid var(--line)}
+  .scale-h{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px}
+  .track{position:relative;height:46px;margin:0 6px}
+  .axis{position:absolute;top:30px;left:0;right:0;height:3px;background:#1b2333;border-radius:2px}
+  .band{position:absolute;top:24px;height:15px;border-radius:4px;opacity:.32}
+  .band.h{background:var(--human)}.band.a{background:var(--ai)}
+  .bandlbl{position:absolute;top:0;font-size:10px;transform:translateX(-50%);white-space:nowrap}
+  .dot{position:absolute;top:23px;width:14px;height:14px;border-radius:50%;transform:translateX(-50%);border:2px solid var(--bg);cursor:default}
+  .ticks{position:absolute;top:36px;left:0;right:0;display:flex;justify-content:space-between;font-size:9.5px;color:#5b677d}
+  .board{padding:6px 0}
+  .row{display:flex;align-items:center;gap:9px;padding:8px 16px;border-bottom:1px solid #161d2b}
+  .row .rk{width:18px;color:var(--muted);font-size:12px;text-align:right}
+  .row .chip{font-size:9.5px;font-weight:700;padding:1px 6px;border-radius:999px;white-space:nowrap}
+  .row .nm{flex:1;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .row .sb{width:90px;height:7px;border-radius:4px;background:#1b2333;overflow:hidden}
+  .row .sb>i{display:block;height:100%}
+  .row .sv{width:26px;text-align:right;font-size:12px;font-variant-numeric:tabular-nums}
+  .row .ex{font-size:10px;color:var(--muted);width:120px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .note{padding:11px 16px;font-size:11.5px;color:var(--muted);line-height:1.5;border-top:1px solid var(--line);background:var(--panel2)}
+  .note b{color:var(--text)}
+  .disc{padding:11px 16px;font-size:11px;color:var(--muted);line-height:1.5;border-top:1px solid var(--line)}
+  .disc b{color:var(--med,#ffd23f)}
+  @media(max-width:900px){main{grid-template-columns:1fr}aside{max-height:55vh}}
+</style>
+</head>
+<body>
+<a href="../index.html" title="Back to the launcher (switch tools)" style="position:fixed;top:9px;right:14px;z-index:60;font-size:11.5px;color:#36e0c8;background:rgba(14,19,32,.92);text-decoration:none;border:1px solid #1f2735;border-radius:8px;padding:5px 11px">&lsaquo; Suite</a>
+<header>
+  <h1><span class="a">Song</span> Compare <span style="color:var(--muted);font-weight:400;font-size:13px">— anchor-banded AI ranking</span></h1>
+  <div class="sub">paste many songs, tag known ones <b>#human</b> / <b>#ai</b>, leave suspects untagged — rank everyone against the two bands. Separate songs with a line of <b>===</b>.</div>
+</header>
+<main>
+  <div class="left">
+    <div class="lbar">
+      <span id="pplchip" title="Optional local model. Run start-perplexity.bat, then click." style="cursor:pointer;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)">● model: off</span>
+      <div class="spacer"></div>
+      <button id="sample">Load example</button>
+      <button id="clear">Clear</button>
+      <button id="run">Analyze all ▸</button>
+    </div>
+    <textarea id="editor" spellcheck="false" placeholder="#human  My 2014 demo&#10;[Verse]&#10;your hand-written, concrete, pre-AI lyric here…&#10;&#10;===&#10;&#10;#ai  Suno auto-lyrics&#10;[Verse]&#10;a known-AI lyric here…&#10;&#10;===&#10;&#10;#?  Track from the group&#10;the suspect lyric here…"></textarea>
+  </div>
+  <aside>
+    <div class="scalewrap">
+      <div class="scale-h">AI-likelihood scale — <span style="color:var(--human)">human band</span> vs <span style="color:var(--ai)">AI band</span></div>
+      <div class="track" id="track"></div>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="note" id="note"></div>
+    <div class="disc"><b>Relative, not absolute.</b> Judge a suspect by where it falls between YOUR two bands, not by the raw number. Anchor the human band with <b>un-famous pre-2019</b> lyrics/poetry (famous ones are memorized by the model → false-low). Use Suno's own "write my lyrics" output for the AI band. More anchors = tighter bands.</div>
+  </aside>
+</main>
+<script>
+const META=/*__META__*/{};const PATTERNS=/*__PATTERNS__*/[];const RHYMES=/*__RHYMES__*/[];const TEMPLATES=/*__TEMPLATES__*/[];
+const el=id=>document.getElementById(id);const editor=el('editor');
+function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+function wavg(p){let w=0,a=0;for(const[v,wt]of p){w+=wt;a+=wt*v;}return w?a/w:0;}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function pushAll(re,t,fn){re.lastIndex=0;let m;while((m=re.exec(t))){if(!m[0]){re.lastIndex++;continue;}fn(m);if(m.index===re.lastIndex)re.lastIndex++;}}
+const patByPhrase=new Map();for(const p of PATTERNS){if(!patByPhrase.has(p.p))patByPhrase.set(p.p,p);}
+const bigRe=patByPhrase.size?new RegExp('\\b(?:'+[...patByPhrase.keys()].sort((a,b)=>b.length-a.length).map(p=>reEsc(p).replace(/\s+/g,'\\s+')).join('|')+')\\b','gi'):null;
+const COMPILED=TEMPLATES.map(t=>{let f=(t.flags||'gi');if(!f.includes('g'))f+='g';let re=null;try{re=new RegExp(t.pattern,f);}catch(e){}return{re};}).filter(t=>t.re);
+const sevW=s=>s===2?3:s===1?2:1;
+const TRANSITIONS=['however','moreover','furthermore','additionally','therefore','nevertheless','nonetheless','notably','ultimately','essentially'];
+const trRe=new RegExp('\\b(?:'+TRANSITIONS.join('|')+')\\b','gi');
+const ELEVATED=['resplendent','luminescence','luminous','incandescent','ethereal','celestial','transcend','transcendent','ascend','ascending','traverse','pirouette','pirouetting','conflagration','cinders','sundering','fetters','liberate','emanate','beckon','yearn','yearning','lament','solitude','reverie','nocturne','crimson','azure','verdant','gossamer','ephemeral','sublime','ineffable','cascade','melancholy','euphoric','dormant','ablaze','adrift','vermilion','obsidian','elysian'];
+const evRe=new RegExp('\\b(?:'+ELEVATED.join('|')+')\\b','gi');
+const ELEV_SET=new Set(ELEVATED);
+const ABSTRACT_VIBE=new Set(('soul souls heart hearts dream dreams fire flame flames light dark darkness shadow shadows pain love fear hope glory freedom eternity eternal forever infinity sky skies star stars night moonlight sun dawn dusk twilight storm fate destiny time void abyss grace embrace desire passion ecstasy sorrow paradise heaven hell angel demons ghost spirit energy magic power strength courage faith truth memory memories silence echo echoes whisper whispers neon chains wings ashes embers gold crimson velvet horizon glow longing yearning oblivion infinite endless boundless timeless heartbeat tears rise rising soar shine burning').split(' '));
+const CONCRETE=new Set(('truck car cars road roads street streets highway sidewalk curb door window kitchen table chair bed couch floor wall phone screen key keys coat jacket shirt jeans dress shoes boots glass bottle cup coffee whiskey beer wine cigarette lighter match porch yard fence gate barn field dirt gravel mud snow dog cat bird river lake creek bridge train bus plane ticket money dollar dollars cash receipt receipts letter envelope photo picture ring watch clock mirror sink stairs basement garage store bar diner church school hospital grave casket funeral wake hand hands finger knee teeth scar sweater glovebox pontiac casserole record records gas brake engine wheel radio motel driveway mailbox stove fridge knife plate').split(' '));
+function lineWords(l){return l.match(/[A-Za-z']+/g)||[];}
+function syllables(w){w=w.toLowerCase().replace(/[^a-z]/g,'');if(!w)return 0;let s=(w.match(/[aeiouy]+/g)||[]).length;if(w.length>2&&w.endsWith('e')&&!/[aeiouy]e$/.test(w))s--;return Math.max(1,s);}
+function rhymeKey(w){w=w.toLowerCase().replace(/[^a-z]/g,'');const m=w.match(/[aeiouy]+[^aeiouy]*$/);return m?m[0]:w.slice(-2);}
+function rhymeReg(lines){const ends=lines.map(l=>{const w=lineWords(l);return w.length?w[w.length-1]:null;}).filter(Boolean);if(ends.length<2)return 0;const k=ends.map(rhymeKey);let r=0;for(let i=0;i<k.length;i++){if(k.some((x,j)=>j!==i&&x===k[i]))r++;}let pr=0,co=0;for(let i=0;i+1<k.length;i+=2){pr++;if(k[i]===k[i+1])co++;}return Math.max(r/k.length,pr?co/pr:0);}
+function syllCV(lines){const c=lines.map(l=>lineWords(l).reduce((a,w)=>a+syllables(w),0)).filter(n=>n>0);if(c.length<3)return 0.5;const m=c.reduce((a,b)=>a+b,0)/c.length;const sd=Math.sqrt(c.reduce((a,b)=>a+(b-m)*(b-m),0)/c.length);return clamp(0.9-((m?sd/m:0)-0.1)/0.4*0.78,0.1,0.92);}
+function humanMarkers(t){return (t.match(/\b(i think|honestly|tbh|idk|kinda|gonna|wanna|gotta|lol|haha|yeah|nah|btw|literally|ain't|y'all)\b/gi)||[]).length+(t.match(/!{2,}|\?{2,}/g)||[]).length+(t.match(/\b[A-Z]{3,}\b/g)||[]).length+(t.match(/\([^)]{1,40}\)/g)||[]).length;}
+function imageryGrounding(lines){let fl=0,wa=0;for(const l of lines){const ws=lineWords(l);let abs=0,gnd=0;ws.forEach((w,i)=>{const lw=w.toLowerCase().replace(/[^a-z']/g,'');if(!lw)return;if(ABSTRACT_VIBE.has(lw)||ELEV_SET.has(lw))abs++;else if(CONCRETE.has(lw))gnd++;else if(i>0&&/^[A-Z][a-z]/.test(w)&&lw!=='i')gnd++;if(/[0-9]/.test(w))gnd++;});if(abs>=1){wa++;if(gnd===0&&abs>=2)fl++;}}const r=wa?fl/wa:0;return clamp(0.12+(r-0.15)/0.6*0.8,0.08,0.95);}
+function densities(t){const W=(t.match(/\b[\w']+\b/g)||[]).length||1;let cW=0,cN=0;if(bigRe)pushAll(bigRe,t,m=>{const meta=patByPhrase.get(m[0].toLowerCase().replace(/\s+/g,' '))||{s:1};if(meta.s>=1){cW+=sevW(meta.s);cN++;}});let tN=0;for(const c of COMPILED)pushAll(c.re,t,()=>tN++);let trN=0;pushAll(trRe,t,()=>trN++);let evN=0;pushAll(evRe,t,()=>evN++);return{W,cW,cN,tN,trN,evN};}
+function sub_cliche(d,cN){const b=0.12+0.83*(d/(d+4.0));return 0.14+(b-0.14)*clamp((cN-1)/5,0,1);}
+function sub_tpl(d){return 0.10+0.85*(d/(d+1.0));}
+function sub_tr(d){return 0.15+0.8*(d/(d+1.6));}
+
+/* ---- optional local model ---- */
+const PPL={on:false,base:'http://127.0.0.1:8770',cache:new Map()};
+function perpFor(t){return PPL.cache.get(t.trim())||null;}
+function perpSubFrom(m){if(!m)return null;const t1=clamp((m.pct_top1-0.12)/0.22,0,1);const b=clamp((7.4-m.mean_bits)/2.6,0,1);const bn=(m.binoculars!=null)?clamp((1.04-m.binoculars)/0.13,0,1):null;return bn!=null?clamp((1.4*bn+2.0*t1+0.8*b)/4.2,0,1):clamp((2.2*t1+1.0*b)/3.2,0,1);}
+function updateChip(){const c=el('pplchip');if(PPL.on){c.style.color='var(--accent)';c.style.borderColor='var(--accent)';c.textContent='● model: ON';}else{c.style.color='var(--muted)';c.style.borderColor='var(--line)';c.textContent='● model: off';}}
+async function pingPPL(){try{const r=await fetch(PPL.base+'/health',{cache:'no-store'});const j=await r.json();PPL.on=!!j.ok;}catch(e){PPL.on=false;}updateChip();}
+async function ensurePerp(text){const k=text.trim();if(!PPL.on)return;if(k.split(/\s+/).filter(Boolean).length<14)return;if(PPL.cache.has(k))return;try{const r=await fetch(PPL.base+'/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:k})});if(r.ok)PPL.cache.set(k,await r.json());}catch(e){PPL.on=false;updateChip();}}
+
+function scoreSong(text){
+  const allLines=text.split('\n').filter(l=>l.trim()!==''&&!/^\s*[\[(].*[\])]\s*$/.test(l));
+  const d=densities(text);const W=d.W;
+  const content=(text.match(/\b[a-z']+\b/gi)||[]).length||1;
+  const cd=d.cW/W*100,td=d.tN/W*100,trd=d.trN/W*100;
+  const rr=rhymeReg(allLines);const S3=syllCV(allLines);
+  const ll=allLines.map(l=>lineWords(l).length).filter(n=>n>0);const lm=ll.length?ll.reduce((a,b)=>a+b,0)/ll.length:0;
+  const lsd=ll.length>1?Math.sqrt(ll.reduce((a,b)=>a+(b-lm)*(b-lm),0)/ll.length):0;const lcv=lm?lsd/lm:0;
+  const S5=ll.length<4?0.5:clamp(0.9-(lcv-0.18)/0.52*0.78,0.1,0.92);
+  const L1=sub_cliche(cd,d.cN),L2=sub_tr(trd),S1=sub_tpl(td),S2=clamp(0.16+0.74*rr,0.1,0.95);
+  const igS=imageryGrounding(allLines);
+  const elev=d.evN/content*100;const O1=clamp(0.15+0.7*(elev/(elev+2.0)),0.1,0.95);
+  const prosody=wavg([[S2,1.8],[S3,1.6],[S5,1.6]]);const robust=wavg([[S1,1.2],[S2,1.8],[S3,1.6],[S5,1.6]]);
+  const surface=wavg([[L1,1.6],[L2,1.0]]);const hm=humanMarkers(text);const hmPull=clamp(hm*0.05,0,0.32);
+  const pm=perpFor(text),ps=perpSubFrom(pm);
+  const aiPairs=[[L1,2.4],[S1,2.0],[L2,1.0],[igS,1.5],[S2,0.6],[S3,0.6],[S5,0.5]];if(ps!=null)aiPairs.push([ps,1.6]);
+  const ai=clamp(wavg(aiPairs)-hmPull,0.03,0.97);
+  const O1bump=clamp((O1-0.30)/0.6,0,1),prosGate=clamp((prosody-0.40)/0.5,0,1),mism=clamp(robust-surface,0,1);
+  const obf=clamp(0.9*clamp(O1bump*prosGate,0,1)+0.2*mism,0,1);
+  return {ai:Math.round(ai*100),obf:Math.round(obf*100),ground:Math.round(igS*100),bino:pm&&pm.binoculars!=null?+pm.binoculars.toFixed(3):null,hasPerp:ps!=null};
+}
+
+function parseBatch(raw){
+  const blocks=raw.split(/\n\s*(?:={3,}|-{3,})\s*\n/);const out=[];
+  for(let b of blocks){b=b.trim();if(!b)continue;const lines=b.split('\n');let tag='suspect',label='';
+    if(/^\s*#/.test(lines[0])){const h=lines.shift().replace(/^\s*#\s*/,'').trim();const m=h.match(/^(human|ai|suno|\?)\b[:\s-]*(.*)$/i);
+      if(m){const t=m[1].toLowerCase();tag=(t==='human')?'human':(t==='ai'||t==='suno')?'ai':'suspect';label=(m[2]||'').trim()||h;}else label=h;}
+    const text=lines.join('\n').trim();if(text)out.push({tag,label:label||('Song '+(out.length+1)),text});}
+  return out;
+}
+const avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null;
+const tagCol=t=>t==='human'?'var(--human)':t==='ai'?'var(--ai)':'var(--mixed)';
+function meterColor(v){return v>=66?'var(--ai)':v>=45?'var(--mixed)':'var(--human)';}
+
+async function runBatch(){
+  const songs=parseBatch(editor.value);
+  if(!songs.length){el('board').innerHTML='<div style="padding:18px;color:var(--muted)">Nothing to analyze.</div>';el('track').innerHTML='';el('note').textContent='';return;}
+  el('board').innerHTML='<div style="padding:14px;color:var(--muted)">scoring…</div>';
+  if(PPL.on){for(const s of songs){await ensurePerp(s.text);}}
+  const scored=songs.map(s=>({...s,...scoreSong(s.text)}));
+  renderBoard(scored);
+}
+
+function renderBoard(scored){
+  const H=scored.filter(s=>s.tag==='human').map(s=>s.ai);
+  const A=scored.filter(s=>s.tag==='ai').map(s=>s.ai);
+  // scale
+  const track=el('track');let html='<div class="axis"></div>';
+  if(H.length){const lo=Math.min(...H),hi=Math.max(...H);html+=`<div class="band h" style="left:${lo}%;width:${Math.max(2,hi-lo)}%"></div><div class="bandlbl" style="left:${(lo+hi)/2}%;color:var(--human)">human</div>`;}
+  if(A.length){const lo=Math.min(...A),hi=Math.max(...A);html+=`<div class="band a" style="left:${lo}%;width:${Math.max(2,hi-lo)}%"></div><div class="bandlbl" style="left:${(lo+hi)/2}%;top:34px;color:var(--ai)">AI</div>`;}
+  for(const s of scored){html+=`<div class="dot" title="${esc(s.label)}: ${s.ai}" style="left:${s.ai}%;background:${tagCol(s.tag)}"></div>`;}
+  html+='<div class="ticks"><span>0 human</span><span>50</span><span>100 AI</span></div>';
+  track.innerHTML=html;
+  // leaderboard
+  const sorted=[...scored].sort((a,b)=>b.ai-a.ai);
+  el('board').innerHTML=sorted.map((s,i)=>{
+    const ex=(s.obf>=55?'⚑ vocabulator ':'')+(s.bino!=null?'B '+s.bino:'');
+    return `<div class="row"><span class="rk">${i+1}</span><span class="chip" style="background:${tagCol(s.tag)};color:#0b0e14">${s.tag}</span><span class="nm" title="${esc(s.label)}">${esc(s.label)}</span><span class="sb"><i style="width:${s.ai}%;background:${meterColor(s.ai)}"></i></span><span class="sv" style="color:${meterColor(s.ai)}">${s.ai}</span><span class="ex">${esc(ex)}</span></div>`;
+  }).join('');
+  // note / relative read on suspects
+  const susp=scored.filter(s=>s.tag==='suspect');
+  let note='';
+  if(H.length&&A.length&&susp.length){
+    const hMean=avg(H),aMean=avg(A),mid=(Math.max(...H)+Math.min(...A))/2;
+    note=`<b>Bands:</b> human ${Math.min(...H)}–${Math.max(...H)} (avg ${Math.round(hMean)}) · AI ${Math.min(...A)}–${Math.max(...A)} (avg ${Math.round(aMean)}). `;
+    note+=susp.map(s=>{const aboveH=H.filter(h=>h<s.ai).length;const side=s.ai>=mid?'AI':'human';return `<br><b>${esc(s.label)}</b> = ${s.ai} → leans <b style="color:${s.ai>=mid?'var(--ai)':'var(--human)'}">${side}</b> (above ${aboveH}/${H.length} human anchors${s.obf>=55?', vocabulator flagged':''})`;}).join('');
+  } else { note=`Tag at least one <b>#human</b> and one <b>#ai</b> anchor to get a relative read. ${scored.length} songs scored.`; }
+  el('note').innerHTML=note;
+}
+
+el('run').addEventListener('click',runBatch);
+el('clear').addEventListener('click',()=>{editor.value='';el('board').innerHTML='';el('track').innerHTML='';el('note').textContent='';editor.focus();});
+el('pplchip').addEventListener('click',async()=>{await pingPPL();});
+el('sample').addEventListener('click',()=>{editor.value=SAMPLE;runBatch();});
+
+const SAMPLE=`#human  un-famous 2014 demo
+[Verse]
+The brake lights bleed across the wet 9th street,
+I left your sweater in the Pontiac's back seat.
+Mom's voicemail's still on the phone from spring,
+forty bucks of gas and a wedding ring.
+
+===
+
+#human  2016 open-mic
+[Verse]
+Dale closed the diner at a quarter past two,
+mopped the same floor that his old man knew.
+Snow on the truck and the radio dead,
+a casserole cooling on the cuttingboard bread.
+
+===
+
+#ai  Suno "write my lyrics"
+[Verse]
+In the neon glow I'm chasing dreams tonight,
+two hearts beat as one beneath the pale moonlight.
+With every breath I rise above the pain,
+breaking these chains and dancing in the rain.
+
+===
+
+#ai  ChatGPT lyrics
+[Verse]
+Beneath the resplendent luminescence I transcend the night,
+sundering these fetters, ascending toward the light.
+The architecture of grief, the silence, the unspoken,
+a symphony of echoes, eternal and unbroken.
+
+===
+
+#?  Track from the group, "they swear they wrote it"
+[Verse]
+The kitchen light still flickers when it rains,
+I keep your father's watch but not his name.
+Tuesday, and the freezer's full of casseroles,
+grief is mostly errands, so the saying goes.
+
+===
+
+#?  Another suspect
+[Verse]
+Chasing shadows through the endless night,
+my heart's on fire, burning ever bright.
+Rising from the ashes, I will never fall,
+love's sweet embrace will conquer all.`;
+
+pingPPL();runBatch();editor.focus();
+</script>
+</body>
+</html>

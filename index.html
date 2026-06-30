@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Cliché Detection Suite</title>
+<style>
+  :root{--bg:#0b0e14;--panel:#121723;--line:#1f2735;--text:#e6e9ef;--muted:#8a93a6;--accent:#36e0c8}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
+  .wrap{max-width:900px;margin:0 auto;padding:34px 22px 60px}
+  h1{margin:0;font-size:26px}h1 .a{color:var(--accent)}
+  .sub{color:var(--muted);font-size:14px;margin:8px 0 26px;line-height:1.55}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 17px;transition:border-color .15s,transform .15s}
+  a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .card h2{margin:0 0 5px;font-size:16px}.card h2 .ic{color:var(--accent)}
+  .card p{margin:0;font-size:12.7px;color:var(--muted);line-height:1.5}
+  .tag{display:inline-block;font-size:10.5px;color:var(--accent);border:1px solid var(--line);border-radius:999px;padding:1px 8px;margin-top:9px}
+  .foot{margin-top:26px;font-size:12.5px;color:var(--muted);line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
+  .foot b{color:var(--text)}
+  code{background:#0e1320;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><span class="a">AI Cliché</span> Detection Suite</h1>
+  <div class="sub">Five offline tools over a 2,076-entry database of AI tells (overused words, phrases, rhyme-pairs, tropes & regex pattern-detectors). Open any tool below — they run locally, no internet needed. Some signals get sharper if you also start the local model (<code>server/start-perplexity.bat</code>).</div>
+  <div class="grid">
+    <a class="card" href="apps/complete.html" style="grid-column:1 / -1;border-color:var(--accent)">
+      <h2><span class="ic">★</span> Complete Analysis</h2>
+      <p>Everything on one paste — forensics verdict, every signal, the cliché list, and the borrowed-line check, in tabs. The all-in-one window. (The 5 focused tools below still work solo.)</p>
+      <span class="tag">all-in-one</span>
+    </a>
+    <a class="card" href="apps/song-compare.html">
+      <h2><span class="ic">▣</span> Song Compare</h2>
+      <p>Paste many songs, tag known <b>#human</b>/<b>#ai</b> anchors + suspects, and rank everyone against the two bands. The "who actually wrote it" tool.</p>
+      <span class="tag">the game</span>
+    </a>
+    <a class="card" href="apps/song-forensics.html">
+      <h2><span class="ic">◑</span> Song Forensics</h2>
+      <p>Deep provenance breakdown of one song: AI-likelihood, paraphrase-proof structure, vocabulator/obfuscation, and rewrite/multi-source indices.</p>
+      <span class="tag">one song, deep</span>
+    </a>
+    <a class="card" href="apps/ai-detector.html">
+      <h2><span class="ic">◆</span> AI Detector</h2>
+      <p>Transparent multi-signal estimator for prose: cliché density, burstiness, grounding, and (with the model) Binoculars perplexity. Shows every signal.</p>
+      <span class="tag">prose</span>
+    </a>
+    <a class="card" href="apps/cliche-catcher.html">
+      <h2><span class="ic">✦</span> Cliché Catcher</h2>
+      <p>Live highlighter — type or paste and watch flagged AI clichés light up by severity, with fix suggestions. The writing-aid side.</p>
+      <span class="tag">write clean</span>
+    </a>
+    <a class="card" href="apps/lyric-check.html">
+      <h2><span class="ic">⌕</span> Lyric Check</h2>
+      <p>Borrowed-line finder: flags lines a song may have stolen/regurgitated (which read as human) with one-click searches to confirm.</p>
+      <span class="tag">stolen ≠ generated</span>
+    </a>
+    <a class="card" href="exports/">
+      <h2><span class="ic">⤓</span> The Database</h2>
+      <p>The full 2,076-entry corpus in 6 formats — CSV, JSON, SQLite, XLSX, TXT, PDF. For import, apps, or print.</p>
+      <span class="tag">exports/</span>
+    </a>
+  </div>
+  <div class="foot">
+    <b>Layout:</b> <code>apps/</code> the tools you open · <code>exports/</code> the database in 6 formats · <code>build/</code> templates + scripts that generate everything · <code>server/</code> the optional local model. See <code>README.md</code>.
+  </div>
+</div>
+</body>
+</html>

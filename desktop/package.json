@@ -1,0 +1,41 @@
+{
+  "name": "ai-cliche-suite",
+  "productName": "AI Cliche Detection Suite",
+  "version": "0.1.0",
+  "description": "Offline AI-text / lyric detection suite with a bundled local model.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "author": "MiniDraco",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.minidraco.aiclichesuite",
+    "productName": "AI Cliche Detection Suite",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "package.json"],
+    "extraResources": [
+      { "from": "../index.html", "to": "suite/index.html" },
+      { "from": "../README.md", "to": "suite/README.md" },
+      { "from": "../apps", "to": "suite/apps" },
+      { "from": "../exports", "to": "suite/exports" },
+      { "from": "../ai-cliche-megadb.json", "to": "suite/ai-cliche-megadb.json" },
+      { "from": "../server/perplexity_server.py", "to": "suite/server/perplexity_server.py" },
+      { "from": "../server/pyenv", "to": "suite/server/pyenv" },
+      { "from": "../server/models", "to": "suite/server/models" }
+    ],
+    "win": { "target": ["nsis"], "artifactName": "AI-Cliche-Suite-Setup-${version}.${ext}" },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "AI Cliche Detection Suite"
+    }
+  }
+}

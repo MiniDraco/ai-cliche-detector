@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Text Detector — transparent multi-signal estimator</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121723; --panel2:#0e1320; --line:#1f2735;
+    --text:#e6e9ef; --muted:#8a93a6; --accent:#36e0c8;
+    --human:#36e0c8; --mixed:#ffd23f; --ai:#ff4d6d;
+    --high:#ff4d6d; --high-bg:rgba(255,77,109,.30);
+    --med:#ff9f1c; --med-bg:rgba(255,159,28,.28);
+    --low:#ffd23f; --low-bg:rgba(255,210,63,.20);
+    --rhyme-bg:rgba(155,123,255,.28);
+    --tr-bg:rgba(80,160,255,.26);
+    --font: ui-monospace,"Cascadia Code","JetBrains Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;display:flex;flex-direction:column}
+  header{padding:13px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#101521,#0b0e14)}
+  header h1{margin:0;font-size:18px}
+  header h1 .a{color:var(--accent)}
+  header .sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+  main{flex:1;display:grid;grid-template-columns:1fr 420px;min-height:0}
+  .left{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
+  .lbar{display:flex;gap:10px;align-items:center;padding:9px 16px;border-bottom:1px solid var(--line);background:var(--panel2);font-size:12.5px}
+  .lbar button{background:#1a2233;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer;font-size:12.5px}
+  .lbar button:hover{border-color:var(--accent)}
+  .lbar .spacer{flex:1}
+  .lbar .stat{color:var(--muted)} .lbar .stat b{color:var(--text)}
+  .editor-wrap{position:relative;flex:1;min-height:0}
+  .backdrop,.editor{margin:0;border:0;width:100%;height:100%;padding:18px 20px;font-family:var(--font);font-size:14.5px;line-height:1.75;white-space:pre-wrap;word-wrap:break-word;overflow:auto}
+  .backdrop{position:absolute;inset:0;z-index:1;color:transparent;pointer-events:none;background:var(--bg)}
+  .backdrop mark{border-radius:3px;color:transparent}
+  .backdrop mark.s2{background:var(--high-bg)} .backdrop mark.s1{background:var(--med-bg)}
+  .backdrop mark.s0{background:var(--low-bg)} .backdrop mark.sr{background:var(--rhyme-bg)}
+  .backdrop mark.mt{box-shadow:inset 0 -2px 0 rgba(54,224,200,.55)}
+  .backdrop mark.tr{background:var(--tr-bg)}
+  .editor{position:relative;z-index:2;background:transparent;color:var(--text);resize:none;outline:none;caret-color:var(--accent)}
+  .editor::placeholder{color:#41506b}
+  aside{background:var(--panel);display:flex;flex-direction:column;min-height:0;overflow:auto}
+  .verdict{padding:18px;border-bottom:1px solid var(--line)}
+  .gauge{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,var(--human),var(--mixed) 50%,var(--ai));overflow:visible;margin:14px 0 8px}
+  .needle{position:absolute;top:-5px;width:3px;height:24px;background:#fff;border-radius:2px;box-shadow:0 0 6px rgba(0,0,0,.6);transition:left .25s}
+  .gscale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted)}
+  .score-row{display:flex;align-items:baseline;gap:12px}
+  .score-num{font-size:46px;font-weight:800;line-height:1}
+  .score-cap{font-size:12px;color:var(--muted)}
+  .vlabel{font-size:17px;font-weight:700;margin-top:6px}
+  .vconf{font-size:12.5px;color:var(--muted);margin-top:5px}
+  .vconf b{color:var(--text)}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:700}
+  .sig-head{padding:11px 16px 4px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .signals{padding:4px 16px 10px}
+  .sig{padding:9px 0;border-bottom:1px solid #161d2b}
+  .sig .t{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .sig .nm{font-size:13px;font-weight:600}
+  .sig .vv{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .bar{height:6px;border-radius:4px;background:#1b2333;margin:6px 0 4px;overflow:hidden}
+  .bar > i{display:block;height:100%;border-radius:4px}
+  .sig .d{font-size:11.5px;color:var(--muted);line-height:1.45}
+  .sig.wk{opacity:.55}
+  .disc{padding:12px 16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.5;background:var(--panel2)}
+  .disc b{color:var(--med)}
+  .legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted);padding:8px 16px;border-top:1px solid var(--line)}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+  .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+  @media(max-width:880px){main{grid-template-columns:1fr}aside{max-height:50vh}}
+</style>
+</head>
+<body>
+<a href="../index.html" title="Back to the launcher (switch tools)" style="position:fixed;top:9px;right:14px;z-index:60;font-size:11.5px;color:#36e0c8;background:rgba(14,19,32,.92);text-decoration:none;border:1px solid #1f2735;border-radius:8px;padding:5px 11px">&lsaquo; Suite</a>
+<header>
+  <h1><span class="a">AI</span> Text Detector <span style="color:var(--muted);font-weight:400;font-size:13px">— transparent multi-signal estimator</span></h1>
+  <div class="sub" id="subline">offline · no data leaves your machine · shows every signal it uses</div>
+</header>
+
+<main>
+  <div class="left">
+    <div class="lbar">
+      <span class="stat">Words: <b id="wc">0</b></span>
+      <span class="stat">Sentences: <b id="sc">0</b></span>
+      <div class="spacer"></div>
+      <span id="pplchip" title="Optional local perplexity model on your GPU. Run start-perplexity.bat, then click to connect." style="cursor:pointer;font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)">● local model: off</span>
+      <button id="report">Copy report</button>
+      <button id="sampleAI">AI sample</button>
+      <button id="sampleH">Human sample</button>
+      <button id="clear">Clear</button>
+    </div>
+    <div class="editor-wrap">
+      <div class="backdrop" id="backdrop" aria-hidden="true"><div id="highlights"></div></div>
+      <textarea class="editor" id="editor" spellcheck="false"
+        placeholder="Paste text to analyze. The detector scores ~8 independent signals and highlights the evidence as you type…"></textarea>
+    </div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--high)"></i> AI cliché/tell</span>
+      <span><i class="sw" style="background:var(--accent)"></i> templated phrase</span>
+      <span><i class="sw" style="background:#50a0ff"></i> transition/hedge</span>
+      <span><i class="sw" style="background:#9b7bff"></i> lazy rhyme</span>
+    </div>
+  </div>
+
+  <aside>
+    <div class="verdict">
+      <div class="score-row"><div class="score-num" id="scoreNum">0</div><div class="score-cap">/100<br>AI-likelihood</div></div>
+      <div class="gauge"><div class="needle" id="needle" style="left:0%"></div></div>
+      <div class="gscale"><span>human</span><span>mixed</span><span>AI</span></div>
+      <div class="vlabel" id="vlabel">Paste some text…</div>
+      <div class="vconf" id="vconf"></div>
+    </div>
+    <div class="sig-head">Signal breakdown</div>
+    <div class="signals" id="signals"></div>
+    <div class="disc">
+      <b>Read this.</b> This is a heuristic estimator, <b>not proof</b>. It measures style patterns that correlate with AI text — it cannot know who wrote anything. Polished, formal, or non-native human writing can score high (false positive); AI text that's been edited or prompted for voice can score low (false negative). Use it as one input, never as a verdict. Needs ~120+ words to be meaningful.
+    </div>
+  </aside>
+</main>
+
+<script>
+/* ===== injected shared DB data ===== */
+const META = /*__META__*/{};
+const PATTERNS  = /*__PATTERNS__*/[];
+const RHYMES    = /*__RHYMES__*/[];
+const TEMPLATES = /*__TEMPLATES__*/[];
+/* =================================== */
+
+const el=id=>document.getElementById(id);
+const editor=el('editor'), backdrop=el('backdrop'), highlights=el('highlights');
+function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+function clamp01(x){return clamp(x,0,1);}
+
+// ---- optional local perplexity model (the signal stylometry can't compute) ----
+const PPL={on:false,base:'http://127.0.0.1:8770',cache:new Map(),pending:null};
+function perpFor(text){return PPL.cache.get(text.trim())||null;}
+function perpSubFrom(m){ if(!m)return null; const t1=clamp((m.pct_top1-0.15)/0.30,0,1); const b=clamp((6.5-m.mean_bits)/3.0,0,1); const bn=(m.binoculars!=null)?clamp((0.95-m.binoculars)/0.15,0,1):null; return bn!=null?clamp((1.8*bn+1.6*t1+0.8*b)/4.2,0,1):clamp((2.2*t1+1.2*b)/3.4,0,1); }
+function updateChip(){ const c=el('pplchip'); if(!c)return; if(PPL.on){c.style.color='var(--accent)';c.style.borderColor='var(--accent)';c.textContent='● local model: ON (gpt2)';} else {c.style.color='var(--muted)';c.style.borderColor='var(--line)';c.textContent='● local model: off — click to connect';} }
+async function pingPPL(){ try{ const r=await fetch(PPL.base+'/health',{cache:'no-store'}); const j=await r.json(); PPL.on=!!j.ok; }catch(e){ PPL.on=false; } updateChip(); if(PPL.on) render(); }
+async function ensurePerp(text){ const k=text.trim(); if(!PPL.on)return false; if(k.split(/\s+/).filter(Boolean).length<18)return false; if(PPL.cache.has(k)||PPL.pending===k)return false; PPL.pending=k; let ok=false; try{ const r=await fetch(PPL.base+'/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:k})}); if(r.ok){PPL.cache.set(k,await r.json());ok=true;} }catch(e){PPL.on=false;updateChip();} PPL.pending=null; return ok; }
+
+// ---- image grounding for prose: do abstractions get anchored in specifics, or float? ----
+const ABS_SET=new Set(('soul heart dream dreams fire light dark shadow pain love fear hope glory freedom eternity forever infinity sky star stars night fate destiny time void grace desire passion sorrow paradise heaven spirit energy magic power strength courage faith truth memory silence echo whisper potential innovation solution solutions synergy value growth landscape journey vision mission impact transformation excellence success future possibilities opportunities insights paradigm ecosystem framework tapestry essence realm legacy resonance complexity nuance clarity meaning purpose').split(' '));
+const CONC_SET=new Set(('truck car road street door window kitchen table chair bed phone coat shirt glass bottle coffee whiskey beer porch yard fence dog cat river bridge train bus ticket dollar receipt letter photo ring clock mirror stairs garage store bar church hospital grave hands fingers knees teeth sweater gas brake engine wheel monday tuesday wednesday thursday friday saturday sunday january february march april june july august september october november december').split(' '));
+function groundingUnits(units){
+  let floating=0, withAbs=0;
+  for(const u of units){ const ws=(u.match(/[A-Za-z']+/g)||[]); let abs=0,gnd=0;
+    ws.forEach((w,i)=>{ const lw=w.toLowerCase().replace(/[^a-z']/g,''); if(!lw)return;
+      if(ABS_SET.has(lw))abs++; else if(CONC_SET.has(lw))gnd++; else if(i>0&&/^[A-Z][a-z]/.test(w)&&lw!=='i')gnd++; if(/[0-9]/.test(w))gnd++; });
+    if(abs>=1){ withAbs++; if(gnd===0&&abs>=2)floating++; } }
+  const ratio=withAbs?floating/withAbs:0;
+  return {ratio,floating,withAbs,sub:clamp(0.12+(ratio-0.15)/0.6*0.8,0.08,0.95)};
+}
+
+// literal cliché matcher (longest-first alternation)
+const patByPhrase=new Map();
+for(const p of PATTERNS){ if(!patByPhrase.has(p.p)) patByPhrase.set(p.p,p); }
+const bigRe = patByPhrase.size ? new RegExp('\\b(?:'+[...patByPhrase.keys()].sort((a,b)=>b.length-a.length).map(p=>reEsc(p).replace(/\s+/g,'\\s+')).join('|')+')\\b','gi') : null;
+const COMPILED = TEMPLATES.map(t=>{let f=(t.flags||'gi'); if(!f.includes('g'))f+='g'; let re=null; try{re=new RegExp(t.pattern,f);}catch(e){} return {re,sev:t.s,label:t.term};}).filter(t=>t.re);
+
+// transition / hedge words (AI loves these)
+const TRANSITIONS=['however','moreover','furthermore','additionally','consequently','therefore','nevertheless','nonetheless','notably','importantly','ultimately','essentially','crucially','significantly','specifically','particularly','indeed','overall','meanwhile','similarly','conversely','accordingly','subsequently','undoubtedly','arguably','interestingly','remarkably'];
+const HEDGES=["it's important to note","it's worth noting","that being said","at the end of the day","when it comes to","in today's","in conclusion","in summary","to summarize","needless to say","first and foremost","last but not least"];
+const trRe=new RegExp('\\b(?:'+TRANSITIONS.join('|')+')\\b','gi');
+const hedgeRe=new RegExp('(?:'+HEDGES.map(reEsc).join('|')+')','gi');
+
+const sevW=s=>s===2?3:s===1?2:1;
+
+function pushAll(re,text,fn){ re.lastIndex=0; let m; while((m=re.exec(text))){ if(!m[0]){re.lastIndex++;continue;} fn(m); if(m.index===re.lastIndex) re.lastIndex++; } }
+
+function analyze(text){
+  const ranges=[];
+  // ---- cliché literal hits ----
+  let clicheW=0, clicheN=0;
+  if(bigRe) pushAll(bigRe,text,m=>{ const meta=patByPhrase.get(m[0].toLowerCase().replace(/\s+/g,' '))||{s:1}; ranges.push({start:m.index,end:m.index+m[0].length,kind:'c',sev:meta.s}); clicheW+=sevW(meta.s); clicheN++; });
+  // ---- rhyme pairs at line ends ----
+  const ends=[]; let off=0;
+  for(const ln of text.split('\n')){ const mw=[...ln.matchAll(/[A-Za-z']+/g)]; if(mw.length){const last=mw[mw.length-1]; ends.push({w:last[0].toLowerCase().replace(/'/g,''),start:off+last.index,end:off+last.index+last[0].length});} off+=ln.length+1; }
+  const endSet=new Set(ends.map(e=>e.w)); let rhymeN=0;
+  for(const r of RHYMES){ if(endSet.has(r.a)&&endSet.has(r.b)){ for(const e of ends){ if(e.w===r.a||e.w===r.b){ ranges.push({start:e.start,end:e.end,kind:'r',sev:'r'}); rhymeN++; } } } }
+  // ---- template / pattern hits ----
+  let tplN=0;
+  for(const c of COMPILED) pushAll(c.re,text,m=>{ ranges.push({start:m.index,end:m.index+m[0].length,kind:'t',sev:c.sev}); tplN++; });
+  // ---- transitions / hedges ----
+  let trN=0;
+  pushAll(trRe,text,m=>{ ranges.push({start:m.index,end:m.index+m[0].length,kind:'x',sev:1}); trN++; });
+  pushAll(hedgeRe,text,m=>{ ranges.push({start:m.index,end:m.index+m[0].length,kind:'x',sev:1}); trN++; });
+
+  // ---- basic corpus stats ----
+  const words=text.match(/\b[\w']+\b/g)||[]; const W=words.length;
+  const chars=Math.max(1,text.length);
+  // sentences
+  let sents=text.split(/(?<=[.!?])\s+/).map(s=>s.trim()).filter(s=>/[\w]/.test(s));
+  if(sents.length<2){ sents=text.split(/\n+/).map(s=>s.trim()).filter(s=>/[\w]/.test(s)); }
+  const sLens=sents.map(s=>(s.match(/\b[\w']+\b/g)||[]).length).filter(n=>n>0);
+  const S=sLens.length;
+  const mean=S?sLens.reduce((a,b)=>a+b,0)/S:0;
+  const sd=S>1?Math.sqrt(sLens.reduce((a,b)=>a+(b-mean)*(b-mean),0)/S):0;
+  const cv=mean?sd/mean:0;
+  // openers
+  const openers=sents.map(s=>(s.match(/[A-Za-z']+/)||[''])[0].toLowerCase());
+  const trStarts=openers.filter(o=>TRANSITIONS.includes(o)).length;
+  const oc={}; openers.forEach(o=>{if(o)oc[o]=(oc[o]||0)+1;});
+  const repOpen=Object.values(oc).reduce((a,n)=>a+(n>1?n-1:0),0);
+  const openerFrac=S?(trStarts+repOpen)/S:0;
+  // punctuation fingerprint
+  const emN=(text.match(/[—–]/g)||[]).length; const emPer1k=emN/chars*1000;
+  const smart=/[“”‘’]/.test(text);
+  // contractions
+  const contr=(text.match(/\b\w+['’](t|s|re|ve|ll|d|m)\b/gi)||[]).length;
+  const contrRate=S?contr/S:0;
+  // human-casual markers (pull toward human)
+  const hm=(text.match(/\b(i think|i mean|imo|imho|honestly|tbh|idk|dunno|kinda|sorta|gonna|wanna|gotta|lol|lmao|haha|yeah|nah|nope|yep|btw|anyway|literally|basically)\b/gi)||[]).length
+    + (text.match(/!{2,}|\?{2,}|\.\.\./g)||[]).length
+    + (text.match(/\b[A-Z]{3,}\b/g)||[]).length
+    + (text.match(/\([^)]{1,40}\)/g)||[]).length
+    + (text.match(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu)||[]).length;
+
+  // ---- per-100-word densities ----
+  const per=(n)=>W?n/W*100:0;
+  const dCliche=per(clicheW), dTpl=per(tplN), dTr=per(trN);
+
+  // ---- signals (each => sub-score 0..1 toward AI, with weight) ----
+  const sig=[];
+  sig.push({key:'cliche',name:'AI cliché / tell density',w:2.5,
+    s:0.12+0.83*(dCliche/(dCliche+2.2)),
+    d:`${clicheN} flagged terms (${dCliche.toFixed(1)}/100 words). The model's statistical-middle vocabulary.`});
+  sig.push({key:'pattern',name:'Templated phrasing',w:2.2,
+    s:0.10+0.85*(dTpl/(dTpl+1.2)),
+    d:`${tplN} mad-lib / structural patterns (e.g. "not just X but Y", "with every ___").`});
+  sig.push({key:'burst',name:'Sentence-length burstiness',w:1.7,weak:S<4,
+    s:S<4?0.5:clamp(0.92-(cv-0.22)/(0.78-0.22)*0.77,0.12,0.92),
+    d:S<4?`Too few sentences (${S}) to judge.`:`Length CV ${cv.toFixed(2)} (mean ${mean.toFixed(0)} words). Humans vary more; AI is uniform.`});
+  sig.push({key:'trans',name:'Transition / hedge density',w:1.4,
+    s:0.15+0.8*(dTr/(dTr+1.6)),
+    d:`${trN} transition/hedge markers (${dTr.toFixed(1)}/100). "However", "Moreover", "It's important to note"…`});
+  sig.push({key:'opener',name:'Sentence-opener uniformity',w:1.0,weak:S<4,
+    s:S<4?0.5:clamp(0.2+0.75*openerFrac+(trStarts? .05:0),0.12,0.92),
+    d:S<4?'Too few sentences to judge.':`${Math.round(openerFrac*100)}% of sentences start with a transition or a repeated word.`});
+  const emScore=clamp((emN-2)/4,0,1); // em-dash only signals AI when OVER-used (3+), not at all
+  sig.push({key:'punct',name:'Punctuation fingerprint',w:1.0,
+    s:clamp(0.3+0.45*emScore+(smart?0.18:0),0.12,0.9),
+    d:`${emN} em-dashes${smart?', curly quotes present':''}. Only a tell when over-used — humans use em-dashes too.`});
+  const contrGated=hm>=3; // casual writers may skip apostrophe-contractions; don't penalize them
+  sig.push({key:'contr',name:'Contraction deficit',w:0.7,weak:(S<3||contrGated),
+    s:(S<3)?0.5:(contrGated?Math.min(0.5,clamp(0.78-contrRate*0.55,0.2,0.8)):clamp(0.78-contrRate*0.55,0.2,0.8)),
+    d:(S<3)?'Too short to judge.':contrGated?`${contrRate.toFixed(2)}/sentence, but tone is casual — discounted.`:`${contrRate.toFixed(2)} contractions/sentence. Formal AI prose avoids them.`});
+  sig.push({key:'human',name:'Human-casual markers',w:1.3,
+    s:clamp(0.5-hm*0.07,0.08,0.5),
+    d:`${hm} informal/personal markers (slang, asides, !!!, ALLCAPS, emoji). More = more human.`});
+  const ig=groundingUnits(sents);
+  sig.push({key:'ground',name:'Image grounding (floating abstractions)',w:1.6,weak:ig.withAbs<2,
+    s:ig.sub,
+    d:`${ig.floating}/${ig.withAbs} sentences are floating abstraction with no concrete anchor (name, number, real object). Humans ground claims in specifics; AI stacks abstractions. Survives paraphrase.`});
+  // strongest single signal when available: real perplexity from a local LM
+  const pm=perpFor(text), ps=perpSubFrom(pm);
+  if(ps!=null) sig.push({key:'perp',name:'Binoculars + perplexity (local model)',w:3.6,s:ps,
+    d:`Binoculars ${pm.binoculars!=null?pm.binoculars.toFixed(3):'n/a'} (SOTA cross-model ratio — under ~0.85 = AI), ppl ${pm.perplexity.toFixed(0)}, model top-1 ${(pm.pct_top1*100).toFixed(0)}%. The normalized ratio cancels prompt/domain effects.`});
+
+  // ---- combine ----
+  let wsum=0,acc=0,subs=[];
+  for(const x of sig){ const w=x.weak?x.w*0.4:x.w; wsum+=w; acc+=w*x.s; subs.push(x.s); }
+  const p=wsum?acc/wsum:0.5;
+  const score=Math.round(p*100);
+  // confidence: text length + signal agreement; a connected model is a big boost
+  const meanSub=subs.reduce((a,b)=>a+b,0)/subs.length;
+  const spread=Math.sqrt(subs.reduce((a,b)=>a+(b-meanSub)*(b-meanSub),0)/subs.length);
+  let conf=clamp(W/170,0.15,1)*(1-clamp(spread*1.3,0,0.55));
+  if(ps!=null) conf=clamp(conf+0.28,0,1);
+  const confLabel=conf>0.66?'High':conf>0.38?'Medium':'Low';
+
+  return {ranges,score,sig,W,S,confLabel,emN,hasPerp:ps!=null};
+}
+
+function verdictOf(score){
+  if(score>=80) return ['Likely AI-generated','var(--ai)'];
+  if(score>=64) return ['Leaning AI','var(--ai)'];
+  if(score>=46) return ['Mixed / uncertain','var(--mixed)'];
+  if(score>=34) return ['Leaning human','var(--human)'];
+  return ['Likely human-written','var(--human)'];
+}
+function barColor(s){ return s>=0.66?'var(--ai)':s>=0.45?'var(--mixed)':'var(--human)'; }
+function kindClass(r){ return r.kind==='x'?'tr':r.kind==='t'?('s'+r.sev+' mt'):r.kind==='r'?'sr':'s'+r.sev; }
+
+let last=null;
+function render(){
+  const text=editor.value;
+  const a=analyze(text); last=a;
+  // highlight overlay
+  const rs=a.ranges.slice().sort((x,y)=>x.start-y.start||(y.end-y.start)-(x.end-x.start));
+  const keep=[]; let le=-1; for(const r of rs){ if(r.start>=le){keep.push(r);le=r.end;} }
+  let html='',i=0;
+  for(const r of keep){ html+=esc(text.slice(i,r.start)); html+=`<mark class="${kindClass(r)}">`+esc(text.slice(r.start,r.end))+'</mark>'; i=r.end; }
+  html+=esc(text.slice(i)); if(text.endsWith('\n'))html+=' ';
+  highlights.innerHTML=html; syncScroll();
+
+  el('wc').textContent=a.W; el('sc').textContent=a.S;
+  el('scoreNum').textContent=text.trim()?a.score:0;
+  el('needle').style.left=(text.trim()?a.score:0)+'%';
+  const [vl,vc]=verdictOf(a.score);
+  if(!text.trim()){ el('vlabel').textContent='Paste some text…'; el('vlabel').style.color='var(--muted)'; el('vconf').textContent=''; el('signals').innerHTML=''; return; }
+  el('vlabel').textContent=vl; el('vlabel').style.color=vc;
+  const lowN=a.W<120?` <span class="pill" style="background:var(--med-bg);color:var(--med)">short text — low confidence</span>`:'';
+  const perpN=a.hasPerp?` <span class="pill" style="background:rgba(54,224,200,.18);color:var(--accent)">+ local model</span>`:'';
+  el('vconf').innerHTML=`Confidence: <b>${a.confLabel}</b> · ${a.W} words, ${a.S} sentences.${lowN}${perpN}`;
+  el('signals').innerHTML=a.sig.map(x=>{
+    const pct=Math.round(x.s*100);
+    return `<div class="sig ${x.weak?'wk':''}${x.key==='perp'?' perp':''}"><div class="t"><span class="nm">${x.name}</span><span class="vv">${pct}${x.weak?' (weak)':''}</span></div>
+      <div class="bar"><i style="width:${pct}%;background:${barColor(x.s)}"></i></div>
+      <div class="d">${esc(x.d)}</div></div>`;
+  }).join('');
+  if(PPL.on && text.trim()) ensurePerp(text).then(did=>{ if(did) render(); });
+}
+function syncScroll(){ backdrop.scrollTop=editor.scrollTop; backdrop.scrollLeft=editor.scrollLeft; }
+
+let t=null; editor.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(render,140);});
+editor.addEventListener('scroll',syncScroll);
+el('clear').addEventListener('click',()=>{editor.value='';render();editor.focus();});
+el('sampleAI').addEventListener('click',()=>{editor.value=SAMPLE_AI;render();});
+el('sampleH').addEventListener('click',()=>{editor.value=SAMPLE_H;render();});
+el('report').addEventListener('click',()=>{
+  if(!last||!editor.value.trim())return;
+  const [vl]=verdictOf(last.score);
+  const L=[`AI DETECTOR REPORT`,`Verdict: ${vl}  (${last.score}/100 AI-likelihood, ${last.confLabel} confidence)`,`${last.W} words, ${last.S} sentences`,`(heuristic estimate — not proof)`,'',`Signals:`];
+  for(const s of last.sig) L.push(`  ${Math.round(s.s*100).toString().padStart(3)}  ${s.name}${s.weak?' [weak]':''} — ${s.d}`);
+  const txt=L.join('\n');
+  const done=()=>{el('vconf').innerHTML='<b>Report copied to clipboard.</b>';};
+  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done,()=>{});
+});
+
+const SAMPLE_AI=`In today's fast-paced digital world, artificial intelligence has become an indispensable cornerstone of innovation. It's important to note that this transformative technology is not just a tool, but a revolution that empowers organizations to unlock their full potential. Moreover, by leveraging robust, cutting-edge solutions, businesses can navigate the complexities of an ever-evolving landscape. Furthermore, the seamless integration of these systems fosters unprecedented growth. Ultimately, embracing this paradigm shift is essential for any organization seeking to thrive in the modern era.`;
+
+const SAMPLE_H=`ok so i finally tried that ramen place on 4th and honestly? kinda mid. the broth was good — really rich, almost too salty tbh — but the noodles were mushy by the time it hit the table. my friend loved it though, go figure. we waited like 40 min for a table on a tuesday which is insane. would i go back? maybe, if someone else is paying lol. the egg was perfect at least.`;
+
+el('pplchip').addEventListener('click',pingPPL);
+render(); editor.focus(); pingPPL();
+</script>
+</body>
+</html>

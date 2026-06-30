@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lyric Check — borrowed / regurgitated line finder</title>
+<style>
+  :root{
+    --bg:#0b0e14;--panel:#121723;--panel2:#0e1320;--line:#1f2735;--text:#e6e9ef;--muted:#8a93a6;--accent:#36e0c8;
+    --human:#36e0c8;--mixed:#ffd23f;--ai:#ff4d6d;--font:ui-monospace,"Cascadia Code",Consolas,monospace;
+  }
+  *{box-sizing:border-box}html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;display:flex;flex-direction:column}
+  header{padding:13px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#101521,#0b0e14)}
+  header h1{margin:0;font-size:18px}header h1 .a{color:var(--accent)}
+  header .sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+  main{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0}
+  .left{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
+  .lbar{display:flex;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel2);font-size:12.5px;flex-wrap:wrap}
+  .lbar button{background:#1a2233;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer;font-size:12.5px}
+  .lbar button#run{background:var(--accent);color:#06281f;border-color:var(--accent);font-weight:700}
+  .lbar button:hover{border-color:var(--accent)}.lbar .spacer{flex:1}
+  textarea{flex:1;width:100%;border:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:13.5px;line-height:1.7;padding:14px 16px;resize:none;outline:none;white-space:pre-wrap}
+  textarea::placeholder{color:#41506b}
+  aside{background:var(--panel);display:flex;flex-direction:column;min-height:0;overflow:auto}
+  .summary{padding:13px 16px;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5}
+  .summary b{color:var(--text)}
+  .rows{padding:4px 0}
+  .lrow{padding:9px 14px;border-bottom:1px solid #161d2b;display:flex;gap:10px;align-items:flex-start}
+  .lrow .meter{width:54px;flex:none;text-align:center}
+  .lrow .mv{font-size:16px;font-weight:800;line-height:1.1}
+  .lrow .mb{height:4px;border-radius:3px;background:#1b2333;margin-top:4px;overflow:hidden}
+  .lrow .mb>i{display:block;height:100%}
+  .lrow .body{flex:1;min-width:0}
+  .lrow .txt{font-family:var(--font);font-size:13px;line-height:1.45}
+  .lrow .tags{margin-top:5px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .badge{font-size:10px;font-weight:700;padding:1px 7px;border-radius:999px}
+  .lrow a{font-size:11px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:2px 7px;cursor:pointer}
+  .lrow a:hover{border-color:var(--accent)}
+  .note{font-size:11px;color:var(--muted)}
+  .disc{padding:12px 16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.55;background:var(--panel2)}
+  .disc b{color:var(--mixed)}
+  @media(max-width:900px){main{grid-template-columns:1fr}aside{max-height:55vh}}
+</style>
+</head>
+<body>
+<a href="../index.html" title="Back to the launcher (switch tools)" style="position:fixed;top:9px;right:14px;z-index:60;font-size:11.5px;color:#36e0c8;background:rgba(14,19,32,.92);text-decoration:none;border:1px solid #1f2735;border-radius:8px;padding:5px 11px">&lsaquo; Suite</a>
+<header>
+  <h1><span class="a">Lyric</span> Check <span style="color:var(--muted);font-weight:400;font-size:13px">— borrowed / regurgitated line finder</span></h1>
+  <div class="sub">the other half of "did they write it": this catches <b>stolen</b> lines (real songs ReMi regurgitated or someone copied) that read as human and slip past AI-detection.</div>
+</header>
+<main>
+  <div class="left">
+    <div class="lbar">
+      <span id="pplchip" title="Local model gives the recognition score. Run start-perplexity.bat, then click." style="cursor:pointer;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)">● model: off</span>
+      <div class="spacer"></div>
+      <button id="sample">Example</button>
+      <button id="clear">Clear</button>
+      <button id="run">Check lines ▸</button>
+    </div>
+    <textarea id="editor" spellcheck="false" placeholder="Paste a suspect lyric. Each distinctive line gets a 'recognition' score (how strongly the local model already knows it — a memorized real song scores high) plus one-click searches to confirm it against published lyrics."></textarea>
+  </div>
+  <aside>
+    <div class="summary" id="summary">Paste a lyric and hit <b>Check lines</b>.</div>
+    <div class="rows" id="rows"></div>
+    <div class="disc"><b>What this is.</b> It can't hold every song ever written, so it flags lines the local model <b>already recognizes</b> — strong recognition means the line is either a memorized real lyric (borrowed) or generic filler. Use the per-line <b>search</b> buttons to confirm a hit against published lyrics. <b>It pairs with the AI-detector:</b> that tool catches <i>generated</i> lyrics; this one catches <i>stolen</i> ones. Neither is proof — they're leads. Needs the local model for scoring (works as a search-helper without it).</div>
+  </aside>
+</main>
+<script>
+const el=id=>document.getElementById(id);const editor=el('editor');
+function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+const PPL={on:false,base:'http://127.0.0.1:8770',cache:new Map()};
+function updateChip(){const c=el('pplchip');if(PPL.on){c.style.color='var(--accent)';c.style.borderColor='var(--accent)';c.textContent='● model: ON';}else{c.style.color='var(--muted)';c.style.borderColor='var(--line)';c.textContent='● model: off — click to connect';}}
+async function pingPPL(){try{const r=await fetch(PPL.base+'/health',{cache:'no-store'});const j=await r.json();PPL.on=!!j.ok;}catch(e){PPL.on=false;}updateChip();}
+async function scoreLine(line){const k=line.trim();if(PPL.cache.has(k))return PPL.cache.get(k);if((k.match(/\b[\w']+\b/g)||[]).length<3){PPL.cache.set(k,null);return null;}
+  try{const r=await fetch(PPL.base+'/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:k})});if(r.ok){const j=await r.json();PPL.cache.set(k,j);return j;}}catch(e){PPL.on=false;updateChip();}
+  PPL.cache.set(k,null);return null;}
+// familiarity: how predictable the line is to the model (ppl-based). LOW ppl = familiar/generic phrasing.
+// NB: a small model only flags VERY common phrasing; it can't reliably spot a memorized song -> SEARCH is the real check.
+function recognition(m){if(!m)return null;return clamp((5.6-Math.log(Math.max(2,m.perplexity)))/2.4,0,1);}
+function recoColor(v){return v>=0.62?'var(--ai)':v>=0.34?'var(--mixed)':'var(--human)';}
+function recoLabel(v){return v>=0.62?['familiar — search it','var(--ai)']:v>=0.34?['somewhat familiar','var(--mixed)']:['novel phrasing','var(--human)'];}
+function gSearch(line){return 'https://www.google.com/search?q='+encodeURIComponent('"'+line+'" lyrics');}
+function genius(line){return 'https://genius.com/search?q='+encodeURIComponent(line);}
+
+async function run(){
+  const raw=editor.value;
+  const lines=raw.split('\n').map(l=>l.trim()).filter(l=>l&&!/^\s*[\[(].*[\])]\s*$/.test(l));
+  if(!lines.length){el('summary').innerHTML='Nothing to check.';el('rows').innerHTML='';return;}
+  // internal duplicates
+  const counts={};lines.forEach(l=>{const k=l.toLowerCase();counts[k]=(counts[k]||0)+1;});
+  el('summary').innerHTML='Checking '+lines.length+' lines…';
+  el('rows').innerHTML='';
+  const scored=[];
+  for(let i=0;i<lines.length;i++){
+    const m=PPL.on?await scoreLine(lines[i]):null;
+    const rec=recognition(m);
+    scored.push({n:i+1,text:lines[i],rec,m,dup:counts[lines[i].toLowerCase()]>1});
+  }
+  const ranked=scored.slice().sort((a,b)=>(b.rec??-1)-(a.rec??-1));
+  const flagged=scored.filter(s=>s.rec!=null&&s.rec>=0.62).length;
+  const dups=Object.values(counts).filter(c=>c>1).length;
+  let sum='<b>The real check: search each line.</b> ';
+  if(PPL.on){ sum+='<b>'+lines.length+'</b> lines · <b style="color:var(--ai)">'+flagged+'</b> sound familiar (search those first). '; }
+  else { sum+='<b>'+lines.length+'</b> lines. <span style="color:var(--mixed)">Model offline</span> — search-helpers + duplicate check only; connect the model for the familiarity hint. '; }
+  if(dups) sum+='<span style="color:var(--mixed)">'+dups+' line(s) repeat verbatim.</span> ';
+  sum+='<br><span class="note">Most-familiar lines first. The model hint is rough (small model misses memorized songs) — searching is what confirms a borrowed line.</span>';
+  el('summary').innerHTML=sum;
+  el('rows').innerHTML=ranked.map(s=>{
+    let meter='<div class="mv" style="color:var(--muted)">–</div>';
+    if(s.rec!=null){const pct=Math.round(s.rec*100);meter='<div class="mv" style="color:'+recoColor(s.rec)+'">'+pct+'</div><div class="mb"><i style="width:'+pct+'%;background:'+recoColor(s.rec)+'"></i></div>';}
+    let badge='';
+    if(s.rec!=null){const[lab,col]=recoLabel(s.rec);badge='<span class="badge" style="background:'+col+';color:#0b0e14">'+lab+'</span>';}
+    if(s.dup)badge+=' <span class="badge" style="background:var(--mixed);color:#0b0e14">repeats</span>';
+    const ppl=s.m?'<span class="note">ppl '+s.m.perplexity.toFixed(0)+' · top-1 '+(s.m.pct_top1*100).toFixed(0)+'%</span>':'';
+    return '<div class="lrow"><div class="meter">'+meter+'</div><div class="body"><div class="txt">'+esc(s.text)+'</div><div class="tags">'+badge+
+      ' <a href="'+genius(s.text)+'" target="_blank" rel="noopener">search Genius</a> <a href="'+gSearch(s.text)+'" target="_blank" rel="noopener">search web</a> '+ppl+'</div></div></div>';
+  }).join('');
+}
+
+el('run').addEventListener('click',run);
+el('clear').addEventListener('click',()=>{editor.value='';el('rows').innerHTML='';el('summary').innerHTML='Paste a lyric and hit <b>Check lines</b>.';editor.focus();});
+el('pplchip').addEventListener('click',async()=>{await pingPPL();});
+el('sample').addEventListener('click',()=>{editor.value=SAMPLE;run();});
+
+const SAMPLE=`[Verse]
+The brake lights bled across the wet ninth street
+I kept your father's watch but not his name
+Tuesday, and the freezer's full of casseroles
+rising from the ashes I will never fall
+baby tonight we dance until the morning light
+the brake lights bled across the wet ninth street`;
+
+pingPPL();editor.focus();
+</script>
+</body>
+</html>

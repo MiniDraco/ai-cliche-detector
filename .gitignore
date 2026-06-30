@@ -1,0 +1,19 @@
+# --- large binaries (shipped only inside the installer / Release, never in git) ---
+server/pyenv/
+server/models/
+desktop/node_modules/
+desktop/dist/
+
+# --- NSFW + raw source word-lists: kept LOCAL only; the public DB is the sanitized build ---
+build/platform_tells.json
+build/wordlists_tells.json
+build/extra_tells.json
+build/claudeslop_raw.yaml
+build/antislop_raw.json
+ai-cliche-megadb.full.json
+
+# misc
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

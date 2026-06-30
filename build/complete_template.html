@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complete — all analytics, one paste</title>
+<style>
+  :root{
+    --bg:#0b0e14;--panel:#121723;--panel2:#0e1320;--line:#1f2735;--text:#e6e9ef;--muted:#8a93a6;--accent:#36e0c8;
+    --human:#36e0c8;--mixed:#ffd23f;--ai:#ff4d6d;--obf:#c78bff;--low:#ffd23f;
+    --high-bg:rgba(255,77,109,.30);--med-bg:rgba(255,159,28,.28);--low-bg:rgba(255,210,63,.20);
+    --rhyme-bg:rgba(155,123,255,.28);--tr-bg:rgba(80,160,255,.26);--ev-bg:rgba(255,196,84,.24);
+    --font:ui-monospace,"Cascadia Code","JetBrains Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box}html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;display:flex;flex-direction:column}
+  header{padding:13px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#101521,#0b0e14)}
+  header h1{margin:0;font-size:18px}header h1 .a{color:var(--accent)}
+  header .sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+  main{flex:1;display:grid;grid-template-columns:1fr 470px;min-height:0}
+  .left{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
+  .lbar{display:flex;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel2);font-size:12.5px;flex-wrap:wrap}
+  .lbar button{background:#1a2233;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:12px}
+  .lbar button:hover{border-color:var(--accent)}.lbar .spacer{flex:1}
+  .lbar .stat{color:var(--muted)}.lbar .stat b{color:var(--text)}
+  .editor-wrap{position:relative;flex:1;min-height:0}
+  .backdrop,.editor{margin:0;border:0;width:100%;height:100%;padding:16px 18px;font-family:var(--font);font-size:14.5px;line-height:1.8;white-space:pre-wrap;word-wrap:break-word;overflow:auto}
+  .backdrop{position:absolute;inset:0;z-index:1;color:transparent;pointer-events:none;background:var(--bg)}
+  .backdrop mark{border-radius:3px;color:transparent}
+  .backdrop mark.s2{background:var(--high-bg)}.backdrop mark.s1{background:var(--med-bg)}.backdrop mark.s0{background:var(--low-bg)}
+  .backdrop mark.mt{box-shadow:inset 0 -2px 0 rgba(54,224,200,.6)}.backdrop mark.tr{background:var(--tr-bg)}
+  .backdrop mark.ev{background:var(--ev-bg);box-shadow:inset 0 -2px 0 rgba(255,196,84,.7)}
+  .editor{position:relative;z-index:2;background:transparent;color:var(--text);resize:none;outline:none;caret-color:var(--accent)}
+  .editor::placeholder{color:#41506b}
+  aside{background:var(--panel);display:flex;flex-direction:column;min-height:0}
+  .tabs{display:flex;border-bottom:1px solid var(--line);background:var(--panel2)}
+  .tabs button{flex:1;background:none;border:0;color:var(--muted);padding:11px 4px;cursor:pointer;font-size:12px;border-bottom:2px solid transparent}
+  .tabs button.active{color:var(--accent);border-bottom-color:var(--accent)}
+  .tabs button .b{display:inline-block;min-width:16px}
+  .panewrap{flex:1;overflow:auto;min-height:0}
+  .verdict{padding:15px 16px;border-bottom:1px solid var(--line)}
+  .vline{font-size:15.5px;font-weight:700;line-height:1.35}
+  .vsub{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}.vsub b{color:var(--text)}
+  .meters{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:13px 16px;border-bottom:1px solid var(--line)}
+  .meter{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 11px}
+  .meter .mt{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+  .meter .mv{font-size:26px;font-weight:800;line-height:1.1;margin-top:2px}
+  .meter .mb{height:5px;border-radius:3px;background:#1b2333;margin-top:7px;overflow:hidden}.meter .mb>i{display:block;height:100%}
+  .meter .mn{font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.35}
+  .sec-head{padding:11px 16px 4px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .sections{padding:2px 16px 12px}
+  .secrow{display:flex;align-items:center;gap:9px;padding:6px 0;border-bottom:1px solid #161d2b}
+  .secrow .lab{font-size:12px;min-width:88px}.secrow .chip{font-size:10px;font-weight:700;padding:1px 7px;border-radius:999px;white-space:nowrap}
+  .secrow .sb{flex:1;height:6px;border-radius:4px;background:#1b2333;overflow:hidden}.secrow .sb>i{display:block;height:100%}
+  .secrow .sv{font-size:11px;color:var(--muted);width:26px;text-align:right}
+  .signals{padding:6px 16px 10px}
+  .fam{font-size:11px;color:var(--accent);margin:9px 0 2px}
+  .sig{padding:6px 0;border-bottom:1px solid #161d2b}
+  .sig .t{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .sig .nm{font-size:12.5px}.sig .vv{font-size:11px;color:var(--muted)}
+  .bar{height:5px;border-radius:3px;background:#1b2333;margin:5px 0 3px;overflow:hidden}.bar>i{display:block;height:100%}
+  .sig .d{font-size:11px;color:var(--muted);line-height:1.4}.sig.wk{opacity:.5}
+  .finding{padding:8px 16px;border-bottom:1px solid #161d2b}
+  .finding .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .finding .term{font-family:var(--font);font-size:12.5px;font-weight:600}
+  .finding.s2 .term{color:var(--ai)}.finding.s1 .term{color:var(--mixed)}.finding.s0 .term{color:var(--low)}
+  .finding .cnt{font-size:10.5px;color:var(--muted);white-space:nowrap}
+  .finding .why{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .finding .fix{font-size:11px;color:var(--accent);margin-top:3px;line-height:1.4}
+  .lrow{padding:8px 16px;border-bottom:1px solid #161d2b;display:flex;gap:9px;align-items:flex-start}
+  .lrow .meter2{width:40px;text-align:center}.lrow .mv2{font-size:14px;font-weight:800}
+  .lrow .body{flex:1;min-width:0}.lrow .txt{font-family:var(--font);font-size:12px;line-height:1.4}
+  .lrow .tags{margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .badge{font-size:9.5px;font-weight:700;padding:1px 6px;border-radius:999px}
+  .lrow a{font-size:10.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+  .lrow a:hover{border-color:var(--accent)}
+  .empty{padding:18px 16px;color:var(--muted);font-size:12.5px;line-height:1.5}
+  .disc{padding:10px 16px;border-top:1px solid var(--line);font-size:10.5px;color:var(--muted);line-height:1.5;background:var(--panel2)}
+  .disc b{color:var(--mixed)}
+  .legend{display:flex;gap:11px;flex-wrap:wrap;font-size:10.5px;color:var(--muted);padding:7px 16px;border-top:1px solid var(--line)}
+  .legend span{display:inline-flex;align-items:center;gap:5px}.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+  @media(max-width:980px){main{grid-template-columns:1fr}aside{max-height:60vh}}
+</style>
+</head>
+<body>
+<a href="../index.html" title="Back to the launcher (switch tools)" style="position:fixed;top:9px;right:14px;z-index:60;font-size:11.5px;color:#36e0c8;background:rgba(14,19,32,.92);text-decoration:none;border:1px solid #1f2735;border-radius:8px;padding:5px 11px">&lsaquo; Suite</a>
+<header>
+  <h1><span class="a">Complete</span> Analysis <span style="color:var(--muted);font-weight:400;font-size:13px">— everything on one paste</span></h1>
+  <div class="sub">forensics verdict · all signals · cliché findings · borrowed-line check — in tabs. (The 5 solo tools still live in the launcher for single checks.)</div>
+</header>
+<main>
+  <div class="left">
+    <div class="lbar">
+      <span class="stat">Words: <b id="wc">0</b></span>
+      <span class="stat">Lines: <b id="lc">0</b></span>
+      <span class="stat">Sections: <b id="secn">0</b></span>
+      <div class="spacer"></div>
+      <span id="pplchip" title="Optional local model. Run server/start-perplexity.bat, then click." style="cursor:pointer;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)">● model: off</span>
+      <button id="report">Copy report</button>
+      <button id="sAI">AI</button>
+      <button id="sHum">Human</button>
+      <button id="clear">Clear</button>
+    </div>
+    <div class="editor-wrap">
+      <div class="backdrop" id="backdrop" aria-hidden="true"><div id="highlights"></div></div>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Paste a song or text. Everything runs at once — flip the tabs on the right for the verdict, every signal, the cliché list, and the borrowed-line check…"></textarea>
+    </div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--ai)"></i> AI cliché</span>
+      <span><i class="sw" style="background:var(--accent)"></i> template</span>
+      <span><i class="sw" style="background:#50a0ff"></i> transition</span>
+      <span><i class="sw" style="background:#ffc454"></i> elevated synonym</span>
+    </div>
+  </div>
+  <aside>
+    <div class="tabs">
+      <button data-tab="verdict" class="active">Verdict</button>
+      <button data-tab="signals">Signals <span class="b" id="tc-sig"></span></button>
+      <button data-tab="cliches">Clichés <span class="b" id="tc-cli"></span></button>
+      <button data-tab="borrowed">Borrowed</button>
+    </div>
+    <div class="panewrap">
+      <div id="tab-verdict">
+        <div class="verdict"><div class="vline" id="vline">Paste a song…</div><div class="vsub" id="vsub"></div></div>
+        <div class="meters" id="meters"></div>
+        <div class="sec-head">Per-section breakdown</div>
+        <div class="sections" id="sections"></div>
+      </div>
+      <div id="tab-signals" hidden><div class="signals" id="signals"></div></div>
+      <div id="tab-cliches" hidden><div id="cliches"></div></div>
+      <div id="tab-borrowed" hidden><div id="borrowed"><div class="empty">Open this tab to scan for borrowed / regurgitated lines (real songs that read as human). Each line gets one-click searches to confirm.</div></div></div>
+    </div>
+    <div class="disc"><b>Estimators, not proof.</b> Style patterns, not authorship. Polished/non-native human can read high; edited AI can read low. The structural + grounding signals survive paraphrase ("vocabulators"); the borrowed-line tab needs the local model + your own searching to confirm. Leads, not verdicts.</div>
+  </aside>
+</main>
+<script>
+/* ===== injected shared DB ===== */
+const META=/*__META__*/{};const PATTERNS=/*__PATTERNS__*/[];const RHYMES=/*__RHYMES__*/[];const TEMPLATES=/*__TEMPLATES__*/[];
+/* ============================== */
+const el=id=>document.getElementById(id);
+const editor=el('editor'),backdrop=el('backdrop'),highlights=el('highlights');
+function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+function wavg(pairs){let w=0,a=0;for(const[v,wt]of pairs){w+=wt;a+=wt*v;}return w?a/w:0;}
+
+const PPL={on:false,base:'http://127.0.0.1:8770',cache:new Map(),pending:null};
+function perpFor(text){return PPL.cache.get(text.trim())||null;}
+function perpSubFrom(m){if(!m)return null;const t1=clamp((m.pct_top1-0.12)/0.22,0,1);const b=clamp((7.4-m.mean_bits)/2.6,0,1);const bn=(m.binoculars!=null)?clamp((1.04-m.binoculars)/0.13,0,1):null;return bn!=null?clamp((1.4*bn+2.0*t1+0.8*b)/4.2,0,1):clamp((2.2*t1+1.0*b)/3.2,0,1);}
+function updateChip(){const c=el('pplchip');if(PPL.on){c.style.color='var(--accent)';c.style.borderColor='var(--accent)';c.textContent='● model: ON';}else{c.style.color='var(--muted)';c.style.borderColor='var(--line)';c.textContent='● model: off';}}
+async function pingPPL(){try{const r=await fetch(PPL.base+'/health',{cache:'no-store'});const j=await r.json();PPL.on=!!j.ok;}catch(e){PPL.on=false;}updateChip();if(PPL.on)render();}
+async function ensurePerp(text){const k=text.trim();if(!PPL.on)return false;if(k.split(/\s+/).filter(Boolean).length<18)return false;if(PPL.cache.has(k)||PPL.pending===k)return false;PPL.pending=k;let ok=false;try{const r=await fetch(PPL.base+'/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:k})});if(r.ok){PPL.cache.set(k,await r.json());ok=true;}}catch(e){PPL.on=false;updateChip();}PPL.pending=null;return ok;}
+
+const patByPhrase=new Map();for(const p of PATTERNS){if(!patByPhrase.has(p.p))patByPhrase.set(p.p,p);}
+const bigRe=patByPhrase.size?new RegExp('\\b(?:'+[...patByPhrase.keys()].sort((a,b)=>b.length-a.length).map(p=>reEsc(p).replace(/\s+/g,'\\s+')).join('|')+')\\b','gi'):null;
+const COMPILED=TEMPLATES.map(t=>{let f=(t.flags||'gi');if(!f.includes('g'))f+='g';let re=null;try{re=new RegExp(t.pattern,f);}catch(e){}return{re,sev:t.s,label:t.term,why:t.w};}).filter(t=>t.re);
+const sevW=s=>s===2?3:s===1?2:1;
+function pushAll(re,text,fn){re.lastIndex=0;let m;while((m=re.exec(text))){if(!m[0]){re.lastIndex++;continue;}fn(m);if(m.index===re.lastIndex)re.lastIndex++;}}
+const TRANSITIONS=['however','moreover','furthermore','additionally','consequently','therefore','nevertheless','nonetheless','notably','importantly','ultimately','essentially','meanwhile','similarly','conversely','accordingly','subsequently','undoubtedly'];
+const trRe=new RegExp('\\b(?:'+TRANSITIONS.join('|')+')\\b','gi');
+const ELEVATED=['resplendent','luminescence','luminous','incandescent','effervescent','iridescent','ethereal','celestial','transcend','transcendent','ascend','ascending','traverse','pirouette','pirouetting','conflagration','cinders','smoldering','sundering','fetters','shackled','liberate','emanate','permeate','enshroud','beckon','beckoning','yearn','yearning','lament','solitude','reverie','nocturne','crimson','azure','verdant','gossamer','labyrinthine','serendipity','mellifluous','evanescent','diaphanous','tempestuous','quintessential','ubiquitous','myriad','plethora','endeavor','commence','culminate','elucidate','juxtapose','ephemeral','sublime','profound','ineffable','cascade','cascading','wanderlust','kindred','melancholy','melancholic','euphoric','dormant','ablaze','adrift','aglow','undulating','cacophony','symphonic','resonant','luminary','astral','empyrean','tenebrous','susurrus','vermilion','obsidian','alabaster','zephyr','elysian'];
+const evRe=new RegExp('\\b(?:'+ELEVATED.join('|')+')\\b','gi');
+const STOP=new Set(('the a an and or but of to in on at for with is am are was were be been i you he she it we they my your our me him her them this that these those as so if then than out up down off over under into from by no not all out just now here there what when how').split(' '));
+const ELEV_SET=new Set(ELEVATED);
+const ABSTRACT_VIBE=new Set(('soul souls heart hearts dream dreams fire flame flames light dark darkness shadow shadows pain love hate fear hope glory freedom eternity eternal forever infinity sky skies star stars night moonlight sun dawn dusk twilight storm fate destiny time void abyss grace embrace desire passion ecstasy sorrow misery agony bliss paradise heaven hell angel angels demon demons ghost spirit energy magic power strength courage faith truth memory memories silence echo echoes whisper whispers neon chains wings ashes embers gold crimson velvet horizon glow radiance emptiness longing serenity oblivion infinite endless boundless timeless heartbeat tears rise rising soar shine burning').split(' '));
+const CONCRETE=new Set(('truck car cars road roads street streets highway sidewalk curb door doors window windows kitchen table chair chairs bed couch floor wall walls phone screen key keys coat jacket shirt jeans dress shoes boots glass bottle cup mug coffee whiskey beer wine cigarette lighter match porch yard fence gate barn field dirt gravel mud snow dog dogs cat bird river lake creek bridge train bus plane ticket money dollar dollars cash receipt receipts letter envelope photo picture ring watch clock mirror sink stairs basement garage store bar diner church school hospital grave casket funeral wake hand hands finger knee teeth scar sweater glovebox pontiac casserole records gas brake engine wheel radio motel driveway mailbox stove fridge knife plate').split(' '));
+function lineWords(l){return l.match(/[A-Za-z']+/g)||[];}
+function imageryGrounding(lines){let fl=0,wa=0;for(const l of lines){const ws=lineWords(l);let abs=0,gnd=0;ws.forEach((w,i)=>{const lw=w.toLowerCase().replace(/[^a-z']/g,'');if(!lw)return;if(ABSTRACT_VIBE.has(lw)||ELEV_SET.has(lw))abs++;else if(CONCRETE.has(lw))gnd++;else if(i>0&&/^[A-Z][a-z]/.test(w)&&lw!=='i')gnd++;if(/[0-9]/.test(w))gnd++;});if(abs>=1){wa++;if(gnd===0&&abs>=2)fl++;}}const r=wa?fl/wa:0;return{floating:fl,withAbs:wa,sub:clamp(0.12+(r-0.15)/0.6*0.8,0.08,0.95)};}
+function syllables(w){w=w.toLowerCase().replace(/[^a-z]/g,'');if(!w)return 0;let s=(w.match(/[aeiouy]+/g)||[]).length;if(w.length>2&&w.endsWith('e')&&!/[aeiouy]e$/.test(w))s--;return Math.max(1,s);}
+function rhymeKey(w){w=w.toLowerCase().replace(/[^a-z]/g,'');const m=w.match(/[aeiouy]+[^aeiouy]*$/);return m?m[0]:w.slice(-2);}
+function rhymeRegularity(lines){const ends=lines.map(l=>{const w=lineWords(l);return w.length?w[w.length-1]:null;}).filter(Boolean);if(ends.length<2)return 0;const k=ends.map(rhymeKey);let r=0;for(let i=0;i<k.length;i++){if(k.some((x,j)=>j!==i&&x===k[i]))r++;}let pr=0,co=0;for(let i=0;i+1<k.length;i+=2){pr++;if(k[i]===k[i+1])co++;}return Math.max(r/k.length,pr?co/pr:0);}
+function syllCV(lines){const c=lines.map(l=>lineWords(l).reduce((a,w)=>a+syllables(w),0)).filter(n=>n>0);if(c.length<3)return{cv:0,n:c.length};const m=c.reduce((a,b)=>a+b,0)/c.length;const sd=Math.sqrt(c.reduce((a,b)=>a+(b-m)*(b-m),0)/c.length);return{cv:m?sd/m:0,n:c.length};}
+function humanMarkers(t){return(t.match(/\b(i think|i mean|imo|imho|honestly|tbh|idk|dunno|kinda|sorta|gonna|wanna|gotta|lol|lmao|haha|yeah|nah|nope|yep|btw|anyway|literally|ain't|y'all)\b/gi)||[]).length+(t.match(/!{2,}|\?{2,}/g)||[]).length+(t.match(/\b[A-Z]{3,}\b/g)||[]).length+(t.match(/\([^)]{1,40}\)/g)||[]).length;}
+function parseSections(text){const lines=text.split('\n');const tagRe=/^\s*[\[(]\s*([^\])]+?)\s*[\])]\s*$/;const hasTags=lines.some(l=>tagRe.test(l));const secs=[];let cur=null;for(const ln of lines){const tag=ln.match(tagRe);if(hasTags){if(tag){if(cur)secs.push(cur);cur={label:tag[1],lines:[],text:''};}else if(cur&&ln.trim()!==''){cur.lines.push(ln);cur.text+=ln+'\n';}else if(!cur&&ln.trim()!==''){cur={label:'Intro',lines:[ln],text:ln+'\n'};}}else{if(ln.trim()===''){if(cur){secs.push(cur);cur=null;}}else{if(!cur)cur={label:'Stanza '+(secs.length+1),lines:[],text:''};cur.lines.push(ln);cur.text+=ln+'\n';}}}if(cur)secs.push(cur);return secs;}
+function densities(text){const W=(text.match(/\b[\w']+\b/g)||[]).length||1;let cW=0,cN=0;if(bigRe)pushAll(bigRe,text,m=>{const meta=patByPhrase.get(m[0].toLowerCase().replace(/\s+/g,' '))||{s:1};if(meta.s>=1){cW+=sevW(meta.s);cN++;}});let tN=0;for(const c of COMPILED)pushAll(c.re,text,()=>tN++);let trN=0;pushAll(trRe,text,()=>trN++);let evN=0;pushAll(evRe,text,()=>evN++);return{W,cW,cN,tN,trN,evN};}
+function sub_cliche(d,cN){const base=0.12+0.83*(d/(d+4.0));return(cN==null)?base:0.14+(base-0.14)*clamp((cN-1)/5,0,1);}
+function sub_tpl(d){return 0.10+0.85*(d/(d+1.0));}
+function sub_tr(d){return 0.15+0.8*(d/(d+1.6));}
+function sectionScore(sec){const d=densities(sec.text);const cd=d.cW/d.W*100,td=d.tN/d.W*100;const rr=rhymeRegularity(sec.lines);const sc=syllCV(sec.lines);const suS=sc.n<3?0.5:clamp(0.9-(sc.cv-0.1)/0.4*0.78,0.1,0.92);const hm=humanMarkers(sec.text);let s=0.30*sub_cliche(cd,d.cN)+0.30*sub_tpl(td)+0.22*clamp(0.18+0.72*rr,0.1,0.95)+0.18*suS;return Math.round(clamp(s-hm*0.05,0.03,0.97)*100);}
+
+function analyzeSong(text){
+  const ranges=[];
+  if(bigRe)pushAll(bigRe,text,m=>{const key=m[0].toLowerCase().replace(/\s+/g,' ');const meta=patByPhrase.get(key)||{s:1,w:''};ranges.push({start:m.index,end:m.index+m[0].length,cls:'s'+meta.s,sev:meta.s,term:m[0],why:meta.w||'',kind:'cliché'});});
+  for(const c of COMPILED)pushAll(c.re,text,m=>ranges.push({start:m.index,end:m.index+m[0].length,cls:'s'+c.sev+' mt',sev:c.sev,term:c.label,why:c.why||'',kind:'template'}));
+  pushAll(trRe,text,m=>ranges.push({start:m.index,end:m.index+m[0].length,cls:'tr',sev:1,term:m[0],why:'Transition/hedge marker — AI discourse tic.',kind:'transition'}));
+  pushAll(evRe,text,m=>ranges.push({start:m.index,end:m.index+m[0].length,cls:'ev',sev:2,term:m[0],why:'Elevated synonym — vocabulator/humanizer tell.',kind:'elevated'}));
+
+  const allLines=text.split('\n').filter(l=>l.trim()!==''&&!/^\s*[\[(].*[\])]\s*$/.test(l));
+  const d=densities(text);const W=d.W;
+  const content=(text.match(/\b[a-z']+\b/gi)||[]).filter(w=>!STOP.has(w.toLowerCase())).length||1;
+  const rr=rhymeRegularity(allLines);const sc=syllCV(allLines);const suS=sc.n<3?0.5:clamp(0.9-(sc.cv-0.1)/0.4*0.78,0.1,0.92);
+  const ll=allLines.map(l=>lineWords(l).length).filter(n=>n>0);const lm=ll.length?ll.reduce((a,b)=>a+b,0)/ll.length:0;const lsd=ll.length>1?Math.sqrt(ll.reduce((a,b)=>a+(b-lm)*(b-lm),0)/ll.length):0;const lcv=lm?lsd/lm:0;
+  const burst=ll.length<4?0.5:clamp(0.9-(lcv-0.18)/0.52*0.78,0.1,0.92);
+  const secs=parseSections(text);const lineCounts=secs.map(s=>s.lines.length).filter(n=>n>0);let symm=0.5;
+  if(lineCounts.length>=2){const m=lineCounts.reduce((a,b)=>a+b,0)/lineCounts.length;const sd=Math.sqrt(lineCounts.reduce((a,b)=>a+(b-m)*(b-m),0)/lineCounts.length);symm=clamp(1-(m?sd/m:0)*1.4,0.1,0.95);}
+  const hm=humanMarkers(text);const elev=d.evN/content*100;
+  const cd=d.cW/W*100,td=d.tN/W*100,trd=d.trN/W*100;
+  const L1=sub_cliche(cd,d.cN),L2=sub_tr(trd),S1=sub_tpl(td),S2=clamp(0.16+0.74*rr,0.1,0.95),S3=suS,S4=symm,S5=burst;
+  const O1=clamp(0.15+0.7*(elev/(elev+2.0)),0.1,0.95);
+  const prosody=wavg([[S2,1.8],[S3,1.6],[S4,1.1],[S5,1.6]]);
+  const robust=wavg([[S1,1.2],[S2,1.8],[S3,1.6],[S4,1.1],[S5,1.6]]);
+  const surface=wavg([[L1,1.6],[L2,1.0]]);const hmPull=clamp(hm*0.05,0,0.32);
+  const ig=imageryGrounding(allLines);const pm=perpFor(text),ps=perpSubFrom(pm);
+  const cs=(pm&&pm.coh_centroid!=null)?clamp(0.55*((pm.coh_centroid-0.50)/0.20)+0.45*((pm.coh_adjacent-0.10)/0.18),0.05,0.95):null;
+  const aiPairs=[[L1,2.4],[S1,2.0],[L2,1.0],[ig.sub,1.5],[S2,0.6],[S3,0.6],[S5,0.5]];if(ps!=null)aiPairs.push([ps,1.6]);if(cs!=null)aiPairs.push([cs,0.8]);
+  const ai=clamp(wavg(aiPairs)-hmPull,0.03,0.97);
+  const O1bump=clamp((O1-0.30)/0.6,0,1),prosGate=clamp((prosody-0.40)/0.5,0,1),mismatch=clamp(robust-surface,0,1);
+  const vocFp=clamp(O1bump*prosGate,0,1);const obf=clamp(0.9*vocFp+0.2*mismatch,0,1);
+  const secScores=secs.map(s=>({label:s.label,score:sectionScore(s),lines:s.lines.length,hm:humanMarkers(s.text)}));
+  let rewrite=0;if(secScores.length>=2){const m=secScores.reduce((a,b)=>a+b.score,0)/secScores.length;const sd=Math.sqrt(secScores.reduce((a,b)=>a+(b.score-m)*(b.score-m),0)/secScores.length);rewrite=clamp(sd/34,0,1);}
+  const sig=[
+    {fam:'Lexical (surface — defeatable by a vocabulator)',name:'AI cliché density',s:L1,d:`${d.cN} flagged terms (${cd.toFixed(1)}/100 words).`},
+    {fam:'Lexical (surface — defeatable by a vocabulator)',name:'Transition / hedge density',s:L2,d:`${d.trN} markers.`},
+    {fam:'Structural (robust — survives paraphrase)',name:'Templated phrasing',s:S1,d:`${d.tN} structural mad-libs.`},
+    {fam:'Structural (robust — survives paraphrase)',name:'Rhyme-scheme regularity',s:S2,d:`${Math.round(rr*100)}% of lines lock into a rhyme.`},
+    {fam:'Structural (robust — survives paraphrase)',name:'Meter / syllable uniformity',s:S3,weak:sc.n<3,d:sc.n<3?'Too few lines.':`Syllable CV ${sc.cv.toFixed(2)}. Low = metronomic = AI.`},
+    {fam:'Structural (robust — survives paraphrase)',name:'Stanza symmetry',s:S4,weak:lineCounts.length<2,d:lineCounts.length<2?'One section.':`Sections [${lineCounts.join(', ')}] lines.`},
+    {fam:'Structural (robust — survives paraphrase)',name:'Line-length burstiness',s:S5,weak:ll.length<4,d:ll.length<4?'Too few lines.':`Line-length CV ${lcv.toFixed(2)}. Humans vary more.`},
+    {fam:'Structural (robust — survives paraphrase)',name:'Image grounding (do clichés get built around?)',s:ig.sub,weak:ig.withAbs<2,d:`${ig.floating}/${ig.withAbs} image-lines float (abstractions, no concrete anchor). Survives the vocabulator.`},
+    {fam:'Vocabulator / obfuscation',name:'Elevated-synonym density',s:O1,d:`${d.evN} "humanizer" synonyms per ${content} content words.`},
+    {fam:'Vocabulator / obfuscation',name:'Vocabulator fingerprint (elevated + regular)',s:clamp(0.1+0.85*vocFp,0.08,0.97),d:`Elevated vocabulary on metronomic structure (prosody ${Math.round(prosody*100)}) = laundered-AI signature.`},
+    {fam:'Pipeline',name:'Section heterogeneity (rewrite / multi-source)',s:rewrite,weak:secScores.length<2,d:secScores.length<2?'Single section.':`Per-section spread ${secScores.map(s=>s.score).join('/')}.`},
+    {fam:'Pipeline',name:'Human-casual markers',s:clamp(0.5-hm*0.07,0.08,0.5),d:`${hm} informal/personal markers. More = more human.`},
+  ];
+  if(ps!=null)sig.push({fam:'Pipeline',name:'Binoculars + perplexity (local model)',s:ps,d:`Binoculars ${pm.binoculars!=null?pm.binoculars.toFixed(3):'n/a'} (lower=AI), ppl ${pm.perplexity.toFixed(0)}, top-1 ${(pm.pct_top1*100).toFixed(0)}%.`});
+  if(cs!=null)sig.push({fam:'Pipeline',name:'Semantic coherence (experimental)',s:cs,weak:true,d:`Lines cluster at ${pm.coh_centroid.toFixed(2)}. AI piles generic lines into one vibe-neighborhood. Noisy — low weight.`});
+  let conf=clamp(W/170,0.15,1)*clamp(allLines.length/16,0.3,1);if(ps!=null)conf=clamp(conf+0.18,0,1);
+  const confLabel=conf>0.66?'High':conf>0.38?'Medium':'Low';
+  return {ranges,W,lines:allLines.length,secs:secScores,sig,idx:{ai:Math.round(ai*100),robust:Math.round(robust*100),obf:Math.round(obf*100),rewrite:Math.round(rewrite*100)},confLabel,hasPerp:ps!=null};
+}
+function secLabel(s,obfHigh){if(s.hm>=2)return['human-edited','var(--human)'];if(obfHigh&&s.score>=55)return['obfuscated','var(--obf)'];if(s.score>=66)return['AI','var(--ai)'];if(s.score<=36)return['human','var(--human)'];return['mixed','var(--mixed)'];}
+function meterColor(v){return v>=66?'var(--ai)':v>=45?'var(--mixed)':'var(--human)';}
+function narrative(a){const{ai,robust,obf,rewrite}=a.idx;if(a.W<8)return['Paste a song…','',''];
+  if(obf>=52)return['AI structure + vocabulator detected','var(--obf)',`Elevated synonyms over a metronomic AI skeleton. Classic "humanizer" laundering — trust the structural read.`];
+  if(rewrite>=44&&ai>=40)return['Mixed provenance — AI base, partially rewritten','var(--mixed)',`Sections disagree (heterogeneity ${rewrite}) — AI draft with hand-rewritten/multi-source parts.`];
+  if(ai<34&&obf<45)return['Likely human-written','var(--human)',`Low genericness and specific content. Form may be regular, but the content reads human.`];
+  if(ai>=68)return['Likely AI-generated','var(--ai)',`High generic-phrase density on regular structure.`];
+  if(ai>=48)return['Leaning AI','var(--ai)',`Some AI fingerprints (genericness ${ai}, structure ${robust}) but not airtight.`];
+  return['Leaning human / uncertain','var(--mixed)',`Mixed signals.`];}
+
+// ---- cliché fix suggestions (compact) ----
+const TERM_FIX={neon:'Name the real light — a gas-station sign, brake lights.',soul:'Cut it; point to the body part or object that aches.',heart:'Replace with a physical act — a held breath, a slammed door.',fire:'Show the heat in a concrete action, don\'t name "fire".',tapestry:'Cut it; use a plain noun.',dreams:'Name the specific want, not "dreams".',shadows:'Say what casts it and where.',whispers:'Use the actual quiet sound.',rain:'Make it specific — sleet on a windshield.',stars:'Pick one real light — a satellite, a porch bulb.'};
+function fixFor(it){if(it.kind==='elevated')return'Swap the fancy synonym back to a plain word, or cut it — it adds no grounding.';if(it.kind==='template')return'Templated phrasing — fill the blank with ONE concrete specific, or cut the frame.';if(it.kind==='transition')return'Cut the discourse marker; lyrics rarely need them.';const t=(it.term||'').toLowerCase();for(const k in TERM_FIX){if(t===k||t.includes(k))return TERM_FIX[k];}return'Replace with a concrete, specific image only this song could contain.';}
+
+let last=null,lastText='';
+function render(){
+  const text=editor.value;const a=analyzeSong(text);last=a;lastText=text;
+  const rs=a.ranges.slice().sort((x,y)=>x.start-y.start||(y.end-y.start)-(x.end-x.start));
+  const keep=[];let le=-1;for(const r of rs){if(r.start>=le){keep.push(r);le=r.end;}}
+  let html='',i=0;for(const r of keep){html+=esc(text.slice(i,r.start));html+=`<mark class="${r.cls}">`+esc(text.slice(r.start,r.end))+'</mark>';i=r.end;}
+  html+=esc(text.slice(i));if(text.endsWith('\n'))html+=' ';highlights.innerHTML=html;syncScroll();
+  el('wc').textContent=a.W;el('lc').textContent=a.lines;el('secn').textContent=a.secs.length;
+  const[vl,vc,vs]=narrative(a);el('vline').textContent=vl;el('vline').style.color=vc||'var(--text)';
+  el('vsub').innerHTML=text.trim()?`${vs}<br><span style="color:var(--muted)">Confidence: <b style="color:var(--text)">${a.confLabel}</b> · ${a.W} words, ${a.lines} lines${a.W<120?' — short, low confidence':''}.</span>`:'';
+  if(!text.trim()){['meters','sections','signals','cliches'].forEach(id=>el(id).innerHTML='');el('borrowed').innerHTML='<div class="empty">Open this tab to scan for borrowed/regurgitated lines.</div>';el('tc-sig').textContent='';el('tc-cli').textContent='';return;}
+  const M=[['AI-likelihood',a.idx.ai,a.hasPerp?'structure + vocab + local-model':'blended; weighted toward structure'],['Structural',a.idx.robust,'paraphrase-proof'],['Vocabulator / obfuscation',a.idx.obf,'how de-clichéd / "humanized"'],['Rewrite / multi-source',a.idx.rewrite,'how much sections disagree']];
+  el('meters').innerHTML=M.map(([t,v,n])=>`<div class="meter"><div class="mt">${t}</div><div class="mv" style="color:${meterColor(v)}">${v}</div><div class="mb"><i style="width:${v}%;background:${meterColor(v)}"></i></div><div class="mn">${n}</div></div>`).join('');
+  const obfHigh=a.idx.obf>=55;
+  el('sections').innerHTML=a.secs.map(s=>{const[lab,col]=secLabel(s,obfHigh);return `<div class="secrow"><span class="lab">${esc(s.label)}</span><span class="chip" style="background:${col};color:#0b0e14">${lab}</span><span class="sb"><i style="width:${s.score}%;background:${meterColor(s.score)}"></i></span><span class="sv">${s.score}</span></div>`;}).join('')||'<div class="empty">No sections detected.</div>';
+  let famNow='';el('signals').innerHTML=a.sig.map(x=>{const pct=Math.round(x.s*100);let head='';if(x.fam!==famNow){famNow=x.fam;head=`<div class="fam">${esc(x.fam)}</div>`;}return head+`<div class="sig ${x.weak?'wk':''}"><div class="t"><span class="nm">${x.name}</span><span class="vv">${pct}${x.weak?'w':''}</span></div><div class="bar"><i style="width:${pct}%;background:${meterColor(pct)}"></i></div><div class="d">${x.d}</div></div>`;}).join('');
+  el('tc-sig').textContent=a.sig.length;
+  // cliché findings
+  const agg=new Map();for(const r of a.ranges){const key=(r.kind==='template'?'t:'+r.term:r.term.toLowerCase());if(!agg.has(key))agg.set(key,{term:r.term,sev:r.sev,why:r.why,kind:r.kind,count:0});agg.get(key).count++;}
+  const items=[...agg.values()].sort((x,y)=>(y.sev-x.sev)||(y.count-x.count));
+  el('tc-cli').textContent=a.ranges.length;
+  el('cliches').innerHTML=items.length?items.map(it=>`<div class="finding s${it.sev}"><div class="top"><span class="term">${esc(it.term)}</span><span class="cnt">×${it.count} · ${it.kind}</span></div>${it.why?`<div class="why">${esc(it.why)}</div>`:''}<div class="fix">✎ ${esc(fixFor(it))}</div></div>`).join(''):'<div class="empty">No clichés flagged — clean writing, or keep going.</div>';
+  if(PPL.on&&text.trim())ensurePerp(text).then(did=>{if(did)render();});
+  if(curTab==='borrowed')renderBorrowed();
+}
+function syncScroll(){backdrop.scrollTop=editor.scrollTop;backdrop.scrollLeft=editor.scrollLeft;}
+
+// ---- borrowed / regurgitated lines ----
+async function scoreLine(line){const k=line.trim();if(PPL.cache.has('L:'+k))return PPL.cache.get('L:'+k);if((k.match(/\b[\w']+\b/g)||[]).length<3){PPL.cache.set('L:'+k,null);return null;}try{const r=await fetch(PPL.base+'/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:k})});if(r.ok){const j=await r.json();PPL.cache.set('L:'+k,j);return j;}}catch(e){PPL.on=false;updateChip();}PPL.cache.set('L:'+k,null);return null;}
+function recognition(m){if(!m)return null;return clamp((5.6-Math.log(Math.max(2,m.perplexity)))/2.4,0,1);}
+function recoLabel(v){return v>=0.62?['familiar — search it','var(--ai)']:v>=0.34?['somewhat familiar','var(--mixed)']:['novel phrasing','var(--human)'];}
+function recoCol(v){return v>=0.62?'var(--ai)':v>=0.34?'var(--mixed)':'var(--human)';}
+async function renderBorrowed(){
+  const text=lastText;const lines=text.split('\n').map(l=>l.trim()).filter(l=>l&&!/^\s*[\[(].*[\])]\s*$/.test(l));
+  if(!lines.length){el('borrowed').innerHTML='<div class="empty">Nothing to check.</div>';return;}
+  const counts={};lines.forEach(l=>{const k=l.toLowerCase();counts[k]=(counts[k]||0)+1;});
+  el('borrowed').innerHTML='<div class="empty">scanning…</div>';
+  const scored=[];for(const ln of lines){const m=PPL.on?await scoreLine(ln):null;scored.push({text:ln,rec:recognition(m),dup:counts[ln.toLowerCase()]>1});}
+  const ranked=scored.slice().sort((a,b)=>(b.rec??-1)-(a.rec??-1));
+  const dups=Object.values(counts).filter(c=>c>1).length;
+  let head=`<div class="empty" style="border-bottom:1px solid #161d2b"><b style="color:var(--text)">The real check: search each line.</b> ${PPL.on?'Most-familiar first; the model hint is rough (misses memorized songs).':'<span style="color:var(--mixed)">Model offline</span> — search-helpers only.'}${dups?` <span style="color:var(--mixed)">${dups} line(s) repeat verbatim.</span>`:''}</div>`;
+  el('borrowed').innerHTML=head+ranked.map(s=>{let mv='<div class="mv2" style="color:var(--muted)">–</div>';let badge='';if(s.rec!=null){const pct=Math.round(s.rec*100);mv=`<div class="mv2" style="color:${recoCol(s.rec)}">${pct}</div>`;const[lab,col]=recoLabel(s.rec);badge=`<span class="badge" style="background:${col};color:#0b0e14">${lab}</span>`;}if(s.dup)badge+=' <span class="badge" style="background:var(--mixed);color:#0b0e14">repeats</span>';const g='https://genius.com/search?q='+encodeURIComponent(s.text);const w='https://www.google.com/search?q='+encodeURIComponent('"'+s.text+'" lyrics');return `<div class="lrow"><div class="meter2">${mv}</div><div class="body"><div class="txt">${esc(s.text)}</div><div class="tags">${badge} <a href="${g}" target="_blank" rel="noopener">Genius</a> <a href="${w}" target="_blank" rel="noopener">web</a></div></div></div>`;}).join('');
+}
+
+// ---- tabs ----
+let curTab='verdict';
+[...document.querySelectorAll('.tabs button')].forEach(b=>b.addEventListener('click',()=>{
+  curTab=b.dataset.tab;
+  [...document.querySelectorAll('.tabs button')].forEach(x=>x.classList.toggle('active',x===b));
+  ['verdict','signals','cliches','borrowed'].forEach(t=>el('tab-'+t).hidden=(t!==curTab));
+  if(curTab==='borrowed')renderBorrowed();
+}));
+
+let t=null;editor.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(render,150);});
+editor.addEventListener('scroll',syncScroll);
+el('clear').addEventListener('click',()=>{editor.value='';render();editor.focus();});
+el('pplchip').addEventListener('click',pingPPL);
+el('report').addEventListener('click',()=>{if(!last||!editor.value.trim())return;const[vl]=narrative(last);const L=[`COMPLETE ANALYSIS`,`Verdict: ${vl} (${last.confLabel})`,`AI ${last.idx.ai} | Structural ${last.idx.robust} | Vocabulator ${last.idx.obf} | Rewrite ${last.idx.rewrite}`,`${last.W} words, ${last.lines} lines`,'','Signals:'];for(const s of last.sig)L.push(`  ${Math.round(s.s*100).toString().padStart(3)}  ${s.name}`);if(navigator.clipboard)navigator.clipboard.writeText(L.join('\n')).then(()=>{el('vsub').innerHTML='<b>Report copied.</b>';},()=>{});});
+
+const S_AI=`[Verse]
+In the neon glow I'm chasing dreams tonight,
+two hearts beat as one beneath the pale moonlight.
+With every breath I rise above the pain,
+breaking these chains and dancing in the rain.
+
+[Chorus]
+It's not just a song, it's a revolution,
+we'll unlock the power, ignite the resolution.
+Rising from the ashes with our hearts on fire,
+lost in the moment, climbing ever higher.`;
+const S_HUM=`[Verse]
+My truck won't start again, it's minus ten,
+late for Dale's service, third one since the fall.
+Mom keeps the porch light on like I'm still ten.
+I drank his whiskey neat. He'd have called it gall.
+
+[Verse]
+Nobody tells you grief is mostly errands,
+the forms, the casseroles, the borrowed folding chairs.
+I laughed at the wake. My sister wasn't ready.
+We split his records down the basement stairs.`;
+el('sAI').addEventListener('click',()=>{editor.value=S_AI;render();});
+el('sHum').addEventListener('click',()=>{editor.value=S_HUM;render();});
+
+render();editor.focus();pingPPL();
+</script>
+</body>
+</html>
