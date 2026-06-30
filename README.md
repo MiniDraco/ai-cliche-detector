@@ -6,11 +6,15 @@
 
 ---
 
-## ⬇️ Download & run (no setup)
+## ▶️ Try it live (no download)
 
-**[➡️ Download the installer from Releases](../../releases/latest)** — run it, and you're done. The local model is **built in**, so even the deep "Binoculars" perplexity signals work out of the box. No Python, no GPU, no internet required.
+**[Open the live demo →](https://minidraco.github.io/ai-cliche-detector/)** — runs right in your browser on the database + stylometry. Nothing to install. *(The deep local-model signals only run in the desktop download below.)*
 
-Don't want to install anything? The tools are plain HTML — you can also just open `apps/complete.html` in any browser (it runs on the database + stylometry; the bundled model only kicks in with the installer).
+## ⬇️ Download the desktop app (model built in)
+
+**[➡️ Download the portable build from Releases](../../releases/latest)** → unzip it anywhere → run **`AI Cliche Detection Suite.exe`**. That's it. The local model is **bundled inside**, so even the deep "Binoculars" perplexity signals work out of the box — **no Python, no GPU, no internet** required.
+
+> It's a *portable* build (a folder you unzip and run), not an installer — so there's nothing to install or uninstall, just unzip and double-click.
 
 ---
 
