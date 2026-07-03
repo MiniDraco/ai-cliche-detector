@@ -1,6 +1,6 @@
-# AI Cliché Detection Suite
+﻿# AI Cliché Detection Suite
 
-**Spot AI-written text and lyrics — offline, on your own machine.** A suite of tools backed by a 2,000+ entry database of AI "tells" (overused words, phrases, rhyme-pairs, tropes, and pattern-detectors), plus an optional local language model for the deep signals.
+**Spot AI-written text and lyrics — offline, on your own machine.** A suite of tools backed by a 4,000+ entry database of AI "tells" (overused words, phrases, rhyme-pairs, tropes, and pattern-detectors), plus an optional local language model for the deep signals.
 
 > Estimators, not proof. These measure style patterns that *correlate* with AI writing — they can't know who wrote anything. Polished or non-native human writing can read high; carefully edited AI can read low. Treat every result as a lead, not a verdict.
 
@@ -39,7 +39,7 @@ Open the app and you get a launcher with:
 
 ## The database
 
-The full catalog ships in six formats under `exports/` — `.csv`, `.json`, `.db` (SQLite, indexed + a `canonical_tells` view), `.xlsx`, `.txt`, and a printable `.pdf`. Sources include a large research sweep, Wikipedia's *Signs of AI writing*, the EQ-Bench antislop list, and per-platform fingerprints.
+The full catalog ships in six formats under `exports/` — `.csv`, `.json`, `.db` (SQLite, indexed + a `canonical_tells` view), `.xlsx`, `.txt`, and a printable `.pdf`. Sources include two large research sweeps, per-model slop-forensics profiles for 44+ models (Claude 3.5/3.7, GPT-3.5→4.5, Gemini, Llama 2→4, DeepSeek V3/R1, Qwen, Grok, GLM, Mistral, Command-A…), Wikipedia's *Signs of AI writing*, the EQ-Bench antislop list, and per-platform fingerprints.
 
 ## Build from source
 

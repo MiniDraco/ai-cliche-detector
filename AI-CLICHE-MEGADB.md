@@ -1,11 +1,11 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**2015 unique entries** (deduped from 2368 raw findings by a 26-agent research sweep).
+**4153 unique entries** (deduped from 4506 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 703 | opener: 85 | phrase: 720 | structure: 128 | trope: 156 | template: 71 | rhyme_pair: 170 | closer: 43
+**By type:** word: 2124 | structure: 135 | trope: 156 | phrase: 1407 | rhyme_pair: 170 | opener: 89 | closer: 47 | template: 86
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
@@ -1523,7 +1523,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **tears fall like rain** _(phrase)_ — Stock simile combining two model crutches (tears + rain). The pat weather-equals-sadness metaphor flags formulaic emotional writing.
 
-# DOMAIN: BOTH  (1012)
+# DOMAIN: BOTH  (3049)
 
 ## abstract verb  (1)
 
@@ -2101,8 +2101,8 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 ## antislop: fixated character name  (6)
 
+- 🔴 **eldoria** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🟠 **elara** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
-- 🟠 **eldoria** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🟠 **elias** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🟠 **elysia** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🟠 **kael** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
@@ -2189,6 +2189,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## city set-dressing cliché  (1)
 
 - 🟠 **city that never sleeps** _(phrase)_ — Borrowed stock idiom the model inserts for urban atmosphere; flags AI because it's a ready-made phrase used instead of an observed detail of an actual place.  _e.g._ "Lost in the city that never sleeps"
+
+## claude fiction tell  (1)
+
+- 🟠 **dust motes** _(phrase)_ — 'Dust motes dancing in sunlight' — AI scene-dressing fixation.
 
 ## closer  (1)
 
@@ -2772,6 +2776,814 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **echoes in the silence / whispers in the wind** _(trope)_ — 'Echoes' and 'whispers' are top-flagged Suno tells; AI uses them as atmospheric filler to imply lingering memory or mystery without content.  _e.g._ "Hear the echoes whispering in the wind"
 
+## model-distinctive collocation  (254)
+
+- 🟡 **across stone floor** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **almost imperceptibly** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **another day** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **arms crossed** _(phrase)_ — Top repetitive n-gram in qwq-32b output (slop-forensics).
+- 🟡 **around eyes** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **avoiding eye contact** _(phrase)_ — Top repetitive n-gram in gemma-3-27b-it output (slop-forensics).
+- 🟡 **back arms crossed** _(phrase)_ — Top repetitive n-gram in qwq-32b output (slop-forensics).
+- 🟡 **back home** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **back neck** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **back neck prickle** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **back throat** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **beyond simply** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **breath fogging air** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **ca help** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **ca help notice** _(phrase)_ — Top repetitive n-gram in claude-3-haiku output (slop-forensics).
+- 🟡 **ca help wonder** _(phrase)_ — Top repetitive n-gram in gpt-4-0314 output (slop-forensics).
+- 🟡 **casting jagged shadows** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **changing market conditions** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **chipped nail polish** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **chuckled shaking head** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **clasped behind back** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **class euclid special** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **close enough** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **close enough smell** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **clung back throat** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **compelling case study** _(phrase)_ — Top repetitive n-gram in glm-4.6 output (slop-forensics).
+- 🟡 **complex multifaceted** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **content warning** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **content warning narrative** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **content warning passage** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **continues evolve** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **corporate social responsibility** _(phrase)_ — Top repetitive n-gram in gpt-4.1-nano output (slop-forensics).
+- 🟡 **count references** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **crucial role** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **customer satisfaction** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **damp earth something** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **dark eyes** _(phrase)_ — Top repetitive n-gram in gpt-4-0314 output (slop-forensics).
+- 🟡 **data driven** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **data driven decision** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **decision making** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **decision making processes** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **deep breath try** _(phrase)_ — Top repetitive n-gram in llama-3.1-70b-instruct output (slop-forensics).
+- 🟡 **deep seated** _(phrase)_ — Top repetitive n-gram in glm-4.6 output (slop-forensics).
+- 🟡 **deep understanding** _(phrase)_ — Top repetitive n-gram in gemini-2.5-flash-lite output (slop-forensics).
+- 🟡 **description refers series** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **door clicks shut** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **draft capturing** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **driven decision making** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **dropping conspiratorial whisper** _(phrase)_ — Top repetitive n-gram in gemma-2-9b-it output (slop-forensics).
+- 🟡 **dry leaves skittering** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **dust motes dancing** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **e g** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **early th century** _(phrase)_ — Top repetitive n-gram in grok-4-fast output (slop-forensics).
+- 🟡 **economic growth** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **else something** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **essay delve** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **essay delve multifaceted** _(phrase)_ — Top repetitive n-gram in gemini-2.5-flash-lite output (slop-forensics).
+- 🟡 **essay explore** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **essay explores** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **et al** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **euclid special containment** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **evidence based** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **exhaled slowly** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **expression unreadable** _(phrase)_ — Top repetitive n-gram in command-a output (slop-forensics).
+- 🟡 **extends far beyond** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **eye contact** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **eyes glinting** _(phrase)_ — Top repetitive n-gram in llama-3.1-8b-instruct output (slop-forensics).
+- 🟡 **eyes glinting amusement** _(phrase)_ — Top repetitive n-gram in llama-3.2-3b-instruct output (slop-forensics).
+- 🟡 **eyes narrow** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **eyes narrowed mind** _(phrase)_ — Top repetitive n-gram in llama-3.2-1b-instruct output (slop-forensics).
+- 🟡 **eyes never** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **eyes seemed** _(phrase)_ — Top repetitive n-gram in llama-3.2-1b-instruct output (slop-forensics).
+- 🟡 **eyes sparkling** _(phrase)_ — Top repetitive n-gram in llama-3.1-405b-instruct output (slop-forensics).
+- 🟡 **far beyond** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **far end bar** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **feeling sense** _(phrase)_ — Top repetitive n-gram in llama-3.1-70b-instruct output (slop-forensics).
+- 🟡 **feels different** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **fingers twitch** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **fluorescent lights hum** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **gain deeper understanding** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **gestured vaguely** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **ghost smile** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **ghost smile touching** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **gloved hand** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **gon na** _(phrase)_ — Top repetitive n-gram in qwq-32b output (slop-forensics).
+- 🟡 **got ta** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **hair pulled back** _(phrase)_ — Top repetitive n-gram in Gemma-3-Starshine-12B output (slop-forensics).
+- 🟡 **hairs back neck** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **hands clasped behind** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **harvard business review** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **head slightly** _(phrase)_ — Top repetitive n-gram in gpt-4.5-preview output (slop-forensics).
+- 🟡 **heart sank realized** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **high quality** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **https doi org** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **https www** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **hung thick** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **incident report** _(phrase)_ — Top repetitive n-gram in llama-3.1-405b-instruct output (slop-forensics).
+- 🟡 **inextricably linked** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **item object class** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **jagged shadows** _(phrase)_ — Top repetitive n-gram in qwq-32b output (slop-forensics).
+- 🟡 **jagged shadows across** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **key performance indicators** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **knock door interrupted** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **last night** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **last time** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **last week** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **late th century** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **late th early** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **leaned forward slightly** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **leather jacket** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **leaving face** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **let silence stretch** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **li wei** _(phrase)_ — Top repetitive n-gram in mistral-large-2411 output (slop-forensics).
+- 🟡 **locked onto** _(phrase)_ — Top repetitive n-gram in llama-3.1-8b-instruct output (slop-forensics).
+- 🟡 **long moment** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **long term** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **long term success** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **long term sustainability** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **long term viability** _(phrase)_ — Top repetitive n-gram in glm-4.6 output (slop-forensics).
+- 🟡 **loyal customer base** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **make informed decisions** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **makes think wo** _(phrase)_ — Top repetitive n-gram in mistral-small-24b-instruct-2501 output (slop-forensics).
+- 🟡 **man hemlock** _(phrase)_ — Top repetitive n-gram in gemma-3-27b-it output (slop-forensics).
+- 🟡 **manifest various ways** _(phrase)_ — Top repetitive n-gram in gemini-2.5-flash-lite output (slop-forensics).
+- 🟡 **maybe next time** _(phrase)_ — Top repetitive n-gram in quasar-alpha output (slop-forensics).
+- 🟡 **mental health** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **merely academic exercise** _(phrase)_ — Top repetitive n-gram in glm-4.6 output (slop-forensics).
+- 🟡 **metallic tang** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **metallic tang blood** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **mid th century** _(phrase)_ — Top repetitive n-gram in grok-4-fast output (slop-forensics).
+- 🟡 **morning sun** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **move beyond** _(phrase)_ — Top repetitive n-gram in glm-4.6 output (slop-forensics).
+- 🟡 **multi faceted approach** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **nail polish** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **narrative perspective** _(phrase)_ — Top repetitive n-gram in claude-3-haiku output (slop-forensics).
+- 🟡 **narrowed mind** _(phrase)_ — Top repetitive n-gram in llama-3.2-1b-instruct output (slop-forensics).
+- 🟡 **narrowed mind racing** _(phrase)_ — Top repetitive n-gram in llama-3.2-1b-instruct output (slop-forensics).
+- 🟡 **navigate complexities** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **neon sign** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **never leaving** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **never leaving face** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **next time** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **next week** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **object class euclid** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **object class keter** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **okay deep breaths** _(phrase)_ — Top repetitive n-gram in gemini-2.0-flash-001 output (slop-forensics).
+- 🟡 **old man hemlock** _(phrase)_ — Top repetitive n-gram in gemma-3-27b-it output (slop-forensics).
+- 🟡 **old man tiber** _(phrase)_ — Top repetitive n-gram in gemma-3-27b-it output (slop-forensics).
+- 🟡 **one final** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **one final time** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **one hand** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **one key** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **one last** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **one primary** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **one size fits** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **opened mouth protest** _(phrase)_ — Top repetitive n-gram in claude-3-haiku output (slop-forensics).
+- 🟡 **oxford university press** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **passage contains references** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **performance indicators kpis** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **phone buzzes text** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **pinched bridge nose** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **play critical role** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **play crucial role** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **play pivotal role** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **plays crucial role** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **plays pivotal role** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **plays vital role** _(phrase)_ — Top repetitive n-gram in gpt-4.1-nano output (slop-forensics).
+- 🟡 **polished obsidian** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **post world war** _(phrase)_ — Top repetitive n-gram in grok-4-fast output (slop-forensics).
+- 🟡 **problem solving** _(phrase)_ — Top repetitive n-gram in gemini-2.5-flash-lite output (slop-forensics).
+- 🟡 **psychological evaluation** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **public health** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **pulse hammered throat** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **pulse roared ears** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **raised eyebrow skeptically** _(phrase)_ — Top repetitive n-gram in gpt-4.5-preview output (slop-forensics).
+- 🟡 **reach eyes** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **real time** _(phrase)_ — Top repetitive n-gram in gpt-4.1-nano output (slop-forensics).
+- 🟡 **real time data** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+- 🟡 **real world** _(phrase)_ — Top repetitive n-gram in qwen3-30b-a3b-instruct-2507 output (slop-forensics).
+- 🟡 **recent years** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **red light** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **researcher voss** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **retrieved https** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **retrieved https www** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **right arm** _(phrase)_ — Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
+- 🟡 **rolled eyes** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **scene setting** _(phrase)_ — Top repetitive n-gram in reka-flash-3:free output (slop-forensics).
+- 🟡 **second skin** _(phrase)_ — Top repetitive n-gram in Darkest-muse-v1 output (slop-forensics).
+- 🟡 **security footage shows** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **seemed breathe around** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **shake head** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **shaking head** _(phrase)_ — Top repetitive n-gram in gpt-4.5-preview output (slop-forensics).
+- 🟡 **shook head slowly** _(phrase)_ — Top repetitive n-gram in gpt-4.5-preview output (slop-forensics).
+- 🟡 **short term** _(phrase)_ — Top repetitive n-gram in qwen3-30b-a3b-instruct-2507 output (slop-forensics).
+- 🟡 **slides onto stool** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **slow deliberate** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **small smile** _(phrase)_ — Top repetitive n-gram in claude-3-haiku output (slop-forensics).
+- 🟡 **smile reach eyes** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **smile touching lips** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **smiled feeling sense** _(phrase)_ — Top repetitive n-gram in llama-4-maverick output (slop-forensics).
+- 🟡 **social media** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **social media platforms** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **softly voice** _(phrase)_ — Top repetitive n-gram in gpt-4.5-preview output (slop-forensics).
+- 🟡 **someone else** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **something beyond** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **something new** _(phrase)_ — Top repetitive n-gram in quasar-alpha output (slop-forensics).
+- 🟡 **something unreadable expression** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **something wrong** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **special containment procedures** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **split second** _(phrase)_ — Top repetitive n-gram in quasar-alpha output (slop-forensics).
+- 🟡 **stay ahead competition** _(phrase)_ — Top repetitive n-gram in llama-4-scout output (slop-forensics).
+- 🟡 **steps closer** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **stone floor** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **subtle shift** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **supply chain** _(phrase)_ — Top repetitive n-gram in gemma-3-4b-it output (slop-forensics).
+- 🟡 **supply chain disruptions** _(phrase)_ — Top repetitive n-gram in grok-4-fast output (slop-forensics).
+- 🟡 **supply chain management** _(phrase)_ — Top repetitive n-gram in gemini-2.5-flash-lite output (slop-forensics).
+- 🟡 **take deep** _(phrase)_ — Top repetitive n-gram in mistral-small-24b-instruct-2501 output (slop-forensics).
+- 🟡 **take deep breath** _(phrase)_ — Top repetitive n-gram in mistral-small-3.1-24b-instruct-2503 output (slop-forensics).
+- 🟡 **technological advancements** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **th century** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **thick scent damp** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **threat assessment** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **three days** _(phrase)_ — Top repetitive n-gram in claude-3.7-sonnet output (slop-forensics).
+- 🟡 **three months** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **three years ago** _(phrase)_ — Top repetitive n-gram in claude-3.5-sonnet output (slop-forensics).
+- 🟡 **throat tightened** _(phrase)_ — Top repetitive n-gram in qwq-32b output (slop-forensics).
+- 🟡 **tilted head studying** _(phrase)_ — Top repetitive n-gram in quasar-alpha output (slop-forensics).
+- 🟡 **tilts head** _(phrase)_ — Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
+- 🟡 **tilts head slightly** _(phrase)_ — Top repetitive n-gram in gpt-4.5-preview output (slop-forensics).
+- 🟡 **tilts head studying** _(phrase)_ — Top repetitive n-gram in qwq-32b output (slop-forensics).
+- 🟡 **touching lips** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **trying sound** _(phrase)_ — Top repetitive n-gram in gemini-2.0-flash-001 output (slop-forensics).
+- 🟡 **trying sound casual** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **turned back toward** _(phrase)_ — Top repetitive n-gram in quasar-alpha output (slop-forensics).
+- 🟡 **two days ago** _(phrase)_ — Top repetitive n-gram in chatgpt-4o-latest output (slop-forensics).
+- 🟡 **underscores importance** _(phrase)_ — Top repetitive n-gram in gpt-4.1-nano output (slop-forensics).
+- 🟡 **united states** _(phrase)_ — Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
+- 🟡 **university press** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **voice cracks** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **voice dangerously low** _(phrase)_ — Top repetitive n-gram in gemini-2.0-flash-001 output (slop-forensics).
+- 🟡 **voice dropping conspiratorial** _(phrase)_ — Top repetitive n-gram in gemma-2-9b-it output (slop-forensics).
+- 🟡 **voice low husky** _(phrase)_ — Top repetitive n-gram in llama-3.1-8b-instruct output (slop-forensics).
+- 🟡 **voice low murmur** _(phrase)_ — Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
+- 🟡 **voice steady need** _(phrase)_ — Top repetitive n-gram in mistral-small-24b-instruct-2501 output (slop-forensics).
+- 🟡 **voice surprisingly** _(phrase)_ — Top repetitive n-gram in Gemma-3-Glitter-12B output (slop-forensics).
+- 🟡 **warning narrative contains** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **warning passage contains** _(phrase)_ — Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
+- 🟡 **wiped sweat brow** _(phrase)_ — Top repetitive n-gram in quasar-alpha output (slop-forensics).
+- 🟡 **word count** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **word count condensed** _(phrase)_ — Top repetitive n-gram in deepseek-r1 output (slop-forensics).
+- 🟡 **word count references** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **world health organization** _(phrase)_ — Top repetitive n-gram in mistral-nemo output (slop-forensics).
+- 🟡 **world war ii** _(phrase)_ — Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
+
+## model-distinctive slop  (548)
+
+- 🔴 **aaker** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 759; appears in 1/44 model top-lists).
+- 🔴 **acheron** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 1160; appears in 1/44 model top-lists).
+- 🔴 **alistair** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 761; appears in 2/44 model top-lists).
+- 🔴 **allure** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 522; appears in 1/44 model top-lists).
+- 🔴 **amnesiac** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 1684; appears in 1/44 model top-lists).
+- 🔴 **amplifies** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 542; appears in 2/44 model top-lists).
+- 🔴 **arachne** _(word)_ — Statistically over-represented in llama-3.2-1b-instruct output vs human baseline (slop-forensics profile, score 4505; appears in 1/44 model top-lists).
+- 🔴 **aramex** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 1438; appears in 2/44 model top-lists).
+- 🔴 **astrid** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 1122; appears in 1/44 model top-lists).
+- 🔴 **aurelia** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 509; appears in 1/44 model top-lists).
+- 🔴 **baltes** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 1016; appears in 1/44 model top-lists).
+- 🔴 **bergamot** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 1026; appears in 1/44 model top-lists).
+- 🔴 **berkow** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 965; appears in 1/44 model top-lists).
+- 🔴 **blares** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 1754; appears in 1/44 model top-lists).
+- 🔴 **bryman** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 1102; appears in 1/44 model top-lists).
+- 🔴 **calliope** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 585; appears in 1/44 model top-lists).
+- 🔴 **champy** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 828; appears in 1/44 model top-lists).
+- 🔴 **clenches** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 1649; appears in 1/44 model top-lists).
+- 🔴 **countertransference** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 610; appears in 2/44 model top-lists).
+- 🔴 **creaks** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 1018; appears in 2/44 model top-lists).
+- 🔴 **dais** _(word)_ — Statistically over-represented in reka-flash-3:free output vs human baseline (slop-forensics profile, score 845; appears in 1/44 model top-lists).
+- 🔴 **defensiveness** _(word)_ — Statistically over-represented in llama-3.2-1b-instruct output vs human baseline (slop-forensics profile, score 1048; appears in 1/44 model top-lists).
+- 🔴 **demystifies** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 844; appears in 2/44 model top-lists).
+- 🔴 **destigmatizing** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 612; appears in 1/44 model top-lists).
+- 🔴 **dictating** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 560; appears in 1/44 model top-lists).
+- 🔴 **dreads** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 520; appears in 1/44 model top-lists).
+- 🔴 **dryly** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 1256; appears in 2/44 model top-lists).
+- 🔴 **edmodo** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 528; appears in 2/44 model top-lists).
+- 🔴 **elkind** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 820; appears in 1/44 model top-lists).
+- 🔴 **elyria** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 1506; appears in 1/44 model top-lists).
+- 🔴 **enisa** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 829; appears in 1/44 model top-lists).
+- 🔴 **erebus** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 848; appears in 2/44 model top-lists).
+- 🔴 **evangeline** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 948; appears in 1/44 model top-lists).
+- 🔴 **exhaling** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 595; appears in 1/44 model top-lists).
+- 🔴 **fathomless** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 8064; appears in 1/44 model top-lists).
+- 🔴 **fizzing** _(word)_ — Statistically over-represented in gemini-2.5-pro-exp-03-25 output vs human baseline (slop-forensics profile, score 853; appears in 1/44 model top-lists).
+- 🔴 **flagstones** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 1903; appears in 1/44 model top-lists).
+- 🔴 **flinches** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 1809; appears in 1/44 model top-lists).
+- 🔴 **flowability** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 653; appears in 2/44 model top-lists).
+- 🔴 **fogging** _(word)_ — Statistically over-represented in reka-flash-3:free output vs human baseline (slop-forensics profile, score 1518; appears in 1/44 model top-lists).
+- 🔴 **foreboding** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 598; appears in 1/44 model top-lists).
+- 🔴 **foregrounding** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 663; appears in 1/44 model top-lists).
+- 🔴 **foregrounds** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 532; appears in 1/44 model top-lists).
+- 🔴 **fractionally** _(word)_ — Statistically over-represented in gemini-2.5-pro-exp-03-25 output vs human baseline (slop-forensics profile, score 1450; appears in 1/44 model top-lists).
+- 🔴 **frazzled** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 848; appears in 1/44 model top-lists).
+- 🔴 **gaokao** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 610; appears in 2/44 model top-lists).
+- 🔴 **ghemawat** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 937; appears in 1/44 model top-lists).
+- 🔴 **glints** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 2975; appears in 1/44 model top-lists).
+- 🔴 **grazes** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 2086; appears in 1/44 model top-lists).
+- 🔴 **griz** _(word)_ — Statistically over-represented in gemini-2.5-pro-exp-03-25 output vs human baseline (slop-forensics profile, score 1693; appears in 1/44 model top-lists).
+- 🔴 **grudging** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 1096; appears in 2/44 model top-lists).
+- 🔴 **grumbles** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 535; appears in 1/44 model top-lists).
+- 🔴 **guthman** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 729; appears in 1/44 model top-lists).
+- 🔴 **handfield** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 792; appears in 1/44 model top-lists).
+- 🔴 **hellhound** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 1565; appears in 1/44 model top-lists).
+- 🔴 **hemlock** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 1431; appears in 1/44 model top-lists).
+- 🔴 **hemmings** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 548; appears in 1/44 model top-lists).
+- 🔴 **hitches** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 848; appears in 2/44 model top-lists).
+- 🔴 **honeyed** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 1375; appears in 1/44 model top-lists).
+- 🔴 **humanizes** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 544; appears in 2/44 model top-lists).
+- 🔴 **hydroponics** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 727; appears in 2/44 model top-lists).
+- 🔴 **imperceptibly** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 1663; appears in 2/44 model top-lists).
+- 🔴 **informativeness** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 591; appears in 1/44 model top-lists).
+- 🔴 **infuriatingly** _(word)_ — Statistically over-represented in gemini-2.5-pro-exp-03-25 output vs human baseline (slop-forensics profile, score 938; appears in 1/44 model top-lists).
+- 🔴 **jabbed** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 978; appears in 1/44 model top-lists).
+- 🔴 **kaira** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 10013; appears in 1/44 model top-lists).
+- 🔴 **kenji** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 2448; appears in 1/44 model top-lists).
+- 🔴 **kestrel** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 2109; appears in 1/44 model top-lists).
+- 🔴 **kiran** _(word)_ — Statistically over-represented in claude-3-haiku output vs human baseline (slop-forensics profile, score 923; appears in 1/44 model top-lists).
+- 🔴 **krashen** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 605; appears in 1/44 model top-lists).
+- 🔴 **krell** _(word)_ — Statistically over-represented in reka-flash-3:free output vs human baseline (slop-forensics profile, score 4552; appears in 1/44 model top-lists).
+- 🔴 **laudon** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 941; appears in 1/44 model top-lists).
+- 🔴 **liang** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 1417; appears in 2/44 model top-lists).
+- 🔴 **lilt** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 1159; appears in 1/44 model top-lists).
+- 🔴 **lounged** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 1315; appears in 1/44 model top-lists).
+- 🔴 **mari** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 717; appears in 1/44 model top-lists).
+- 🔴 **maslach** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 878; appears in 1/44 model top-lists).
+- 🔴 **materializes** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 872; appears in 1/44 model top-lists).
+- 🔴 **millisecond** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 956; appears in 1/44 model top-lists).
+- 🔴 **misting** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 1291; appears in 1/44 model top-lists).
+- 🔴 **newhaven** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 947; appears in 2/44 model top-lists).
+- 🔴 **nonchalance** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 1131; appears in 2/44 model top-lists).
+- 🔴 **nvivo** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 590; appears in 2/44 model top-lists).
+- 🔴 **overexpansion** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 531; appears in 1/44 model top-lists).
+- 🔴 **overripe** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 1058; appears in 1/44 model top-lists).
+- 🔴 **parasuraman** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 1640; appears in 1/44 model top-lists).
+- 🔴 **pcns** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 547; appears in 1/44 model top-lists).
+- 🔴 **phosphorescent** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 932; appears in 1/44 model top-lists).
+- 🔴 **preoperational** _(word)_ — Statistically over-represented in grok-4-fast output vs human baseline (slop-forensics profile, score 557; appears in 1/44 model top-lists).
+- 🔴 **promisee** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 543; appears in 2/44 model top-lists).
+- 🔴 **purrs** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 1317; appears in 2/44 model top-lists).
+- 🔴 **quickens** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 1173; appears in 1/44 model top-lists).
+- 🔴 **rasps** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 1916; appears in 1/44 model top-lists).
+- 🔴 **recursive** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 572; appears in 1/44 model top-lists).
+- 🔴 **reeking** _(word)_ — Statistically over-represented in reka-flash-3:free output vs human baseline (slop-forensics profile, score 786; appears in 1/44 model top-lists).
+- 🔴 **restlessly** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 713; appears in 1/44 model top-lists).
+- 🔴 **retorts** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 507; appears in 2/44 model top-lists).
+- 🔴 **rivian** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 530; appears in 1/44 model top-lists).
+- 🔴 **sabb** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 801; appears in 2/44 model top-lists).
+- 🔴 **saccharine** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 1095; appears in 2/44 model top-lists).
+- 🔴 **salmi** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 843; appears in 1/44 model top-lists).
+- 🔴 **scuffed** _(word)_ — Statistically over-represented in reka-flash-3:free output vs human baseline (slop-forensics profile, score 621; appears in 1/44 model top-lists).
+- 🔴 **semco** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 958; appears in 1/44 model top-lists).
+- 🔴 **shakily** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 870; appears in 1/44 model top-lists).
+- 🔴 **sheepish** _(word)_ — Statistically over-represented in claude-3-haiku output vs human baseline (slop-forensics profile, score 653; appears in 1/44 model top-lists).
+- 🔴 **shyly** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 1337; appears in 2/44 model top-lists).
+- 🔴 **sibilant** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 1326; appears in 1/44 model top-lists).
+- 🔴 **slacktivism** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 616; appears in 1/44 model top-lists).
+- 🔴 **snarls** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 632; appears in 2/44 model top-lists).
+- 🔴 **sneer** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 701; appears in 2/44 model top-lists).
+- 🔴 **spiderweb** _(word)_ — Statistically over-represented in Darkest-muse-v1 output vs human baseline (slop-forensics profile, score 1828; appears in 1/44 model top-lists).
+- 🔴 **stammer** _(word)_ — Statistically over-represented in claude-3-haiku output vs human baseline (slop-forensics profile, score 648; appears in 1/44 model top-lists).
+- 🔴 **statista** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 1247; appears in 2/44 model top-lists).
+- 🔴 **steadied** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 535; appears in 1/44 model top-lists).
+- 🔴 **stiffly** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 997; appears in 2/44 model top-lists).
+- 🔴 **subtext** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 562; appears in 1/44 model top-lists).
+- 🔴 **sunstone** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 1826; appears in 1/44 model top-lists).
+- 🔴 **takashi** _(word)_ — Statistically over-represented in llama-3.2-1b-instruct output vs human baseline (slop-forensics profile, score 528; appears in 1/44 model top-lists).
+- 🔴 **talis** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 11406; appears in 1/44 model top-lists).
+- 🔴 **tensing** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 887; appears in 1/44 model top-lists).
+- 🔴 **terran** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 966; appears in 1/44 model top-lists).
+- 🔴 **theatricality** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 920; appears in 1/44 model top-lists).
+- 🔴 **theatrically** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 615; appears in 1/44 model top-lists).
+- 🔴 **theguardian** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 750; appears in 1/44 model top-lists).
+- 🔴 **thimbles** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 1877; appears in 1/44 model top-lists).
+- 🔴 **thornfield** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 2695; appears in 1/44 model top-lists).
+- 🔴 **throaty** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 1267; appears in 2/44 model top-lists).
+- 🔴 **tiber** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 700; appears in 2/44 model top-lists).
+- 🔴 **trickling** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 932; appears in 2/44 model top-lists).
+- 🔴 **unbothered** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 1409; appears in 1/44 model top-lists).
+- 🔴 **uncertainly** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 1379; appears in 1/44 model top-lists).
+- 🔴 **uneasily** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 966; appears in 1/44 model top-lists).
+- 🔴 **volkow** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 899; appears in 1/44 model top-lists).
+- 🔴 **wafting** _(word)_ — Statistically over-represented in llama-4-maverick output vs human baseline (slop-forensics profile, score 623; appears in 1/44 model top-lists).
+- 🔴 **wavers** _(word)_ — Statistically over-represented in llama-4-maverick output vs human baseline (slop-forensics profile, score 1026; appears in 1/44 model top-lists).
+- 🔴 **wearily** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 661; appears in 1/44 model top-lists).
+- 🔴 **weaved** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 541; appears in 1/44 model top-lists).
+- 🔴 **weitzer** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 855; appears in 1/44 model top-lists).
+- 🔴 **why're** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 772; appears in 1/44 model top-lists).
+- 🔴 **widom** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 976; appears in 1/44 model top-lists).
+- 🔴 **worldbank** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 1699; appears in 1/44 model top-lists).
+- 🔴 **wryly** _(word)_ — Statistically over-represented in llama-4-maverick output vs human baseline (slop-forensics profile, score 623; appears in 1/44 model top-lists).
+- 🔴 **zora** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 973; appears in 1/44 model top-lists).
+- 🟠 **aacn** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 480; appears in 3/44 model top-lists).
+- 🟠 **abort** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 155; appears in 4/44 model top-lists).
+- 🟠 **aching** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 134; appears in 5/44 model top-lists).
+- 🟠 **adeptly** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 230; appears in 3/44 model top-lists).
+- 🟠 **adjusting** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 75; appears in 2/44 model top-lists).
+- 🟠 **adjusts** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 190; appears in 3/44 model top-lists).
+- 🟠 **airpower** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 331; appears in 1/44 model top-lists).
+- 🟠 **akira** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 1541; appears in 3/44 model top-lists).
+- 🟠 **aligning** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 336; appears in 5/44 model top-lists).
+- 🟠 **alluring** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 245; appears in 1/44 model top-lists).
+- 🟠 **amulet** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 166; appears in 1/44 model top-lists).
+- 🟠 **annoyance** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 98; appears in 4/44 model top-lists).
+- 🟠 **antipsychotic** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 212; appears in 1/44 model top-lists).
+- 🟠 **antipsychotics** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 451; appears in 4/44 model top-lists).
+- 🟠 **antiseptic** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 253; appears in 2/44 model top-lists).
+- 🟠 **apprehension** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 268; appears in 4/44 model top-lists).
+- 🟠 **archival** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 259; appears in 1/44 model top-lists).
+- 🟠 **arra** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 415; appears in 4/44 model top-lists).
+- 🟠 **artificiality** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 207; appears in 1/44 model top-lists).
+- 🟠 **backpack** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 64; appears in 5/44 model top-lists).
+- 🟠 **baldrige** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 329; appears in 5/44 model top-lists).
+- 🟠 **bartender** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 124; appears in 5/44 model top-lists).
+- 🟠 **bartholomew** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 256; appears in 2/44 model top-lists).
+- 🟠 **battered** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 374; appears in 5/44 model top-lists).
+- 🟠 **bebop** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 302; appears in 2/44 model top-lists).
+- 🟠 **beeps** _(word)_ — Statistically over-represented in llama-4-maverick output vs human baseline (slop-forensics profile, score 397; appears in 1/44 model top-lists).
+- 🟠 **betraying** _(word)_ — Statistically over-represented in claude-3-haiku output vs human baseline (slop-forensics profile, score 275; appears in 4/44 model top-lists).
+- 🟠 **betrays** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 121; appears in 1/44 model top-lists).
+- 🟠 **bicultural** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 356; appears in 1/44 model top-lists).
+- 🟠 **blinking** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 163; appears in 3/44 model top-lists).
+- 🟠 **blinks** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 468; appears in 2/44 model top-lists).
+- 🟠 **blueprinting** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 817; appears in 3/44 model top-lists).
+- 🟠 **blurt** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 554; appears in 3/44 model top-lists).
+- 🟠 **blushes** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 226; appears in 1/44 model top-lists).
+- 🟠 **bounty** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 292; appears in 4/44 model top-lists).
+- 🟠 **bracing** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 170; appears in 4/44 model top-lists).
+- 🟠 **breach** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 64; appears in 2/44 model top-lists).
+- 🟠 **breaths** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 162; appears in 5/44 model top-lists).
+- 🟠 **brushed** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 81; appears in 4/44 model top-lists).
+- 🟠 **burgeoning** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 266; appears in 2/44 model top-lists).
+- 🟠 **burly** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 410; appears in 4/44 model top-lists).
+- 🟠 **callum** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 403; appears in 1/44 model top-lists).
+- 🟠 **capm** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 1439; appears in 3/44 model top-lists).
+- 🟠 **carvings** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 402; appears in 2/44 model top-lists).
+- 🟠 **cataloging** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 332; appears in 1/44 model top-lists).
+- 🟠 **catastrophe** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 126; appears in 1/44 model top-lists).
+- 🟠 **catastrophic** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 146; appears in 3/44 model top-lists).
+- 🟠 **cheekbones** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 226; appears in 3/44 model top-lists).
+- 🟠 **chen** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 172; appears in 2/44 model top-lists).
+- 🟠 **chimes** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 169; appears in 1/44 model top-lists).
+- 🟠 **chipped** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 257; appears in 5/44 model top-lists).
+- 🟠 **circling** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 77; appears in 4/44 model top-lists).
+- 🟠 **clanging** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 477; appears in 1/44 model top-lists).
+- 🟠 **clench** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 363; appears in 2/44 model top-lists).
+- 🟠 **clings** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 215; appears in 2/44 model top-lists).
+- 🟠 **clink** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 350; appears in 2/44 model top-lists).
+- 🟠 **coaxing** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 636; appears in 3/44 model top-lists).
+- 🟠 **coils** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 122; appears in 2/44 model top-lists).
+- 🟠 **coldness** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 365; appears in 1/44 model top-lists).
+- 🟠 **comms** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 324; appears in 2/44 model top-lists).
+- 🟠 **comorbid** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 380; appears in 1/44 model top-lists).
+- 🟠 **constructivist** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 274; appears in 1/44 model top-lists).
+- 🟠 **contextualizing** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 424; appears in 1/44 model top-lists).
+- 🟠 **coolly** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 313; appears in 1/44 model top-lists).
+- 🟠 **courier** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 52; appears in 1/44 model top-lists).
+- 🟠 **courtyard** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 121; appears in 2/44 model top-lists).
+- 🟠 **cramped** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 157; appears in 5/44 model top-lists).
+- 🟠 **crates** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 157; appears in 1/44 model top-lists).
+- 🟠 **crede** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 259; appears in 2/44 model top-lists).
+- 🟠 **crucially** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 1084; appears in 3/44 model top-lists).
+- 🟠 **crusted** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 345; appears in 1/44 model top-lists).
+- 🟠 **cultivates** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 289; appears in 5/44 model top-lists).
+- 🟠 **cunning** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 92; appears in 2/44 model top-lists).
+- 🟠 **daoism** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 348; appears in 4/44 model top-lists).
+- 🟠 **darrow** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 401; appears in 1/44 model top-lists).
+- 🟠 **dashboards** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 613; appears in 3/44 model top-lists).
+- 🟠 **debriefing** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 354; appears in 3/44 model top-lists).
+- 🟠 **decarbonization** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 215; appears in 2/44 model top-lists).
+- 🟠 **decentering** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 329; appears in 2/44 model top-lists).
+- 🟠 **decentralizing** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 297; appears in 1/44 model top-lists).
+- 🟠 **deductibility** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 469; appears in 1/44 model top-lists).
+- 🟠 **deepens** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 218; appears in 1/44 model top-lists).
+- 🟠 **defiance** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 106; appears in 5/44 model top-lists).
+- 🟠 **democratizes** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 411; appears in 3/44 model top-lists).
+- 🟠 **demonstrable** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 445; appears in 1/44 model top-lists).
+- 🟠 **demonstrably** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 301; appears in 2/44 model top-lists).
+- 🟠 **demotivation** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 378; appears in 2/44 model top-lists).
+- 🟠 **diagonally** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 188; appears in 1/44 model top-lists).
+- 🟠 **differentiator** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 386; appears in 5/44 model top-lists).
+- 🟠 **disconcerting** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 376; appears in 4/44 model top-lists).
+- 🟠 **dismantles** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 286; appears in 2/44 model top-lists).
+- 🟠 **disparities** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 237; appears in 4/44 model top-lists).
+- 🟠 **dissecting** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 252; appears in 3/44 model top-lists).
+- 🟠 **dissonance** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 236; appears in 3/44 model top-lists).
+- 🟠 **doorway** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 76; appears in 5/44 model top-lists).
+- 🟠 **downcast** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 381; appears in 1/44 model top-lists).
+- 🟠 **drifting** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 120; appears in 5/44 model top-lists).
+- 🟠 **effortless** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 181; appears in 1/44 model top-lists).
+- 🟠 **effortlessly** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 93; appears in 3/44 model top-lists).
+- 🟠 **egocentrism** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 511; appears in 5/44 model top-lists).
+- 🟠 **eliza** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 149; appears in 2/44 model top-lists).
+- 🟠 **emiratis** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 351; appears in 2/44 model top-lists).
+- 🟠 **emphasizes** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 260; appears in 4/44 model top-lists).
+- 🟠 **emphasizing** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 472; appears in 4/44 model top-lists).
+- 🟠 **enforcer** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 208; appears in 1/44 model top-lists).
+- 🟠 **enforcers** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 371; appears in 4/44 model top-lists).
+- 🟠 **enhances** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 316; appears in 3/44 model top-lists).
+- 🟠 **enhancing** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 202; appears in 2/44 model top-lists).
+- 🟠 **enriches** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 309; appears in 2/44 model top-lists).
+- 🟠 **entanglement** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 326; appears in 1/44 model top-lists).
+- 🟠 **entrenching** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 233; appears in 2/44 model top-lists).
+- 🟠 **espresso** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 133; appears in 2/44 model top-lists).
+- 🟠 **exacerbates** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 230; appears in 5/44 model top-lists).
+- 🟠 **exasperation** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 316; appears in 1/44 model top-lists).
+- 🟠 **exemplifies** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 582; appears in 5/44 model top-lists).
+- 🟠 **exertion** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 286; appears in 2/44 model top-lists).
+- 🟠 **exhale** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 263; appears in 4/44 model top-lists).
+- 🟠 **exhaled** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 4116; appears in 5/44 model top-lists).
+- 🟠 **exhales** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 2797; appears in 5/44 model top-lists).
+- 🟠 **existential** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 126; appears in 3/44 model top-lists).
+- 🟠 **expertly** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 274; appears in 1/44 model top-lists).
+- 🟠 **extinguished** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 116; appears in 1/44 model top-lists).
+- 🟠 **facade** _(word)_ — Statistically over-represented in llama-3.2-1b-instruct output vs human baseline (slop-forensics profile, score 205; appears in 4/44 model top-lists).
+- 🟠 **faintest** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 312; appears in 5/44 model top-lists).
+- 🟠 **falter** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 184; appears in 2/44 model top-lists).
+- 🟠 **falters** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 698; appears in 3/44 model top-lists).
+- 🟠 **fangs** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 148; appears in 3/44 model top-lists).
+- 🟠 **feigenbaum** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 838; appears in 3/44 model top-lists).
+- 🟠 **feigning** _(word)_ — Statistically over-represented in Gemma-3-Glitter-12B output vs human baseline (slop-forensics profile, score 333; appears in 2/44 model top-lists).
+- 🟠 **fidgeting** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 446; appears in 1/44 model top-lists).
+- 🟠 **fiery** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 111; appears in 2/44 model top-lists).
+- 🟠 **flaring** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 371; appears in 3/44 model top-lists).
+- 🟠 **flexed** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 261; appears in 1/44 model top-lists).
+- 🟠 **flowed** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 121; appears in 3/44 model top-lists).
+- 🟠 **fluidity** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 211; appears in 5/44 model top-lists).
+- 🟠 **flustered** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 135; appears in 4/44 model top-lists).
+- 🟠 **flydubai** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 630; appears in 4/44 model top-lists).
+- 🟠 **foghorn** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 1357; appears in 4/44 model top-lists).
+- 🟠 **foodborne** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 353; appears in 1/44 model top-lists).
+- 🟠 **footsteps** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 65; appears in 3/44 model top-lists).
+- 🟠 **forearms** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 244; appears in 1/44 model top-lists).
+- 🟠 **fourthly** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 370; appears in 2/44 model top-lists).
+- 🟠 **fragmented** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 135; appears in 4/44 model top-lists).
+- 🟠 **franchisors** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 204; appears in 2/44 model top-lists).
+- 🟠 **frowning** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 398; appears in 1/44 model top-lists).
+- 🟠 **futtaim** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 549; appears in 4/44 model top-lists).
+- 🟠 **gaunt** _(word)_ — Statistically over-represented in Gemma-3-Glitter-12B output vs human baseline (slop-forensics profile, score 218; appears in 4/44 model top-lists).
+- 🟠 **generalizable** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 303; appears in 5/44 model top-lists).
+- 🟠 **glassy** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 326; appears in 1/44 model top-lists).
+- 🟠 **glimpsed** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 285; appears in 1/44 model top-lists).
+- 🟠 **grapples** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 309; appears in 4/44 model top-lists).
+- 🟠 **grime** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 133; appears in 2/44 model top-lists).
+- 🟠 **grimy** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 277; appears in 5/44 model top-lists).
+- 🟠 **groans** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 239; appears in 1/44 model top-lists).
+- 🟠 **growls** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 453; appears in 4/44 model top-lists).
+- 🟠 **guild** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 48; appears in 3/44 model top-lists).
+- 🟠 **gulls** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 306; appears in 2/44 model top-lists).
+- 🟠 **hacker** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 138; appears in 2/44 model top-lists).
+- 🟠 **hamstrings** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 242; appears in 1/44 model top-lists).
+- 🟠 **hana** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 787; appears in 3/44 model top-lists).
+- 🟠 **hardening** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 151; appears in 3/44 model top-lists).
+- 🟠 **harlow** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 299; appears in 1/44 model top-lists).
+- 🟠 **haunting** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 70; appears in 1/44 model top-lists).
+- 🟠 **heartbeats** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 288; appears in 1/44 model top-lists).
+- 🟠 **henshaw** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 459; appears in 1/44 model top-lists).
+- 🟠 **hindering** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 209; appears in 2/44 model top-lists).
+- 🟠 **hisses** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 992; appears in 4/44 model top-lists).
+- 🟠 **hoot** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 149; appears in 1/44 model top-lists).
+- 🟠 **hourglass** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 261; appears in 2/44 model top-lists).
+- 🟠 **hovering** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 64; appears in 3/44 model top-lists).
+- 🟠 **howls** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 249; appears in 1/44 model top-lists).
+- 🟠 **hris** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 423; appears in 5/44 model top-lists).
+- 🟠 **hsms** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 400; appears in 1/44 model top-lists).
+- 🟠 **hyperarousal** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 414; appears in 2/44 model top-lists).
+- 🟠 **hypercoagulability** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 538; appears in 5/44 model top-lists).
+- 🟠 **ideational** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 291; appears in 3/44 model top-lists).
+- 🟠 **illuminating** _(word)_ — Statistically over-represented in llama-3.2-1b-instruct output vs human baseline (slop-forensics profile, score 423; appears in 4/44 model top-lists).
+- 🟠 **imatinib** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 309; appears in 5/44 model top-lists).
+- 🟠 **imbues** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 316; appears in 1/44 model top-lists).
+- 🟠 **impeccably** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 373; appears in 2/44 model top-lists).
+- 🟠 **incentivizes** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 244; appears in 5/44 model top-lists).
+- 🟠 **incentivizing** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 286; appears in 4/44 model top-lists).
+- 🟠 **incoherent** _(word)_ — Statistically over-represented in llama-3.2-1b-instruct output vs human baseline (slop-forensics profile, score 179; appears in 1/44 model top-lists).
+- 🟠 **indirectness** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 406; appears in 1/44 model top-lists).
+- 🟠 **inequities** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 234; appears in 4/44 model top-lists).
+- 🟠 **inextricably** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 568; appears in 3/44 model top-lists).
+- 🟠 **inferential** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 244; appears in 3/44 model top-lists).
+- 🟠 **infernal** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 394; appears in 3/44 model top-lists).
+- 🟠 **ingrained** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 199; appears in 5/44 model top-lists).
+- 🟠 **ingratiation** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 242; appears in 1/44 model top-lists).
+- 🟠 **inscrutable** _(word)_ — Statistically over-represented in mistral-small-3.1-24b-instruct-2503 output vs human baseline (slop-forensics profile, score 308; appears in 2/44 model top-lists).
+- 🟠 **institutionalizing** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 204; appears in 2/44 model top-lists).
+- 🟠 **interactionist** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 349; appears in 3/44 model top-lists).
+- 🟠 **intertwines** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 299; appears in 2/44 model top-lists).
+- 🟠 **intoxicating** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 664; appears in 5/44 model top-lists).
+- 🟠 **intranets** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 373; appears in 4/44 model top-lists).
+- 🟠 **inwardly** _(word)_ — Statistically over-represented in claude-3-haiku output vs human baseline (slop-forensics profile, score 319; appears in 1/44 model top-lists).
+- 🟠 **jawline** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 331; appears in 1/44 model top-lists).
+- 🟠 **jerked** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 359; appears in 2/44 model top-lists).
+- 🟠 **jingles** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 248; appears in 1/44 model top-lists).
+- 🟠 **jukebox** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 178; appears in 2/44 model top-lists).
+- 🟠 **jumbled** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 417; appears in 1/44 model top-lists).
+- 🟠 **kessler** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 348; appears in 1/44 model top-lists).
+- 🟠 **keter** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 2243; appears in 3/44 model top-lists).
+- 🟠 **kira** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 204; appears in 1/44 model top-lists).
+- 🟠 **kneecap** _(word)_ — Statistically over-represented in gemini-2.5-pro-exp-03-25 output vs human baseline (slop-forensics profile, score 326; appears in 1/44 model top-lists).
+- 🟠 **kotter** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 917; appears in 5/44 model top-lists).
+- 🟠 **languid** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 341; appears in 3/44 model top-lists).
+- 🟠 **lantern** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 82; appears in 2/44 model top-lists).
+- 🟠 **lashing** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 258; appears in 2/44 model top-lists).
+- 🟠 **laughter** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 80; appears in 5/44 model top-lists).
+- 🟠 **lazily** _(word)_ — Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 591; appears in 3/44 model top-lists).
+- 🟠 **lena** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 287; appears in 3/44 model top-lists).
+- 🟠 **lengel** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 497; appears in 2/44 model top-lists).
+- 🟠 **liam** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 121; appears in 3/44 model top-lists).
+- 🟠 **ling** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 252; appears in 1/44 model top-lists).
+- 🟠 **lipped** _(word)_ — Statistically over-represented in llama-4-maverick output vs human baseline (slop-forensics profile, score 265; appears in 1/44 model top-lists).
+- 🟠 **lmics** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 359; appears in 1/44 model top-lists).
+- 🟠 **lombroso** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 215; appears in 4/44 model top-lists).
+- 🟠 **loneliness** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 144; appears in 1/44 model top-lists).
+- 🟠 **longing** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 175; appears in 3/44 model top-lists).
+- 🟠 **luna** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 108; appears in 1/44 model top-lists).
+- 🟠 **madame** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 160; appears in 4/44 model top-lists).
+- 🟠 **manipulated** _(word)_ — Statistically over-represented in llama-3.1-405b-instruct output vs human baseline (slop-forensics profile, score 156; appears in 2/44 model top-lists).
+- 🟠 **mara** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 367; appears in 1/44 model top-lists).
+- 🟠 **marcus** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 54; appears in 3/44 model top-lists).
+- 🟠 **marius** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 169; appears in 1/44 model top-lists).
+- 🟠 **marlowe** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 113; appears in 1/44 model top-lists).
+- 🟠 **masterfully** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 225; appears in 3/44 model top-lists).
+- 🟠 **maze** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 55; appears in 1/44 model top-lists).
+- 🟠 **melodious** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 346; appears in 1/44 model top-lists).
+- 🟠 **memetic** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 2942; appears in 3/44 model top-lists).
+- 🟠 **mendez** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 298; appears in 1/44 model top-lists).
+- 🟠 **merrick** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 166; appears in 1/44 model top-lists).
+- 🟠 **mesmerized** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 447; appears in 3/44 model top-lists).
+- 🟠 **metacognitive** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 375; appears in 3/44 model top-lists).
+- 🟠 **methodically** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 219; appears in 1/44 model top-lists).
+- 🟠 **microscopic** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 194; appears in 1/44 model top-lists).
+- 🟠 **midday** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 141; appears in 3/44 model top-lists).
+- 🟠 **mingled** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 266; appears in 3/44 model top-lists).
+- 🟠 **mintzberg** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 1607; appears in 4/44 model top-lists).
+- 🟠 **misalignments** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 325; appears in 3/44 model top-lists).
+- 🟠 **misinterpretations** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 221; appears in 4/44 model top-lists).
+- 🟠 **misjudgments** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 355; appears in 1/44 model top-lists).
+- 🟠 **mitigates** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 399; appears in 4/44 model top-lists).
+- 🟠 **mncs** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 557; appears in 3/44 model top-lists).
+- 🟠 **mnes** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 223; appears in 2/44 model top-lists).
+- 🟠 **mortals** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 178; appears in 2/44 model top-lists).
+- 🟠 **multipronged** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 365; appears in 1/44 model top-lists).
+- 🟠 **musty** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 259; appears in 1/44 model top-lists).
+- 🟠 **mutters** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 444; appears in 5/44 model top-lists).
+- 🟠 **navigates** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 272; appears in 5/44 model top-lists).
+- 🟠 **necessitates** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 301; appears in 5/44 model top-lists).
+- 🟠 **neurochemical** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 262; appears in 4/44 model top-lists).
+- 🟠 **neurotypical** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 295; appears in 3/44 model top-lists).
+- 🟠 **nguyen** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 143; appears in 1/44 model top-lists).
+- 🟠 **normalcy** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 259; appears in 2/44 model top-lists).
+- 🟠 **northside** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 299; appears in 1/44 model top-lists).
+- 🟠 **offeree** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 213; appears in 5/44 model top-lists).
+- 🟠 **oligopoly** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 247; appears in 3/44 model top-lists).
+- 🟠 **onboarding** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 236; appears in 5/44 model top-lists).
+- 🟠 **onlookers** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 257; appears in 2/44 model top-lists).
+- 🟠 **operationalize** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 350; appears in 3/44 model top-lists).
+- 🟠 **operationalized** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 440; appears in 3/44 model top-lists).
+- 🟠 **opium** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 135; appears in 1/44 model top-lists).
+- 🟠 **organizational** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 250; appears in 5/44 model top-lists).
+- 🟠 **organogenesis** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 301; appears in 1/44 model top-lists).
+- 🟠 **ostracization** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 361; appears in 1/44 model top-lists).
+- 🟠 **outpost** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 188; appears in 4/44 model top-lists).
+- 🟠 **overextension** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 381; appears in 2/44 model top-lists).
+- 🟠 **overreliance** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 315; appears in 4/44 model top-lists).
+- 🟠 **overstated** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 230; appears in 4/44 model top-lists).
+- 🟠 **overthinking** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 182; appears in 2/44 model top-lists).
+- 🟠 **painstakingly** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 201; appears in 1/44 model top-lists).
+- 🟠 **participative** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 309; appears in 3/44 model top-lists).
+- 🟠 **pausing** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 110; appears in 3/44 model top-lists).
+- 🟠 **pentad** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 390; appears in 3/44 model top-lists).
+- 🟠 **pistols** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 112; appears in 2/44 model top-lists).
+- 🟠 **pivoted** _(word)_ — Statistically over-represented in qwq-32b output vs human baseline (slop-forensics profile, score 847; appears in 3/44 model top-lists).
+- 🟠 **plucked** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 202; appears in 2/44 model top-lists).
+- 🟠 **policymakers** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 338; appears in 4/44 model top-lists).
+- 🟠 **pouch** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 120; appears in 5/44 model top-lists).
+- 🟠 **practiced** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 96; appears in 4/44 model top-lists).
+- 🟠 **pragmatist** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 435; appears in 2/44 model top-lists).
+- 🟠 **precarity** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 397; appears in 4/44 model top-lists).
+- 🟠 **precision** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 48; appears in 4/44 model top-lists).
+- 🟠 **predispositions** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 200; appears in 5/44 model top-lists).
+- 🟠 **presenteeism** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 208; appears in 2/44 model top-lists).
+- 🟠 **prioritized** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 244; appears in 5/44 model top-lists).
+- 🟠 **proactively** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 345; appears in 4/44 model top-lists).
+- 🟠 **probing** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 148; appears in 3/44 model top-lists).
+- 🟠 **promisor** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 409; appears in 2/44 model top-lists).
+- 🟠 **protocols** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 136; appears in 3/44 model top-lists).
+- 🟠 **psychoeducation** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 339; appears in 4/44 model top-lists).
+- 🟠 **purr** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 392; appears in 1/44 model top-lists).
+- 🟠 **radiated** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 253; appears in 1/44 model top-lists).
+- 🟠 **razor** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 126; appears in 1/44 model top-lists).
+- 🟠 **receded** _(word)_ — Statistically over-represented in llama-4-maverick output vs human baseline (slop-forensics profile, score 309; appears in 1/44 model top-lists).
+- 🟠 **reek** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 355; appears in 2/44 model top-lists).
+- 🟠 **reevaluation** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 396; appears in 3/44 model top-lists).
+- 🟠 **refine** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 129; appears in 1/44 model top-lists).
+- 🟠 **reframes** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 511; appears in 4/44 model top-lists).
+- 🟠 **refreezing** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 227; appears in 1/44 model top-lists).
+- 🟠 **rehearse** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 234; appears in 3/44 model top-lists).
+- 🟠 **rehearsed** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 130; appears in 3/44 model top-lists).
+- 🟠 **rehearsing** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 133; appears in 2/44 model top-lists).
+- 🟠 **remnants** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 85; appears in 2/44 model top-lists).
+- 🟠 **replaying** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 324; appears in 4/44 model top-lists).
+- 🟠 **reshape** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 334; appears in 1/44 model top-lists).
+- 🟠 **reshapes** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 419; appears in 4/44 model top-lists).
+- 🟠 **reskilling** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 960; appears in 5/44 model top-lists).
+- 🟠 **rhea** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 147; appears in 1/44 model top-lists).
+- 🟠 **rimmed** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 224; appears in 1/44 model top-lists).
+- 🟠 **ripples** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 155; appears in 1/44 model top-lists).
+- 🟠 **rougher** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 236; appears in 1/44 model top-lists).
+- 🟠 **rowe** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 135; appears in 1/44 model top-lists).
+- 🟠 **rumble** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 232; appears in 5/44 model top-lists).
+- 🟠 **sandalwood** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 233; appears in 1/44 model top-lists).
+- 🟠 **sarbanes** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 243; appears in 1/44 model top-lists).
+- 🟠 **satchel** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 265; appears in 2/44 model top-lists).
+- 🟠 **scaffolded** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 461; appears in 4/44 model top-lists).
+- 🟠 **scalability** _(word)_ — Statistically over-represented in qwen3-30b-a3b-instruct-2507 output vs human baseline (slop-forensics profile, score 206; appears in 3/44 model top-lists).
+- 🟠 **scavengers** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 267; appears in 3/44 model top-lists).
+- 🟠 **scoffs** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 1144; appears in 4/44 model top-lists).
+- 🟠 **scribbling** _(word)_ — Statistically over-represented in reka-flash-3:free output vs human baseline (slop-forensics profile, score 633; appears in 3/44 model top-lists).
+- 🟠 **sensed** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 143; appears in 4/44 model top-lists).
+- 🟠 **sensei** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 185; appears in 1/44 model top-lists).
+- 🟠 **sensing** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 130; appears in 4/44 model top-lists).
+- 🟠 **servqual** _(word)_ — Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 2150; appears in 3/44 model top-lists).
+- 🟠 **sethe** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 225; appears in 1/44 model top-lists).
+- 🟠 **shake** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 86; appears in 4/44 model top-lists).
+- 🟠 **sharpens** _(word)_ — Statistically over-represented in quasar-alpha output vs human baseline (slop-forensics profile, score 406; appears in 1/44 model top-lists).
+- 🟠 **she'd** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 84; appears in 5/44 model top-lists).
+- 🟠 **shelves** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 72; appears in 5/44 model top-lists).
+- 🟠 **shelving** _(word)_ — Statistically over-represented in gemini-2.5-pro-exp-03-25 output vs human baseline (slop-forensics profile, score 348; appears in 2/44 model top-lists).
+- 🟠 **shroud** _(word)_ — Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 138; appears in 4/44 model top-lists).
+- 🟠 **shrugging** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 380; appears in 2/44 model top-lists).
+- 🟠 **sighs** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 174; appears in 5/44 model top-lists).
+- 🟠 **silencing** _(word)_ — Statistically over-represented in claude-3-haiku output vs human baseline (slop-forensics profile, score 214; appears in 2/44 model top-lists).
+- 🟠 **silken** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 1234; appears in 5/44 model top-lists).
+- 🟠 **sketchbook** _(word)_ — Statistically over-represented in Gemma-3-Glitter-12B output vs human baseline (slop-forensics profile, score 230; appears in 1/44 model top-lists).
+- 🟠 **slipping** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 63; appears in 4/44 model top-lists).
+- 🟠 **sliver** _(word)_ — Statistically over-represented in gemma-2-Ifable-9B output vs human baseline (slop-forensics profile, score 1025; appears in 3/44 model top-lists).
+- 🟠 **slung** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 401; appears in 5/44 model top-lists).
+- 🟠 **smirking** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 310; appears in 3/44 model top-lists).
+- 🟠 **smuggler** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 267; appears in 2/44 model top-lists).
+- 🟠 **softens** _(word)_ — Statistically over-represented in command-a output vs human baseline (slop-forensics profile, score 310; appears in 4/44 model top-lists).
+- 🟠 **spiraling** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 275; appears in 3/44 model top-lists).
+- 🟠 **squeezes** _(word)_ — Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 186; appears in 1/44 model top-lists).
+- 🟠 **staggered** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 130; appears in 1/44 model top-lists).
+- 🟠 **stakeholders** _(word)_ — Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 205; appears in 3/44 model top-lists).
+- 🟠 **stark** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 195; appears in 3/44 model top-lists).
+- 🟠 **starkly** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 252; appears in 1/44 model top-lists).
+- 🟠 **steady** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 165; appears in 3/44 model top-lists).
+- 🟠 **sternum** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 244; appears in 1/44 model top-lists).
+- 🟠 **stiffened** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 602; appears in 4/44 model top-lists).
+- 🟠 **straightened** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 176; appears in 4/44 model top-lists).
+- 🟠 **straightening** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 151; appears in 2/44 model top-lists).
+- 🟠 **stranger** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 103; appears in 5/44 model top-lists).
+- 🟠 **strings** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 93; appears in 2/44 model top-lists).
+- 🟠 **stumbling** _(word)_ — Statistically over-represented in llama-3.1-8b-instruct output vs human baseline (slop-forensics profile, score 120; appears in 2/44 model top-lists).
+- 🟠 **swaying** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 216; appears in 3/44 model top-lists).
+- 🟠 **synthesizer** _(word)_ — Statistically over-represented in Gemma-3-Glitter-12B output vs human baseline (slop-forensics profile, score 161; appears in 1/44 model top-lists).
+- 🟠 **tangled** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 63; appears in 3/44 model top-lists).
+- 🟠 **thicken** _(word)_ — Statistically over-represented in lfm-7b output vs human baseline (slop-forensics profile, score 342; appears in 1/44 model top-lists).
+- 🟠 **throng** _(word)_ — Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 312; appears in 1/44 model top-lists).
+- 🟠 **thrums** _(word)_ — Statistically over-represented in deepseek-r1 output vs human baseline (slop-forensics profile, score 9677; appears in 3/44 model top-lists).
+- 🟠 **tick** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 70; appears in 2/44 model top-lists).
+- 🟠 **tighter** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 51; appears in 3/44 model top-lists).
+- 🟠 **tilting** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 170; appears in 3/44 model top-lists).
+- 🟠 **tingling** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 204; appears in 2/44 model top-lists).
+- 🟠 **tokenistic** _(word)_ — Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 276; appears in 2/44 model top-lists).
+- 🟠 **transforming** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 129; appears in 1/44 model top-lists).
+- 🟠 **translucent** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 204; appears in 1/44 model top-lists).
+- 🟠 **treacherous** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 93; appears in 4/44 model top-lists).
+- 🟠 **tucking** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 192; appears in 3/44 model top-lists).
+- 🟠 **tyco** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 235; appears in 1/44 model top-lists).
+- 🟠 **unbearable** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 136; appears in 1/44 model top-lists).
+- 🟠 **unbound** _(word)_ — Statistically over-represented in Gemma-3-Glitter-12B output vs human baseline (slop-forensics profile, score 171; appears in 1/44 model top-lists).
+- 🟠 **unconsciously** _(word)_ — Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 263; appears in 1/44 model top-lists).
+- 🟠 **undeniably** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 206; appears in 5/44 model top-lists).
+- 🟠 **underpin** _(word)_ — Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 304; appears in 1/44 model top-lists).
+- 🟠 **underrepresentation** _(word)_ — Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 356; appears in 3/44 model top-lists).
+- 🟠 **unimpressed** _(word)_ — Statistically over-represented in chatgpt-4o-latest output vs human baseline (slop-forensics profile, score 180; appears in 1/44 model top-lists).
+- 🟠 **unnaturally** _(word)_ — Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 432; appears in 3/44 model top-lists).
+- 🟠 **unpredictable** _(word)_ — Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 136; appears in 3/44 model top-lists).
+- 🟠 **untamed** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 248; appears in 4/44 model top-lists).
+- 🟠 **vibrate** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 169; appears in 4/44 model top-lists).
+- 🟠 **victorious** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 86; appears in 3/44 model top-lists).
+- 🟠 **volatilities** _(word)_ — Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 305; appears in 3/44 model top-lists).
+- 🟠 **vrin** _(word)_ — Statistically over-represented in gpt-oss-20b output vs human baseline (slop-forensics profile, score 412; appears in 1/44 model top-lists).
+- 🟠 **waltz** _(word)_ — Statistically over-represented in gpt-4-0314 output vs human baseline (slop-forensics profile, score 97; appears in 1/44 model top-lists).
+- 🟠 **whisky** _(word)_ — Statistically over-represented in gpt-3.5-turbo-0613 output vs human baseline (slop-forensics profile, score 75; appears in 4/44 model top-lists).
+- 🟠 **who'd** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 71; appears in 2/44 model top-lists).
+- 🟠 **widen** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 164; appears in 3/44 model top-lists).
+- 🟠 **widens** _(word)_ — Statistically over-represented in gemma-2-9b-it output vs human baseline (slop-forensics profile, score 424; appears in 4/44 model top-lists).
+- 🟠 **windmill** _(word)_ — Statistically over-represented in llama-3.1-70b-instruct output vs human baseline (slop-forensics profile, score 134; appears in 2/44 model top-lists).
+- 🟠 **winked** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 347; appears in 5/44 model top-lists).
+- 🟠 **wiry** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 430; appears in 5/44 model top-lists).
+- 🟠 **wisp** _(word)_ — Statistically over-represented in gemini-2.0-flash-001 output vs human baseline (slop-forensics profile, score 291; appears in 3/44 model top-lists).
+- 🟠 **wren** _(word)_ — Statistically over-represented in gemma-3-27b-it output vs human baseline (slop-forensics profile, score 226; appears in 3/44 model top-lists).
+- 🟠 **wrinkled** _(word)_ — Statistically over-represented in mistral-large-2411 output vs human baseline (slop-forensics profile, score 146; appears in 1/44 model top-lists).
+- 🟠 **writhing** _(word)_ — Statistically over-represented in claude-3.5-sonnet output vs human baseline (slop-forensics profile, score 367; appears in 1/44 model top-lists).
+- 🟠 **yanked** _(word)_ — Statistically over-represented in deepseek-chat-v3-0324 output vs human baseline (slop-forensics profile, score 213; appears in 4/44 model top-lists).
+- 🟠 **yimou** _(word)_ — Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 503; appears in 4/44 model top-lists).
+
 ## moon imagery  (1)
 
 - 🟠 **silver moon / moonlight glow** _(phrase)_ — AI's default romantic-night fixture; the moon is reliably 'silver' or 'glowing,' a trained adjective pairing that flags generated mood-setting.  _e.g._ "Beneath the silver moon we lay"
@@ -2887,6 +3699,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **raised on** _(opener)_ — Formulaic origin-story opener ('Raised on dirt roads and Sunday church'). AI loves it because it lets it list genre tokens in apposition without building a scene; the construction is a known template head.  _e.g._ "Raised on whiskey, gravel, and Sunday prayers"
 
+## opener template  (1)
+
+- 🟠 **'In a world where X' opener** _(template)_ — Trailer-voice opener.
+
 ## optimism  (1)
 
 - 🟡 **silver lining in the clouds** _(trope)_ — A proverb-cliché AI deploys for forced optimism; quoting the idiom whole replaces any specific reason for hope.  _e.g._ "There's a silver lining behind these clouds"
@@ -2981,6 +3797,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **unspoken truths** _(phrase)_ — AI gravitas phrase.
 - 🔴 **'what remains unspoken / what we carry'** _(template)_ — Abstract 'what we carry' gravitas filler.
 - 🟠 **carrying the weight** _(phrase)_ — Burden-as-weight cliche.
+- 🟠 **hushed** _(word)_ — AI quiet-adjective.
 - 🟠 **'in the quiet/silence/dark' as a place** _(template)_ — Absence-as-setting; AI loves naming negative space.
 - 🟠 **neon static** _(phrase)_ — AI synthwave-mashup image.
 - 🟠 **space between us** _(phrase)_ — Negative-space abstraction.
@@ -2989,7 +3806,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **the weight of** _(phrase)_ — 'the weight of [abstraction]' filler.
 - 🟠 **unspoken** _(word)_ — AI gravitas-word.
 - 🟡 **hush** _(word)_ — AI quiet-noun.
-- 🟡 **hushed** _(word)_ — AI quiet-adjective.
 - 🟡 **spark** _(word)_ — AI connection-metaphor.
 - 🟡 **tenderness** _(word)_ — AI's go-to soft-noun.
 
@@ -3215,6 +4031,1245 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## simile cliché  (1)
 
 - 🟠 **shining like a star / shining bright** _(phrase)_ — Top-cited dead simile; AI defaults to star-brightness for any praise. Combined with 'tonight' it's a chorus-grade cliché the model can't resist.  _e.g._ "You're shining like a star tonight"
+
+## slop-forensics canonical  (870)
+
+- 🔴 **aethelgard** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **absently** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **abuzz** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ached** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **acrid** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **adira** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aedan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aelara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aeldrin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aeliana** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aelion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aelius** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aella** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aeloria** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aelric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aelwyn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aerion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aeternum** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aeternus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethel** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethelburg** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethelred** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethera** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethereia** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aetheria** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aetherians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aetherium** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aetherius** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethers** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aethon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **agonizing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **agonizingly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **akinator** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **alara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **alaric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **alayna** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aldwyn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aleron** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **alleyway** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **allfather** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **anya** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **arcane** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **arcanus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **arced** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **archdemon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **archmage** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **arcturian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **arin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aris** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **armrest** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **armrests** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ashen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ashwood** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **asmodeus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **astrobiologist** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **audible** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **aurors** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **azathoth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **azazel** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **azrael** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **barked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **baruk** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **beckoned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **beeped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **belied** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bellowed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bellweather** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bewildered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bewilderment** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **billowed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **billowing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blackwood** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blackwoods** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blared** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bleez** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blinding** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blinked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bloomed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blurring** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **blurted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **boomed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **borin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **brindlemark** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **brow** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **brushstroke** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **bustled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **buzzed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cackled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **caelan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **caelum** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **calloused** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **calvinball** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cartographer** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cascaded** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cautiously** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cavernous** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cawed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cerebus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chattered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chestplate** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chillingly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chirped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chitinous** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **choz** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chronal** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chronarium** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **chronos** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cityscape** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clacked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clang** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clanged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clasped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clatter** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clattered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clattering** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clawed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clawing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clenched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clich** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cloaked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clockmaker** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cloying** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clung** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clutched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **clutching** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cluttered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **coalesced** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **coalescing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cobblestones** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **coiling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **commlink** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **conspiratorial** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **contorted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **contorting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **coursed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **coursing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crackle** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crackled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crackling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cradled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cradling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **creak** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **creaked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **creaking** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crept** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crescendoed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crinkled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crinkling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **croaked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crookedly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crouched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crucio** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crumbling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crumpled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **crumpling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **cultists** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **daedra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **daedric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dampeners** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dampness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dappling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **darkwood** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **darted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **darting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **datapad** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **deafening** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **defied** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **desolate** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **destructo** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **devourer** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dimly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dimmed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dimness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **disbelief** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **disconcertingly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **discordant** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **disheveled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dismissively** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **disorientation** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **disoriented** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **disorienting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dizzying** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **doomguy** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **doorframe** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **doppelg** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dovahkiin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dragonborn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **drakon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **drawled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dread** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **droned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **drumbeat** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **dursleys** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eamon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **echoing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eerie** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eerily** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **einherjar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldarion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elderglen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldergrove** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldermere** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elderton** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldrath** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldrid** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldrin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldrion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldritch** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eldrith** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eliana** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eliora** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elira** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ellaria** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elliana** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elmsworth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elongating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elowen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elros** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elyas** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elyndor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elyndra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elyon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elyra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elys** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elysion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **elysium** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **emanated** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **enchantments** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **encroaching** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **enigmatic** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **enslavers** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **enveloped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eolan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eolande** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eons** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eremon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eridan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eridani** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **erupted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **eryndor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ethan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **evelyn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **exhilaration** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **expanse** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **facepalmed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **faded** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **faint** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **faintly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **faltered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **festered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **fianc** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **finnian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **finnigan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **firelight** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **fishtailed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **flicker** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **flickering** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **flinched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **flitted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **floorboards** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **fluffernutter** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **fluttered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **frantic** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **frayed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **fraying** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **frizzle** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **frowned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **froze** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gaped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gaslights** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gasped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gauntleted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gaze** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gazed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gazes** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **geralt** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gerta** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glances** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glancing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glared** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gleep** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glided** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glimmer** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glimmered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glimmering** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glint** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glinted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glistened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glistening** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gloved** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glowed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **glyphs** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gnarled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gnawing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **godric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gorok** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gorthok** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grath** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gravelly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **greatsword** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gregnok** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grimbold** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grimgold** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grimly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grimoire** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grimoires** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grimstone** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grinned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gripped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grizzled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **groaned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grogg** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **groggily** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grognak** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grok** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grolak** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **growl** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **growled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gruff** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **grunted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gruuz** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **guildmaster** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **guildmates** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **gurgled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **guttered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **guttural** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hargrove** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **havenwood** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **heartstone** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hefted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hefting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hilt** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hissed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hitched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hivemind** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hoarse** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hollowly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **holographic** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **holstered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **homelander** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hovered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **howled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hues** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **huginn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hulking** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hummed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **humming** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **humorless** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hurried** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **hurtled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ichor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ignarion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ignis** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **igniting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **impassive** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **imperceptible** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **impossibly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **incantation** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **incantations** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **indefinably** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **inky** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **innocuously** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **insectoid** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **insistent** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **instinctively** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **interdimensional** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **intoned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **intricately** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **iridescent** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ironforge** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **isher** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **isolde** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **itched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **jagged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **jarek** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **jolt** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **jolted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **joren** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaela** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaelan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaelen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaelin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaelor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaelthar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaida** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kaito** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kalel** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kal'ren** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kessari** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **keth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kethra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **keycard** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **knelt** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **krael** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kraelion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kragoth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **krel** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **krixon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **kryll** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **k'tharr** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **laced** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lamplight** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lanced** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **liora** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lira** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lirael** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **liran** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lirien** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lirin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **locket** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lockpick** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lockpicking** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lockpicks** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **loomed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lorian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lumin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lumina** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **luminara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **luminari** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **luminescence** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lunged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lurched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lurked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lyrien** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lysander** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lysandra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **lysara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mages** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malachai** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malachar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malachor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malakai** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malakar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malakor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malazar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malevolence** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malevolent** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malkor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malphas** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malric** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **malus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mandibles** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **materialized** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **materializing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **meadowgrove** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **medbay** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **megacorps** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **meowed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **merfolk** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **meticulousness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **miggins** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mingling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mirroring** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mirthless** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **missingno** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **moros** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **morwen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **motes** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mournful** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mttr** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **muffled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **muggle** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mumbled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **murmur** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mused** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **mutely** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **muttered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **narrowed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **narrowing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **necromancer** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **necromantic** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **nightshade** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **nocked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **numbah** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **numbly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **nuzzled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **oblivious** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **obsidian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **oelia** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **omnicorp** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **orcish** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **otherworldly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **outmaneuver** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **outmatched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **outthink** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **paled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pang** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **panted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **peephole** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **peered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **penhaligon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **perked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **perpetually** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **petrova** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pinpricks** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pipkin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pixelated** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **placating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **planchette** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **plasteel** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pored** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pounding** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **precipice** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **prickle** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **prickled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **prickling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **protectiveness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pulsating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pulsed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pulsing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **punctuated** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **purred** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **pyrokinetic** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **quaked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **quickened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **quickening** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **quicksave** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **quirked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **quivered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **raced** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **radiating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **raged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **railguns** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **raspy** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **recoiled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **recoiling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **reeked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **reeled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **reeling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **relentless** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **renn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **resonant** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **resonating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **reticuli** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **reverberating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rhythmic** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rippling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rivia** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rngus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **roared** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **roomba** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rostova** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rumbled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rumbling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rummaged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **runes** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rusted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rustle** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rustled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **rustling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ryker** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ryla** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sadim** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scavenged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scent** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **schr** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scoffed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scowled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scrawled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **screeched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scribbled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scrolled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **scurried** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **searing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **seep** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **seeped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **seeping** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sellsword** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **seraphiel** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **seraphina** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **seraphine** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shadowblade** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shambled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shambling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shimmer** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shimmering** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shiver** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shivered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shivers** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shrieked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shrouded** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **shuddered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sickly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sidestepped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sigil** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sigils** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **silas** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **silhouetted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **silverwood** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **skittered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **skittering** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sleek** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slicked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slicking** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slithered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slitted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slood** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slumbered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **slumped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **smirked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **smoldered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **snaked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **snarled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sneered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **snorted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **softened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **softening** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **solara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **soundlessly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spasmed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **speedrunner** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **speedrunners** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spellbook** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spellbooks** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spellcasting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spiderwebbed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spiraled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **spires** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sprawled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sprawling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sprinted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sputtered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **squinted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **squinting** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **starborn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **stared** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **staticky** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **steadier** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **steadying** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **steeled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **steeling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **steepling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **stilled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **stillness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **streaked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **streetlamp** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **streetlamps** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **streetlights** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **strode** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **suffocating** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sulfurous** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **supervillain** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **surged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **swirled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **swirling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **swiveled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sylas** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sylvani** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **sylvans** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **taehal** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tankards** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **taren** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tattered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **teetered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tendril** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tendrils** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tenebrous** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **terrans** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **terrifyingly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thalassa** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thalen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thalion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thalor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thalos** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tharivol** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tharos** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tharros** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **theron** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thog** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thoran** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thoren** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thorgar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thorgrim** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thorne** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thorned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thrain** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thrax** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **throbbed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **throk** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **throngs** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thrum** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thrumming** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thud** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thudded** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thudding** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **thunderous** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **ticked** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tightened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tilted** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tinged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tingled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tomes** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **torchlight** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **torvin** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tousled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tousling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **townsfolk** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **transfixed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **treant** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **trembled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **trembling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tremor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **trepidation** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **trifled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **trudged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **truffula** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **tugged** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **twinge** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **twitched** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unassuming** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unbidden** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unblinking** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unburdened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unclenching** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **uncurled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **underbrush** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **undercity** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **undercurrent** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unfazed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unfurling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unmarred** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unmoving** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unnerving** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unnervingly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unraveling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unreadable** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unremarkable** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unseeing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unsettling** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unsettlingly** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unshaken** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unspooled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **unyielding** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **uthgar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **uuwu** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vael** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **valerius** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **valoria** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **valtor** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **varek** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **varen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **varyn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vastness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **venon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **verdant** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veridia** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veridian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veridium** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **verran** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vespera** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vexar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veyl** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veyn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veyne** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veyra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **veyth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vial** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vibrated** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **viewport** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **viewscreen** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **volkov** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vorath** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vorlag** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vorn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vorne** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **voryn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **voss** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vrook** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vrykali** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **vrynn** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wailed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **warily** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wariness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **warred** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wavered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wavering** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **weariness** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **weathered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wheezed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whimpered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whir** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whirled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whirring** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whirs** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whispered** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whisperwind** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **whiterun** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **widened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **winced** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wincing** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **windowpane** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wizened** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **wojek** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **woodsmoke** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **writhe** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **writhed** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **writingprompts** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xandros** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xanthean** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xantheans** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xaphan** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xaren** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xarpti** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xavius** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xendari** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xenobiologist** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xenobiology** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xenolinguist** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xenos** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xeridian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xeridians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xhk'kht** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xyla** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylia** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylo** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylons** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylophia** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylos** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylosian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylosians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylossian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylossians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xyloth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylothian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylothians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xylox** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **xyra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **yawned** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **yelped** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **y'lgoth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **yowled** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zafir** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zalrex** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zarek** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zarthus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyr** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyrian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyrians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyrion** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyros** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zephyrus** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zetans** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zha'thik** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zhra'gha** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorath** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorax** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zoraxians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorgon** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorp** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorvath** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorvathian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zorvathians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zydonian** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zydonians** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zyla** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zylar** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zylara** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zyloth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zylth** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zyn'thari** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zyn'thra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zyra** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+- 🟠 **zz'glorg** _(word)_ — Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+
+## slop-forensics collocation  (363)
+
+- 🟡 **across face** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **across room** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air around** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air crackled** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air hung thick** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air thick** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air thick anticipation** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air thick scent** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air thick smell** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **air thick tension** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **almost imperceptible** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **also knew** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **anything ever** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **anything ever seen** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **around room** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **asked voice barely** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **asked voice laced** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **asked voice low** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **asked voice trembling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **back chair** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **barely audible** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **barely whisper** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **beacon hope** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **began set casting** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **began voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **beneath feet** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **beneath surface** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **blood ran cold** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **breath catching throat** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **breath caught** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **breath caught throat** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **brow furrowed** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **brow furrowed concentration** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **brow furrowed concern** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **brow furrowed confusion** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **called voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **carefully constructed** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **casting eerie glow** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **casting long** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **casting long shadows** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **casting warm** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **casting warm glow** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **caught eye** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **caught throat** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **challenges lay ahead** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **chapter seven** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **chill ran spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **chill run** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **chill run spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **cleared throat** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **closed eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **constant reminder** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **continued fall washing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could feel power** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could feel weight** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could find way** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could help feel** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could help notice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could help wonder** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **could shake feeling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dark lord** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **days turned** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **days turned weeks** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **deep breath** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **deep breath feeling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **deep breath steeling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **deep breath stepped** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **deep breath trying** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **deep within** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dim light** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dimly lit** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dimly lit room** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dipped horizon** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dipped horizon casting** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **door creaked open** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **door swung open** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **dust motes danced** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **echoed mind** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **elara said voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **end end end** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **ever seen** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes darting** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes darting around** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes filled** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes filled mixture** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes fixed** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes gleaming** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes locked** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes locked onto** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes narrowed** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes narrowing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes scanning** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes scanning room** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes wide** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes wide fear** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes wide mixture** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes wide terror** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes wide wonder** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes widened** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes widened shock** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes widened surprise** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **eyes widening** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **fabric reality** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **face etched** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **face pale** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **face whatever** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **face whatever challenges** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **faces etched** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **faint almost imperceptible** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **feel sense pride** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **feel sense unease** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **fell silent** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt chill run** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt cold dread** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt glimmer hope** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt growing sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt like eternity** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt sense peace** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt shiver run** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt strange sensation** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **felt strange sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **figure emerged** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **figure emerged shadows** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **filled air** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **find way** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **fingers flying across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **first time** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **first time long** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **flicker something** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **flicker something akin** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **fluorescent lights** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **forward eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **gaze fixed** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **gaze sweeping across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **glimmer hope** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **grin spreading across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **ground beneath feet** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **growing sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **growing sense dread** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **growing sense unease** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hand instinctively reaching** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart hammered ribs** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart heavy weight** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart pounded** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart pounded chest** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart pounding** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart pounding chest** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart raced** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart racing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **heart skipped beat** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **held breath** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **help feel sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **help feel twinge** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **help wonder** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hesitated moment** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **horizon casting** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **horizon casting long** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **horizon painting sky** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hung air** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hung air heavy** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hung heavy air** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hung low sky** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **hung thick scent** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **intricately carved wooden** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **keep voice steady** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **knew chilling certainty** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **knew one thing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **knew road ahead** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **knew would never** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **lay ahead** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **leaned back** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **leaned back chair** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **leaned forward** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **leaned forward eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **leaving behind** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **left behind** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **let get** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **let go** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **let see** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **living room** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **long could remember** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **long shadows** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **long shadows across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **long since** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **long time** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **looked around room** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **looked eyes filled** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **low sky casting** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **made decision would** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **made way** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **made way back** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **make sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **make sure** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **man named** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **maybe maybe** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **maybe maybe could** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind already racing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind raced** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind raced trying** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind racing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind racing implications** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind racing possibilities** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind racing questions** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind racing tried** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mind reeling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **mixture fear** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **never seen** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **never seen anything** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **new world** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **newfound sense purpose** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **next morning** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **nodded eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **nodded mind racing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **old man** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **one day** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **one last time** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **one one** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **one thing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **one thing certain** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **opened eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **opened mouth** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **painting sky hues** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **piercing blue eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **playing lips** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **pounding chest** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **rain continued fall** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **raised eyebrow** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **raised hand** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **raised hand silencing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **ready face** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **ready face whatever** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **renewed sense purpose** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **replied voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **replied voice steady** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **resonated deep within** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **road ahead would** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **room fell silent** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **run spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said trying sound** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice barely** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice calm** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice dripping** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice echoing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice filled** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice firm** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice laced** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice like** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice low** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice smooth** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice soft** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice steady** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice tight** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice tinged** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **said voice trembling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **scent damp earth** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **seen anything like** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sense dread** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sense peace** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sense peace wash** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sense purpose** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sense unease** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sent shiver spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sent shivers spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shadows across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shake feeling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shake feeling something** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shiver ran spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shiver run** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shiver run spine** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shook head** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **shook head trying** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sighed running hand** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sky casting long** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **small intricately carved** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **small smile playing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **smile playing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **smile playing lips** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **smile spread across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **smile spreading across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **smile tugging corners** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **something akin** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **something else** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **something else entirely** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **something else something** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **something far** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **spent countless hours** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **spoke voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **spread across face** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **spread like wildfire** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **spreading across** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **spreading across face** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stammered voice barely** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stark contrast** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **step forward** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stepped closer** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stepped forward** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stepped forward eyes** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stepped forward voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **strange sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **stumbled upon** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sun began set** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sun dipped** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sun dipped horizon** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **sun hung low** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **swallowed hard** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **taking deep breath** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **tears streaming face** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **thick scent** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **tilted head** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **took deep** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **took deep breath** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **took step** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **took step back** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **took step closer** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **took step forward** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **trembling slightly** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **tried make sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **trying keep** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **trying keep voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **trying make** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **trying make sense** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **turned back** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **turned face** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **turned walked away** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **turned weeks** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **turned weeks weeks** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **unlike anything** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **unlike anything ever** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice barely** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice barely audible** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice barely whisper** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice dripping** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice echoed** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice echoing** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice filled** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice firm** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice laced** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice low** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice low rumble** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice soft** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice steady** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice steady despite** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice tinged** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice trembling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **voice trembling slightly** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **walked away** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **way back** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **weeks weeks months** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **whatever challenges lay** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **whatever lay ahead** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **whispered voice** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **whispered voice barely** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **whispered voice trembling** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **words echoed mind** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **words hung air** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **world around** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **world outside** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **would find way** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **would never forget** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **years ago** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **young man** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **young woman** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+- 🟡 **young woman named** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 
 ## song architecture  (1)
 
@@ -3464,7 +5519,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **sky/why** _(rhyme_pair)_ — Skyward-questioning rhyme ('staring at the sky / asking God why'); AI's stock for an existential bridge. The unanswered 'why' aimed at the heavens is a generated-melancholy hallmark.  _e.g._ "I look up at the sky / and I ask the heavens why"
 
-# DOMAIN: PROSE  (465)
+# DOMAIN: PROSE  (566)
 
 ## abstract noun  (1)
 
@@ -3506,6 +5561,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **commendable** _(word)_ — One of the original 21 focal words. It is evaluative praise ('a commendable effort') natural to a chatbot grading text but odd in neutral exposition; the spike reflects RLHF's politeness register leaking into academic prose.  _e.g._ "The authors make a commendable effort to address this."
 - 🔴 **paramount** _(word)_ — Focal-word list member. It is an archaic-register intensifier ('of paramount importance') that real scientific abstracts seldom used pre-2023; its sudden post-ChatGPT rise with no field reason marks it as model boilerplate.  _e.g._ "Security is of paramount importance."
 - 🔴 **pivotal** _(word)_ — One of the 21 focal words and named in the paper as a top LLM-preferred term. AI grades nearly everything as 'pivotal' ('a pivotal role/moment/step'), an inflation that humans don't match, so its frequency jump is stylistic rather than topical.  _e.g._ "This played a pivotal role in shaping history."
+- 🟠 **bustling** _(word)_ — Travel-brochure adjective ('bustling city/market') AI overuses alongside 'vibrant' and 'nestled'. Atmospheric filler.  _e.g._ "A bustling metropolis full of energy."
 - 🟠 **compelling** _(word)_ — Focal-word member ('compelling evidence/case/narrative'). It is reader-directed persuasion language a chatbot uses to sell a point; humans rarely call their own evidence 'compelling,' so it reads as model self-promotion.  _e.g._ "This provides compelling evidence for the hypothesis."
 - 🟠 **comprehensive** _(word)_ — Listed among AI-favored adjectives. It is a self-congratulatory completeness claim ('comprehensive overview/analysis') models attach by default; the rate rose without papers actually becoming more exhaustive.  _e.g._ "A comprehensive guide to everything."
 - 🟠 **crucial** _(word)_ — Focal-word member with measured excess (δ=0.026). AI marks nearly every point as 'crucial,' an importance-inflation that flattens emphasis; its raw frequency jump outpaces any real increase in genuinely crucial findings.  _e.g._ "It is crucial to understand this concept."
@@ -3519,7 +5575,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **seamless** _(word)_ — Grouped with robust/dynamic as overused AI adjectives. A marketing word for 'smooth integration' that surged in formal prose; detector lists treat it as promotional filler with no measurable content.  _e.g._ "A seamless user experience."
 - 🟠 **vibrant** _(word)_ — Flagged by Wikipedia and word-lists as a decorative AI adjective ('vibrant community/ecosystem'). It adds color without information and rose in encyclopedic/formal text where neutral tone is expected.  _e.g._ "A vibrant and diverse community."
 - 🟠 **vital** _(word)_ — Wikipedia flags 'plays a vital role' as a signature AI puffery frame. Like 'crucial/pivotal,' it is importance-inflation; the fixed collocation 'plays a vital role in' is a templated tell, not just the adjective.  _e.g._ "This plays a vital role in the ecosystem."
-- 🟡 **bustling** _(word)_ — Travel-brochure adjective ('bustling city/market') AI overuses alongside 'vibrant' and 'nestled'. Atmospheric filler.  _e.g._ "A bustling metropolis full of energy."
 - 🟡 **enduring** _(word)_ — Wikipedia-flagged AI adjective ('enduring legacy/impact'). A grandiose permanence claim models attach to ordinary subjects; its elevated rate signals generated puffery rather than warranted assessment.  _e.g._ "The work left an enduring legacy in the field."
 - 🟡 **valuable** _(word)_ — Wikipedia-listed, almost always in 'valuable insights/contribution.' AI self-rates its output as valuable; the collocation is templated and rose without any matching increase in genuine novelty.  _e.g._ "This makes a valuable contribution to the literature."
 
@@ -3611,6 +5666,17 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **I'd be happy to help / Happy to help!** _(phrase)_ — Synthetic eagerness rewarded during instruction tuning; it injects a service-desk persona into text that has no reason to address a customer.  _e.g._ "I'd be happy to help you with that!"
 - 🟡 **By following these steps, you'll be able to...** _(closer)_ — A reassurance-payoff sign-off promising the reader capability; it addresses a 'you' on a how-to journey, betraying the instructional-assistant frame.  _e.g._ "By following these steps, you'll be well on your way to success."
 
+## assistant-voice leak  (8)
+
+- 🔴 **as of my last knowledge update** _(phrase)_ — Knowledge-cutoff disclaimer leak (Wikipedia signs).
+- 🔴 **Here's a revised version** _(phrase)_ — Edit-loop artifact left in final text.
+- 🔴 **I apologize for the confusion** _(phrase)_ — Apology-loop artifact.
+- 🔴 **I hope this helps** _(phrase)_ — Assistant closer leaked into documents; Wikipedia AI-cleanup flags it.
+- 🔴 **I've incorporated your feedback** _(phrase)_ — Edit-loop artifact.
+- 🔴 **Let me know if you'd like** _(phrase)_ — Collaborative-offer closer leak.
+- 🔴 **That's a really insightful question** _(phrase)_ — Sycophancy opener leak from chat context.
+- 🔴 **Would you like me to** _(phrase)_ — Follow-up-offer closer leak (Wikipedia signs of AI writing: collaborative artifacts).
+
 ## audience-hedge  (1)
 
 - 🟠 **whether you're a X or a Y** _(phrase)_ — AI's universal inclusivity hedge that pretends to address everyone ('whether you're a beginner or a pro'); a formulaic both-ends construction that dodges specificity.  _e.g._ "Whether you're a startup or an enterprise, we've got you covered."
@@ -3635,6 +5701,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **X is a double-edged sword** _(structure)_ — Stock metaphor AI reaches for to perform nuance ('on one hand... on the other'). The reflexive both-sides framing signals template balance rather than a genuine position.  _e.g._ "Automation is a double-edged sword."
 
+## casual template  (1)
+
+- 🟠 **'And honestly? X' beat** _(template)_ — Faux-candid pivot both Claude and 4o over-use in casual register.
+
 ## catch-all triad  (1)
 
 - 🟡 **X, Y, and everything in between** _(closer)_ — The 'and everything in between' tag manufactures false comprehensiveness on top of a rule-of-three. AI tacks it on to imply total coverage without specifics.  _e.g._ "From startups, enterprises, and everything in between."
@@ -3648,6 +5718,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **Despite its X, [subject] faces challenges... future could...** _(closer)_ — Rigid closing formula that acknowledges a problem then pivots to hopeful future speculation. Wikipedia flags this exact 'Challenges and Future Directions' pivot as a signature AI section structure.  _e.g._ "Despite its success, the project faces challenges, but future investment could unlock its potential."
 
+## character-ai rp tell  (2)
+
+- 🟠 ***giggles*** _(phrase)_ — Character.AI action-asterisk staple.
+- 🟠 ***smirks*** _(phrase)_ — Asterisk-action RP convention; AI over-uses smirk specifically.
+
 ## chat boilerplate  (4)
 
 - 🔴 **Feel free to reach out / ask!** _(closer)_ — Flagged in AI-content audits as a typical machine artifact closer. Offers open-ended further help no human writer tacks onto a finished piece of prose.
@@ -3655,14 +5730,47 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **I hope this helps!** _(closer)_ — Generic friendly sign-off appended to nearly every answer; survives brevity instructions per TechRadar. The reflexive well-wish with exclamation point is unmistakable assistant boilerplate.  _e.g._ "...and that's the overview. I hope this helps!"
 - 🟠 **Let me know if you have any questions!** _(closer)_ — Customer-service-style follow-up offer that leaks from chat mode into delivered text. The exclamation and the unsolicited availability are the tell.
 
-## claude fiction tell  (2)
+## citation artifact  (1)
+
+- 🔴 **utm_source=chatgpt.com** _(phrase)_ — URL parameter ChatGPT appends to links — literal proof of provenance (Wikipedia signs).
+
+## claude fiction tell  (8)
 
 - 🔴 **'a breath [he/she] didn't know [they] were holding'** _(template)_ — Notorious Claude/AI fiction beat.
+- 🔴 **something shifted** _(phrase)_ — Claude fiction beat for unearned emotional turns (RP community claude-isms).
+- 🔴 **the ghost of a smile** _(phrase)_ — RP slop-list staple.
+- 🟠 **a beat passes** _(phrase)_ — Stage-direction pacing tic in AI fiction.
+- 🟠 **achingly** _(word)_ — Claude poetic-intensifier fixation.
+- 🟠 **old books and** _(phrase)_ — 'smelled of old books and X' scent-formula.
+- 🟠 **smells of sandalwood** _(phrase)_ — Claude scent-palette fixation (sandalwood/jasmine/old books).
 - 🟠 **'the only thing that mattered'** _(template)_ — AI emotional-absolutism beat.
+
+## claude prose tell  (6)
+
+- 🟠 **a few things worth noting** _(phrase)_ — Claude list-preamble habit.
+- 🟠 **it's also worth considering** _(phrase)_ — Claude both-sides hedge.
+- 🟠 **That said,** _(phrase)_ — Balance-pivot tic; AI-elevated rate.
+- 🟡 **fundamentally** _(word)_ — Claude-elevated qualifier (model-idiolect comparisons).
+- 🟡 **in essence** _(phrase)_ — Claude summarizing tic.
+- 🟡 **to be clear** _(phrase)_ — Claude clarification tic (elevated rate vs human).
 
 ## cliché verb phrase  (1)
 
 - 🟡 **shed light on** _(phrase)_ — Stock AI phrase for 'reveal/clarify'. Listed among overused AI phrases; mechanical metaphor for explanation.  _e.g._ "This study sheds light on the mechanism."
+
+## closer tell  (3)
+
+- 🟠 **and that makes all the difference** _(closer)_ — AI borrowed-Frost conclusion.
+- 🟠 **Happy coding!** _(closer)_ — AI tutorial sign-off.
+- 🟡 **is bright** _(closer)_ — 'the future ... is bright' AI conclusion formula.
+
+## closer template  (1)
+
+- 🟠 **'isn't going anywhere' closer** _(template)_ — 'X isn't going anywhere' AI trend-conclusion.
+
+## closer/opener tell  (1)
+
+- 🟡 **The future of** _(opener)_ — 'The future of X is bright/here' — AI essay bookend.
 
 ## compliance lead-in  (3)
 
@@ -3678,6 +5786,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## context opener  (1)
 
 - 🔴 **In the ever-evolving landscape of X** _(opener)_ — 'Ever-evolving / rapidly changing landscape' is a near-fingerprint AI preamble. It pads scope and buys time before content, a pattern human editors usually cut.  _e.g._ "In the ever-evolving landscape of artificial intelligence..."
+
+## contrast template  (1)
+
+- 🟠 **'not because X, but because Y'** _(template)_ — AI motive-reframe parallelism (antislop-documented family).
 
 ## contrast transition  (1)
 
@@ -3700,12 +5812,22 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **foster / drive / unlock + meaningful/tangible results** _(phrase)_ — AI pairs an action verb with a vague outcome noun ('drive tangible results', 'deliver meaningful impact'); the noun is unmeasurable, making the whole claim hollow corporate-speak.  _e.g._ "Drive tangible results across every channel."
 
+## deepseek fiction tell  (2)
+
+- 🔴 **somewhere, a clock ticked** _(phrase)_ — R1's portentous scene-fragment tic (community-flagged in R1 creative writing).
+- 🟠 **and somewhere,** _(phrase)_ — R1's 'and somewhere, X did Y' dramatic-cutaway formula.
+
 ## diction  (4)
 
 - 🔴 **Delve / leverage / facilitate / utilize** _(word)_ — 'Delve' and 'utilize' show documented post-ChatGPT frequency spikes; these pretend-precise verbs replace plain words (use, help) and cluster together as a lexical fingerprint.  _e.g._ "Let's delve into how to leverage this to facilitate growth."
 - 🟠 **Comprehensive overview / comprehensive guide** _(phrase)_ — Models announce 'a comprehensive overview' when prefacing structure; the self-congratulatory completeness claim is a stock framing line that recurs across topics.  _e.g._ "Here's a comprehensive overview of everything you need to know."
 - 🟠 **navigate (life's challenges)** _(phrase)_ — 'Navigate' is a quantified ChatGPT focal word, and 'navigate life's challenges/the storm' marries it to the storm trope. The corporate-coach register is a strong giveaway in adversity writing.  _e.g._ "Learning to navigate life's many storms"
 - 🟠 **resonate** _(word)_ — Focal-word member ('resonate with audiences/findings'). An emotional-register verb that surged in formal writing where it has little literal meaning, marking AI's tendency to borrow persuasive-essay vocabulary.  _e.g._ "This story of survival will resonate with many"
+
+## disclaimer boilerplate  (2)
+
+- 🟠 **consult a qualified professional** _(phrase)_ — AI hedge-disclaimer formula.
+- 🟡 **This is not financial advice** _(phrase)_ — Reflexive AI disclaimer insertion.
 
 ## distillation transition  (1)
 
@@ -3723,6 +5845,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## em-dash significance lift  (1)
 
 - 🔴 **X does more than Y — it Zs** _(structure)_ — 'Does more than Y — it Z' merges the 'more than' inflation with the em-dash reveal to elevate a mundane function into a grand effect. A compound AI tell in a single sentence.  _e.g._ "This framework does more than organize tasks — it reshapes how teams think."
+
+## emphasis template  (1)
+
+- 🟠 **'X. Full stop.' emphasis** _(template)_ — AI hard-stop emphasis beat.
 
 ## emphasis transition  (3)
 
@@ -3744,6 +5870,17 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **It's worth noting that / It's important to note** _(structure)_ — Filler hedge that adds no information and connects nothing. AI uses it as connective tissue between thoughts; human editors delete it on sight.  _e.g._ "It's worth noting that results may vary."
 
+## engagement-bait tell  (8)
+
+- 🟠 **deep dive** _(phrase)_ — AI-elevated content-marketing noun ('a deep dive into').
+- 🟠 **Let that sink in** _(phrase)_ — AI thread/post dramatic beat.
+- 🟠 **Plot twist:** _(phrase)_ — AI faux-surprise pivot.
+- 🟠 **Read that again** _(phrase)_ — AI engagement-bait beat.
+- 🟡 **Fun fact:** _(phrase)_ — AI trivia-framing tic.
+- 🟡 **Hot take:** _(phrase)_ — AI opinion-framing tic.
+- 🟡 **Pro tip:** _(phrase)_ — AI listicle interjection.
+- 🟡 **Spoiler alert:** _(phrase)_ — AI reveal-framing tic.
+
 ## essay preamble  (1)
 
 - 🔴 **In today's rapidly evolving landscape** _(opener)_ — Gemini prompt guides explicitly warn users to strip 'in today's rapidly evolving landscape' — the model's default zoom-out essay opener. 'Landscape' is itself a flagged spike word.
@@ -3751,6 +5888,14 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## explicit wrap-up label  (1)
 
 - 🔴 **In conclusion, / In summary,** _(closer)_ — Explicitly labeling the conclusion is an essay-template reflex. A well-structured human ending is obvious without the signpost; the literal 'In conclusion' marks formulaic AI scaffolding.  _e.g._ "In conclusion, the benefits clearly outweigh the costs."
+
+## fabrication tell  (1)
+
+- 🟠 **invented statistical precision ('boosts productivity by 73%')** _(structure)_ — Suspiciously specific uncited percentages — AI hallucinated-precision tell.
+
+## fake-anecdote tell  (1)
+
+- 🟠 **As a busy mom** _(phrase)_ — Fabricated-persona opener in AI content-farm posts.
 
 ## fake-revelation hinge  (1)
 
@@ -3821,10 +5966,23 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **a wide array of / diverse array** _(phrase)_ — Wikipedia's tourism cluster includes 'diverse array'. Padded quantifier AI uses instead of plain 'many'.  _e.g._ "A diverse array of options."
 
+## filler template  (1)
+
+- 🟡 **'the world of X' filler** _(template)_ — 'in the world of X' scope-filler AI over-uses.
+
 ## filler transition  (2)
 
 - 🟠 **when it comes to** _(phrase)_ — A throat-clearing topic-introducer that adds nothing; AI strings these to glide between subtopics, producing the over-transitioned flow editors associate with generated drafts.  _e.g._ "When it comes to productivity, planning matters."
 - 🟡 **Essentially / In essence** _(phrase)_ — Filler that promises distillation but precedes shallow restatement; AI uses it to sound like it's simplifying complexity it never established, a recognizable hollow-transition tell.  _e.g._ "Essentially, it's about balance."
+
+## fixated character name  (1)
+
+- 🔴 **Sarah Chen** _(phrase)_ — THE documented default AI character name for 'competent professional woman' (multiple 2024-2026 writeups).
+
+## fixated place name  (2)
+
+- 🔴 **Ravencrest** _(word)_ — AI-invented dramatic place name.
+- 🟠 **Willow Creek** _(phrase)_ — AI default small-town name.
 
 ## formatting  (8)
 
@@ -3844,11 +6002,33 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **Header + bullets + bold recap sandwich** _(structure)_ — Gemini wraps answers in a section heading, a bulleted middle, and a bolded takeaway, regardless of length. The instructor-like scaffolding on a two-line question is the structural tell.
 - 🟡 **Title Case Headers On Every Section** _(structure)_ — Gemini auto-titles every block in Title Case ('Understanding The Basics') even for casual answers. The compulsive section-headering of short replies is a layout tell more than a wording one.
 
-## formatting tell  (1)
+## formatting tell  (5)
 
+- 🔴 **bold-lead bullet lists ('**Term:** restatement')** _(structure)_ — Wikipedia signs: inline-header vertical lists — a ChatGPT signature barely present in natural writing.
 - 🔴 **emoji-bullet hype list (✅ 🚀 💡 per line)** _(structure)_ — The signature AI LinkedIn format: every bullet led by a checkmark/rocket/bulb emoji plus a bolded inline header and colon. The uniform emoji-per-line scaffold is a dead giveaway of generated posts.  _e.g._ "🚀 Faster growth
 ✅ Proven results
 💡 Smart insights"
+- 🔴 **markdown artifacts in plain text (** or ###)** _(structure)_ — Raw markdown pasted where it doesn't render = unedited AI output.
+- 🟠 **emoji section headers** _(structure)_ — 🚀/✨/💡-led section headers — 4o-era formatting fingerprint.
+- 🟠 **title-case section headings** _(structure)_ — Wikipedia signs: AI title-cases headings; humans sentence-case.
+
+## gpt-4o casual tell  (3)
+
+- 🟠 ***checks notes*** _(phrase)_ — Faux-comedic aside AI over-uses.
+- 🟠 **chef's kiss** _(phrase)_ — 4o-era hype interjection.
+- 🟠 **It's giving** _(phrase)_ — 4o's forced-casual register (2025 sycophancy era).
+
+## grandiose opener  (1)
+
+- 🔴 **In the annals of** _(opener)_ — AI historical-gravitas opener.
+
+## gravitas template  (1)
+
+- 🔴 **'a testament to X' frame** _(template)_ — The 'testament' formula generalized — catches inflected uses.
+
+## grok tell  (1)
+
+- 🟠 **Ah, the classic** _(phrase)_ — Grok's smug-recognition opener.
 
 ## heading formatting  (1)
 
@@ -3860,6 +6040,18 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **It's generally considered** _(phrase)_ — Passive, sourceless consensus-claim Gemini uses to sound balanced without attribution. Flagged as a Gemini-specific over-hedge in AI-detector analyses.
 - 🟠 **It's important to remember that** _(phrase)_ — Sibling of 'important to note'; Pangram lists it as a Reddit-bot transition giveaway. The model reminds you of something it never told you, a sourceless authority move.
 - 🟠 **There are various perspectives on this.** _(phrase)_ — Gemini's even-handedness bias surfaces as gratuitous both-sides framing. Detection write-ups call out this encyclopedic neutrality as distinctly non-human.
+
+## hedge template  (1)
+
+- 🟡 **'X, if you will'** _(template)_ — Coinage-hedge tic.
+
+## hedge/transition  (5)
+
+- 🟠 **In today's day and age** _(phrase)_ — Redundant-era opener.
+- 🟡 **it goes without saying** _(phrase)_ — Self-negating AI hedge.
+- 🟡 **more often than not** _(phrase)_ — AI-elevated frequency hedge.
+- 🟡 **On the flip side** _(phrase)_ — AI-elevated contrast marker.
+- 🟡 **When all is said and done** _(phrase)_ — AI summary idiom.
 
 ## hedging  (2)
 
@@ -3881,10 +6073,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **take your X to the next level** _(phrase)_ — Stock aspirational closer AI reaches for; entirely generic 'improve' framing with no defined level or metric. Parodied as peak filler copy.  _e.g._ "Take your business to the next level."
 - 🟠 **are you tired of X?** _(opener)_ — Infomercial pain-point opener AI defaults to for ads; a rhetorical-question hook so overused it reads as auto-generated direct response.  _e.g._ "Are you tired of wasting hours on reports?"
+- 🟠 **buckle up** _(phrase)_ — Forced-energy intro AI uses to fake excitement before a list; a conversational tic that reads as canned hype when generated at scale.  _e.g._ "Buckle up — these tips will transform your strategy."
 - 🟠 **look no further** _(phrase)_ — Infomercial-register CTA AI loves ('looking for X? look no further'); a tired direct-response cliche that flags templated, non-original copy.  _e.g._ "Looking for better leads? Look no further."
 - 🟠 **say goodbye to X / say hello to Y** _(phrase)_ — Direct-response template AI reuses verbatim; the before/after 'goodbye/hello' swap is a formulaic pain-then-relief pattern that signals generated promo copy.  _e.g._ "Say goodbye to spreadsheets. Say hello to clarity."
 - 🟠 **this changes everything** _(phrase)_ — Apple-keynote-register hyperbole AI deploys as a standalone punchy line; classic LLM 'big reveal' filler that overpromises with no substance.  _e.g._ "One feature. This changes everything."
-- 🟡 **buckle up** _(phrase)_ — Forced-energy intro AI uses to fake excitement before a list; a conversational tic that reads as canned hype when generated at scale.  _e.g._ "Buckle up — these tips will transform your strategy."
 - 🟡 **we've got you covered** _(phrase)_ — Reassurance filler AI appends to feature lists; folksy stock phrase that adds warmth-signaling but no information. Pairs with 'whether you're'.  _e.g._ "From design to delivery, we've got you covered."
 
 ## hype compound  (1)
@@ -3957,6 +6149,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **As we navigate** _(opener)_ — Combines the AI-spike verb 'navigate' with a we-inclusive frame; an overused transition crutch that adds drama to ordinary change, flagged in copywriter tell-lists.  _e.g._ "As we navigate these changes..."
 - 🟠 **Embark on a journey** _(phrase)_ — Melodramatic journey framing for mundane content; 'embark/journey' clusters with AI's travel-metaphor habit and reads as canned uplift rather than earned narrative.  _e.g._ "Let's embark on a journey through history."
 
+## linkedin tell  (2)
+
+- 🟠 **I'm humbled to announce** _(phrase)_ — AI-LinkedIn-post staple (humble-brag formula).
+- 🟠 **Thrilled to share** _(phrase)_ — AI-LinkedIn announcement formula.
+
 ## literary AI tell  (1)
 
 - 🟠 **load-bearing** _(word)_ — AI metaphor-of-the-moment, slapped onto abstractions.
@@ -3989,6 +6186,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟡 **proactive** _(word)_ — Marketing-AI adjective.
 - 🟡 **scalable** _(word)_ — Marketing-AI adjective.
 - 🟡 **thrilled** _(word)_ — AI announcement-opener ('We're thrilled to').
+
+## marketing template  (1)
+
+- 🔴 **'no longer a luxury' frame** _(template)_ — 'X is no longer a luxury — it's a necessity' AI B2B formula.
 
 ## mechanical structure  (2)
 
@@ -4057,6 +6258,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟡 **Let's break it down / Let's unpack this** _(opener)_ — Announces an explanatory move rather than just explaining; the meta-narration of structure ('let's unpack') is a conversational-assistant habit transplanted into prose.  _e.g._ "There's a lot here, so let's break it down."
 - 🟡 **This guide will explore / In this article we'll cover** _(opener)_ — Self-referential roadmap sentences that narrate what the piece will do are an SEO-listicle/model intro habit; experienced writers just start the content.  _e.g._ "In this article, we'll explore everything you need to know about..."
 
+## opener template  (1)
+
+- 🟡 **double question opener ('X? Y?')** _(template)_ — AI stacked-rhetorical-question opener.
+
 ## ornate metaphor  (1)
 
 - 🟠 **a/the [adjective] tapestry/symphony/dance of** _(trope)_ — AI's ornamental-metaphor reflex ('a symphony of flavors', 'an intricate dance of'); these baroque figures applied to mundane subjects are a strong generated-prose marker.  _e.g._ "A symphony of design and function."
@@ -4066,6 +6271,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **There are several factors to consider.** _(phrase)_ — TechRadar and Gemini prompt guides cite this exact padding sentence — the model inflates simple answers by announcing factors before listing them. Pure throat-clearing with no information.
 - 🟡 **When it comes to X,** _(opener)_ — Filler topic-introducer the model uses to ease into the subject. On padding-phrase lists; contributes nothing but a smooth, generic on-ramp to the real sentence.
 
+## perplexity tell  (1)
+
+- 🔴 **According to the search results** _(phrase)_ — RAG-answer leak.
+
 ## perspective transition  (1)
 
 - 🟡 **In the grand scheme of things** _(phrase)_ — Filler perspective-framing AI inserts to sound reflective even on non-grand topics; the mismatch between the lofty frame and trivial subject flags machine padding.  _e.g._ "In the grand scheme of things, it's minor."
@@ -4074,6 +6283,20 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **vibrant tapestry** _(phrase)_ — Two separate AI-tell words ('vibrant' on Wikipedia's list + 'tapestry') fused into the canonical AI-prose phrase. Co-occurrence of two flagged words is near-certain machine origin.  _e.g._ "a vibrant tapestry of cultures and traditions"
 
+## pi tell  (2)
+
+- 🟠 **That sounds really tough** _(phrase)_ — Inflection Pi's therapist-warm validation register.
+- 🟡 **I'm here for you** _(phrase)_ — Companion-bot validation phrase.
+
+## pitch template  (1)
+
+- 🟠 **'Think X, but for Y' analogy frame** _(template)_ — AI startup-pitch analogy formula.
+
+## pivot template  (2)
+
+- 🟠 **'Enter: X' dramatic introduction** _(template)_ — AI product/character introduction beat.
+- 🟡 **'Cue the X'** _(template)_ — AI staged-reaction beat.
+
 ## pivot transition  (2)
 
 - 🔴 **That being said** _(phrase)_ — A 'balance pivot' the model reaches for to manufacture both-sides nuance between paragraphs; humans use it occasionally, AI uses it formulaically at nearly every contrast, creating rigid see-saw pacing.  _e.g._ "The plan is solid. That being said, there are risks."
@@ -4081,9 +6304,9 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 ## platform tell: chatgpt  (6)
 
+- 🔴 **great question** _(phrase)_ — ChatGPT flattery opener.
 - 🟠 **absolutely!** _(phrase)_ — ChatGPT enthusiastic affirmation.
 - 🟠 **certainly!** _(phrase)_ — ChatGPT affirmation opener.
-- 🟠 **great question** _(phrase)_ — ChatGPT flattery opener.
 - 🟠 **here's the thing** _(phrase)_ — ChatGPT conversational pivot.
 - 🟠 **i'd be happy to help** _(phrase)_ — Assistant-voice ChatGPT tell.
 - 🟠 **let's break it down** _(phrase)_ — ChatGPT explainer pivot.
@@ -4218,9 +6441,20 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **From X to Y, ...** _(opener)_ — A 'spectrum' opener AI uses to imply comprehensiveness without specifics; its predictable 'From A to B' scaffolding to launch a sentence is a stock generated structure.  _e.g._ "From startups to enterprises, everyone benefits."
 
+## reasoning leak  (3)
+
+- 🔴 **Wait, let me reconsider** _(phrase)_ — Chain-of-thought leak from reasoning models (R1 visible-thinking era).
+- 🟠 **Hmm, but** _(phrase)_ — R1 thinking-token leak.
+- 🟠 **Let me work through this** _(phrase)_ — Reasoning-scaffold leak.
+
 ## recommendation transition  (1)
 
 - 🟡 **Look no further than** _(phrase)_ — A salesy stock recommendation-frame AI uses to make any pick sound definitive; the canned superlative setup marks generated marketing copy.  _e.g._ "For value, look no further than this plan."
+
+## reframe template  (2)
+
+- 🟠 **'It's less about X and more about Y'** _(template)_ — AI insight-reframe scaffold.
+- 🟠 **'What makes X special isn't Y'** _(template)_ — AI differentiation scaffold.
 
 ## reframe transition  (1)
 
@@ -4229,6 +6463,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## refusal boilerplate  (1)
 
 - 🔴 **I cannot fulfill that request, but I can...** _(phrase)_ — Safety-refusal scaffolding (decline, then redirect to a wholesome alternative) is unmistakable assistant behavior that never appears in human prose. The polite pivot is the tell.
+
+## refusal leak  (2)
+
+- 🔴 **I cannot fulfill this request** _(phrase)_ — Llama-2-chat's infamous over-refusal phrasing.
+- 🟠 **I'm just an AI** _(phrase)_ — Llama-2 alignment-speak.
 
 ## register  (1)
 
@@ -4273,6 +6512,17 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **rule of three (adjective triplets)** _(structure)_ — Wikipedia-flagged: AI compulsively groups things in threes ('fast, simple, and powerful'; triplet adjectives) for rhythm, producing an unnaturally regular cadence across a whole piece.  _e.g._ "Engage, convert, and retain your audience."
 
+## rp fiction tell  (4)
+
+- 🔴 **mischievous glint** _(phrase)_ — RP slop-list staple ('a mischievous glint in her eyes').
+- 🔴 **unspoken bond** _(phrase)_ — RP/fiction connection cliche.
+- 🟠 **eyes darkening** _(phrase)_ — RP mood-shift cliche (SFW register).
+- 🟠 **for now** _(closer)_ — Ominous two-word paragraph closer ('...she was safe. For now.') — RP slop lists.
+
+## scene opener  (1)
+
+- 🟠 **Picture this:** _(opener)_ — AI imagination-command opener.
+
 ## scene-setting cliche  (4)
 
 - 🔴 **in today's digital landscape** _(opener)_ — Combines the AI-spiked spatial metaphor 'landscape' with the empty time-anchor 'today's'; a content-free runway opener LLMs use to fill the first sentence before any real point.  _e.g._ "In today's digital landscape, brands must stand out."
@@ -4285,6 +6535,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **In the ever-evolving landscape of** _(opener)_ — Combines two AI-spike words ('landscape', 'evolving') into a nonspecific safety opener; it dodges committing to specifics and is among the most parodied generated-article intros.  _e.g._ "In the ever-evolving landscape of marketing..."
 - 🟠 **In an era characterized by** _(opener)_ — A formulaic grandeur opener (sibling to 'in today's fast-paced world') that frames the present as momentous; the abstract throat-clearing delays any actual content, a generated-intro signature.  _e.g._ "In an era characterized by rapid change..."
 - 🟠 **In the realm of** _(opener)_ — 'Realm' is a flagged Kobak focal word; the phrase adds unnecessary grandiosity to introduce a plain topic, a hallmark of AI inflating register.  _e.g._ "In the realm of cybersecurity..."
+
+## second-person tell  (2)
+
+- 🟠 **we've all been there** _(phrase)_ — AI false-relatability formula.
+- 🟠 **you might be wondering** _(phrase)_ — AI reader-mind-reading formula.
 
 ## self-disclosure  (1)
 
@@ -4343,6 +6598,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **In conclusion / To conclude** _(closer)_ — Models default to a tidy summary conclusion even for short pieces; the explicit 'In conclusion' label is five-paragraph-essay scaffolding that fluent human writers usually drop.  _e.g._ "In conclusion, balance is key to success."
 - 🟡 **In summary, / To sum up,** _(closer)_ — Explicit recap labels close out model responses even when no summary is needed; the reflexive 'to sum up' is essay-template scaffolding signaling generated structure.  _e.g._ "In summary, planning and consistency drive results."
 
+## style tell  (2)
+
+- 🟡 **dialect flattening (uniform register across quoted speakers)** _(structure)_ — AI gives every character/quote the same idiolect; humans vary.
+- 🟡 **paragraph-length uniformity** _(structure)_ — AI paragraphs cluster at 3-4 sentences with low variance.
+
 ## summary transition  (1)
 
 - 🟡 **Ultimately** _(opener)_ — A pseudo-conclusive adverb AI uses to wrap a thought with false finality; it recurs as a paragraph closer/opener at a rate that flags templated reasoning.  _e.g._ "Ultimately, success depends on effort."
@@ -4386,6 +6646,19 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **dive in / let's dive in** _(phrase)_ — AI's reflex 'begin the body' phrase, sibling to 'delve'; 'let's dive in' to close an intro is a recognized ChatGPT structural tic.  _e.g._ "Ready to get started? Let's dive in."
 
+## translationese tell  (2)
+
+- 🟠 **as we all know** _(phrase)_ — Chinese-model English translationese connector.
+- 🟠 **it is worth mentioning that** _(phrase)_ — Formal-connector translationese elevated in Chinese-model English.
+
+## travel-copy opener  (1)
+
+- 🔴 **Nestled in** _(opener)_ — AI travel/description default opener ('Nestled in the heart of').
+
+## travel-copy tell  (1)
+
+- 🟠 **in the heart of** _(phrase)_ — AI location-copy formula.
+
 ## triadic listing  (1)
 
 - 🔴 **rule of three (X, Y, and Z)** _(structure)_ — Wikipedia documents LLMs structurally repeating items in triplets (adjective, adjective, adjective). Relentless triadic rhythm is a statistical fingerprint.  _e.g._ "It's fast, reliable, and affordable."
@@ -4394,9 +6667,13 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **Rule of three / tricolon crescendo** _(structure)_ — LLMs deploy triplets compulsively, often with three roughly-synonymous adjectives, because the rule of three is deep in Western rhetoric. The tell is saturation: every list lands on exactly three, dulling the device into a tic.  _e.g._ "It's fast, reliable, and effective."
 
-## vague attribution  (1)
+## vague attribution  (5)
 
+- 🔴 **industry reports suggest** _(phrase)_ — Wikipedia signs: vague attribution formula.
+- 🔴 **observers have noted** _(phrase)_ — Wikipedia signs: phantom-observer attribution.
+- 🟠 **experts agree** _(phrase)_ — Uncited consensus claim.
 - 🟠 **experts argue / observers have noted** _(phrase)_ — Wikipedia's vague-attribution cluster ('experts argue', 'observers have cited'). Conjures unnamed authority to launder unsupported claims.  _e.g._ "Experts argue this trend will continue."
+- 🟠 **studies show that** _(phrase)_ — Uncited authority claim — Wikipedia signs: vague attributions.
 
 ## verb  (23)
 
@@ -4466,5 +6743,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **sets the stage for** _(phrase)_ — Wikipedia AI-cleanup overused phrase.
 - 🟠 **significant shift** _(phrase)_ — Wikipedia AI-cleanup overused phrase.
 - 🟡 **align with** _(phrase)_ — Wikipedia AI-cleanup overused phrase.
+
+## youtube-script tell  (2)
+
+- 🟠 **Welcome back to the channel** _(phrase)_ — AI YouTube-script boilerplate opener.
+- 🟡 **don't forget to like and subscribe** _(phrase)_ — AI YouTube-script boilerplate closer.
 
 

@@ -19,6 +19,7 @@ foreach ($e in $entries) {
   foreach ($part in ($term -split '/')) {
     $p = $part.Trim().Trim("'").Trim('"').Trim()
     $p = ($p -replace '\s+', ' ').Trim()
+    $p = $p.TrimEnd('!','?','.',',',':')   # punctuation-suffixed tells should match bare too
     if ($p.Length -lt 3 -or $p.Length -gt 60) { continue }
     if (($p -split ' ').Count -gt 6) { continue }
     if ($p -match '[.][.][.]|…') { continue }
