@@ -1,11 +1,11 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**4153 unique entries** (deduped from 4506 raw findings by a 26-agent research sweep).
+**4165 unique entries** (deduped from 4518 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 2124 | structure: 135 | trope: 156 | phrase: 1407 | rhyme_pair: 170 | opener: 89 | closer: 47 | template: 86
+**By type:** word: 2125 | structure: 135 | trope: 156 | phrase: 1411 | rhyme_pair: 170 | opener: 89 | closer: 47 | template: 93
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
@@ -1523,7 +1523,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **tears fall like rain** _(phrase)_ — Stock simile combining two model crutches (tears + rain). The pat weather-equals-sadness metaphor flags formulaic emotional writing.
 
-# DOMAIN: BOTH  (3049)
+# DOMAIN: BOTH  (3053)
 
 ## abstract verb  (1)
 
@@ -2317,6 +2317,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## dominance  (1)
 
 - 🟠 **power/hour** _(rhyme_pair)_ — 'Feel the power' + 'finest hour' (plus 'ivory tower', 'money shower') — the -ower family inflates ordinary brags with borrowed grandeur. 'Finest hour' is a cliché; the model uses 'power' as an abstract dominance-noun with no demonstrated source of it.  _e.g._ "Feel my power / This my finest hour"
+
+## editorializing  (1)
+
+- 🟠 **leaves an indelible mark** _(phrase)_ — Wikipedia-listed puffery closer: something 'leaves an indelible mark' on something else. Vague significance-assertion with no concrete detail.  _e.g._ "Her work left an indelible mark on the genre."
 
 ## embrace  (1)
 
@@ -3735,6 +3739,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **Caught up in the moment** _(phrase)_ — Generic 'we got swept away' filler; AI uses it to gesture at spontaneity while describing nothing specific that happened.  _e.g._ "Caught up in the moment, just you and I"
 
+## paste artifact  (2)
+
+- 🔴 **ChatGPT turn0search / turn0news citation token** _(template)_ — Internal source IDs (turn0search1, turn0news5) that ChatGPT's browsing tool emits around citations. They are meaningless to a reader and only appear when raw browsing output is pasted verbatim.  _e.g._ "according to recent reports turn0search2 the figure is higher"
+- 🔴 **contentReference[oaicite] citation artifact** _(template)_ — ChatGPT web-search leaves a 'contentReference[oaicite:N]{index=N}' citation stub in its answer; if it survives into pasted text it is near-proof the passage was copied straight out of ChatGPT unedited.  _e.g._ "The market grew 40% :contentReference[oaicite:3]{index=3}."
+
 ## permanence  (3)
 
 - 🟠 **Forever and always** _(phrase)_ — A redundant permanence doublet ('forever' restated as 'always') the model loves because both words are rhyme/sentiment anchors; the redundancy itself reads as machine-generated.  _e.g._ "I'll love you forever and always"
@@ -3808,6 +3817,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟡 **hush** _(word)_ — AI quiet-noun.
 - 🟡 **spark** _(word)_ — AI connection-metaphor.
 - 🟡 **tenderness** _(word)_ — AI's go-to soft-noun.
+
+## prestige metaphor  (1)
+
+- 🟠 **beacon of hope** _(phrase)_ — Decorative prestige-metaphor collocation ('a beacon of hope/innovation'). Near-poetic register that reads as generated filler in neutral prose.  _e.g._ "The clinic became a beacon of hope for the community."
 
 ## prose filler  (1)
 
@@ -5519,7 +5532,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **sky/why** _(rhyme_pair)_ — Skyward-questioning rhyme ('staring at the sky / asking God why'); AI's stock for an existential bridge. The unanswered 'why' aimed at the heavens is a generated-melancholy hallmark.  _e.g._ "I look up at the sky / and I ask the heavens why"
 
-# DOMAIN: PROSE  (566)
+# DOMAIN: PROSE  (574)
 
 ## abstract noun  (1)
 
@@ -5653,6 +5666,13 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **I must inform you that** _(phrase)_ — Assistant-voice leak.
 
+## assistant voice leak  (4)
+
+- 🔴 **as a large language model** _(phrase)_ — Self-identification as an LLM. Alongside 'As an AI language model', the single most unambiguous tell of unedited chatbot output.  _e.g._ "As a large language model, I can help you draft this."
+- 🔴 **Here is the revised / rewritten version** _(template)_ — Editing-handoff preamble the model prepends when returning a rewrite. If it appears in a finished piece, the author pasted the assistant's wrapper along with the content.  _e.g._ "Here is the revised version of your introduction:"
+- 🔴 **knowledge-cutoff self-reference** _(template)_ — The model narrating its own training boundary ('as of my last knowledge update', 'my training data goes up to ...'). A human author has no knowledge cutoff; this is an unedited assistant voice leaking through.  _e.g._ "As of my last knowledge update in early 2023, the policy had not changed."
+- 🔴 **no real-time / cannot browse disclaimer** _(template)_ — Assistant hedge about lacking live data or web access. Never something a human writer says about their own article; a direct leak of the chatbot persona.  _e.g._ "I don't have access to real-time data, but as of my last update..."
+
 ## assistant-voice  (10)
 
 - 🔴 **As an AI language model** _(phrase)_ — The single most unambiguous tell — it is literally the model disclosing its own nature; no human writer narrates that they are a language model, so its presence is near-100% proof of unedited AI output.  _e.g._ "As an AI language model, I don't have personal opinions, but..."
@@ -5696,6 +5716,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## both-sides scaffold  (1)
 
 - 🟠 **Pros and Cons / On one hand... on the other** _(structure)_ — Gemini reflexively splits any judgment into a balanced pro/con table to avoid committing — a direct expression of its even-handed, encyclopedic bias noted by detectors.
+
+## buzzword  (1)
+
+- 🟠 **paradigm shift** _(phrase)_ — Corporate-hype collocation on every 2025-2026 AI-word blacklist; the model overstates ordinary change as a 'paradigm shift'.  _e.g._ "This represents a paradigm shift in how we work."
 
 ## canned balanced-take  (1)
 
@@ -6131,6 +6155,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **the world of X / in the realm of X** _(opener)_ — AI's stock framing device opening sentences with 'In the world of...' / 'In the realm of...'. Combines with flagged 'realm' for double-tell intros.  _e.g._ "In the world of finance, timing is everything."
 
+## intro verb  (1)
+
+- 🟡 **demystify** _(word)_ — 2026 detector-blacklist intro verb ('let us demystify X'). A packaging word the model reaches for to frame explainer content.  _e.g._ "In this guide we demystify tax brackets."
+
 ## inverted significance opener  (1)
 
 - 🟠 **At the heart of X lies Y** _(opener)_ — Inverted-syntax 'At the heart of ___ lies ___' is a stock AI sentence for asserting a central truth. The fronted prepositional flourish reads as manufactured gravitas.  _e.g._ "At the heart of every great team lies trust."
@@ -6352,13 +6380,15 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **'in today's fast-paced/digital world'** _(template)_ — The single most parodied AI essay opener.  _e.g._ "In today's fast-paced digital world..."
 
-## prose structure  (8)
+## prose structure  (10)
 
 - 🔴 **'isn't merely... it's...'** _(template)_ — Same elevation tic in negative form; classic LLM closing-paragraph move.  _e.g._ "This isn't merely a trend, it's the future"
 - 🔴 **'it's not about X, it's about Y'** _(template)_ — Pseudo-deep reframing template the model reaches for to manufacture insight.  _e.g._ "It's not about the destination, it's about the journey"
 - 🔴 **'not just X, but Y' elevation** _(template)_ — The signature AI inflation frame ('not just a tool, but a revolution'). Sets up a fake contrast to sound profound.  _e.g._ "It's not just software, it's a revolution"
 - 🔴 **triadic negation 'No X. No Y. Just Z.'** _(template)_ — Punchy negative-parallelism the model loves for taglines.  _e.g._ "No fluff. No filler. Just results."
+- 🟠 **formulaic AI section headers** _(template)_ — Wikipedia documents these boilerplate section titles as an AI structural tell; the model resolves any topic into the same optimistic outline scaffolding.  _e.g._ "## Future Outlook"
 - 🟠 **present-participle opener ('Standing there, she…')** _(template)_ — '-ing …, she' sentence opener used as a default cadence.
+- 🟠 **summarizing present-participle tail** _(template)_ — Wikipedia's 'present participle endings' tell: the real clause is followed by a floating '-ing' summary that editorializes its own significance ('..., underscoring the importance of ...'). A hallmark of generated wrap-up prose.  _e.g._ "The bridge opened in 1932, cementing the city as a regional hub."
 - 🟠 **'The goal? / bottom line?' self-answer** _(template)_ — Tiny rhetorical question answered instantly — marketing-AI tic.
 - 🟠 **'whether you're a... or a...'** _(template)_ — Fake-inclusive audience hedge; pads without committing.  _e.g._ "Whether you're a beginner or a pro..."
 - 🟡 **'from X to Y,' merism opener** _(template)_ — Sweeping 'from A to B' range-claim that sounds comprehensive while saying little.  _e.g._ "From startups to enterprises, everyone benefits"

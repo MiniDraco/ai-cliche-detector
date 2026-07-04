@@ -1,4 +1,4 @@
-AI-CLICHE DETECTION DB  -  4153 entries
+AI-CLICHE DETECTION DB  -  4165 entries
 format: [severity] domain/type | category | TERM :: why
 ==============================================================================
 
@@ -178,6 +178,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | light/dark | You're the light in my darkness :: Default light-vs-dark salvation trope; the model maps 'you saved me' onto the most over-trained binary in lyric data, producing an abstract, placeless line.
 [high  ] both/phrase | completion | You're the missing piece (of my puzzle) :: A puzzle/completion metaphor the model reaches for as a variant of 'you complete me'; the jigsaw image is so worn it signals template-filling.
 [medium] both/phrase | literary AI tell | 3am on the curb :: AI's edgy-specific 'liminal' image.
+[medium] both/phrase | prestige metaphor | beacon of hope :: Decorative prestige-metaphor collocation ('a beacon of hope/innovation'). Near-poetic register that reads as generated filler in neutral prose.
 [medium] both/phrase | liberation | break the chains / broke the chains :: Stock freedom metaphor. AI deploys it for any 'escaping oppression/the past' prompt; the chains are never literal, making it a borrowed shorthand for liberation rather than a described act of breaking free.
 [medium] both/phrase | dead-metaphor cliché | Burning bridges :: Flagged as 'frequently used, sounds unoriginal.' AI deploys it as default for any falling-out, a dead metaphor that signals stock conflict language rather than a real rupture.
 [medium] both/phrase | passion/drive | burning like a fire inside :: Inner-fire-as-determination cliché; forums list 'like fire' / 'burning' similes as worn out. AI uses the internal-fire image as a stock stand-in for motivation or passion without specifying what's actually felt.
@@ -228,6 +229,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | darkness | in the dark :: All-purpose mood/rhyme anchor ('dark' rhymes with heart/spark/mark); the model leans on it to set intimacy cheaply, so it co-occurs with the heart/spark cluster.
 [medium] both/phrase | time-of-night | in the night :: High-frequency line-filler that supplies an easy rhyme ('night/light/right') and a vague setting; the model's default temporal anchor when none is specified.
 [medium] both/phrase | hype transition | It's a game-changer :: Hyperbolic stock praise the model defaults to when asked to sound enthusiastic; its indiscriminate application to trivial features marks generated marketing copy.
+[medium] both/phrase | editorializing | leaves an indelible mark :: Wikipedia-listed puffery closer: something 'leaves an indelible mark' on something else. Vague significance-assertion with no concrete detail.
 [medium] both/phrase | resilience arc | Light at the end of the tunnel :: Pure dead idiom; AI's reach for the most exhausted hope-metaphor in English signals it's pattern-completing inspirational language rather than writing rap.
 [medium] both/phrase | setting/scene | long way home :: Abstract journey image AI uses as a road-trip mood-setter and easy 'home/roam/alone' rhyme enabler. Conveys vague wistfulness with no actual route or destination.
 [medium] both/phrase | temporal abstraction | lost in time :: Listed AI cliché; a vague temporal-dislocation phrase used to manufacture wistfulness with no specific then-and-now.
@@ -1016,6 +1018,8 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/structure | diction | 'gentle' as an intensifier on things that aren't gentle :: AI softens everything with 'gentle' regardless of fit.
 [high  ] both/template | poetry tell | 'the architecture/geometry of [abstraction]' :: Pretentious 'the [science] of [feeling]' — a strong AI essay/poetry tell.
 [high  ] both/template | poetry tell | 'what remains unspoken / what we carry' :: Abstract 'what we carry' gravitas filler.
+[high  ] both/template | paste artifact | ChatGPT turn0search / turn0news citation token :: Internal source IDs (turn0search1, turn0news5) that ChatGPT's browsing tool emits around citations. They are meaningless to a reader and only appear when raw browsing output is pasted verbatim.
+[high  ] both/template | paste artifact | contentReference[oaicite] citation artifact :: ChatGPT web-search leaves a 'contentReference[oaicite:N]{index=N}' citation stub in its answer; if it survives into pasted text it is near-proof the passage was copied straight out of ChatGPT unedited.
 [high  ] both/template | prose structure | negative parallelism 'not X, but Y' :: AI's signature rhetorical frame — defines a thing by what it isn't to sound profound.
 [high  ] both/template | prose structure | self-posed question, instant answer ('The result? Devastating.') :: Asks a tiny rhetorical question and answers it in one punchy word for fake drama.
 [high  ] both/template | poetry tell | triadic abstract list ('the grief, the silence, the forgetting') :: Three abstract nouns as 'the X, the Y, the Z' — a top AI-poetry tic.
@@ -3664,6 +3668,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] prose/opener | padding | When it comes to X, :: Filler topic-introducer the model uses to ease into the subject. On padding-phrase lists; contributes nothing but a smooth, generic on-ramp to the real sentence.
 [high  ] prose/phrase | resilience | a testament to the human spirit :: Combines the flagged focal word 'testament' with the grand abstraction 'human spirit.' It's the model's stock summarizing flourish for any survival/comeback story — pure caption, no content.
 [high  ] prose/phrase | perplexity tell | According to the search results :: RAG-answer leak.
+[high  ] prose/phrase | assistant voice leak | as a large language model :: Self-identification as an LLM. Alongside 'As an AI language model', the single most unambiguous tell of unedited chatbot output.
 [high  ] prose/phrase | assistant-voice | As an AI language model :: The single most unambiguous tell — it is literally the model disclosing its own nature; no human writer narrates that they are a language model, so its presence is near-100% proof of unedited AI output.
 [high  ] prose/phrase | assistant-voice leak | as of my last knowledge update :: Knowledge-cutoff disclaimer leak (Wikipedia signs).
 [high  ] prose/phrase | fiction tell | barely above a whisper :: Top AI-fiction phrase.
@@ -3817,6 +3822,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | diction | navigate (life's challenges) :: 'Navigate' is a quantified ChatGPT focal word, and 'navigate life's challenges/the storm' marries it to the storm trope. The corporate-coach register is a strong giveaway in adversity writing.
 [medium] prose/phrase | tourism puffery | nestled in the heart of :: Wikipedia's tourism-puffery cluster ('nestled', 'in the heart of'). Travel-brochure cliché AI applies to any location.
 [medium] prose/phrase | claude fiction tell | old books and :: 'smelled of old books and X' scent-formula.
+[medium] prose/phrase | buzzword | paradigm shift :: Corporate-hype collocation on every 2025-2026 AI-word blacklist; the model overstates ordinary change as a 'paradigm shift'.
 [medium] prose/phrase | progress transition | paving the way for :: Generic progress-metaphor connective AI uses to imply consequence; its false-revolutionary tone applied to minor developments is a documented filler tell.
 [medium] prose/phrase | editorializing | pivotal / plays a pivotal role :: Focal word 'pivotal' plus the stock frame 'plays a pivotal role in' is an AI significance-inflater that asserts importance without demonstrating it.
 [medium] prose/phrase | inflation | plays a crucial role in :: 'Crucial' is one of Gemini's authoritative qualifiers (alongside 'key,' 'primarily') that statistical-tells research found over-represented. The role-playing clause pads importance onto any noun.
@@ -3990,6 +3996,9 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] prose/template | marketing | 'unlock the power/potential' :: Marketing-AI staple; 'unlock' + abstract-noun is mode-collapse hype.
 [high  ] prose/template | platform tell: claude | Claude: 'I want to be direct / let me be honest' :: Claude's signature framing move.
 [high  ] prose/template | platform tell: gemini | Gemini: 'here's a breakdown / what you need to know' :: Gemini's default list-dump opener.
+[high  ] prose/template | assistant voice leak | Here is the revised / rewritten version :: Editing-handoff preamble the model prepends when returning a rewrite. If it appears in a finished piece, the author pasted the assistant's wrapper along with the content.
+[high  ] prose/template | assistant voice leak | knowledge-cutoff self-reference :: The model narrating its own training boundary ('as of my last knowledge update', 'my training data goes up to ...'). A human author has no knowledge cutoff; this is an unedited assistant voice leaking through.
+[high  ] prose/template | assistant voice leak | no real-time / cannot browse disclaimer :: Assistant hedge about lacking live data or web access. Never something a human writer says about their own article; a direct leak of the chatbot persona.
 [high  ] prose/template | platform tell: perplexity | Perplexity: 'According to a [year] report by' :: Perplexity's formulaic citation attribution.
 [high  ] prose/template | platform tell: perplexity | Perplexity: 'based on the search results / available information' :: Perplexity/RAG answer-opener.
 [high  ] prose/template | prose structure | triadic negation 'No X. No Y. Just Z.' :: Punchy negative-parallelism the model loves for taglines.
@@ -4007,8 +4016,10 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/template | reframe template | 'What makes X special isn't Y' :: AI differentiation scaffold.
 [medium] prose/template | prose structure | 'whether you're a... or a...' :: Fake-inclusive audience hedge; pads without committing.
 [medium] prose/template | emphasis template | 'X. Full stop.' emphasis :: AI hard-stop emphasis beat.
+[medium] prose/template | prose structure | formulaic AI section headers :: Wikipedia documents these boilerplate section titles as an AI structural tell; the model resolves any topic into the same optimistic outline scaffolding.
 [medium] prose/template | marketing | game-changer / game-changing :: Inflated novelty claim.
 [medium] prose/template | prose structure | present-participle opener ('Standing there, she…') :: '-ing …, she' sentence opener used as a default cadence.
+[medium] prose/template | prose structure | summarizing present-participle tail :: Wikipedia's 'present participle endings' tell: the real clause is followed by a floating '-ing' summary that editorializes its own significance ('..., underscoring the importance of ...'). A hallmark of generated wrap-up prose.
 [low   ] prose/template | pivot template | 'Cue the X' :: AI staged-reaction beat.
 [low   ] prose/template | prose structure | 'from X to Y,' merism opener :: Sweeping 'from A to B' range-claim that sounds comprehensive while saying little.
 [low   ] prose/template | filler template | 'the world of X' filler :: 'in the world of X' scope-filler AI over-uses.
@@ -4132,6 +4143,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] prose/word | verb phrase | align with :: Wikipedia-flagged ('align/resonate with'). Models use 'aligns with' as a vague consistency claim instead of stating a concrete relationship; its templated, hedging quality marks generated analysis.
 [low   ] prose/word | abstract-noun | bedrock :: Tapestry-noun cluster, pairs with cornerstone/foundation. AI's importance-marker for 'the basic thing everything rests on,' deployed without any specific structure in view.
 [low   ] prose/word | verb | bolster :: Wikipedia-listed ('bolstered by'). An elevated synonym for 'support/strengthen' that AI inserts to sound authoritative; flagged because its frequency rose as register dressing, not from any topical need.
+[low   ] prose/word | intro verb | demystify :: 2026 detector-blacklist intro verb ('let us demystify X'). A packaging word the model reaches for to frame explainer content.
 [low   ] prose/word | verb | encompass :: Flagged excess marker; AI uses 'encompasses a wide range of' as a comprehensiveness claim. A Latinate substitute for 'includes/covers' whose inflated rate signals the model's generic completeness habit.
 [low   ] prose/word | adjective | enduring :: Wikipedia-flagged AI adjective ('enduring legacy/impact'). A grandiose permanence claim models attach to ordinary subjects; its elevated rate signals generated puffery rather than warranted assessment.
 [low   ] prose/word | verb | exhibited :: Listed excess style verb; AI prefers 'exhibited' over plain 'showed.' Its over-rate in results sections is a register choice — the same observation reported in a more formal-sounding word — making it a quiet stylistic tell.

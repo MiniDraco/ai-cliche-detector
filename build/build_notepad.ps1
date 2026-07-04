@@ -84,5 +84,5 @@ Write-Output "sample high patterns:"
 $patterns | Where-Object { $_.s -eq 2 } | Select-Object -First 12 | ForEach-Object { Write-Output ("  " + $_['p']) }
 Write-Output "sample rhymes:"
 $rhymes | Select-Object -First 8 | ForEach-Object { Write-Output ("  " + $_.a + "/" + $_.b) }
-$out = Join-Path $dir 'cliche-catcher.html'
+$out = Join-Path $dir 'apps\cliche-catcher.html'
 Write-Output ("html bytes: " + (Get-Item $out).Length)

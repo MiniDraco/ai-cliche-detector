@@ -10,17 +10,17 @@
    "Claude",
    "general"
   ],
-  "rawCount": 4506,
-  "uniqueCount": 4153,
+  "rawCount": 4518,
+  "uniqueCount": 4165,
   "byType": {
-   "word": 2124,
+   "word": 2125,
    "structure": 135,
    "trope": 156,
-   "phrase": 1407,
+   "phrase": 1411,
    "rhyme_pair": 170,
    "opener": 89,
    "closer": 47,
-   "template": 86
+   "template": 93
   },
   "builtBy": "26-agent workflow + compass + pattern-detectors + extra-tells",
   "note": "Public build: the NSFW-detection category is excluded here; it remains in the local/full build and inside the installer."
@@ -71895,6 +71895,230 @@
     "wave2"
    ],
    "source": "wave2"
+  },
+  {
+   "term": "contentReference[oaicite] citation artifact",
+   "type": "template",
+   "category": "paste artifact",
+   "domain": "both",
+   "platforms": [
+    "chatgpt"
+   ],
+   "why": "ChatGPT web-search leaves a 'contentReference[oaicite:N]{index=N}' citation stub in its answer; if it survives into pasted text it is near-proof the passage was copied straight out of ChatGPT unedited.",
+   "example": "The market grew 40% :contentReference[oaicite:3]{index=3}.",
+   "severity": "high",
+   "sources": [
+    "wave3-vale"
+   ],
+   "source": "wave3-vale",
+   "pattern": "contentReference\\[oaicite:\\d+\\]|\\[oaicite:\\d+\\]",
+   "flags": "gi"
+  },
+  {
+   "term": "ChatGPT turn0search / turn0news citation token",
+   "type": "template",
+   "category": "paste artifact",
+   "domain": "both",
+   "platforms": [
+    "chatgpt"
+   ],
+   "why": "Internal source IDs (turn0search1, turn0news5) that ChatGPT's browsing tool emits around citations. They are meaningless to a reader and only appear when raw browsing output is pasted verbatim.",
+   "example": "according to recent reports turn0search2 the figure is higher",
+   "severity": "high",
+   "sources": [
+    "wave3-vale"
+   ],
+   "source": "wave3-vale",
+   "pattern": "\\bturn\\d+(?:search|news|view|forecast|image|academia|finance|product)\\d+\\b",
+   "flags": "gi"
+  },
+  {
+   "term": "knowledge-cutoff self-reference",
+   "type": "template",
+   "category": "assistant voice leak",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "The model narrating its own training boundary ('as of my last knowledge update', 'my training data goes up to ...'). A human author has no knowledge cutoff; this is an unedited assistant voice leaking through.",
+   "example": "As of my last knowledge update in early 2023, the policy had not changed.",
+   "severity": "high",
+   "sources": [
+    "wave3-vale"
+   ],
+   "source": "wave3-vale",
+   "pattern": "\\b(?:as of|up to|until) my (?:last )?(?:knowledge|training) (?:update|cutoff|cut-?off)\\b|my (?:knowledge|training) (?:cutoff|cut-?off|data) (?:is|goes|extends|only goes|was last|ends)",
+   "flags": "gi"
+  },
+  {
+   "term": "no real-time / cannot browse disclaimer",
+   "type": "template",
+   "category": "assistant voice leak",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Assistant hedge about lacking live data or web access. Never something a human writer says about their own article; a direct leak of the chatbot persona.",
+   "example": "I don't have access to real-time data, but as of my last update...",
+   "severity": "high",
+   "sources": [
+    "wave3-vale"
+   ],
+   "source": "wave3-vale",
+   "pattern": "\\bI (?:do not|don'?t) have (?:access to )?real-?time\\b|\\bI (?:cannot|can'?t) (?:browse|access) the internet\\b",
+   "flags": "gi"
+  },
+  {
+   "term": "as a large language model",
+   "type": "phrase",
+   "category": "assistant voice leak",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Self-identification as an LLM. Alongside 'As an AI language model', the single most unambiguous tell of unedited chatbot output.",
+   "example": "As a large language model, I can help you draft this.",
+   "severity": "high",
+   "sources": [
+    "wave3-vale"
+   ],
+   "source": "wave3-vale"
+  },
+  {
+   "term": "Here is the revised / rewritten version",
+   "type": "template",
+   "category": "assistant voice leak",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Editing-handoff preamble the model prepends when returning a rewrite. If it appears in a finished piece, the author pasted the assistant's wrapper along with the content.",
+   "example": "Here is the revised version of your introduction:",
+   "severity": "high",
+   "sources": [
+    "wave3-vale"
+   ],
+   "source": "wave3-vale",
+   "pattern": "\\bhere(?:\\s|')?s? (?:is|are) the (?:revised|rewritten|updated|polished|improved) (?:version|text|draft|paragraph|copy)\\b",
+   "flags": "gi"
+  },
+  {
+   "term": "formulaic AI section headers",
+   "type": "template",
+   "category": "prose structure",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Wikipedia documents these boilerplate section titles as an AI structural tell; the model resolves any topic into the same optimistic outline scaffolding.",
+   "example": "## Future Outlook",
+   "severity": "medium",
+   "sources": [
+    "wave3-wikipedia"
+   ],
+   "source": "wave3-wikipedia",
+   "pattern": "^\\s{0,3}#{0,4}\\s*(?:Future Outlook|Challenges and Legacy|Key Takeaways|Final Thoughts|In Summary|Conclusion and Next Steps|The Road Ahead)\\s*:?\\s*$",
+   "flags": "gim"
+  },
+  {
+   "term": "summarizing present-participle tail",
+   "type": "template",
+   "category": "prose structure",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Wikipedia's 'present participle endings' tell: the real clause is followed by a floating '-ing' summary that editorializes its own significance ('..., underscoring the importance of ...'). A hallmark of generated wrap-up prose.",
+   "example": "The bridge opened in 1932, cementing the city as a regional hub.",
+   "severity": "medium",
+   "sources": [
+    "wave3-wikipedia"
+   ],
+   "source": "wave3-wikipedia",
+   "pattern": ",\\s+(?:highlighting|underscoring|emphasizing|showcasing|reflecting|symbolizing|ensuring|cementing|solidifying|reinforcing|paving the way|shaping|marking)\\b[^.?!\\n]{0,70}[.?!]",
+   "flags": "gi"
+  },
+  {
+   "term": "leaves an indelible mark",
+   "type": "phrase",
+   "category": "editorializing",
+   "domain": "both",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Wikipedia-listed puffery closer: something 'leaves an indelible mark' on something else. Vague significance-assertion with no concrete detail.",
+   "example": "Her work left an indelible mark on the genre.",
+   "severity": "medium",
+   "sources": [
+    "wave3-wikipedia"
+   ],
+   "source": "wave3-wikipedia"
+  },
+  {
+   "term": "beacon of hope",
+   "type": "phrase",
+   "category": "prestige metaphor",
+   "domain": "both",
+   "platforms": [
+    "chatgpt",
+    "claude",
+    "gemini"
+   ],
+   "why": "Decorative prestige-metaphor collocation ('a beacon of hope/innovation'). Near-poetic register that reads as generated filler in neutral prose.",
+   "example": "The clinic became a beacon of hope for the community.",
+   "severity": "medium",
+   "sources": [
+    "wave3-wikipedia"
+   ],
+   "source": "wave3-wikipedia"
+  },
+  {
+   "term": "demystify",
+   "type": "word",
+   "category": "intro verb",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "gemini"
+   ],
+   "why": "2026 detector-blacklist intro verb ('let us demystify X'). A packaging word the model reaches for to frame explainer content.",
+   "example": "In this guide we demystify tax brackets.",
+   "severity": "low",
+   "sources": [
+    "wave3-detectorlists"
+   ],
+   "source": "wave3-detectorlists"
+  },
+  {
+   "term": "paradigm shift",
+   "type": "phrase",
+   "category": "buzzword",
+   "domain": "prose",
+   "platforms": [
+    "chatgpt",
+    "gemini"
+   ],
+   "why": "Corporate-hype collocation on every 2025-2026 AI-word blacklist; the model overstates ordinary change as a 'paradigm shift'.",
+   "example": "This represents a paradigm shift in how we work.",
+   "severity": "medium",
+   "sources": [
+    "wave3-detectorlists"
+   ],
+   "source": "wave3-detectorlists"
   }
  ]
 }

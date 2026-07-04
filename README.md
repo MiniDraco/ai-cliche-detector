@@ -36,10 +36,11 @@ Open the app and you get a launcher with:
 - **It shows its work.** Every signal is on the table — cliché density, sentence burstiness, rhyme/meter regularity, image-grounding, and (with the model) Binoculars cross-perplexity. No black-box percentage.
 - **Built to survive "humanizers."** The structural and grounding signals don't care if you swap clichés for fancy synonyms — they read the skeleton, not the paint.
 - **Catches stolen *and* generated.** Most detectors only flag AI-*generated* text; this also flags *borrowed* lyrics that read as human because they are.
+- **Catches paste artifacts.** Near-proof tells that only appear in un-edited chatbot output — ChatGPT web-citation stubs (`contentReference[oaicite:…]`, `turn0search…`), knowledge-cutoff self-references, and "as a large language model" leaks.
 
 ## The database
 
-The full catalog ships in six formats under `exports/` — `.csv`, `.json`, `.db` (SQLite, indexed + a `canonical_tells` view), `.xlsx`, `.txt`, and a printable `.pdf`. Sources include two large research sweeps, per-model slop-forensics profiles for 44+ models (Claude 3.5/3.7, GPT-3.5→4.5, Gemini, Llama 2→4, DeepSeek V3/R1, Qwen, Grok, GLM, Mistral, Command-A…), Wikipedia's *Signs of AI writing*, the EQ-Bench antislop list, and per-platform fingerprints.
+The full catalog ships in six formats under `exports/` — `.csv`, `.json`, `.db` (SQLite, indexed + a `canonical_tells` view), `.xlsx`, `.txt`, and a printable `.pdf`. Sources include two large research sweeps, per-model slop-forensics profiles for 44+ models (Claude 3.5/3.7, GPT-3.5→4.5, Gemini, Llama 2→4, DeepSeek V3/R1, Qwen, Grok, GLM, Mistral, Command-A…), Wikipedia's *Signs of AI writing*, the ammil.industries Vale AI-writing ruleset, 2025–2026 detector-vendor blacklists, the EQ-Bench antislop list, and per-platform fingerprints.
 
 ## Build from source
 
