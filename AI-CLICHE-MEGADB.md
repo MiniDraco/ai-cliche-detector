@@ -1,11 +1,11 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**4165 unique entries** (deduped from 4518 raw findings by a 26-agent research sweep).
+**4856 unique entries** (deduped from 5209 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 2125 | structure: 135 | trope: 156 | phrase: 1411 | rhyme_pair: 170 | opener: 89 | closer: 47 | template: 93
+**By type:** word: 2282 | structure: 135 | trope: 161 | phrase: 1788 | rhyme_pair: 170 | opener: 174 | closer: 75 | template: 132
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
@@ -1523,7 +1523,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **tears fall like rain** _(phrase)_ — Stock simile combining two model crutches (tears + rain). The pat weather-equals-sadness metaphor flags formulaic emotional writing.
 
-# DOMAIN: BOTH  (3053)
+# DOMAIN: BOTH  (3744)
+
+## abstract metaphor  (1)
+
+- 🔴 **navigate the landscape** _(phrase)_ — Signature AI abstraction pairing 'navigate' with 'landscape'.  _e.g._ "Helping you navigate the landscape of options."
 
 ## abstract verb  (1)
 
@@ -1546,6 +1550,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **abstract-noun stacking (strength, courage, freedom, destiny)** _(structure)_ — AI piles capitalized abstractions instead of concrete sensory detail; a line like 'with strength and courage I'll find my destiny' is pure abstraction-stacking with no image to grab, a hallmark of generated lyrics.  _e.g._ "With strength and courage, I'll claim my destiny"
 - 🔴 **soul / souls** _(word)_ — Listed by the zoetic Suno study as auto-repeated ('velvet, souls, night'). Vollmer flags the pivot to 'the soul' as abstraction drift — the model retreats to soul when it has no concrete image.  _e.g._ "Two souls lost in the night"
+
+## abstraction filler  (1)
+
+- 🟠 **digital realm** _(phrase)_ — Vague 'realm/landscape' abstraction typical of AI filler.  _e.g._ "In the digital realm, first impressions matter."
 
 ## abstract-noun  (30)
 
@@ -1580,10 +1588,25 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **yearning** _(word)_ — Naming-the-longing tell. AI states 'yearning' as an abstract noun for desire instead of dramatizing want; high-frequency in machine love lyrics as a label.  _e.g._ "a yearning deep within my restless heart"
 - 🟡 **ephemera** _(word)_ — AI loves the fleeting/transient theme; 'ephemera' and 'the ephemeral' are upscale abstractions for impermanence it reaches for to sound deep without a concrete passing thing.  _e.g._ "we are ephemera, here then gone"
 
+## academic filler  (1)
+
+- 🟠 **demonstrates significant** _(phrase)_ — Formulaic AI academic-report phrasing that inflates claims.  _e.g._ "The study demonstrates significant improvement."
+
+## academic hedge  (4)
+
+- 🟠 **One could argue that** _(phrase)_ — AI false-balance hedging phrase.  _e.g._ "One could argue that both sides have merit."
+- 🟠 **One might argue that** _(phrase)_ — AI impersonal hedging opener for counterpoints.  _e.g._ "One might argue that the cost is prohibitive."
+- 🟠 **One must consider** _(phrase)_ — Impersonal directive phrasing typical of AI essays.  _e.g._ "One must consider the long-term impact."
+- 🟡 **One should remember** _(phrase)_ — Impersonal reminder phrasing common in AI prose.  _e.g._ "One should remember that context matters."
+
 ## academic-AI crossover  (2)
 
 - 🔴 **tapestry / woven** _(word)_ — The single most notorious ChatGPT tell (one editor: it's never used innocently); when 'tapestry of [life/dreams]' or 'woven' appears in lyrics it screams LLM lyric-writing.  _e.g._ "A tapestry of love and pain"
 - 🟠 **resonate / it resonates** _(word)_ — On the 21 ChatGPT 'focal words' spike list; 'resonate' is LLM register, conspicuous in lyrics where a plainer word would fit.  _e.g._ "These words still resonate in me"
+
+## additive  (1)
+
+- 🟡 **This, but also** _(phrase)_ — Weak additive connector pattern common in AI listing.  _e.g._ "This, but also that."
 
 ## adversity  (2)
 
@@ -1598,16 +1621,30 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **writing my own story / rewriting the ending** _(trope)_ — The meta 'life-as-a-book' agency image is an AI favorite because it's flattering and theme-agnostic; 'rewrite the ending' is a self-contained empowerment cliché.  _e.g._ "I'm writing my own story, rewriting the end"
 
+## AI closer  (2)
+
+- 🔴 **I hope this answers your question!** _(closer)_ — Classic chatbot sign-off appended to responses, strong AI tell.  _e.g._ "...I hope this answers your question!"
+- 🔴 **I hope you found this helpful** _(closer)_ — Formulaic assistant wrap-up line rarely used by human writers.  _e.g._ "...I hope you found this helpful!"
+
 ## AI rhetorical pattern  (2)
 
 - 🔴 **it's not just X, it's Y** _(trope)_ — The defining AI antithesis structure ('not just a lipstick, an attitude'). Bleeds into both ad-copy and lyrics; its repeated negate-then-elevate shape is one of the most recognizable AI cadences.  _e.g._ "It's not just a song, it's a feeling"
 - 🟠 **rule of three (forced third item)** _(structure)_ — AI compulsively completes lists to three even when two suffice, and stacks adjective-adjective-adjective. The mechanical triple — in prose lists or lyric lines — is a structural fingerprint independent of vocabulary.  _e.g._ "It's bold, beautiful, and unforgettable"
+
+## AI trope  (1)
+
+- 🟠 **Appeals to unnamed authority** _(trope)_ — Vague authority citations ('experts say', 'studies show') are a hallmark of AI-generated persuasion.  _e.g._ "Experts agree this is the best approach."
 
 ## AI word-spike  (3)
 
 - 🔴 **resonate / resonates** _(word)_ — Directly identified in the 'Why does ChatGPT delve so much' focal-word study; bleeds into lyrics as 'let it resonate,' an academic-register word that exposes the model's training accent.  _e.g._ "Let the silence resonate within"
 - 🔴 **whisper / whispers** _(word)_ — Explicitly cited by AI-lyric critics as imagery that 'appears in every song.' AI uses whisper as a soft-dynamic contrast word that sounds poetic but is now an instant generator fingerprint.  _e.g._ "I hear the whispers calling out my name"
 - 🟠 **embrace the / embrace** _(word)_ — AI's favorite uplifting transitive verb (embrace the pain/darkness/light); flagged in overused-word lists. In lyrics it pairs with an abstract noun to fake a resolution.  _e.g._ "Embrace the darkness, let it set you free"
+
+## AI-favored adjective  (2)
+
+- 🟠 **Remarkable** _(word)_ — Overused superlative adjective typical of AI enthusiasm.  _e.g._ "A remarkable achievement in engineering."
+- 🟡 **Noteworthy** _(word)_ — Evaluative adjective LLMs overuse to flag importance.  _e.g._ "A noteworthy development in the field."
 
 ## AI-prose rhetorical frame  (1)
 
@@ -1616,6 +1653,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## AI-prose vocabulary spike  (1)
 
 - 🟠 **realm ('in the realm of')** _(word)_ — Documented ChatGPT focal word; an inflated synonym for 'area/field' that also crosses into lyrics for grandiose effect.
+
+## AI-tool marketing  (1)
+
+- 🟡 **Fully undetectable** _(phrase)_ — Marketing claim used by AI humanizer tools, itself a formulaic hype phrase.  _e.g._ "100% fully undetectable output"
 
 ## ambition  (1)
 
@@ -2108,9 +2149,23 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **kael** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🟠 **lyra** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 
+## antithesis  (2)
+
+- 🔴 **This isn't a tactics problem. It's a positioning problem** _(template)_ — Instance of the AI negation-reframe formula swapping X for Y.  _e.g._ "This isn't a tactics problem. It's a positioning problem."
+- 🔴 **This isn't a X. It's a Y** _(template)_ — Signature AI negation-reframe template used for dramatic contrast.  _e.g._ "This isn't a bug. It's a feature."
+
 ## antithesis scaffold  (1)
 
 - 🔴 **it's not just X, it's Y** _(structure)_ — Identified on tropes.fyi and Hacker News as the single most common AI tell: a contrast template that creates false profundity by framing every point as a surprising reframe. People did not write this at scale before LLMs; likely reinforced by RLHF/RLVR reward shaping.  _e.g._ "It's not just a song, it's a feeling"
+
+## antithesis template  (1)
+
+- 🔴 **It is not just about X, it is also about Y** _(template)_ — Formulaic AI antithesis construction contrasting two ideas for false depth.  _e.g._ "It is not just about speed, it is also about accuracy."
+
+## archaic diction  (2)
+
+- 🟡 **herein** _(word)_ — Archaic legalese AI sometimes emits in formal writing.  _e.g._ "The terms described herein..."
+- 🟡 **heretofore** _(word)_ — Archaic formal word rare in natural prose.  _e.g._ "A heretofore unseen approach."
 
 ## aspiration  (5)
 
@@ -2124,6 +2179,31 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **Chasing dreams / Chasing the horizon** _(phrase)_ — 'Chasing ___' aspiration frame is the model's default forward-motion image; 'dreams' and 'horizon' are the highest-probability objects, making the whole construction formulaic.  _e.g._ "Chasing dreams across the open sky"
 - 🟠 **reaching for the stars** _(phrase)_ — Dead-metaphor aspiration line; AI reaches for it as a safe uplift gesture, and it tends to drag in 'sky's the limit' / 'shoot for the moon' neighbors.  _e.g._ "We're reaching for the stars tonight"
+
+## assistant boilerplate  (4)
+
+- 🔴 **Certainly! I'd be happy to** _(opener)_ — Signature chatbot compliance opener that leaks the assistant persona.  _e.g._ "Certainly! I'd be happy to help with that."
+- 🔴 **certainly, here's** _(opener)_ — Canonical AI-assistant lead-in before delivering an answer.  _e.g._ "Certainly, here's an example you can use."
+- 🔴 **I'd be glad to help with that** _(phrase)_ — Classic chatbot acknowledgment that betrays an AI assistant persona.  _e.g._ "I'd be glad to help with that! Here are some ideas."
+- 🔴 **I'm happy to clarify or expand on any point** _(closer)_ — Stock closing offer from chat assistants, almost never written by humans.  _e.g._ "I'm happy to clarify or expand on any point!"
+
+## assistant framing  (2)
+
+- 🟠 **Allow me to explain** _(phrase)_ — Conversational assistant-voice lead-in typical of chatbot output.  _e.g._ "Allow me to explain how this works."
+- 🟠 **Allow me to introduce** _(phrase)_ — Chatbot-style presentational phrase rarely used in natural prose.  _e.g._ "Allow me to introduce a new concept."
+
+## assistant sign-off  (1)
+
+- 🔴 **Let me know if you'd like me to elaborate** _(closer)_ — Signature chatbot closing offer that leaks assistant framing into prose.  _e.g._ "Let me know if you'd like me to elaborate!"
+
+## assistant tell  (2)
+
+- 🔴 **Based on the information provided** _(phrase)_ — Chatbot boilerplate referencing supplied context, a strong assistant tell.  _e.g._ "Based on the information provided, I recommend..."
+- 🔴 **Based on what you've said** _(phrase)_ — Chatbot boilerplate summarizing user input, a strong assistant tell.  _e.g._ "Based on what you've said, here are options."
+
+## assistant-signoff  (1)
+
+- 🔴 **Is there anything else I can help you with?** _(closer)_ — Chatbot sign-off leaking into content is near-proof of AI assistant output.  _e.g._ "Is there anything else I can help you with?"
 
 ## atmosphere  (1)
 
@@ -2153,6 +2233,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **chasing shadows / running from the dark** _(trope)_ — Shadow/darkness as a pursued or pursuing threat is an AI default for fear and avoidance; the abstract 'shadows' never resolve to a real danger.  _e.g._ "I've been chasing shadows all my life"
 
+## awkward-transition  (1)
+
+- 🟡 **Needlessly enough** _(phrase)_ — Odd sentence-initial adverb phrases like this are a subtle AI awkwardness tell.  _e.g._ "Needlessly enough, the process is simple."
+
 ## belonging/return  (1)
 
 - 🟠 **finding my way back home** _(trope)_ — The 'journey home' as resolution is an AI structural default; 'home' is an abstract emotional destination, never a specific place, signaling generic closure.  _e.g._ "I'm finding my way back home tonight"
@@ -2160,6 +2244,19 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## body/fatigue imagery  (1)
 
 - 🔴 **weary bones** _(phrase)_ — AI pairs 'weary' with body-parts to fake hard-lived experience; 'weary bones' signals exhaustion without any concrete cause or scene.  _e.g._ "Rest these weary bones tonight"
+
+## booster  (5)
+
+- 🟠 **Exemplary** _(word)_ — Formal praise adjective AI overuses to describe quality.  _e.g._ "exemplary performance"
+- 🟠 **Invaluable** _(word)_ — Superlative praise word AI overuses to inflate value.  _e.g._ "an invaluable resource"
+- 🟡 **Essential** _(word)_ — Overused emphasis word AI uses to inflate importance.  _e.g._ "It is essential to understand"
+- 🟡 **Significant** _(word)_ — Overused vague quantifier AI leans on instead of concrete detail.  _e.g._ "a significant improvement"
+- 🟡 **Substantial** _(word)_ — Vague quantifier AI uses instead of concrete numbers.  _e.g._ "a substantial increase"
+
+## booster adverb  (2)
+
+- 🟡 **Remarkably** _(word)_ — Editorializing adverb AI sprinkles to signal significance.  _e.g._ "Remarkably, the trend held."
+- 🟡 **Undoubtedly** _(word)_ — Overconfident hedge-adverb AI uses to assert without evidence.  _e.g._ "Undoubtedly, this is the best option."
 
 ## breakage cliché  (1)
 
@@ -2172,6 +2269,47 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## burden  (1)
 
 - 🟠 **carrying the weight of the world** _(trope)_ — Atlas-style burden imagery ('weight of the world on my shoulders') is a default depiction of stress the model reaches for instead of a specific pressure. The burden is total and abstract, so it reads as stock heaviness.  _e.g._ "Carrying the weight of the world on my shoulders"
+
+## business cliche  (2)
+
+- 🟠 **Hit the ground running** _(phrase)_ — Stock corporate idiom AI reaches for to describe fast starts.  _e.g._ "New hires hit the ground running from day one."
+- 🟡 **Win-win** _(phrase)_ — Stock business idiom that recurs in AI-generated persuasive and corporate text.  _e.g._ "It's a win-win for everyone."
+
+## business hype  (2)
+
+- 🟠 **Comprehensive solution** _(phrase)_ — Vague AI-favored marketing descriptor with no concrete meaning.  _e.g._ "a comprehensive solution for all your needs"
+- 🟡 **Change the game** _(phrase)_ — Overused hype cliche common in AI-generated marketing prose.  _e.g._ "This tool will change the game for your workflow."
+
+## business jargon  (18)
+
+- 🟠 **competitive landscape** _(phrase)_ — Stock business-metaphor phrase heavily favored by AI writing.  _e.g._ "navigating the competitive landscape"
+- 🟠 **core competency** _(phrase)_ — Corporate buzzphrase AI leans on to sound authoritative.  _e.g._ "leveraging our core competency"
+- 🟠 **Disrupting the industry** _(phrase)_ — Overused startup/marketing cliche that AI reaches for to sound innovative.  _e.g._ "This app is disrupting the industry."
+- 🟠 **Disruptive innovation** _(phrase)_ — Buzzword pairing AI overuses when describing tech or business ideas.  _e.g._ "A truly disruptive innovation."
+- 🟠 **Drive meaningful impact** _(phrase)_ — Empty impact-language AI reaches for in corporate copy.  _e.g._ "We drive meaningful impact for clients."
+- 🟠 **Drive sustainable growth** _(phrase)_ — Vague corporate-growth cliche typical of AI marketing prose.  _e.g._ "Strategies that drive sustainable growth."
+- 🟠 **Driving innovation** _(phrase)_ — Buzzword phrase AI uses to signal forward-thinking.  _e.g._ "Driving innovation across sectors."
+- 🟠 **Ecosystem of** _(phrase)_ — Overused metaphor AI applies to any collection of tools or partners.  _e.g._ "A rich ecosystem of solutions."
+- 🟠 **Empower your team** _(phrase)_ — Corporate empowerment cliche typical of AI marketing.  _e.g._ "Empower your team to do more."
+- 🟡 **A strategic** _(word)_ — 'Strategic' is an overused AI qualifier in business writing.  _e.g._ "a strategic decision"
+- 🟡 **cost optimization** _(phrase)_ — Corporate buzzphrase AI inserts to sound results-oriented.  _e.g._ "focused on cost optimization"
+- 🟡 **Domain** _(word)_ — Abstract corporate noun AI overuses to mean 'field'.  _e.g._ "Experts in their domain."
+- 🟡 **Domain expertise** _(phrase)_ — Corporate phrasing AI leans on for credibility framing.  _e.g._ "Our domain expertise sets us apart."
+- 🟡 **Drill down** _(phrase)_ — Corporate verb AI overuses for analysis framing.  _e.g._ "Let's drill down into the numbers."
+- 🟡 **Dynamic environment** _(phrase)_ — Vague corporate descriptor AI overuses.  _e.g._ "In today's dynamic environment."
+- 🟡 **Emerging technologies** _(phrase)_ — Vague tech-trend phrase AI uses as filler.  _e.g._ "The rise of emerging technologies."
+- 🟡 **End-to-end** _(phrase)_ — Overused corporate qualifier AI attaches to solutions.  _e.g._ "An end-to-end solution."
+- 🟡 **Value proposition** _(word)_ — Corporate buzz-phrase heavily overused in AI-generated business and marketing copy.  _e.g._ "Our value proposition sets us apart."
+
+## buzzword  (3)
+
+- 🟠 **Innovative approach** _(phrase)_ — Empty marketing buzzphrase AI reaches for to signal novelty.  _e.g._ "Our innovative approach transforms results."
+- 🟡 **Authentic** _(word)_ — Overused value-signaling adjective in AI marketing copy.  _e.g._ "An authentic brand experience."
+- 🟡 **touchpoint** _(word)_ — Corporate AI jargon for a point of contact.  _e.g._ "Every customer touchpoint matters."
+
+## buzzword phrase  (1)
+
+- 🟠 **At the forefront of** _(phrase)_ — Overused promotional phrase positioning a subject as a leader.  _e.g._ "At the forefront of innovation."
 
 ## celestial light  (2)
 
@@ -2186,6 +2324,18 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **heart of gold** _(phrase)_ — Dead idiom for 'good person'; the model uses it as a ready-made descriptor instead of showing the trait. A greeting-card phrase that signals default output.
 
+## chatbot compliance opener  (1)
+
+- 🔴 **Of course! Let me** _(opener)_ — Signature chatbot eager-compliance reply opener.  _e.g._ "Of course! Let me help you with that."
+
+## chatbot preamble  (1)
+
+- 🔴 **Absolutely! Here's what you need** _(opener)_ — Enthusiastic affirmation preamble is a direct tell of a chatbot response.  _e.g._ "Absolutely! Here's what you need to know."
+
+## chatbot sign-off  (1)
+
+- 🟠 **Feel free to reach out if you have questions!** _(closer)_ — Stock helpful-assistant closing line that AI appends to messages and posts.  _e.g._ "Feel free to reach out if you have questions!"
+
 ## city set-dressing cliché  (1)
 
 - 🟠 **city that never sleeps** _(phrase)_ — Borrowed stock idiom the model inserts for urban atmosphere; flags AI because it's a ready-made phrase used instead of an observed detail of an actual place.  _e.g._ "Lost in the city that never sleeps"
@@ -2194,9 +2344,85 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **dust motes** _(phrase)_ — 'Dust motes dancing in sunlight' — AI scene-dressing fixation.
 
-## closer  (1)
+## cliche  (11)
 
+- 🔴 **To unlock the power of** _(phrase)_ — Hallmark AI marketing cliche promising hidden potential.  _e.g._ "To unlock the power of AI in your workflow..."
+- 🔴 **To unlock the secrets of** _(phrase)_ — Signature AI clickbait framing promising revealed knowledge.  _e.g._ "To unlock the secrets of great writing..."
+- 🔴 **Transform the way you** _(phrase)_ — Stock AI marketing template promising sweeping change.  _e.g._ "Transform the way you work with this app."
+- 🔴 **Transform your business** _(phrase)_ — Overused AI corporate marketing hook.  _e.g._ "Transform your business with automation."
+- 🔴 **Transformative power** _(phrase)_ — Grandiose AI phrase inflating significance.  _e.g._ "The transformative power of technology."
+- 🔴 **transforming the way** _(phrase)_ — Hallmark AI phrase overstating a product's impact.  _e.g._ "It's transforming the way we communicate."
+- 🟠 **To pave the way for** _(phrase)_ — Overused AI metaphor for enabling something.  _e.g._ "This paves the way for future growth."
+- 🟠 **To shed light on** _(phrase)_ — Overused AI phrase for introducing an explanation.  _e.g._ "To shed light on this issue..."
+- 🟠 **Win-win situation** _(phrase)_ — Business-cliche AI leans on to signal mutual benefit.  _e.g._ "This creates a win-win situation for everyone."
+- 🟠 **with a keen eye on** _(phrase)_ — Stock ornamental phrase AI uses to convey attentiveness.  _e.g._ "With a keen eye on quality, we deliver results."
+- 🟡 **reaching new heights** _(phrase)_ — Generic aspirational idiom frequently produced by AI writing.  _e.g._ "The team is reaching new heights."
+
+## cliche idiom  (4)
+
+- 🟠 **The genie is out of the bottle** _(phrase)_ — A stock idiom AI reaches for when describing irreversible technological change.  _e.g._ "With AI, the genie is out of the bottle."
+- 🟠 **The plot thickens** _(phrase)_ — A stock narrative idiom AI inserts for faux suspense.  _e.g._ "And then the plot thickens."
+- 🟡 **Get the ball rolling** _(phrase)_ — Stock idiom LLMs lean on to signal starting an action.  _e.g._ "Let's get the ball rolling on this project."
+- 🟡 **Left to chance** _(phrase)_ — Filler idiom AI reaches for to sound decisive.  _e.g._ "Nothing was left to chance."
+
+## cliché idiom  (1)
+
+- 🟡 **Best of both worlds** _(phrase)_ — Stock idiom LLMs reach for to praise a compromise.  _e.g._ "It offers the best of both worlds."
+
+## cliche metaphor  (3)
+
+- 🟠 **tap into** _(phrase)_ — Overused AI metaphor for accessing a resource or potential.  _e.g._ "Tap into the power of AI."
+- 🟠 **the road ahead** _(closer)_ — An overused AI metaphor for the future, common in conclusions.  _e.g._ "The road ahead is full of promise."
+- 🟡 **golden ticket** _(phrase)_ — Overused metaphor for an ideal opportunity or solution.  _e.g._ "AI isn't a golden ticket to success."
+
+## cliché metaphor  (1)
+
+- 🟠 **uncharted waters** _(phrase)_ — Stock exploration metaphor AI leans on for novelty.  _e.g._ "We are entering uncharted waters."
+
+## cliche opener  (5)
+
+- 🟠 **It is no secret that** _(opener)_ — Tired rhetorical opener AI reaches for to assert consensus.  _e.g._ "It is no secret that data drives decisions."
+- 🟠 **It is often said that** _(opener)_ — Vague appeal-to-authority opener typical of AI prose.  _e.g._ "It is often said that practice makes perfect."
+- 🟠 **It is widely believed that** _(opener)_ — Unsourced consensus claim AI uses to open paragraphs.  _e.g._ "It is widely believed that exercise helps."
+- 🟠 **It stands to reason that** _(opener)_ — Pseudo-logical AI connector used to assert conclusions.  _e.g._ "It stands to reason that costs will rise."
+- 🟠 **It's commonly understood that** _(opener)_ — Vague consensus opener characteristic of AI prose.  _e.g._ "It's commonly understood that sleep matters."
+
+## cliche reframing  (1)
+
+- 🟠 **X is the new Y** _(template)_ — Overused reframing cliche frequently produced by AI to sound punchy.  _e.g._ "Data is the new oil."
+
+## cliche-idiom  (1)
+
+- 🟠 **Think outside the box** _(phrase)_ — Stock creativity cliche AI overuses in place of concrete suggestions.  _e.g._ "You need to think outside the box here."
+
+## cliche-metaphor  (1)
+
+- 🔴 **To embark on a journey** _(phrase)_ — Overwrought journey metaphor strongly associated with AI prose.  _e.g._ "Let's embark on a journey to learn Python."
+
+## clickbait  (3)
+
+- 🟠 **What they don't want you to know** _(phrase)_ — Conspiratorial clickbait framing AI generates for listicles.  _e.g._ "The secret they don't want you to know."
+- 🟠 **You're going to want to bookmark this** _(phrase)_ — Formulaic AI blog hook urging the reader to save the page.  _e.g._ "You're going to want to bookmark this guide."
+- 🟡 **The secrets of** _(phrase)_ — A clickbait AI framing promising hidden knowledge.  _e.g._ "The secrets of viral content."
+
+## clickbait opener  (2)
+
+- 🔴 **The secret that [industry] doesn't want you to know:** _(template)_ — A clickbait AI hook that manufactures conspiracy and exclusivity.  _e.g._ "The secret that dentists don't want you to know:"
+- 🟠 **The ultimate list of [X]:** _(template)_ — A listicle AI hook overselling comprehensiveness.  _e.g._ "The ultimate list of productivity tools:"
+
+## clickbait template  (1)
+
+- 🟠 **From zero to X in 48 hours** _(template)_ — Formulaic growth-hype headline pattern common in AI marketing copy.  _e.g._ "From zero to hero in 48 hours"
+
+## closer  (3)
+
+- 🟠 **Happy [doing task]!** _(template)_ — Cheery AI sign-off template like 'Happy coding!' or 'Happy writing!'.  _e.g._ "Happy coding!"
+- 🟠 **To wrap up** _(closer)_ — Formulaic AI conclusion opener.  _e.g._ "To wrap up, here are the takeaways."
 - 🟡 **in the end** _(phrase)_ — AI's reflexive summarizing connective bleeding from prose into lyrics. It signals a wrap-up the song hasn't earned and is a known cross-domain ChatGPT tic.  _e.g._ "In the end, all that matters is love"
+
+## closer-hype  (1)
+
+- 🟠 **This is just the beginning** _(closer)_ — Formulaic forward-looking closer AI tacks onto conclusions.  _e.g._ "And this is just the beginning."
 
 ## clothing  (2)
 
@@ -2219,6 +2445,18 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **You're the missing piece (of my puzzle)** _(phrase)_ — A puzzle/completion metaphor the model reaches for as a variant of 'you complete me'; the jigsaw image is so worn it signals template-filling.  _e.g._ "You're the missing piece I've searched my whole life for"
 
+## conclusion  (1)
+
+- 🟠 **With that, we conclude** _(closer)_ — Formulaic sign-off that mechanically announces the ending.  _e.g._ "With that, we conclude our overview."
+
+## conclusion marker  (1)
+
+- 🟠 **In the final analysis** _(closer)_ — Formal summing-up phrase AI uses to signal a conclusion.  _e.g._ "In the final analysis, patience wins."
+
+## conclusion signpost  (1)
+
+- 🟠 **To wrap things up** _(closer)_ — Formulaic conclusion transition AI uses to signal an ending.  _e.g._ "To wrap things up, here are the takeaways."
+
 ## conflict/regret  (1)
 
 - 🟠 **shame/blame/game** _(rhyme_pair)_ — A three-way -ame cluster AI strings together in accusatory verses ('not my shame / take the blame / play your game'); chaining all three signals exhausting the easy rhyme bucket rather than crafting.  _e.g._ "It's not my shame / you take the blame / playing your game"
@@ -2228,9 +2466,173 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **intertwined / entwined** _(word)_ — Overwrought word for 'connected'; the model uses it for love/fate themes because it sounds poetic. Rarely chosen by human lyricists, so it stands out as model vocabulary.
 - 🟠 **intertwined / tangled** _(word)_ — Named AI default tokens ('intertwined,' 'tangled sheets'). The model uses physical-entanglement words as upscale substitutes for 'together,' a recognizable reach for poetic-sounding filler.  _e.g._ "Our souls forever intertwined"
 
+## contrarian hook  (1)
+
+- 🟠 **The bottleneck isn't X. It's Y** _(template)_ — Formulaic LinkedIn-style contrarian reveal template.  _e.g._ "The bottleneck isn't talent. It's process."
+
+## contrarian-hook  (1)
+
+- 🟠 **Most people think it's X. It's actually Y** _(template)_ — 'Most people think X, it's actually Y' is a stock AI/social contrarian hook.  _e.g._ "Most people think it's talent. It's actually consistency."
+
+## contrast template  (1)
+
+- 🟠 **Forget X. Focus on Y** _(template)_ — Punchy dismiss-then-redirect pattern AI uses for engagement copy.  _e.g._ "Forget followers. Focus on trust."
+
+## conversational filler  (10)
+
+- 🟠 **Let me be clear** _(opener)_ — Emphatic hedge-opener AI uses before restating a point.  _e.g._ "Let me be clear: this matters."
+- 🟠 **Let me break this down for you** _(opener)_ — Classic chatbot framing phrase before an explanation.  _e.g._ "Let me break this down for you."
+- 🟠 **Let us break this down** _(opener)_ — Formal variant of the chatbot 'break this down' explainer opener.  _e.g._ "Let us break this down."
+- 🟠 **Let's unpack** _(opener)_ — Trendy AI verb-opener for beginning an explanation.  _e.g._ "Let's unpack this."
+- 🟡 **Don't get me wrong** _(phrase)_ — Manufactured conversational hedge AI inserts to seem casual.  _e.g._ "Don't get me wrong, it has its uses."
+- 🟡 **Let us consider** _(opener)_ — Stiff essayistic opener typical of AI-generated exposition.  _e.g._ "Let us consider the implications."
+- 🟡 **Let us explore this** _(opener)_ — Generic AI transition into a topic.  _e.g._ "Let us explore this further."
+- 🟡 **Let's examine this further** _(opener)_ — Formulaic AI transition to continue analysis.  _e.g._ "Let's examine this further."
+- 🟡 **Let's look into this idea** _(opener)_ — Generic AI lead-in to elaboration.  _e.g._ "Let's look into this idea."
+- 🟡 **Let's talk about** _(opener)_ — Casual AI section-opener before introducing a topic.  _e.g._ "Let's talk about pricing."
+
+## corporate  (7)
+
+- 🔴 **Seamless integration** _(phrase)_ — Classic AI marketing cliche rarely written naturally by humans.  _e.g._ "Enjoy seamless integration with your existing tools."
+- 🟠 **Roadmap towards** _(phrase)_ — Business-jargon transition favored by LLMs framing next steps.  _e.g._ "This provides a roadmap towards sustainable growth."
+- 🟠 **Robust framework** _(phrase)_ — Overused AI adjective-noun pairing signaling generic authority.  _e.g._ "We built a robust framework for analysis."
+- 🟠 **Robust solution** _(phrase)_ — Formulaic AI product/marketing phrasing.  _e.g._ "This offers a robust solution to complex problems."
+- 🟠 **Scalable solution** _(phrase)_ — Stock AI business-speak pairing common in generated copy.  _e.g._ "A scalable solution for growing teams."
+- 🟡 **risk mitigation** _(phrase)_ — Corporate-jargon pairing LLMs reach for in business prose.  _e.g._ "Our risk mitigation strategy covers all scenarios."
+- 🟡 **root cause analysis** _(phrase)_ — Business-jargon phrase frequently inserted by AI in process writing.  _e.g._ "We conducted a root cause analysis of the outage."
+
+## corporate boilerplate  (1)
+
+- 🔴 **Aims to foster innovation and collaboration** _(phrase)_ — Empty buzzword cluster that reads as pure AI mission-statement filler.  _e.g._ "The initiative aims to foster innovation and collaboration."
+
+## corporate buzz  (4)
+
+- 🟠 **Spearhead the movement** _(phrase)_ — Grandiose business cliche typical of AI marketing copy.  _e.g._ "We spearhead the movement toward change."
+- 🟠 **Streamlined processes** _(phrase)_ — Hollow efficiency cliche characteristic of AI business writing.  _e.g._ "our streamlined processes save time"
+- 🟡 **Strategic** _(word)_ — Vague business buzzword AI overuses as filler.  _e.g._ "a strategic solution"
+- 🟡 **Streamlines** _(word)_ — Overused efficiency verb in AI marketing prose.  _e.g._ "streamlines your workflow"
+
+## corporate buzzphrase  (3)
+
+- 🟠 **Operational efficiency** _(phrase)_ — Overused AI business-jargon phrase.  _e.g._ "boosting operational efficiency across teams"
+- 🟠 **operational excellence** _(phrase)_ — Empty AI corporate-jargon collocation.  _e.g._ "a culture of operational excellence"
+- 🟡 **pain point** _(phrase)_ — AI marketing-jargon term for customer problems.  _e.g._ "addressing your biggest pain point"
+
+## corporate buzz-phrase  (3)
+
+- 🟠 **Foster innovation** _(phrase)_ — Stock business-speak collocation typical of AI-generated corporate prose.  _e.g._ "Our platform helps foster innovation across teams."
+- 🟠 **Strategic alignment** _(phrase)_ — Empty business jargon collocation typical of AI corporate output.  _e.g._ "Ensuring strategic alignment across departments."
+- 🟡 **Going forward** _(phrase)_ — Business filler transition common in AI wrap-ups.  _e.g._ "Going forward, we will monitor results."
+
+## corporate buzzword  (14)
+
+- 🔴 **Bridge the gap** _(phrase)_ — Extremely common AI transitional cliche for connecting two ideas.  _e.g._ "This tool helps bridge the gap between teams."
+- 🟠 **Best-in-class results** _(phrase)_ — Hollow superlative marketing filler AI reaches for to sound impressive.  _e.g._ "Deliver best-in-class results for your team."
+- 🟠 **Blue-sky thinking** _(phrase)_ — Stock business-jargon cliche for open-ended ideation.  _e.g._ "We need some blue-sky thinking here."
+- 🟠 **boil the ocean** _(phrase)_ — Cliche business idiom for an impossibly broad task.  _e.g._ "Let's not try to boil the ocean."
+- 🟠 **Bring to the table** _(phrase)_ — Stock business idiom for offered value.  _e.g._ "What do you bring to the table?"
+- 🟠 **digital transformation** _(phrase)_ — Corporate buzzword AI leans on for tech/business copy.  _e.g._ "Embrace digital transformation to stay competitive."
+- 🟠 **Forward-thinking** _(word)_ — Empty business praise word AI leans on to describe companies or leaders.  _e.g._ "a forward-thinking approach"
+- 🟠 **Holistic framework** _(phrase)_ — Empty consulting jargon pairing AI overuses.  _e.g._ "We offer a holistic framework for growth."
+- 🟠 **holistically** _(word)_ — Overused AI adverb signaling vague comprehensiveness.  _e.g._ "We approach the problem holistically."
+- 🟠 **Turnkey** _(word)_ — Corporate buzzword AI reaches for to describe ready-to-use solutions.  _e.g._ "A turnkey solution for enterprises."
+- 🟡 **Maximize** _(word)_ — Generic optimization verb LLMs overuse in business copy.  _e.g._ "Maximize your productivity today."
+- 🟡 **milestone** _(word)_ — Overused progress noun AI sprinkles into announcements.  _e.g._ "A major milestone for the project."
+- 🟡 **Pioneer** _(word)_ — Inflated marketing verb/noun common in AI business copy.  _e.g._ "We pioneer new solutions."
+- 🟡 **Spearhead** _(word)_ — Business-speak verb common in AI resume/corporate prose.  _e.g._ "She will spearhead the initiative."
+
+## corporate cliche  (13)
+
+- 🔴 **Pioneer new frontiers** _(phrase)_ — A grandiose exploration metaphor that AI uses to inflate ordinary innovation.  _e.g._ "we pioneer new frontiers in technology"
+- 🔴 **Propel your success** _(phrase)_ — A motivational marketing phrase typical of AI-generated business copy.  _e.g._ "strategies to propel your success"
+- 🔴 **Push the boundaries** _(phrase)_ — An overused innovation metaphor AI applies to ordinary progress.  _e.g._ "we push the boundaries of design"
+- 🔴 **Pushing the boundaries** _(phrase)_ — The progressive form of a heavily overused AI innovation cliche.  _e.g._ "pushing the boundaries of what's possible"
+- 🟠 **Low-hanging fruit** _(phrase)_ — Overused business metaphor common in AI corporate output.  _e.g._ "Start with the low-hanging fruit."
+- 🟠 **Mark a significant step forward** _(phrase)_ — Stock progress-hype phrase AI uses to inflate announcements.  _e.g._ "This marks a significant step forward for the team."
+- 🟠 **Move the needle** _(phrase)_ — Stock business idiom frequent in AI marketing prose.  _e.g._ "This change will really move the needle."
+- 🟠 **Propel** _(word)_ — A momentum verb AI reaches for in growth and success framing.  _e.g._ "propel your business forward"
+- 🟠 **Push the envelope** _(phrase)_ — A stale idiom AI recycles to signal ambition.  _e.g._ "always pushing the envelope"
+- 🟡 **Leading the charge** _(phrase)_ — Stock business idiom overused by AI to signal leadership or momentum.  _e.g._ "This company is leading the charge in innovation."
+- 🟡 **Level the playing field** _(phrase)_ — Overused business idiom AI defaults to for fairness/competition.  _e.g._ "This levels the playing field for small businesses."
+- 🟡 **Raise the bar** _(phrase)_ — Overused motivational business idiom common in AI-generated marketing prose.  _e.g._ "This tool raises the bar for content creation."
+- 🟡 **Touch base** _(phrase)_ — Business-speak idiom that shows up in AI professional copy.  _e.g._ "Let's touch base next week."
+
+## corporate diction  (1)
+
+- 🟡 **Facilitates** _(word)_ — Bureaucratic AI verb used in place of plainer wording.  _e.g._ "The platform facilitates communication."
+
+## corporate filler  (3)
+
+- 🟠 **offer a comprehensive** _(phrase)_ — Stock AI marketing collocation.  _e.g._ "We offer a comprehensive suite of tools."
+- 🟡 **collaborative environment** _(phrase)_ — Empty corporate phrasing AI reaches for to sound professional.  _e.g._ "fostering a collaborative environment"
+- 🟡 **continuous improvement** _(phrase)_ — Management-speak cliche AI defaults to in professional prose.  _e.g._ "a culture of continuous improvement"
+
+## corporate jargon  (24)
+
+- 🔴 **Actionable insights** _(phrase)_ — Stock AI business-speak pairing that promises value vaguely.  _e.g._ "deliver actionable insights"
+- 🔴 **Synergy** _(word)_ — Classic empty corporate buzzword AI reproduces in business writing.  _e.g._ "creating synergy across teams"
+- 🟠 **actionable** _(word)_ — Buzzword LLMs reach for when describing advice or insights.  _e.g._ "actionable insights"
+- 🟠 **Best practices** _(phrase)_ — Stock business phrase AI defaults to for recommendations.  _e.g._ "follow industry best practices"
+- 🟠 **Circle back** _(phrase)_ — Office-speak idiom AI reproduces in workplace prose.  _e.g._ "let's circle back on this"
+- 🟠 **Customer-centric** _(word)_ — Business buzzword AI reproduces in marketing copy.  _e.g._ "a customer-centric approach"
+- 🟠 **granular** _(word)_ — Overused AI buzzword for fine-grained detail.  _e.g._ "A more granular breakdown of the metrics."
+- 🟠 **granular detail** _(phrase)_ — Redundant AI phrase pairing an overused buzzword with 'detail'.  _e.g._ "Let's explore this in granular detail."
+- 🟠 **Mission-critical** _(word)_ — Corporate hype term AI reproduces in business writing.  _e.g._ "a mission-critical system"
+- 🟠 **Paradigm** _(word)_ — Pretentious buzzword AI uses for 'model' or 'approach'.  _e.g._ "a new paradigm"
+- 🟠 **synergistically** _(word)_ — Buzzword adverb flagged as an AI corporate tell.  _e.g._ "the teams work synergistically"
+- 🟠 **Synergize your efforts** _(phrase)_ — Empty business buzzphrase typical of AI-generated advice.  _e.g._ "Synergize your efforts to maximize output."
+- 🟠 **value-add** _(word)_ — Business buzzword AI reaches for to sound professional.  _e.g._ "The real value-add is the analytics layer."
+- 🟠 **value-added** _(word)_ — Stock corporate adjective typical of AI marketing copy.  _e.g._ "We offer value-added services."
+- 🟡 **Agile** _(word)_ — Business buzzword AI reuses in workplace/marketing copy.  _e.g._ "an agile approach"
+- 🟡 **Champion** _(word)_ — Buzzword verb AI uses for 'advocate' or 'support' in business prose.  _e.g._ "we champion innovation"
+- 🟡 **governance framework** _(phrase)_ — Corporate buzz-phrase AI overproduces in business writing.  _e.g._ "Establish a robust governance framework."
+- 🟡 **high-level** _(word)_ — Corporate hedge AI uses to describe a summary view.  _e.g._ "A high-level overview of the system."
+- 🟡 **regulatory compliance** _(word)_ — Business buzzword AI overuses in professional-sounding filler.  _e.g._ "ensuring regulatory compliance across sectors"
+- 🟡 **resource allocation** _(word)_ — Generic management jargon AI reaches for in filler prose.  _e.g._ "improving resource allocation"
+- 🟡 **resource optimization** _(word)_ — Abstract efficiency buzzword typical of AI business writing.  _e.g._ "focused on resource optimization"
+- 🟡 **revenue growth** _(word)_ — Business buzzword AI defaults to in generic professional copy.  _e.g._ "driving revenue growth"
+- 🟡 **subject matter experts** _(phrase)_ — Stock corporate filler phrase AI overuses in place of naming specific people.  _e.g._ "consult with subject matter experts"
+- 🟡 **war room** _(word)_ — Business cliche AI uses to dramatize collaboration.  _e.g._ "The team gathered in the war room."
+
+## corporate phrasing  (1)
+
+- 🟠 **Foster the development** _(phrase)_ — Formulaic AI verb phrase for enabling growth without concrete detail.  _e.g._ "to foster the development of new skills"
+
+## corporate verb  (4)
+
+- 🔴 **Aims to democratize** _(phrase)_ — Buzzword-laden mission phrasing strongly associated with AI marketing copy.  _e.g._ "aims to democratize access to data"
+- 🟠 **Aims to bridge** _(phrase)_ — Corporate-speak construction AI defaults to for mission statements.  _e.g._ "The project aims to bridge the gap."
+- 🟠 **Aims to elevate** _(phrase)_ — Inflated corporate verb phrase AI favors over plain wording.  _e.g._ "aims to elevate the customer experience"
+- 🟡 **Orchestrate** _(word)_ — AI-favored elevated verb for coordinating tasks.  _e.g._ "orchestrate a seamless workflow"
+
+## corporate-buzzword  (3)
+
+- 🟠 **thought leaders** _(word)_ — Corporate buzzword AI reaches for to describe experts.  _e.g._ "Industry thought leaders agree."
+- 🟠 **thought leadership** _(word)_ — Marketing-speak buzzphrase AI overuses.  _e.g._ "Build your thought leadership."
+- 🟡 **nimble** _(word)_ — 'Nimble' is stock AI business-speak for agile/flexible.  _e.g._ "stay nimble in a competitive market"
+
+## corporate-cliche  (4)
+
+- 🔴 **Navigate the ever-changing landscape** _(phrase)_ — Classic AI 'navigate + landscape' metaphor stacked with 'ever-changing'.  _e.g._ "To navigate the ever-changing landscape of technology..."
+- 🔴 **navigating the landscape** _(phrase)_ — 'Navigating the landscape' is a hallmark AI framing device for any topic.  _e.g._ "navigating the landscape of modern marketing"
+- 🟠 **Navigate the frontier** _(phrase)_ — 'Navigate the frontier' is a generic AI metaphor for exploring a new area.  _e.g._ "as we navigate the frontier of innovation"
+- 🟠 **new heights** _(phrase)_ — 'To new heights' is a formulaic AI aspirational closer.  _e.g._ "taking your business to new heights"
+
+## corporate-filler  (1)
+
+- 🟠 **industry best practices** _(phrase)_ — Vague corporate authority phrase AI inserts without specifics.  _e.g._ "We follow industry best practices."
+
+## corporate-transition  (1)
+
+- 🟡 **To circle back** _(phrase)_ — Corporate transition phrase AI uses to revisit a point.  _e.g._ "To circle back to the earlier point..."
+
 ## courage  (1)
 
 - 🟠 **facing my fears head-on** _(trope)_ — Generic courage beat with the stock intensifier 'head-on'; the fear is left abstract, which is what marks it as model-generated bravado.  _e.g._ "I'm facing all my fears head-on tonight"
+
+## cover-everyone-opener  (1)
+
+- 🔴 **Whether you're a X or Y** _(template)_ — Mad-lib inclusive opener AI uses to address every reader at once.  _e.g._ "Whether you're a beginner or a pro, this guide helps."
 
 ## cozy ambiance  (1)
 
@@ -2272,6 +2674,13 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **stand tall** _(phrase)_ — Posture-as-pride cliché that the model pairs reflexively with 'won't back down' and 'face the world.' It's a generic empowerment gesture with no specific stake, a frequent filler in AI bridge sections.  _e.g._ "I'll stand tall and face it all on my own"
 - 🟠 **won't let them dim my light / dim my shine** _(phrase)_ — Self-as-light-source empowerment built on the same overused light/dark binary. 'My light/my shine' as identity is a frozen pop-anthem move the model copies wholesale.  _e.g._ "You'll never dim my light no matter how you try"
 
+## delve family  (4)
+
+- 🔴 **Let us delve into the world of** _(opener)_ — Combines the 'delve' tell with the 'world of' framing, a strong AI marker.  _e.g._ "Let us delve into the world of finance."
+- 🔴 **Let's delve into** _(opener)_ — The single most notorious AI opener, built on the flagship 'delve' word.  _e.g._ "Let's delve into the details."
+- 🔴 **Let's delve into the exciting details** _(opener)_ — Pairs 'delve' with hype adjective 'exciting', a strong compound AI tell.  _e.g._ "Let's delve into the exciting details."
+- 🔴 **Let's delve into this** _(opener)_ — Bare 'delve' opener that strongly signals AI text.  _e.g._ "Let's delve into this."
+
 ## dependence  (1)
 
 - 🔴 **Can't live without you** _(phrase)_ — Maximal-dependency cliché flagged across songwriting guides; the model treats it as the default 'I love you strongly' statement, a clear unedited tell.  _e.g._ "Baby I can't live without you by my side"
@@ -2305,6 +2714,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **unwavering** _(word)_ — Focal-word list member. A motivational-register adjective ('unwavering commitment/dedication') that is out of place in neutral academic prose; its spike signals an LLM importing promotional tone into formal writing.  _e.g._ "With unwavering faith I press on"
 - 🟡 **'gentle' as an intensifier on things that aren't gentle** _(structure)_ — AI softens everything with 'gentle' regardless of fit.
 
+## discourse-marker  (2)
+
+- 🟠 **Interestingly** _(word)_ — AI sentence-opener adverb used to feign surprise or engagement.  _e.g._ "Interestingly, the results differed."
+- 🟡 **Inevitably** _(word)_ — Sentence-opening adverb AI uses to assert conclusions.  _e.g._ "Inevitably, costs will rise."
+
 ## dissolution cliché  (1)
 
 - 🟠 **Lost in time / Lost in a moment** _(phrase)_ — Listed on AI-cliché lists as generic nostalgia/confusion filler; 'lost in ___' is one of the model's most-used frames and 'time' is its most probable object.  _e.g._ "We were lost in time, just you and I"
@@ -2314,13 +2728,46 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **horizon** _(word)_ — Aspirational-distance noun. AI gestures to 'the horizon' as a generic symbol of future/hope ('reaching for the horizon'). Default uplift imagery, not an observed sky.  _e.g._ "Chasing the horizon line"
 - 🟡 **distant** _(word)_ — Default longing modifier (distant lights/shores/memory/thunder). Signals yearning across space without naming the place — quintessential atmospheric vagueness.  _e.g._ "Distant lights across the bay"
 
+## dive family  (1)
+
+- 🟠 **Let's dive into the topic** _(opener)_ — 'Dive into' opener AI uses to launch a section.  _e.g._ "Let's dive into the topic."
+
 ## dominance  (1)
 
 - 🟠 **power/hour** _(rhyme_pair)_ — 'Feel the power' + 'finest hour' (plus 'ivory tower', 'money shower') — the -ower family inflates ordinary brags with borrowed grandeur. 'Finest hour' is a cliché; the model uses 'power' as an abstract dominance-noun with no demonstrated source of it.  _e.g._ "Feel my power / This my finest hour"
 
-## editorializing  (1)
+## editorializing  (4)
 
+- 🟠 **Especially noteworthy** _(phrase)_ — AI hedge-emphasis phrase used to signpost the reader.  _e.g._ "Especially noteworthy is the fact that..."
+- 🟠 **Essential to understand the nuances** _(phrase)_ — Formulaic AI framing that flatters complexity without adding content.  _e.g._ "It is essential to understand the nuances of..."
+- 🟠 **Excitingly** _(word)_ — AI-favored sentence-opening adverb that injects manufactured enthusiasm.  _e.g._ "Excitingly, the results showed..."
 - 🟠 **leaves an indelible mark** _(phrase)_ — Wikipedia-listed puffery closer: something 'leaves an indelible mark' on something else. Vague significance-assertion with no concrete detail.  _e.g._ "Her work left an indelible mark on the genre."
+
+## elevated diction  (8)
+
+- 🟠 **Utilizes** _(word)_ — AI prefers 'utilizes' over the simpler 'uses'.  _e.g._ "The system utilizes advanced models."
+- 🟡 **draw on** _(phrase)_ — AI-favored phrasing for using experience or resources.  _e.g._ "We draw on decades of expertise."
+- 🟡 **glean** _(word)_ — Formal register word AI favors over plain 'gather' or 'learn'.  _e.g._ "We can glean valuable insights from the data."
+- 🟡 **grasp** _(word)_ — AI-favored word for understanding, often in 'grasp the concept'.  _e.g._ "To truly grasp the fundamentals..."
+- 🟡 **Hallmark** _(word)_ — AI-favored word for a defining characteristic.  _e.g._ "Efficiency is the hallmark of good design."
+- 🟡 **hinder** _(word)_ — Formal AI-favored verb for 'get in the way of'.  _e.g._ "This can hinder progress."
+- 🟡 **Underpinnings** _(word)_ — Formal AI-favored noun for underlying foundations.  _e.g._ "The theoretical underpinnings of the model."
+- 🟡 **Undertake** _(word)_ — Formal verb AI prefers over plainer 'do/start'.  _e.g._ "We will undertake a review."
+
+## elevated verb  (2)
+
+- 🟡 **Culminate** _(word)_ — Formal verb AI reaches for where plain 'end in' or 'lead to' would do.  _e.g._ "This culminates in a seamless experience."
+- 🟡 **Cultivate** _(word)_ — Overused polished verb for 'build' or 'grow' in AI prose.  _e.g._ "Cultivate a culture of innovation."
+
+## elevated vocabulary  (2)
+
+- 🟠 **linchpin** _(word)_ — Elevated metaphor word AI favors for 'key element'.  _e.g._ "This is the linchpin of the strategy."
+- 🟠 **Metamorphosis** _(word)_ — Grandiose word AI reaches for instead of 'change' or 'transformation'.  _e.g._ "A complete metamorphosis of the industry."
+
+## elevated-diction  (2)
+
+- 🔴 **to delve** _(word)_ — 'Delve' is a hallmark AI verb overused in exposition.  _e.g._ "Let's delve into the details."
+- 🟠 **to elucidate** _(word)_ — Formal register verb AI favors over plainer 'explain'.  _e.g._ "To elucidate the point..."
 
 ## embrace  (1)
 
@@ -2376,6 +2823,33 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **reclaiming my throne / taking back the crown** _(trope)_ — Royalty/throne imagery is AI's default for self-empowerment because it's grandiose and emotionally generic; the listener is rarely an actual monarch, so the borrowed grandeur is a tell of statistical prestige-reaching.  _e.g._ "I'm taking back my crown, reclaiming my throne"
 
+## empty adjective  (1)
+
+- 🟡 **Sophisticated** _(word)_ — Vague praise adjective AI applies without supporting evidence.  _e.g._ "a sophisticated approach"
+
+## empty elaboration  (1)
+
+- 🟠 **X is more than just Y** _(template)_ — Stock 'more than just' construction used to inflate a claim without adding substance, a hallmark of AI filler.  _e.g._ "Content is more than just words on a page."
+
+## empty emphasis  (7)
+
+- 🟠 **The data speaks for itself** _(phrase)_ — A filler rhetorical flourish AI uses to assert significance without evidence.  _e.g._ "The data speaks for itself: engagement is up."
+- 🟠 **The implications are staggering** _(phrase)_ — An overblown AI intensifier that asserts importance without specifics.  _e.g._ "The implications are staggering for the industry."
+- 🟠 **The market has spoken** _(phrase)_ — A stock rhetorical assertion AI uses to imply consensus.  _e.g._ "The market has spoken, and demand is clear."
+- 🟠 **The numbers don't lie** _(phrase)_ — A cliche AI phrase used to lend false authority to figures.  _e.g._ "The numbers don't lie: growth is real."
+- 🟠 **The results were eye-opening** _(phrase)_ — A cliche AI intensifier used to hype findings.  _e.g._ "We ran the test, and the results were eye-opening."
+- 🟠 **The transformative power of** _(phrase)_ — An inflated AI phrase pairing two buzzwords to hype impact.  _e.g._ "The transformative power of AI."
+- 🟠 **There is no doubt that** _(phrase)_ — A confident-sounding AI filler that asserts certainty without support.  _e.g._ "There is no doubt that this works."
+
+## empty intensifier  (6)
+
+- 🟠 **Truly transformative** _(phrase)_ — 'Truly' + grandiose adjective is a hallmark AI hype construction.  _e.g._ "This is a truly transformative approach."
+- 🟠 **Truly unique** _(phrase)_ — Redundant intensifier ('unique' is absolute) common in AI marketing prose.  _e.g._ "A truly unique solution for your needs."
+- 🟡 **absolutely essential** _(phrase)_ — Redundant intensifier pairing AI uses to overstate importance.  _e.g._ "it is absolutely essential to"
+- 🟡 **undeniable** _(word)_ — Overconfident intensifier AI uses to assert importance.  _e.g._ "The impact is undeniable."
+- 🟡 **Undoubtedly important** _(phrase)_ — Redundant intensifier pairing AI uses to assert significance.  _e.g._ "This factor is undoubtedly important."
+- 🟡 **Unquestionably** _(word)_ — Overconfident AI adverb asserting certainty.  _e.g._ "This is unquestionably the best option."
+
 ## endings/conflict  (1)
 
 - 🟠 **burning bridges** _(trope)_ — Explicitly named in AI lyric cliché lists; the idiom is reached for as the stock image for cutting ties, replacing a concrete depiction of the falling-out.  _e.g._ "Burning bridges as I walk away"
@@ -2387,9 +2861,65 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **through the fire and the flames** _(phrase)_ — Fire-as-adversity in its most doubled-up form (fire AND flames is redundant). The model stacks heat words to sound intense; the redundancy is itself a tell of phrase-padding rather than meaning.  _e.g._ "I walked through the fire and the flames to get to you"
 - 🟡 **hold on / just hold on** _(phrase)_ — Generic encouragement filler that fills a vocal hook with zero content. AI uses 'hold on' as a melodic placeholder in endurance choruses; its emptiness is the tell.  _e.g._ "Just hold on, hold on, we'll make it through"
 
+## engagement bait  (4)
+
+- 🟠 **Tag someone who needs to hear this** _(closer)_ — Formulaic social-media engagement-bait call to action.  _e.g._ "...Tag someone who needs to hear this."
+- 🟠 **Wait, it gets better** _(phrase)_ — Manufactured-enthusiasm transition AI inserts to hype the next point.  _e.g._ "Wait, it gets better: it's free."
+- 🟠 **What do you think? Drop your take below** _(closer)_ — Social-media engagement-bait sign-off AI generates for posts.  _e.g._ "What do you think? Drop your take below."
+- 🟠 **What would you add to this list?** _(closer)_ — Canned engagement-bait closer AI appends to listicles.  _e.g._ "What would you add to this list? Comment below."
+
+## engagement filler  (1)
+
+- 🟠 **Sit with that for a second** _(phrase)_ — Faux-reflective conversational aside AI inserts to feign gravitas.  _e.g._ "Sit with that for a second."
+
+## engagement hook  (4)
+
+- 🔴 **But here's what really stood out:** _(opener)_ — Formulaic listicle/LinkedIn hook AI uses to build false suspense.  _e.g._ "But here's what really stood out: the pricing."
+- 🔴 **But here's where it gets interesting:** _(opener)_ — Classic AI suspense-building transition into the payoff.  _e.g._ "But here's where it gets interesting: nobody noticed."
+- 🔴 **But that's not even the best part** _(opener)_ — Hype teaser AI overuses to string readers along.  _e.g._ "But that's not even the best part."
+- 🟠 **Can we talk about [X] for a second?** _(template)_ — Formulaic social-post opener AI uses to feign conversational intimacy.  _e.g._ "Can we talk about pricing for a second?"
+
+## engagement-bait  (3)
+
+- 🟠 **More people need to see this** _(phrase)_ — 'More people need to see this' is formulaic AI-generated social engagement bait.  _e.g._ "This is so true. More people need to see this."
+- 🟠 **Most people won't tell you this** _(phrase)_ — 'Most people won't tell you this' is a canned AI curiosity-gap hook.  _e.g._ "Most people won't tell you this, but..."
+- 🟠 **Nobody's talking about this** _(phrase)_ — 'Nobody's talking about this' is a stock AI social-post hook.  _e.g._ "Nobody's talking about this, but it changes everything."
+
+## epoch opener  (9)
+
+- 🔴 **In an era where** _(opener)_ — Formulaic time-setting opener that is a hallmark of AI intros.  _e.g._ "In an era where data is king..."
+- 🔴 **In the age of** _(opener)_ — Stock era-framing opener that flags AI-generated intros.  _e.g._ "In the age of AI, everything is changing."
+- 🔴 **In the constantly evolving field of** _(opener)_ — Bloated 'ever-changing landscape' opener signature to AI writing.  _e.g._ "In the constantly evolving field of marketing..."
+- 🔴 **In the dynamic world of** _(opener)_ — Cliche 'dynamic world' opener heavily favored by AI.  _e.g._ "In the dynamic world of startups..."
+- 🔴 **In the ever-changing world of** _(opener)_ — Quintessential AI opener pairing 'ever-changing' with a domain.  _e.g._ "In the ever-changing world of tech..."
+- 🔴 **In the fast-paced world** _(opener)_ — One of the most recognizable AI intro cliches.  _e.g._ "In the fast-paced world of business..."
+- 🟠 **In the current era** _(opener)_ — Generic time-setting opener typical of AI intros.  _e.g._ "In the current era, remote work is standard."
+- 🟠 **in the era of** _(opener)_ — Formulaic era-framing lead-in common in AI intros.  _e.g._ "In the era of big data..."
+- 🟠 **In the modern age** _(opener)_ — Generic modernity framing typical of AI openers.  _e.g._ "In the modern age, convenience rules."
+
+## epoch template  (2)
+
+- 🔴 **In an era where X** _(template)_ — Fill-in-the-blank era opener that reliably flags AI-generated intros.  _e.g._ "In an era where privacy is scarce..."
+- 🔴 **In the ever-changing world of X** _(template)_ — Templated 'ever-changing world of [domain]' opener characteristic of AI writing.  _e.g._ "In the ever-changing world of finance..."
+
 ## escape/together  (1)
 
 - 🟠 **Take my hand (and we'll fly away)** _(phrase)_ — Stock escape-with-me gesture; 'take my hand' + flying/running away is a grooved AI pattern for 'let's be together' that names no real destination.  _e.g._ "Take my hand and we'll fly away tonight"
+
+## essay scaffolding  (1)
+
+- 🟠 **Another important factor is** _(phrase)_ — Mechanical essay transition AI uses to enumerate points.  _e.g._ "Another important factor is cost."
+
+## essayistic AI opener  (1)
+
+- 🔴 **One cannot help but notice** _(opener)_ — Stilted impersonal-observer construction characteristic of AI prose.  _e.g._ "One cannot help but notice the growing trend."
+
+## essay-scaffold  (4)
+
+- 🔴 **This article explores** _(opener)_ — Classic AI article opener announcing the topic instead of getting into it.  _e.g._ "This article explores the future of work."
+- 🟠 **This aims to explore** _(opener)_ — Generic academic-style opener AI uses to state intent.  _e.g._ "This aims to explore the causes of..."
+- 🟠 **This paper aims to** _(opener)_ — Boilerplate academic intent-statement opener AI reproduces.  _e.g._ "This paper aims to examine..."
+- 🟠 **This study focuses on** _(opener)_ — Formulaic academic opener scoping the topic.  _e.g._ "This study focuses on urban migration."
 
 ## existential abstraction  (1)
 
@@ -2400,13 +2930,32 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **the abyss** _(word)_ — Part of the AI dark-grandiose vocabulary (void/abyss/oblivion) that spiked in generated poetic text; lends fake philosophical weight while saying nothing concrete.  _e.g._ "Staring down into the abyss"
 - 🟠 **the void** _(word)_ — Spiked in AI poetic vocabulary; used as a catch-all for emptiness, despair, or death. Reviewers note its overuse as a sign of recycled abstract imagery.  _e.g._ "Falling endlessly into the void"
 
+## explainer transition  (2)
+
+- 🟠 **In layman's terms** _(phrase)_ — Formulaic simplification cue frequent in AI explanations.  _e.g._ "In layman's terms, it means faster loading."
+- 🟠 **In simpler terms** _(phrase)_ — Textbook restatement cue AI inserts to re-explain a point.  _e.g._ "In simpler terms, it just works."
+
 ## eyes/gaze  (1)
 
 - 🔴 **Lost in your eyes** _(phrase)_ — Eye imagery is the single most over-trained romance trope; 'lost in your eyes' is its frozen canonical form. AI emits it as a reflex whenever it needs an intimacy line, with no specific detail about the eyes.  _e.g._ "I'm lost in your eyes, drowning in the blue"
 
+## fake credentials  (1)
+
+- 🔴 **As someone who [credentials], I can confirm** _(template)_ — AI fabricates lived-experience authority via a fill-in-the-blank credential claim.  _e.g._ "As someone who has worked in finance for years, I can confirm..."
+
+## fake personal hook  (2)
+
+- 🟠 **I've been sitting on this for weeks** _(opener)_ — Manufactured LinkedIn-style vulnerability hook AI uses to open posts.  _e.g._ "I've been sitting on this for weeks, but here goes."
+- 🟠 **I've never said this publicly before** _(opener)_ — Fabricated confession hook common in AI-written social posts.  _e.g._ "I've never said this publicly before, but..."
+
 ## fake-pivot transition  (1)
 
 - 🟠 **But here's the thing** _(phrase)_ — A manufactured-suspense pivot ('here's the kicker', 'here's the thing') AI uses to fake a conversational reveal; the staged confidentiality is a recognizable blog-bot mannerism.  _e.g._ "But here's the thing: it's harder than it looks."
+
+## false candor  (2)
+
+- 🟠 **I'll be honest** _(phrase)_ — AI often uses this faux-confessional framing to feign authenticity before a generic point.  _e.g._ "I'll be honest: this changes everything."
+- 🟠 **I'm going to be honest with you** _(phrase)_ — Formulaic honesty preamble AI uses to simulate a candid human voice.  _e.g._ "I'm going to be honest with you, most advice misses this."
 
 ## family/people  (2)
 
@@ -2434,14 +2983,98 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **the scent of ozone** _(phrase)_ — AI's go-to 'ozone' smell.
 
-## filler  (2)
+## filler  (14)
 
+- 🟠 **Capturing the attention** _(phrase)_ — Stock AI phrasing for grabbing interest.  _e.g._ "...capturing the attention of millions."
 - 🟠 **couldn't help but notice** _(phrase)_ — AI hedge.
+- 🟠 **shed light** _(phrase)_ — Overused AI transitional idiom for introducing findings.  _e.g._ "This study sheds light on the underlying causes."
+- 🟠 **shedding light on** _(phrase)_ — Overused AI transitional idiom padding explanations.  _e.g._ "The report is shedding light on hidden trends."
 - 🟠 **truth be told** _(phrase)_ — Filler opener.
+- 🟡 **In actual fact** _(phrase)_ — Wordy filler phrase AI uses in place of a plain statement.  _e.g._ "In actual fact, the opposite is true."
+- 🟡 **insights into** _(phrase)_ — Vague value-signaling phrase AI attaches to any topic.  _e.g._ "This guide offers insights into leadership."
+- 🟡 **Said another way** _(phrase)_ — AI restatement transition padding explanations.  _e.g._ "Said another way, the plan failed."
+- 🟡 **Serve as** _(phrase)_ — LLMs overuse this stiff connective where humans say 'is' or 'works as'.  _e.g._ "This can serve as a reminder of our goals."
+- 🟡 **The fact that** _(phrase)_ — A wordy AI-favored construction that pads sentences instead of stating the point directly.  _e.g._ "The fact that costs rose is concerning."
+- 🟡 **The importance of** _(phrase)_ — A generic AI framing that announces a topic's significance rather than demonstrating it.  _e.g._ "The importance of consistency cannot be overstated."
+- 🟡 **The potential of** _(phrase)_ — A generic AI framing hyping unrealized possibility.  _e.g._ "The potential of this technology is vast."
+- 🟡 **The power of** _(phrase)_ — An overused AI framing that inflates a topic's significance.  _e.g._ "The power of storytelling is undeniable."
+- 🟡 **Wide variety** _(phrase)_ — Vague quantifier phrase AI reaches for instead of specifics.  _e.g._ "A wide variety of options is available."
+
+## filler adverb  (3)
+
+- 🟡 **Obviously** _(word)_ — AI presumptive filler adverb that flattens tone.  _e.g._ "Obviously, this is a great choice."
+- 🟡 **Surely** _(word)_ — Presumptuous hedging adverb AI uses to assert reader agreement.  _e.g._ "Surely, you can see the value here."
+- 🟡 **Unsurprisingly** _(word)_ — AI-favored sentence-opener adverb signaling expected results.  _e.g._ "Unsurprisingly, engagement increased."
+
+## filler collocation  (1)
+
+- 🟠 **Ample opportunities** _(phrase)_ — Vague inflated collocation AI leans on to sound optimistic.  _e.g._ "offers ample opportunities for growth"
+
+## filler framing  (1)
+
+- 🟡 **Rapid pace of development** _(phrase)_ — Boilerplate AI framing about how fast a field moves.  _e.g._ "Given the rapid pace of development in AI..."
 
 ## filler idiom  (1)
 
 - 🟡 **time will tell** _(phrase)_ — Empty placeholder idiom the model uses to fill a line about the future; carries no concrete meaning, marking it as predictive padding.
+
+## filler modifier  (1)
+
+- 🟠 **rapidly evolving** _(phrase)_ — Stock AI framing phrase used to describe fields, industries, or technology.  _e.g._ "In the rapidly evolving world of AI..."
+
+## filler phrase  (10)
+
+- 🔴 **It is important to note** _(phrase)_ — Textbook AI throat-clearing phrase that adds no information.  _e.g._ "It is important to note that results vary."
+- 🔴 **Play a crucial role in** _(phrase)_ — A formulaic importance-signaling construction AI uses constantly.  _e.g._ "vitamins play a crucial role in health"
+- 🔴 **Play a pivotal role in** _(phrase)_ — A near-identical AI stock phrase asserting importance without evidence.  _e.g._ "leadership plays a pivotal role in success"
+- 🔴 **Underscore the importance of** _(phrase)_ — Classic AI transition emphasizing a point.  _e.g._ "This underscores the importance of planning."
+- 🟠 **Becomes increasingly evident** _(phrase)_ — Inflated formulaic phrase LLMs use to assert conclusions.  _e.g._ "It becomes increasingly evident that change is needed."
+- 🟠 **Plan accordingly** _(phrase)_ — A hollow advisory closer AI appends to how-to sections.  _e.g._ "budget your time and plan accordingly"
+- 🟡 **For all intents and purposes** _(phrase)_ — Common padding cliche AI uses to sound thorough without adding meaning.  _e.g._ "For all intents and purposes, it works."
+- 🟡 **fresh perspectives** _(phrase)_ — Vague value-add phrase AI uses to imply insight.  _e.g._ "offering fresh perspectives"
+- 🟡 **Hold promise** _(phrase)_ — Vague optimistic hedge AI uses to gesture at potential without specifics.  _e.g._ "These findings hold promise for future research."
+- 🟡 **Quite important** _(phrase)_ — A vague intensifier phrase AI uses to assert significance weakly.  _e.g._ "this is quite important to remember"
+
+## filler quantifier  (2)
+
+- 🟠 **a multitude of** _(phrase)_ — Inflated quantifier LLMs prefer over plain 'many'.  _e.g._ "a multitude of options"
+- 🟡 **A spectrum of** _(phrase)_ — 'A spectrum of' is an inflated AI phrasing for range/variety.  _e.g._ "a spectrum of solutions"
+
+## filler transition  (12)
+
+- 🟠 **A key aspect of** _(phrase)_ — Formulaic scaffolding phrase LLMs use to introduce points.  _e.g._ "A key aspect of success is consistency."
+- 🟠 **First and foremost** _(opener)_ — Formulaic enumerating opener LLMs lean on to start a point.  _e.g._ "First and foremost, we must consider the impact."
+- 🟠 **Let's take a closer look** _(phrase)_ — Formulaic section transition AI uses to introduce detail.  _e.g._ "Let's take a closer look at the numbers."
+- 🟠 **Simply put** _(phrase)_ — Stock discourse marker AI uses to signal a restatement.  _e.g._ "Simply put, this changes everything."
+- 🟡 **Another option is** _(phrase)_ — Formulaic hedging phrase LLMs use to enumerate alternatives.  _e.g._ "Another option is to restart the service."
+- 🟡 **As a matter of fact** _(phrase)_ — Stock emphatic filler phrase overused in AI prose.  _e.g._ "As a matter of fact, this is common."
+- 🟡 **as such** _(phrase)_ — Overused connective transition frequent in AI prose.  _e.g._ "As such, we recommend caution."
+- 🟡 **Given that** _(phrase)_ — Overused reasoning connective that pads AI sentences.  _e.g._ "Given that resources are limited, we prioritize."
+- 🟡 **However** _(word)_ — Contrast connective AI over-relies on to open sentences.  _e.g._ "However, there are drawbacks to consider."
+- 🟡 **Namely** _(word)_ — Formal connective AI overuses to specify.  _e.g._ "Two factors, namely cost and time."
+- 🟡 **Similarly** _(word)_ — Parallel-structure connective AI overuses between points.  _e.g._ "Similarly, the second approach fails."
+- 🟡 **Take a look at** _(phrase)_ — Generic filler directive common in AI walkthroughs.  _e.g._ "Take a look at the example below."
+
+## filler verb  (4)
+
+- 🔴 **Dive deep into** _(phrase)_ — Signature ChatGPT phrase for introducing a topic; strong AI tell.  _e.g._ "Let's dive deep into the details."
+- 🔴 **Let's dive in** _(phrase)_ — Classic AI transition phrase used to launch into content.  _e.g._ "Ready? Let's dive in."
+- 🟡 **Cater to** _(phrase)_ — Generic AI verb for serving an audience or need.  _e.g._ "designed to cater to every user"
+- 🟡 **Center around** _(phrase)_ — Common AI phrasing for what something focuses on.  _e.g._ "The debate centers around cost."
+
+## filler-adjective  (2)
+
+- 🟠 **thought-provoking** _(word)_ — Vague praise adjective AI uses to describe content.  _e.g._ "A thought-provoking piece."
+- 🟡 **Notable** _(word)_ — AI overuses 'notable' as a vague emphasis adjective.  _e.g._ "a notable example of this trend"
+
+## filler-emphasis  (1)
+
+- 🔴 **This highlights the importance of** _(phrase)_ — Empty emphasis phrase AI uses to editorialize significance.  _e.g._ "This highlights the importance of planning."
+
+## filler-transition  (2)
+
+- 🟠 **Now here's the thing** _(phrase)_ — 'Now here's the thing' is a conversational AI pivot phrase used to feign insight.  _e.g._ "Now here's the thing: it doesn't have to be hard."
+- 🟡 **moving forward** _(phrase)_ — 'Moving forward' is a filler transition AI leans on for pivots.  _e.g._ "Moving forward, we will focus on growth."
 
 ## fire/decay imagery  (1)
 
@@ -2468,6 +3101,66 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **sky/fly** _(rhyme_pair)_ — The -y aspiration family (sky/fly/high/try/why) is a massive AI attractor shared with pop. 'Touch the sky', 'learn to fly', 'reach so high' are interchangeable filler; three of these in one verse is a strong generation signal because each is a dead metaphor.  _e.g._ "I'll touch the sky / spread my wings and fly"
 - 🟠 **night/alright** _(rhyme_pair)_ — AI's stock reassurance rhyme; 'through the night / be alright' arrives as a pre-formed comforting couplet with no specific situation.  _e.g._ "We'll make it through the night / everything's alright"
 
+## formal connector  (3)
+
+- 🟡 **Albeit** _(word)_ — Overly formal concessive conjunction AI reaches for far more than human writers.  _e.g._ "a useful, albeit imperfect, tool"
+- 🟡 **thereby** _(word)_ — A stiff formal connective AI overuses to chain clauses.  _e.g._ "It reduces cost, thereby improving margins."
+- 🟡 **therefore** _(word)_ — An overused AI logical connector giving prose a mechanical tone.  _e.g._ "Sales rose; therefore, profits followed."
+
+## formal diction  (2)
+
+- 🟠 **Cognizant** _(word)_ — Overly formal word AI uses instead of 'aware'.  _e.g._ "cognizant of the risks"
+- 🟡 **Commence** _(word)_ — Stiff formal verb AI prefers over 'begin' or 'start'.  _e.g._ "the project will commence"
+
+## formal filler  (2)
+
+- 🟠 **aforementioned** _(word)_ — Stiff formal callback word LLMs overuse to reference earlier points.  _e.g._ "the aforementioned factors"
+- 🟡 **adhere** _(word)_ — Formal verb LLMs favor over plainer 'follow' or 'stick to'.  _e.g._ "adhere to the guidelines"
+
+## formal register  (1)
+
+- 🟡 **Whilst** _(word)_ — Formal conjunction disproportionately favored by LLMs over plain 'while'.  _e.g._ "Whilst this may seem simple..."
+
+## formal transition  (2)
+
+- 🟡 **At the outset** _(phrase)_ — Formal opener phrase overrepresented in AI prose.  _e.g._ "At the outset, let's clarify the goal."
+- 🟡 **Be that as it may** _(phrase)_ — Formal concessive transition overused in AI writing.  _e.g._ "Be that as it may, the plan stands."
+
+## formulaic advice  (1)
+
+- 🟠 **By doing X, you can achieve Y** _(template)_ — Mad-lib cause-effect promise structure AI overuses in how-to prose.  _e.g._ "By automating this, you can achieve more in less time."
+
+## formulaic closer  (4)
+
+- 🟠 **The bottom line is** _(closer)_ — Stock summarizing closer AI uses to signal a takeaway.  _e.g._ "The bottom line is, it works."
+- 🟠 **There you have it** _(closer)_ — A stock AI wrap-up phrase signaling the end of an explanation.  _e.g._ "There you have it: three easy steps."
+- 🟠 **Ultimately, it is up to you** _(closer)_ — Hedging AI closing sentence returning the decision to the reader.  _e.g._ "Ultimately, it is up to you to decide."
+- 🟡 **Stay tuned** _(closer)_ — Stock sign-off AI appends to end sections.  _e.g._ "Stay tuned for more!"
+
+## formulaic framing  (1)
+
+- 🟡 **Blueprint for** _(phrase)_ — Overused metaphor-title framing AI uses to package advice.  _e.g._ "A blueprint for success in modern marketing."
+
+## formulaic opener  (9)
+
+- 🔴 **As technology continues to evolve** _(opener)_ — Cliché sweeping opener LLMs deploy to introduce tech topics.  _e.g._ "As technology continues to evolve, businesses must adapt."
+- 🔴 **As the digital landscape shifts** _(opener)_ — Cliché 'landscape' opener characteristic of AI intros.  _e.g._ "As the digital landscape shifts, marketers face new challenges."
+- 🔴 **As we navigate the complexities of** _(opener)_ — Signature AI essay opener framing the topic as a complex journey.  _e.g._ "As we navigate the complexities of modern work,"
+- 🔴 **In today's digital age** _(opener)_ — Signature AI essay opener setting a vague modern-world scene.  _e.g._ "In today's digital age, data is everywhere."
+- 🔴 **Understanding [topic] is essential for** _(template)_ — Mad-lib sentence stem AI uses to open explanatory sections.  _e.g._ "Understanding SEO is essential for growth."
+- 🔴 **Welcome to our comprehensive guide** _(opener)_ — Boilerplate AI article opener announcing a 'comprehensive guide'.  _e.g._ "Welcome to our comprehensive guide on SEO."
+- 🟠 **The purpose of this** _(opener)_ — A mechanical AI essay opener that announces intent.  _e.g._ "The purpose of this article is to explain..."
+- 🟠 **Welcome to the future** _(opener)_ — Grandiose futurist opener AI uses for tech and trend topics.  _e.g._ "Welcome to the future of work."
+- 🟡 **The benefits of** _(opener)_ — Generic listicle-style opener common in AI content.  _e.g._ "The benefits of remote work are clear."
+
+## formulaic span phrase  (1)
+
+- 🟠 **from inception to execution** _(phrase)_ — Stock full-lifecycle flourish AI adds to sound comprehensive.  _e.g._ "we handle it from inception to execution"
+
+## formulaic transition  (1)
+
+- 🟠 **The bottom line is** _(opener)_ — Formulaic summary lead-in AI uses to close or pivot.  _e.g._ "The bottom line is, it works."
+
 ## framing  (1)
 
 - 🔴 **In a world where...** _(opener)_ — Movie-trailer scene-setter the model uses to launch struggle narratives. It frames a grand abstract backdrop instead of a concrete moment, a recognizable AI opening gambit.  _e.g._ "In a world where dreams come alive"
@@ -2484,9 +3177,17 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **spreading my wings / learning to fly** _(trope)_ — Flight as liberation is a top-frequency AI image; 'spread my wings and fly' arrives as a complete unit, signaling the model filled an empowerment slot rather than building a fresh image.  _e.g._ "Now I spread my wings and finally learn to fly"
 
+## grand conclusion  (1)
+
+- 🔴 **Bringing us closer to a future** _(phrase)_ — Sweeping AI closer that gestures at an inspiring future.  _e.g._ "...bringing us closer to a future where everyone benefits."
+
 ## grandiose framing  (1)
 
 - 🟠 **"In a world where..." opener** _(opener)_ — Movie-trailer opener the model uses to establish stakes; a known AI framing tic that appears both in generated prose intros and Suno verse openers.
+
+## grandiosity  (1)
+
+- 🟠 **Implications are profound** _(phrase)_ — Empty gravitas phrase AI uses to inflate the stakes of a point.  _e.g._ "The implications are profound."
 
 ## grandiosity inflation  (1)
 
@@ -2529,9 +3230,81 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **Two hearts beating as one** _(phrase)_ — A pre-fab unity metaphor; the model treats 'two hearts' + 'as one' as a single stored unit. Its biological literalism (synchronized heartbeats) is a hallmark of generated romance filler.  _e.g._ "Two hearts beating as one tonight"
 
+## hedge  (7)
+
+- 🟠 **Depending on the context** _(phrase)_ — AI hedging phrase used to avoid committing to an answer.  _e.g._ "Depending on the context, this may vary."
+- 🟠 **This is not an exhaustive list** _(phrase)_ — Stock hedging disclaimer AI appends to lists.  _e.g._ "This is not an exhaustive list, but it covers the basics."
+- 🟠 **This isn't to say that** _(phrase)_ — Overused balancing hedge AI uses to qualify a prior claim.  _e.g._ "This isn't to say that it's easy."
+- 🟠 **This may vary depending on** _(phrase)_ — Generic hedging phrase AI uses to avoid committing to specifics.  _e.g._ "This may vary depending on your setup."
+- 🟡 **admittedly** _(word)_ — Concessive hedge LLMs sprinkle to sound balanced.  _e.g._ "Admittedly, there are drawbacks"
+- 🟡 **To a certain extent** _(phrase)_ — Vague qualifier AI uses to soften claims.  _e.g._ "This is true to a certain extent."
+- 🟡 **To some extent** _(phrase)_ — AI hedging qualifier that softens claims.  _e.g._ "This is true to some extent."
+
+## hedge phrase  (1)
+
+- 🟠 **In many cases** _(phrase)_ — Vague hedging connector AI uses to generalize without committing.  _e.g._ "In many cases, this approach works."
+
+## hedge/filler  (5)
+
+- 🔴 **It is worth noting that** _(phrase)_ — Classic AI meta-commentary filler flagged as a near-signature tell.  _e.g._ "It is worth noting that results may vary."
+- 🔴 **It should be noted that** _(phrase)_ — Formal filler variant of the note-worthy tic characteristic of AI prose.  _e.g._ "It should be noted that data is preliminary."
+- 🔴 **It's worth mentioning that** _(phrase)_ — Another near-signature AI meta-commentary opener.  _e.g._ "It's worth mentioning that context matters here."
+- 🟠 **It goes without saying that** _(phrase)_ — Empty throat-clearing phrase LLMs use to introduce obvious points.  _e.g._ "It goes without saying that quality matters."
+- 🟠 **Needless to say** _(phrase)_ — Empty filler opener AI uses before stating the obvious.  _e.g._ "Needless to say, security is critical."
+
+## hedged praise  (1)
+
+- 🟡 **Really quite impressive** _(phrase)_ — AI padding with stacked intensifiers around a weak evaluation.  _e.g._ "The results are really quite impressive."
+
+## hedging  (10)
+
+- 🟠 **It could be argued that** _(phrase)_ — Impersonal hedging construction AI uses to introduce claims without ownership.  _e.g._ "It could be argued that both sides are right."
+- 🟠 **It has been said that** _(phrase)_ — Vague appeal-to-authority opener AI uses without a source.  _e.g._ "It has been said that time heals all."
+- 🟠 **It is clear that** _(phrase)_ — Assertive filler AI prepends to claims for false authority.  _e.g._ "It is clear that we must act now."
+- 🟠 **May potentially help** _(phrase)_ — Redundant double-hedge ('may' + 'potentially') characteristic of AI caution.  _e.g._ "This may potentially help reduce costs."
+- 🟠 **While it is true that** _(phrase)_ — Formulaic concessive hedge AI uses to set up a but-clause.  _e.g._ "While it is true that costs rose, benefits followed."
+- 🟠 **While there are many factors to consider** _(phrase)_ — Empty filler hedge that acknowledges complexity without content.  _e.g._ "While there are many factors to consider, one stands out."
+- 🟠 **whilst it is true** _(phrase)_ — Concessive hedge variant AI uses before a rebuttal.  _e.g._ "Whilst it is true that risks exist, rewards outweigh them."
+- 🟡 **ethical considerations** _(phrase)_ — AI's stock boilerplate section for any topic touching risk or fairness.  _e.g._ "There are also ethical considerations to keep in mind."
+- 🟡 **It appears that** _(phrase)_ — Impersonal hedging opener common in AI-generated explanations.  _e.g._ "It appears that the trend is growing."
+- 🟡 **You could consider** _(phrase)_ — Tentative hedging phrase AI assistants overuse when offering suggestions.  _e.g._ "You could consider breaking this into smaller steps."
+
+## hedging filler  (10)
+
+- 🔴 **It is crucial to recognize** _(phrase)_ — Formulaic AI hedging preamble that adds no information before a claim.  _e.g._ "It is crucial to recognize that markets shift."
+- 🔴 **It is essential to understand** _(phrase)_ — Stock AI framing phrase used to introduce a point with false gravity.  _e.g._ "It is essential to understand the fundamentals."
+- 🔴 **It is important to consider** _(phrase)_ — Overused AI throat-clearing that precedes obvious statements.  _e.g._ "It is important to consider your audience."
+- 🔴 **It is important to note that** _(phrase)_ — Signature AI filler clause flagged by nearly every detector.  _e.g._ "It is important to note that results vary."
+- 🔴 **It is worth mentioning** _(phrase)_ — Redundant AI aside that flags padding.  _e.g._ "It is worth mentioning the cost involved."
+- 🔴 **It is worth noting** _(phrase)_ — Extremely common AI filler clause used to introduce minor points.  _e.g._ "It is worth noting that trends change."
+- 🟠 **It might be worth noting** _(phrase)_ — Softened variant of the classic AI 'worth noting' hedge.  _e.g._ "It might be worth noting the exceptions."
+- 🟠 **It remains to be seen** _(phrase)_ — Non-committal AI cliche used to avoid taking a position.  _e.g._ "It remains to be seen whether it works."
+- 🟠 **It's worth considering that** _(phrase)_ — Padding AI clause introducing a point without commitment.  _e.g._ "It's worth considering that budgets are tight."
+- 🟡 **broadly speaking** _(phrase)_ — Hedge phrase AI uses to soften generalizations.  _e.g._ "Broadly speaking, results improved."
+
+## hedging pattern  (2)
+
+- 🟠 **Granted, [obvious counterpoint]** _(template)_ — Formulaic concession opener AI uses to stage a fake counterargument.  _e.g._ "Granted, this approach has drawbacks, but..."
+- 🟠 **Hedging before making a point** _(trope)_ — AI habit of qualifying a claim before stating it.  _e.g._ "It's worth noting that, in some cases..."
+
+## hedging template  (1)
+
+- 🟠 **Now, I'm not saying X, but** _(template)_ — AI hedging construction that raises a point while disclaiming it.  _e.g._ "Now, I'm not saying it's easy, but it's worth it."
+
+## hollow directive  (2)
+
+- 🟠 **adjust your strategy accordingly** _(phrase)_ — Formulaic empty advice-closer typical of AI how-to content.  _e.g._ "review your data and adjust your strategy accordingly"
+- 🟡 **act accordingly** _(phrase)_ — Vacuous closing directive AI appends without concrete guidance.  _e.g._ "monitor the results and act accordingly"
+
 ## home idiom  (1)
 
 - 🟠 **home is where the heart is / find my way home** _(phrase)_ — AI leans on home-idioms as instant emotional resolution; 'find my way home' resolves any song without naming where home is.  _e.g._ "Someday I'll find my way back home"
+
+## hook opener  (3)
+
+- 🔴 **What if I told you** _(opener)_ — Classic AI rhetorical hook that sets up a supposedly surprising claim.  _e.g._ "What if I told you there's a faster way?"
+- 🟠 **Stop what you're doing** _(opener)_ — Attention-grabbing imperative hook AI uses to open social copy.  _e.g._ "Stop what you're doing and read this."
+- 🟠 **We need to talk about** _(opener)_ — Formulaic confrontational hook AI uses to open a topic dramatically.  _e.g._ "We need to talk about your data."
 
 ## hope  (3)
 
@@ -2556,10 +3329,111 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **dark/spark** _(rhyme_pair)_ — Hope-in-the-dark trope rendered as a clean rhyme ('lost in the dark / one little spark'); AI pairs them to manufacture an uplift beat, and the spark-of-hope image is itself a cliché it can't avoid.  _e.g._ "Lost here in the dark / waiting for a spark"
 
+## hype  (19)
+
+- 🔴 **Expect to witness transformative breakthroughs** _(phrase)_ — Grandiose speculative AI hype phrasing about the future.  _e.g._ "In the coming years, expect to witness transformative breakthroughs."
+- 🔴 **Groundbreaking advancement** _(phrase)_ — Hyperbolic AI hype phrase inflating novelty.  _e.g._ "This represents a groundbreaking advancement in the field."
+- 🔴 **Groundbreaking technology** _(phrase)_ — Hyperbolic AI phrase inflating a product's novelty.  _e.g._ "Our groundbreaking technology transforms workflows."
+- 🔴 **Revolutionizing the field** _(phrase)_ — Grandiose AI framing rarely used by humans in ordinary prose.  _e.g._ "This breakthrough is revolutionizing the field of medicine."
+- 🔴 **Revolutionizing the way** _(phrase)_ — Stock AI hype template introducing any product or idea.  _e.g._ "AI is revolutionizing the way we work."
+- 🔴 **Shape the future** _(phrase)_ — Grandiose aspirational AI closer/filler with no concrete meaning.  _e.g._ "Together we can shape the future of technology."
+- 🔴 **Significant strides** _(phrase)_ — Stock AI progress phrase; near-signature of generated summaries.  _e.g._ "We have made significant strides in this area."
+- 🔴 **This [tool/approach] is a game changer for** _(template)_ — Formulaic hype template AI leans on to introduce tools or methods.  _e.g._ "This tool is a game changer for marketers."
+- 🟠 **Exciting opportunities** _(phrase)_ — Empty AI enthusiasm phrase used to close or pivot sections.  _e.g._ "This opens up exciting opportunities."
+- 🟠 **Exciting possibilities** _(phrase)_ — Vague forward-looking AI enthusiasm filler.  _e.g._ "The future holds exciting possibilities."
+- 🟠 **Exploring new frontiers** _(phrase)_ — Cliche metaphor AI uses for any new development.  _e.g._ "We are exploring new frontiers in AI."
+- 🟠 **Groundbreaking study** _(phrase)_ — Overused AI hype framing for research.  _e.g._ "A groundbreaking study reveals..."
+- 🟠 **Groundbreaking way** _(phrase)_ — AI hype construction praising a method as revolutionary.  _e.g._ "A groundbreaking way to approach the problem."
+- 🟠 **Highly empowering** _(phrase)_ — Hollow AI praise phrase pairing an intensifier with a buzzword.  _e.g._ "This is a highly empowering experience."
+- 🟠 **Highly innovative** _(phrase)_ — AI hype pairing 'highly' with a vague virtue word.  _e.g._ "A highly innovative solution."
+- 🟠 **Highly versatile** _(phrase)_ — Formulaic AI product-praise adjective pairing.  _e.g._ "A highly versatile tool for any workflow."
+- 🟠 **Significant step forward** _(phrase)_ — Formulaic AI framing of any development as momentous.  _e.g._ "This represents a significant step forward for the industry."
+- 🟠 **This opens up a world of** _(phrase)_ — Inflated possibility phrase AI uses to hype outcomes.  _e.g._ "This opens up a world of possibilities."
+- 🟡 **Highly significant** _(phrase)_ — AI intensifier phrase overstating importance.  _e.g._ "The results are highly significant."
+
+## hype adjective  (3)
+
+- 🔴 **Game-changing** _(word)_ — A classic AI marketing intensifier for anything mildly novel.  _e.g._ "a game-changing solution"
+- 🟠 **Phenomenal** _(word)_ — An over-enthusiastic praise word AI leans on for emphasis.  _e.g._ "a phenomenal opportunity for growth"
+- 🟡 **Life-changing** _(word)_ — Hyperbolic marketing adjective AI applies indiscriminately.  _e.g._ "A life-changing experience."
+
+## hype claim  (1)
+
+- 🟠 **[X] will never be the same** _(phrase)_ — Grandiose transformation claim typical of AI-written promotional copy.  _e.g._ "Search will never be the same."
+
+## hype closer  (2)
+
+- 🔴 **The possibilities are endless** _(closer)_ — Formulaic AI closer overselling open-ended potential.  _e.g._ "With this tool, the possibilities are endless."
+- 🟠 **Opens up exciting possibilities** _(phrase)_ — AI enthusiasm-inflation phrase used to close sections.  _e.g._ "This opens up exciting possibilities for the future."
+
+## hype framing  (2)
+
+- 🟠 **X is dead. Y is what's next** _(template)_ — Formulaic provocative reframing template common in AI-generated thought-leadership and marketing copy.  _e.g._ "SEO is dead. AEO is what's next."
+- 🟠 **X isn't the future. Y is** _(template)_ — Provocative dichotomy template typical of AI-generated hype and LinkedIn-style posts.  _e.g._ "Automation isn't the future. Augmentation is."
+
+## hype opener  (2)
+
+- 🟠 **[X] just changed the game forever** _(phrase)_ — Formulaic hype hook common in AI-generated social/marketing posts.  _e.g._ "This tool just changed the game forever."
+- 🟠 **Decode the secrets** _(phrase)_ — Clickbait AI framing that promises hidden knowledge.  _e.g._ "Decode the secrets of viral marketing."
+
+## hype phrase  (19)
+
+- 🔴 **Potentially revolutionizing the way** _(phrase)_ — A speculative transformation cliche AI deploys to hype technology.  _e.g._ "AI is potentially revolutionizing the way we work"
+- 🔴 **Represents a significant milestone** _(phrase)_ — Signature AI closer that frames any development as a significant milestone.  _e.g._ "This represents a significant milestone in the field."
+- 🔴 **Revolutionize the way you** _(phrase)_ — Classic AI marketing template promising transformation of everyday tasks.  _e.g._ "This app will revolutionize the way you work."
+- 🔴 **Unleashing the potential** _(phrase)_ — Signature AI hype phrase about liberating capability.  _e.g._ "Unleashing the potential of your team."
+- 🔴 **unlock potential** _(phrase)_ — Ubiquitous AI 'unlock' hype construction.  _e.g._ "Unlock your full potential today."
+- 🔴 **Unlock the potential** _(phrase)_ — Ubiquitous AI 'unlock' hype construction.  _e.g._ "Unlock the potential of your data."
+- 🔴 **Unlock the secrets of** _(phrase)_ — Formulaic AI listicle promise of hidden knowledge.  _e.g._ "Unlock the secrets of viral content."
+- 🔴 **Unlocking the power** _(phrase)_ — Signature AI hype 'unlocking the power of X' opener.  _e.g._ "Unlocking the power of automation."
+- 🔴 **Unlocking the secrets of** _(phrase)_ — Formulaic AI promise-of-secrets construction.  _e.g._ "Unlocking the secrets of the algorithm."
+- 🟠 **Game-changing technology** _(phrase)_ — Marketing hyperbole AI defaults to when describing tech.  _e.g._ "this game-changing technology"
+- 🟠 **Powerful tool** _(phrase)_ — A generic capability descriptor AI overuses for products and methods.  _e.g._ "this is a powerful tool for marketers"
+- 🟠 **Redefine the future** _(phrase)_ — Grandiose AI-marketing cliche about transformation.  _e.g._ "This technology will redefine the future."
+- 🟠 **Remarkable breakthrough** _(phrase)_ — AI over-hypes developments as remarkable breakthroughs.  _e.g._ "This represents a remarkable breakthrough."
+- 🟠 **Represent a major milestone** _(phrase)_ — Variant of the AI milestone framing cliche.  _e.g._ "These findings represent a major milestone."
+- 🟠 **Uncover hidden trends** _(phrase)_ — Formulaic AI benefit phrasing about revealing insights.  _e.g._ "Uncover hidden trends in your data."
+- 🟠 **Unprecedented opportunity** _(phrase)_ — Overused AI superlative framing of opportunity.  _e.g._ "This is an unprecedented opportunity."
+- 🟡 **Redefine excellence** _(phrase)_ — Empty superlative pairing typical of AI-generated promotional copy.  _e.g._ "We redefine excellence in every project."
+- 🟡 **Remarkable proficiency** _(phrase)_ — Inflated praise phrasing common in AI prose.  _e.g._ "demonstrates remarkable proficiency"
+- 🟡 **Remarkable success** _(phrase)_ — Generic superlative AI uses to describe outcomes.  _e.g._ "achieving remarkable success"
+
+## hype phrasing  (2)
+
+- 🟠 **Latest breakthrough signifies** _(phrase)_ — Inflated promotional AI phrasing common in tech copy.  _e.g._ "This latest breakthrough signifies a new era."
+- 🟡 **Latest offering** _(phrase)_ — Generic AI marketing phrase for products/services.  _e.g._ "Our latest offering redefines convenience."
+
+## hype pivot  (1)
+
+- 🟠 **And here's the kicker** _(phrase)_ — Manufactured-suspense connector common in AI listicle prose.  _e.g._ "And here's the kicker: it's free."
+
+## hype punch  (3)
+
+- 🟠 **And that changes everything** _(closer)_ — Dramatic one-line payoff AI appends for false emphasis.  _e.g._ "And that changes everything."
+- 🟠 **And that's just the beginning** _(closer)_ — Formulaic teaser closer promising more, typical of AI hype prose.  _e.g._ "And that's just the beginning."
+- 🟠 **And we're just getting started** _(closer)_ — Stock momentum-building line AI tacks onto sections.  _e.g._ "And we're just getting started."
+
 ## hype transition  (2)
 
 - 🟠 **It's a game-changer** _(phrase)_ — Hyperbolic stock praise the model defaults to when asked to sound enthusiastic; its indiscriminate application to trivial features marks generated marketing copy.  _e.g._ "This feature is a real game-changer."
 - 🟡 **Buckle up** _(opener)_ — A cheap-thrill engagement insert AI uses to fake excitement before mundane content; the forced adrenaline tonally clashes with the calm prose that follows.  _e.g._ "Buckle up — this gets wild."
+
+## hype trope  (1)
+
+- 🟡 **We're still early** _(phrase)_ — Stock startup/crypto optimism line AI recycles in trend pieces.  _e.g._ "We're still early in the AI revolution."
+
+## hype verb  (2)
+
+- 🟠 **turbocharge** _(word)_ — Overused AI hype verb for boosting/improving.  _e.g._ "Turbocharge your workflow with AI."
+- 🟡 **uncover** _(word)_ — AI-favored verb for revealing insights, often in listicles.  _e.g._ "Uncover the strategies that work."
+
+## hypophora opener  (1)
+
+- 🟠 **Imagine if** _(opener)_ — Formulaic hypothetical framing AI leans on to open sections.  _e.g._ "Imagine if you could double your output."
+
+## hypophora template  (1)
+
+- 🔴 **Imagine a world where X** _(template)_ — Mad-lib hypothetical opener AI uses to hook readers with an imagined scenario.  _e.g._ "Imagine a world where cars drive themselves."
 
 ## identity  (1)
 
@@ -2586,6 +3460,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **silhouettes** _(word)_ — The model's go-to upgrade for 'shadows.' Flagged because swapping to it doesn't escape the cliche — it proves the AI is reaching for the next-closest token, the signature of mode collapse.  _e.g._ "Two silhouettes against the fading light"
 
+## importance marker  (1)
+
+- 🟠 **important to consider** _(phrase)_ — Hedged importance marker typical of AI's cautious explanatory register.  _e.g._ "It's important to consider the trade-offs."
+
 ## individuality  (2)
 
 - 🟡 **breaking the mold** _(trope)_ — AI's default nonconformity idiom; 'break the mold' asserts uniqueness via a worn phrase, ironically proving the lyric's conformity to pattern.  _e.g._ "I'm breaking the mold, I won't conform"
@@ -2599,6 +3477,72 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **endless road / endless night** _(phrase)_ — Listed in AI-cliché guides; 'endless' is the model's favorite intensifier for journeys and suffering, inflating scale without specifics.  _e.g._ "Down this endless road I go"
 
+## inflated abstraction  (1)
+
+- 🟠 **It serves as a stepping stone towards the realization** _(phrase)_ — Grandiose AI phrasing that inflates a mundane point.  _e.g._ "It serves as a stepping stone towards the realization of goals."
+
+## inflated adjective  (13)
+
+- 🟠 **A revolutionary** _(word)_ — Hype adjective AI applies liberally to describe products and ideas.  _e.g._ "a revolutionary new approach"
+- 🟠 **A robust** _(word)_ — 'Robust' is a signature LLM adjective for systems and solutions.  _e.g._ "a robust framework"
+- 🟠 **A seamless** _(word)_ — 'Seamless' is a hallmark AI adjective for experiences and integrations.  _e.g._ "a seamless user experience"
+- 🟠 **All-encompassing** _(word)_ — Grandiose adjective AI overuses to describe scope.  _e.g._ "an all-encompassing solution"
+- 🟠 **Awe-inspiring** _(word)_ — Inflated descriptive adjective LLMs overuse for emphasis.  _e.g._ "An awe-inspiring vista."
+- 🟠 **Breathtaking** _(word)_ — Overwrought superlative AI overuses to describe results or scenery.  _e.g._ "a breathtaking transformation"
+- 🟠 **World-class** _(word)_ — Empty superlative AI leans on to signal quality without evidence.  _e.g._ "our world-class team"
+- 🟡 **A crucial** _(word)_ — 'Crucial' is one of the emphasis adjectives LLMs overuse to mark importance.  _e.g._ "a crucial step in the process"
+- 🟡 **A pivotal** _(word)_ — 'Pivotal' is a favored AI emphasis word for marking turning points.  _e.g._ "a pivotal moment in history"
+- 🟡 **arduous** _(word)_ — Elevated adjective LLMs overuse where 'hard' would do.  _e.g._ "An arduous journey."
+- 🟡 **Brilliant** _(word)_ — Overused praise word in AI assistant responses.  _e.g._ "That's a brilliant idea!"
+- 🟡 **Renowned** _(word)_ — AI overuses renowned as an unearned authority marker.  _e.g._ "the renowned expert in the field"
+- 🟡 **Vast** _(word)_ — Grandiose scale word AI reaches for by default ('a vast array of', 'the vast landscape').  _e.g._ "a vast array of options"
+
+## inflated diction  (15)
+
+- 🟠 **esteemed** _(word)_ — Formal flattery adjective AI uses to inflate subjects it describes.  _e.g._ "our esteemed colleagues"
+- 🟡 **entrenched** _(word)_ — Formal AI-favored adjective for established things.  _e.g._ "deeply entrenched systems"
+- 🟡 **epicenter** _(word)_ — Overused dramatic metaphor word AI reaches for to signal importance.  _e.g._ "the epicenter of innovation"
+- 🟡 **Ethos** _(word)_ — Elevated abstract noun AI overuses when describing culture or brand.  _e.g._ "the company's ethos"
+- 🟡 **excels** _(word)_ — Overused praise verb typical of AI product/tool descriptions.  _e.g._ "This tool excels at..."
+- 🟡 **Extensive** _(word)_ — Vague scale adjective AI overuses to imply thoroughness.  _e.g._ "extensive research shows"
+- 🟡 **Extraordinary** _(word)_ — Overused superlative AI applies indiscriminately.  _e.g._ "an extraordinary breakthrough"
+- 🟡 **flourishing** _(word)_ — Vague uplift word AI reaches for when describing growth or wellbeing.  _e.g._ "a flourishing community"
+- 🟡 **foray** _(word)_ — Overly literary word AI uses for a first attempt at something.  _e.g._ "her foray into writing"
+- 🟡 **Frontier** _(word)_ — Grand metaphor word AI overuses for emerging fields.  _e.g._ "the next frontier of AI"
+- 🟡 **fundamental** _(word)_ — Padding intensifier AI uses to lend importance to ordinary points.  _e.g._ "a fundamental shift"
+- 🟡 **Pertinent** _(word)_ — A formal single-word substitute for 'relevant' that AI overuses in expository prose.  _e.g._ "the most pertinent factors to consider"
+- 🟡 **Pervasive** _(word)_ — An elevated adjective AI reaches for instead of 'widespread' or 'common'.  _e.g._ "a pervasive issue across the industry"
+- 🟡 **Predominantly** _(word)_ — A formal adverb AI favors over 'mostly' or 'mainly'.  _e.g._ "predominantly focused on results"
+- 🟡 **Primarily** _(word)_ — A hedging adverb AI overuses to qualify statements.  _e.g._ "primarily concerned with efficiency"
+
+## inflated emphasis  (2)
+
+- 🟠 **Crucial insight** _(phrase)_ — AI padding that labels a point as profound instead of just stating it.  _e.g._ "A crucial insight here is that customers value speed."
+- 🟠 **Deeply insightful** _(phrase)_ — Hollow intensifier AI uses to inflate ordinary observations.  _e.g._ "This is a deeply insightful perspective."
+
+## inflated modifier  (1)
+
+- 🟡 **Remarkably important** _(phrase)_ — AI overqualifies importance with adverbial hype.  _e.g._ "This is remarkably important for the industry."
+
+## inflated praise  (2)
+
+- 🟠 **a transformative** _(phrase)_ — 'Transformative' is a signature AI hype adjective for ordinary things.  _e.g._ "a transformative approach to learning"
+- 🟡 **adept** _(word)_ — Overused competence adjective common in AI-generated bios and marketing copy.  _e.g._ "adept at solving problems"
+
+## inflated verb  (1)
+
+- 🟠 **Catalyze change** _(phrase)_ — Elevated buzzword pairing AI favors for driving impact.  _e.g._ "Our platform catalyzes change across the org."
+
+## inflated-adjective  (1)
+
+- 🟡 **Monumental** _(word)_ — AI reaches for grandiose adjectives like 'monumental' where plain words fit.  _e.g._ "a monumental shift in the industry"
+
+## inflated-emphasis  (3)
+
+- 🔴 **It cannot be overstated that** _(phrase)_ — Hedged hyperbole construction strongly signature of AI prose.  _e.g._ "It cannot be overstated that data matters."
+- 🟠 **Incredibly significant** _(phrase)_ — Redundant intensifier stack typical of AI's inflated emphasis.  _e.g._ "This is an incredibly significant milestone."
+- 🟡 **Mind-boggling figure** _(phrase)_ — AI overuses hyperbolic quantifiers like 'mind-boggling' to dramatize numbers.  _e.g._ "a mind-boggling figure of over 2 billion users"
+
 ## inner struggle  (2)
 
 - 🔴 **fighting my demons** _(trope)_ — AI renders all internal conflict as a literal externalized battle with 'demons,' a vague abstraction that lets the model gesture at depth without naming a real, specific struggle.  _e.g._ "Every night I'm fighting my demons in the dark"
@@ -2607,6 +3551,20 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## inspirational close  (1)
 
 - 🔴 **Remember, X is a journey, not a destination.** _(closer)_ — Models close with a motivational aphorism to feel uplifting; the 'journey not a destination' cliche is a textbook AI sign-off and appears in AI lyrics too. Unearned profundity tacked onto the end.
+
+## inspirational filler  (2)
+
+- 🟠 **Breaking barriers** _(phrase)_ — Motivational stock phrase AI leans on for uplift.  _e.g._ "Breaking barriers in the industry."
+- 🟠 **Breaking new ground** _(phrase)_ — Cliche innovation phrase overused in AI marketing prose.  _e.g._ "This model is breaking new ground."
+
+## intensifier  (6)
+
+- 🟡 **genuinely** _(word)_ — Overused AI intensifier that hedges sincerity without adding meaning.  _e.g._ "This is genuinely a game-changer."
+- 🟡 **Immense** _(word)_ — Inflated scale adjective AI favors for vague emphasis.  _e.g._ "an immense opportunity"
+- 🟡 **Truly** _(word)_ — Empty intensifier AI overuses to add emphasis.  _e.g._ "This is truly a game-changer."
+- 🟡 **utterly** _(word)_ — Empty intensifier adverb AI overuses to inflate emphasis.  _e.g._ "The result was utterly transformative."
+- 🟡 **vastly** _(word)_ — Overused hedging intensifier common in AI prose.  _e.g._ "This vastly improves your workflow."
+- 🟡 **Without a doubt** _(phrase)_ — Empty emphatic AI uses to assert confidence without evidence.  _e.g._ "Without a doubt, this is the best choice."
 
 ## intensifier construction  (1)
 
@@ -2649,6 +3607,12 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **open road / the long road home** _(phrase)_ — Stock freedom/return imagery in AI Americana; 'the road home' is an instant emotional frame requiring no actual home or journey.  _e.g._ "On the long road home again"
 
+## journey metaphor  (3)
+
+- 🔴 **Embark on this transformative journey** _(phrase)_ — Signature AI journey-metaphor phrasing bundling 'embark' and 'transformative'.  _e.g._ "Embark on this transformative journey with us."
+- 🔴 **Embarking on a journey** _(phrase)_ — Very common AI opener framing any task as an epic journey.  _e.g._ "Embarking on a journey to better health."
+- 🟠 **Embark on a voyage** _(phrase)_ — Grandiose journey metaphor AI favors for openers.  _e.g._ "Embark on a voyage of discovery."
+
 ## joy-through-pain  (1)
 
 - 🟠 **dancing in the rain** _(trope)_ — The 'finding joy amid hardship' image AI reuses constantly; rain (sorrow) + dancing (joy) is a tidy paradox the model loves because it reads as wisdom.  _e.g._ "Learning to dance in the pouring rain"
@@ -2656,6 +3620,12 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## landscape merism  (1)
 
 - 🟠 **mountains high / valleys low** _(phrase)_ — A trained merism (high/low pairing) used to imply 'everywhere'; the antithesis structure is an AI tell and the geography is purely generic.  _e.g._ "Over mountains high and valleys low"
+
+## landscape-cliche  (3)
+
+- 🔴 **In the rapidly shifting landscape of** _(opener)_ — Combines the overused 'landscape' metaphor with a rapid-change setter, a hallmark AI intro.  _e.g._ "In the rapidly shifting landscape of tech, adaptability wins."
+- 🔴 **In today's ever-evolving landscape** _(opener)_ — Stacks 'today', 'ever-evolving', and 'landscape' — near-signature AI opener.  _e.g._ "In today's ever-evolving landscape, businesses must adapt."
+- 🔴 **in today's rapidly evolving market** _(opener)_ — Business-flavored rapid-change opener strongly associated with AI marketing copy.  _e.g._ "In today's rapidly evolving market, agility is key."
 
 ## lazy rhyme  (2)
 
@@ -2691,6 +3661,15 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## light-decay imagery  (1)
 
 - 🔴 **fading light / dying light** _(phrase)_ — Named in AI-lyric cliché lists; light is perpetually 'fading' as a catch-all for loss, day's end, or mortality.  _e.g._ "In the fading light we part"
+
+## listicle scaffolding  (2)
+
+- 🟠 **One key benefit is** _(phrase)_ — Formulaic AI benefit-enumeration phrase.  _e.g._ "One key benefit is increased efficiency."
+- 🟡 **One way to** _(phrase)_ — Common AI how-to scaffolding phrase, weak on its own.  _e.g._ "One way to improve is to practice daily."
+
+## listicle template  (1)
+
+- 🟠 **The 3 pillars of** _(template)_ — Formulaic 'N pillars of X' listicle framing AI overuses.  _e.g._ "The 3 pillars of good leadership"
 
 ## literary AI tell  (8)
 
@@ -2756,9 +3735,65 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **From the very first time I saw you** _(opener)_ — Flagged by human cliché guides ('when I first saw you / walked into the room'); AI defaults to this narrative-origin opener to start a love story on autopilot.  _e.g._ "From the very first time I saw you, I just knew"
 
+## lyric cliche  (1)
+
+- 🔴 **heart on fire, stars align, forever and always** _(phrase)_ — Stock AI-generated love-song lyric imagery.  _e.g._ "My heart on fire as the stars align."
+
+## lyric imagery  (1)
+
+- 🟠 **silver moonlight, golden sunsets, crystal clear** _(phrase)_ — Stacked generic nature-beauty modifiers are a hallmark of AI-generated song lyrics.  _e.g._ "Silver moonlight over golden sunsets, crystal clear"
+
 ## lyric template  (1)
 
 - 🟠 **'just [breathe/stay/be]' closer** _(template)_ — Minimalist closing line for cheap emotional weight.
+
+## mad-lib emphasis  (1)
+
+- 🔴 **X is not just A, but B** _(template)_ — The 'not just A but B' escalation template is one of the strongest AI-writing tells.  _e.g._ "It's not just a tool, but a way of life"
+
+## mad-lib opener  (2)
+
+- 🔴 **From X to Y, [main statement]** _(template)_ — The 'From X to Y' framing is a signature AI sentence template used to imply sweeping range.  _e.g._ "From startups to enterprises, we deliver results"
+- 🔴 **Whether X or Y, [main statement]** _(template)_ — 'Whether X or Y' is a formulaic AI hedging opener that manufactures false balance.  _e.g._ "Whether you're a beginner or a pro, this guide helps"
+
+## mad-lib-contrast  (1)
+
+- 🔴 **Not just X but Y** _(template)_ — The 'not just X, but Y' escalation is a strong AI stylistic tell.  _e.g._ "not just a tool, but a partner"
+
+## mad-lib-range  (1)
+
+- 🟠 **From X to Y** _(template)_ — The 'from X to Y' range template is a signature AI listing device.  _e.g._ "from startups to enterprises"
+
+## marketing buzz  (2)
+
+- 🟠 **State-of-the-art technology** _(phrase)_ — Overused promotional cliche AI reaches for to signal quality.  _e.g._ "powered by state-of-the-art technology"
+- 🟡 **Strong presence** _(phrase)_ — Vague branding cliche AI defaults to without specifics.  _e.g._ "build a strong presence online"
+
+## marketing buzzword  (2)
+
+- 🔴 **Cutting-edge solution** _(phrase)_ — Stock AI marketing filler with no concrete meaning.  _e.g._ "Our cutting-edge solution transforms your workflow."
+- 🔴 **cutting-edge technology** _(phrase)_ — Empty superlative AI attaches to any product description.  _e.g._ "Powered by cutting-edge technology."
+
+## marketing cliche  (2)
+
+- 🟠 **Amplify your reach** _(phrase)_ — Stock marketing exhortation AI produces in promotional copy.  _e.g._ "Amplify your reach with these tips."
+- 🟠 **Elevate your game** _(phrase)_ — Motivational marketing cliche common in AI-generated copy.  _e.g._ "Elevate your game with our platform."
+
+## marketing filler  (4)
+
+- 🟠 **Bespoke** _(word)_ — Upmarket buzzword AI overuses for 'custom'.  _e.g._ "a bespoke solution"
+- 🟠 **Impactful** _(word)_ — Vague booster adjective heavily favored by AI marketing prose.  _e.g._ "an impactful strategy"
+- 🟠 **Innovative** _(word)_ — Empty booster adjective LLMs reach for to describe products and ideas.  _e.g._ "an innovative solution"
+- 🟡 **Dynamic** _(word)_ — Vague booster adjective common in AI business/marketing prose.  _e.g._ "a dynamic environment"
+
+## marketing hype  (1)
+
+- 🔴 **Revolutionize the way** _(phrase)_ — Signature AI marketing hype phrase for describing products.  _e.g._ "This app will revolutionize the way you work."
+
+## marketing hyperbole  (2)
+
+- 🟠 **Stellar** _(word)_ — Hype adjective AI overuses in praise and reviews.  _e.g._ "a stellar performance"
+- 🟠 **Unparalleled** _(word)_ — Superlative hype adjective AI overuses in promotional prose.  _e.g._ "unparalleled quality"
 
 ## melancholy/menace  (1)
 
@@ -2779,6 +3814,27 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## memory/atmosphere  (1)
 
 - 🔴 **echoes in the silence / whispers in the wind** _(trope)_ — 'Echoes' and 'whispers' are top-flagged Suno tells; AI uses them as atmospheric filler to imply lingering memory or mystery without content.  _e.g._ "Hear the echoes whispering in the wind"
+
+## meta narration  (8)
+
+- 🟠 **As we begin** _(opener)_ — AI-style meta-narration announcing the start of a section.  _e.g._ "As we begin, let's define the terms."
+- 🟠 **As we examine** _(phrase)_ — AI-style 'let us examine together' narration framing.  _e.g._ "As we examine the data, patterns emerge."
+- 🟠 **As we explore** _(phrase)_ — AI-style journey-framing narration common in generated essays.  _e.g._ "As we explore this topic, keep an open mind."
+- 🟠 **As we get into this** _(phrase)_ — Conversational AI transition into a topic.  _e.g._ "As we get into this, some background helps."
+- 🟠 **As we have explored** _(phrase)_ — AI-style recap narration wrapping a section.  _e.g._ "As we have explored, the options differ."
+- 🟠 **Before we begin** _(opener)_ — AI-style preamble announcing the start of content.  _e.g._ "Before we begin, a quick note."
+- 🟠 **Before we proceed** _(opener)_ — AI-style preamble transition typical of generated text.  _e.g._ "Before we proceed, let's set expectations."
+- 🟡 **As we look at** _(phrase)_ — AI-style directing-attention narration.  _e.g._ "As we look at the results, note the trend."
+
+## meta-intro  (2)
+
+- 🔴 **In this article, we will explore** _(opener)_ — Textbook AI meta-announcement of article structure.  _e.g._ "In this article, we will explore three strategies."
+- 🔴 **In this blog post, we will discuss** _(opener)_ — Self-referential blog-intro template characteristic of AI writing.  _e.g._ "In this blog post, we will discuss email tips."
+
+## metaphor cliche  (2)
+
+- 🟡 **Blueprint** _(word)_ — Overused AI metaphor for a plan or guide, common in titles.  _e.g._ "a blueprint for success"
+- 🟡 **Bridge** _(word)_ — Overworked AI metaphor for connecting gaps.  _e.g._ "bridge the gap between teams"
 
 ## model-distinctive collocation  (254)
 
@@ -3656,10 +4712,24 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **You're the melody to my heart / my favorite song** _(phrase)_ — A self-referential music metaphor the model overuses in songs about love; comparing the partner to a song/melody is a grooved AI pattern that feels canned.  _e.g._ "You're the melody to my heart, my favorite song"
 
+## narrative cliche  (1)
+
+- 🟠 **Turning point** _(phrase)_ — A stock pivotal-moment phrase AI overuses to signal significance.  _e.g._ "this marked a turning point"
+
 ## narrative filler  (2)
 
 - 🟠 **stories untold / secrets untold** _(phrase)_ — In AI-cliché lists; the inverted 'untold' adjective is a trained poeticism that implies depth while withholding any actual content.  _e.g._ "With a thousand stories untold"
 - 🟠 **the story unfolds** _(phrase)_ — Generic narrative device that announces a story instead of telling one; flagged on the Suno Wiki as a stock line the model opens with.  _e.g._ "And so the story unfolds"
+
+## narrative tell  (1)
+
+- 🟠 **Everyone Is the Same Person** _(trope)_ — Named AI-fiction tell where every character speaks in the same voice.  _e.g._ "Every character sounds identical - everyone is the same person."
+
+## narrative trope  (3)
+
+- 🔴 **Despite facing** _(phrase)_ — Documented AI phrase far more frequent in model output than human text.  _e.g._ "Despite facing numerous challenges, she persevered."
+- 🟠 **a journey of** _(phrase)_ — AI overuses 'journey' framing for ordinary processes.  _e.g._ "embark on a journey of discovery"
+- 🟠 **Venture into the unknown** _(trope)_ — Grandiose adventure framing AI adds to make mundane topics feel epic.  _e.g._ "Let's venture into the unknown of quantum computing."
 
 ## nature metaphor  (1)
 
@@ -3677,6 +4747,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## night ambiance  (1)
 
 - 🟠 **silent night / quiet night** _(phrase)_ — Default still-night setting; the model defaults to silence/quiet to signal solitude or longing, an interchangeable mood-tile across songs.  _e.g._ "On this silent night I wait"
+
+## non-committal closer  (1)
+
+- 🔴 **Only time will tell** _(closer)_ — Cliche AI essay ending that avoids commitment.  _e.g._ "Only time will tell how this unfolds."
 
 ## nostalgia imagery  (1)
 
@@ -3699,9 +4773,19 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **veil** _(word)_ — Named in Walsh's GPT-poetry signature vocabulary (via Vollmer). 'Veil of night/tears/silence' is a default mystery-overlay noun used to sound poetic while obscuring meaning.  _e.g._ "Behind the veil of night"
 
-## opener  (1)
+## opener  (11)
 
+- 🔴 **Explore the fascinating world** _(opener)_ — Textbook AI article opener that frames the topic as a fascinating world.  _e.g._ "Let's explore the fascinating world of..."
+- 🔴 **Have come a long way in recent years** _(phrase)_ — Formulaic AI opener asserting progress over time.  _e.g._ "AI tools have come a long way in recent years."
+- 🔴 **Here's a comprehensive overview** _(phrase)_ — Formulaic AI opener promising exhaustive coverage.  _e.g._ "Here's a comprehensive overview of the topic."
+- 🔴 **Here's the uncomfortable truth:** _(opener)_ — LinkedIn-style AI hook manufacturing false stakes.  _e.g._ "Here's the uncomfortable truth: most plans fail."
+- 🔴 **Here's what most people miss:** _(opener)_ — Formulaic AI social-post hook implying hidden insight.  _e.g._ "Here's what most people miss about SEO."
+- 🔴 **Here's what nobody's talking about:** _(opener)_ — Clickbait AI hook claiming to reveal an ignored truth.  _e.g._ "Here's what nobody's talking about in AI."
 - 🔴 **raised on** _(opener)_ — Formulaic origin-story opener ('Raised on dirt roads and Sunday church'). AI loves it because it lets it list genre tokens in apposition without building a scene; the construction is a known template head.  _e.g._ "Raised on whiskey, gravel, and Sunday prayers"
+- 🔴 **Today, we're going to dive into** _(opener)_ — Classic AI blog/tutorial opener that announces the topic.  _e.g._ "Today, we're going to dive into machine learning."
+- 🟠 **Here's the deal** _(phrase)_ — Faux-casual AI hook used to feign directness.  _e.g._ "Here's the deal: it works."
+- 🟠 **To kick things off** _(opener)_ — Formulaic AI casual opener to begin a section.  _e.g._ "To kick things off, let's define the terms."
+- 🟠 **To open the discussion** _(opener)_ — Stock AI section-opener that stages a topic mechanically.  _e.g._ "To open the discussion, we look at history."
 
 ## opener template  (1)
 
@@ -3710,6 +4794,31 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## optimism  (1)
 
 - 🟡 **silver lining in the clouds** _(trope)_ — A proverb-cliché AI deploys for forced optimism; quoting the idiom whole replaces any specific reason for hope.  _e.g._ "There's a silver lining behind these clouds"
+
+## ornate filler  (1)
+
+- 🔴 **A plethora of** _(phrase)_ — Distinctively AI ornate phrasing for 'many'.  _e.g._ "a plethora of options"
+
+## overused metaphor  (1)
+
+- 🟠 **the linchpin of** _(phrase)_ — An overused AI metaphor for central importance.  _e.g._ "Trust is the linchpin of the strategy."
+
+## overused verb  (2)
+
+- 🟠 **crafting** _(word)_ — AI's favorite artisanal verb applied to nearly any act of making.  _e.g._ "crafting the perfect message"
+- 🟡 **hone** _(word)_ — AI favorite verb for skill refinement.  _e.g._ "Hone your craft over time."
+
+## overused vocabulary  (1)
+
+- 🟡 **Zeitgeist** _(word)_ — Elevated buzzword AI reaches for to sound cultured when a plainer word would do.  _e.g._ "capturing the zeitgeist of a generation"
+
+## overused word  (1)
+
+- 🟡 **Keen** _(word)_ — Stiffly formal adjective AI overuses (a keen interest/eye).  _e.g._ "a keen understanding of the market"
+
+## overused-word  (1)
+
+- 🟡 **Integral** _(word)_ — Overused importance-word AI substitutes for 'essential' or 'key'.  _e.g._ "Trust is integral to success."
 
 ## oxymoron cliché  (1)
 
@@ -3818,9 +4927,34 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟡 **spark** _(word)_ — AI connection-metaphor.
 - 🟡 **tenderness** _(word)_ — AI's go-to soft-noun.
 
+## praise adjective  (1)
+
+- 🟡 **imaginative** _(word)_ — Generic complimentary adjective AI overuses when describing creative work.  _e.g._ "a truly imaginative approach"
+
+## praise filler  (1)
+
+- 🟡 **So well articulated** _(phrase)_ — Sycophantic flattery phrase common in AI chat responses.  _e.g._ "That's so well articulated!"
+
+## praise word  (2)
+
+- 🟠 **well-crafted** _(word)_ — Signature AI compliment applied to prose, tools, and strategies alike.  _e.g._ "A well-crafted narrative that resonates."
+- 🟡 **versatile** _(word)_ — Generic praise adjective AI defaults to when describing tools or people.  _e.g._ "A versatile solution for every need."
+
+## praise-word  (1)
+
+- 🟡 **Insightful** _(word)_ — Vague praise adjective AI overuses to characterize content.  _e.g._ "A truly insightful analysis."
+
 ## prestige metaphor  (1)
 
 - 🟠 **beacon of hope** _(phrase)_ — Decorative prestige-metaphor collocation ('a beacon of hope/innovation'). Near-poetic register that reads as generated filler in neutral prose.  _e.g._ "The clinic became a beacon of hope for the community."
+
+## presumptive filler  (1)
+
+- 🟠 **Of course, you already know** _(phrase)_ — AI flattering-presumption filler that pads without adding content.  _e.g._ "Of course, you already know how important this is."
+
+## prompt leakage  (1)
+
+- 🟠 **act as a genius marketing expert** _(phrase)_ — Role-play prompt instruction that leaks into or signals AI-generated marketing copy.  _e.g._ "Act as a genius marketing expert and write..."
 
 ## prose filler  (1)
 
@@ -3862,12 +4996,25 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **reverberate** _(word)_ — LLM-overused verb.
 - 🟠 **unravel** _(word)_ — LLM-overused verb.
 
+## pseudo-section  (1)
+
+- 🟠 **Here's why:** _(phrase)_ — AI pseudo-section intro that pretends to justify a claim.  _e.g._ "It matters. Here's why:"
+
 ## punctuation fingerprint  (1)
 
 - 🟠 **Em dash overuse (— mid-sentence asides)** _(structure)_ — Models lean on the em dash for parenthetical asides at a density well above typical human writing; widely cited as a punctuation fingerprint of AI prose. The consistent —like this— cadence stacks up across a piece.
 
-## purple prose  (4)
+## purple metaphor  (5)
 
+- 🔴 **A symphony of** _(phrase)_ — 'A symphony of X' is a classic overwrought AI metaphor pattern.  _e.g._ "a symphony of strategy"
+- 🔴 **A tapestry of** _(phrase)_ — 'Tapestry' metaphor is a strong, well-known signature of AI-generated prose.  _e.g._ "a rich tapestry of insights"
+- 🔴 **advancement in the realm** _(phrase)_ — 'In the realm of' is a hallmark AI grandiose framing.  _e.g._ "a major advancement in the realm of technology"
+- 🟠 **A mosaic of** _(phrase)_ — 'Mosaic of ideas' is a formulaic AI decorative metaphor.  _e.g._ "a mosaic of ideas"
+- 🟠 **a web of insights** _(phrase)_ — Ornate 'web of' metaphor typical of AI-inflated prose.  _e.g._ "revealing a web of insights"
+
+## purple prose  (5)
+
+- 🔴 **An intricate interplay** _(phrase)_ — Ornate abstraction AI overuses to sound sophisticated.  _e.g._ "an intricate interplay of factors"
 - 🔴 **hair like a waterfall of night** _(phrase)_ — Overwrought AI simile.
 - 🟠 **liquid-smooth** _(word)_ — AI compound adjective.
 - 🟠 **luminescent** _(word)_ — Overused glow-adjective.
@@ -3876,6 +5023,15 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## question-fragment transition  (1)
 
 - 🟠 **The result? ** _(structure)_ — The tropes.fyi 'The X? A Y.' pattern: a one-word rhetorical question used as a punchy fragment transition; AI over-deploys it for artificial pacing where humans would write a full sentence.  _e.g._ "The result? A faster, cleaner build."
+
+## reader presumption  (2)
+
+- 🟠 **As you are likely aware** _(phrase)_ — AI hedge that presumes reader knowledge.  _e.g._ "As you are likely aware, prices fluctuate."
+- 🟠 **As you may know** _(phrase)_ — AI hedge that presumes reader knowledge.  _e.g._ "As you may know, the market shifted."
+
+## reassurance filler  (1)
+
+- 🟠 **Rest assured** _(phrase)_ — Stock reassuring transition AI inserts to sound confident and helpful.  _e.g._ "Rest assured, this method works."
 
 ## rebirth  (2)
 
@@ -3896,6 +5052,16 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## recovery/resilience  (1)
 
 - 🔴 **broken wings that learn to fly again** _(trope)_ — The 'damaged-then-healed flight' beat pairs two clichés (broken wings + flying again) into a self-contained recovery arc AI reuses verbatim across unrelated songs.  _e.g._ "With these broken wings I'll learn to fly again"
+
+## reframe construction  (3)
+
+- 🔴 **The problem isn't X. It's Y** _(template)_ — A signature AI reframe that dismisses one thing to spotlight another.  _e.g._ "The problem isn't the tool. It's the process."
+- 🔴 **The question isn't whether, but when** _(phrase)_ — A signature AI rhetorical reframe implying inevitability.  _e.g._ "The question isn't whether AI will change work, but when."
+- 🔴 **The question isn't X. The question is Y** _(template)_ — A formulaic AI reframe that redirects the reader's attention.  _e.g._ "The question isn't cost. The question is value."
+
+## reframe template  (1)
+
+- 🟠 **Stop thinking of it as X. Start thinking of it as Y** _(template)_ — The 'stop thinking / start thinking' reframe is a formulaic AI persuasion pattern.  _e.g._ "Stop thinking of it as a cost. Start thinking of it as an investment."
 
 ## refuge/love  (2)
 
@@ -3999,6 +5165,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟡 **frost / frost-covered / winter's chill** _(phrase)_ — AI default for hardship/aging via season; winter imagery ('frost,' 'chill') is applied as mood-coding rather than an observed season.  _e.g._ "Through winter's chill we walk alone"
 
+## section header  (2)
+
+- 🟠 **What This Means for X** _(template)_ — Formulaic AI section header that pivots to implications.  _e.g._ "What This Means for Small Businesses"
+- 🟡 **Your questions, answered** _(closer)_ — Formulaic FAQ/section header AI content generators default to.  _e.g._ "Your questions, answered."
+
 ## self-actualization  (1)
 
 - 🟠 **finding my voice** _(trope)_ — AI's stock metaphor for self-expression/empowerment; the abstract 'voice' lets the model claim a growth arc without dramatizing any actual change.  _e.g._ "Finally found my voice, won't be silenced now"
@@ -4010,6 +5181,13 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## self-protection  (1)
 
 - 🟠 **holding up my shield / armor on** _(trope)_ — AI literalizes emotional defense as medieval combat gear (shield/armor), a grandiose physicalization of a feeling that real lyricists would render through behavior or scene.  _e.g._ "I put my armor on and raise my shield"
+
+## self-reference  (4)
+
+- 🟠 **As mentioned above** _(phrase)_ — Formulaic back-reference phrase LLMs insert to feign continuity.  _e.g._ "As mentioned above, the results vary."
+- 🟠 **As noted earlier** _(phrase)_ — Formulaic back-reference phrase typical of AI-structured text.  _e.g._ "As noted earlier, timing matters."
+- 🟠 **As previously stated** _(phrase)_ — Formulaic back-reference phrase typical of AI-structured text.  _e.g._ "As previously stated, the data is limited."
+- 🟠 **As we've seen** _(phrase)_ — Formulaic recap phrase LLMs use to reference prior points.  _e.g._ "As we've seen, consistency wins."
 
 ## sensory filler  (1)
 
@@ -4040,6 +5218,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## setting/urban-night  (1)
 
 - 🟠 **Underneath the city lights** _(opener)_ — Pairs the over-trained 'neon/city lights' imagery with a romantic setup; AI reaches for it to manufacture instant urban-romance atmosphere without any specific place.  _e.g._ "Underneath the city lights, we dance alone"
+
+## signature AI verb  (2)
+
+- 🔴 **Delving into** _(phrase)_ — The 'delve' family is a near-signature marker of AI writing.  _e.g._ "Delving into the world of finance."
+- 🔴 **delving into the intricacies of** _(phrase)_ — Compound AI cliche stacking 'delve' with 'intricacies'.  _e.g._ "Delving into the intricacies of quantum computing."
 
 ## simile cliché  (1)
 
@@ -5284,6 +6467,18 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟡 **young woman** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 - 🟡 **young woman named** _(phrase)_ — Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 
+## social CTA template  (1)
+
+- 🟠 **Follow for more X content** _(template)_ — Generic AI-written social-media call to action.  _e.g._ "Follow for more marketing content"
+
+## social media trope  (1)
+
+- 🟠 **That's it. That's the tweet** _(phrase)_ — Overused social-media punchline pattern that reads as generated engagement bait.  _e.g._ "Be kind. That's it. That's the tweet."
+
+## social-media hook  (1)
+
+- 🟠 **Everyone's sleeping on this** _(opener)_ — Formulaic AI-generated social hook framing content as an overlooked secret.  _e.g._ "Everyone's sleeping on this one trick."
+
 ## song architecture  (1)
 
 - 🔴 **verse-prechorus-chorus-drop with hype filler** _(structure)_ — AI dance lyrics collapse into a predictable scaffold where the drop section is pure stacked imperatives ('hands up', 'light it up', 'lose control'). The mechanical command-stacking at the drop is a structural fingerprint.  _e.g._ "[Verse] generic setup / [Build] 'can you feel it' / [Drop] 'hands up / light it up / lose control'"
@@ -5320,9 +6515,27 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **breaking the silence** _(trope)_ — Paired AI default for 'finding my voice'; silence-as-oppression broken by song is a self-referential beat the model reuses to signal courage.  _e.g._ "I'm breaking the silence, hear me now"
 
+## stiff-connective  (2)
+
+- 🟡 **Inasmuch as** _(phrase)_ — Archaic formal connective AI overuses in a stilted register.  _e.g._ "Inasmuch as it is possible, we will comply."
+- 🟡 **Insofar as** _(phrase)_ — Formal legalistic connective typical of AI's overly formal tone.  _e.g._ "Insofar as the rules allow, proceed."
+
 ## stock idiom  (1)
 
 - 🟠 **come what may** _(phrase)_ — Dead idiom the model drops in for determination themes; it reads as borrowed greeting-card language rather than a written choice.
+
+## stock metaphor  (1)
+
+- 🟠 **in a sea of** _(phrase)_ — Overused metaphor AI reaches for to convey abundance or being lost among options.  _e.g._ "a beacon in a sea of noise"
+
+## stock phrase  (1)
+
+- 🟠 **deep dive into** _(phrase)_ — Overused AI framing for 'examine closely'.  _e.g._ "Let's take a deep dive into the data."
+
+## stock transition  (2)
+
+- 🟠 **Suffice it to say** _(phrase)_ — Formal filler transition characteristic of AI prose.  _e.g._ "Suffice it to say, the results were impressive."
+- 🟠 **Switching gears** _(phrase)_ — Conversational transition AI leans on to pivot topics.  _e.g._ "Switching gears, let's talk about pricing."
 
 ## struggle cliché  (1)
 
@@ -5344,6 +6557,15 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **In the end / At the end of the day** _(closer)_ — A summarizing cliché the model uses to wrap a song the way it ends an essay ('in conclusion'); the same 'wrap-it-up' instinct that produces AI prose tells bleeds into the final verse/outro.  _e.g._ "In the end, it's only you and me"
 
+## summary opener  (2)
+
+- 🟠 **All in all** _(closer)_ — Formulaic wrap-up phrase that signals an AI-style conclusion.  _e.g._ "All in all, this approach delivers results."
+- 🟠 **All things considered** _(closer)_ — Stock summarizing phrase AI uses to launch a conclusion.  _e.g._ "All things considered, it's worth the effort."
+
+## summary transition  (1)
+
+- 🟡 **Overall** _(closer)_ — Common AI summary-opener that signals a formulaic wrap-up.  _e.g._ "Overall, this is a solid choice."
+
 ## sunset imagery  (1)
 
 - 🟠 **setting sun / sun sinks low** _(phrase)_ — Default closing/melancholy image; AI ends verses with a sunset to signal endings, a near-reflexive scene-setter.  _e.g._ "As the setting sun goes down"
@@ -5355,6 +6577,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## survival/relief  (1)
 
 - 🟠 **breaking through the surface / coming up for air** _(trope)_ — Drowning-then-surfacing is AI's stock image for surviving overwhelm; the water-rescue beat arrives prefabricated as an escape-from-struggle resolution.  _e.g._ "I'm coming up for air, breaking the surface"
+
+## sycophancy  (1)
+
+- 🟠 **You nailed it** _(phrase)_ — Sycophantic affirmation chatbots reflexively give in reply to a user.  _e.g._ "You nailed it — that's exactly right."
 
 ## synonym-evasion tell  (1)
 
@@ -5368,6 +6594,25 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## synthwave imagery  (1)
 
 - 🟠 **electric dreams / electric nights** _(phrase)_ — Synthwave/retro-EDM coded phrase the model attaches 'electric' to any dreamy noun; co-occurs with neon/city for a complete generic-retrowave aesthetic.  _e.g._ "We're living in electric dreams tonight"
+
+## tech buzzphrase  (1)
+
+- 🟠 **on the cutting edge** _(phrase)_ — Overused AI innovation cliche.  _e.g._ "a solution on the cutting edge of technology"
+
+## tech buzzword  (4)
+
+- 🔴 **By harnessing the power** _(phrase)_ — Overused AI framing for leveraging a technology's capabilities.  _e.g._ "By harnessing the power of AI, businesses can grow."
+- 🟠 **blockchain-enabled** _(word)_ — Empty tech-hype modifier AI appends to nouns to signal innovation.  _e.g._ "a blockchain-enabled solution"
+- 🟠 **By combining the capabilities** _(phrase)_ — Formulaic AI phrasing for merging tools or features.  _e.g._ "By combining the capabilities of both models..."
+- 🟡 **Metaverse** _(word)_ — Trend buzzword AI over-inserts into tech writing.  _e.g._ "The future lies in the metaverse."
+
+## tech hype template  (1)
+
+- 🔴 **The [noun] has revolutionized the way we [verb]** _(template)_ — Formulaic AI tech-hype sentence template.  _e.g._ "The internet has revolutionized the way we communicate."
+
+## tech jargon  (1)
+
+- 🟡 **cloud-based** _(word)_ — Generic tech buzzword AI overuses as filler in product descriptions.  _e.g._ "a cloud-based solution for modern teams"
 
 ## temporal abstraction  (1)
 
@@ -5424,6 +6669,78 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **in the night** _(phrase)_ — High-frequency line-filler that supplies an easy rhyme ('night/light/right') and a vague setting; the model's default temporal anchor when none is specified.  _e.g._ "I call your name in the night"
 - 🟠 **twilight** _(word)_ — On Suno cliche-checker lists alongside dusk/dawn. AI's preferred 'pretty in-between time' setting because it's evocative-by-default and demands no specific detail.  _e.g._ "In the twilight of our days"
 
+## time-setter  (5)
+
+- 🔴 **in today's modern age** _(opener)_ — Redundant 'today's modern age' is a strong AI intro tell.  _e.g._ "In today's modern age, we rely on smartphones."
+- 🟠 **in the modern era** _(opener)_ — Vague temporal scene-setter AI uses to open essays and intros.  _e.g._ "In the modern era, technology shapes everything."
+- 🟠 **in this day and age** _(opener)_ — Cliche temporal opener AI overuses to signal contemporary relevance.  _e.g._ "In this day and age, privacy matters more than ever."
+- 🟠 **In today's world** _(opener)_ — Generic contemporary scene-setter AI defaults to for intros.  _e.g._ "In today's world, connectivity is constant."
+- 🟡 **In the not-too-distant future** _(opener)_ — Stock speculative-future opener common in AI narrative and blog intros.  _e.g._ "In the not-too-distant future, cars will drive themselves."
+
+## tonal tell  (1)
+
+- 🟡 **Excessive enthusiasm** _(trope)_ — Named AI tell describing unwarranted upbeat tone throughout a piece.  _e.g._ "The whole piece bubbles with excessive enthusiasm."
+
+## topic-framing  (5)
+
+- 🟠 **When discussing** _(opener)_ — Formulaic essay-style topic frame that AI uses to introduce a subject.  _e.g._ "When discussing climate change, several factors emerge."
+- 🟠 **When examining** _(opener)_ — Formulaic analytical opener AI uses to lead into a point.  _e.g._ "When examining the data, a clear trend appears."
+- 🟠 **When exploring** _(opener)_ — Formulaic exploratory frame AI uses to introduce a topic.  _e.g._ "When exploring this topic, we find nuance."
+- 🟠 **With the advent of** _(opener)_ — Formulaic tech-history opener AI uses to introduce something new.  _e.g._ "With the advent of AI, everything changed."
+- 🟡 **When looking at** _(opener)_ — Common AI lead-in phrase that hedges into analysis.  _e.g._ "When looking at the numbers, growth is evident."
+
+## transition  (23)
+
+- 🟠 **By the same token** _(phrase)_ — Formal transitional connective AI overuses between points.  _e.g._ "By the same token, costs rose."
+- 🟠 **Exploring this avenue** _(phrase)_ — AI's stiff metaphorical transition for pursuing an idea.  _e.g._ "Exploring this avenue further reveals..."
+- 🟠 **Given this context** _(phrase)_ — Formulaic AI transition that re-states framing before a point.  _e.g._ "Given this context, we can conclude..."
+- 🟠 **Having said that** _(phrase)_ — Stock AI pivot transition into a qualification.  _e.g._ "Having said that, there are exceptions."
+- 🟠 **In light of the above** _(phrase)_ — Formal AI connector used to wrap up preceding points.  _e.g._ "In light of the above, we recommend..."
+- 🟠 **Put differently** _(phrase)_ — A restatement transition AI inserts to pad and re-explain.  _e.g._ "Put differently, the results improved."
+- 🟠 **This begs the question** _(phrase)_ — Overused rhetorical connective AI inserts to pivot to a question.  _e.g._ "This begs the question: what comes next?"
+- 🟠 **To frame it differently** _(phrase)_ — Formulaic AI rephrasing transition rarely used in natural human writing.  _e.g._ "To frame it differently, the results suggest..."
+- 🟠 **To look at it from another angle** _(phrase)_ — Formulaic AI perspective-shift transition.  _e.g._ "To look at it from another angle, consider the cost."
+- 🟠 **To put it another way** _(phrase)_ — Stock AI restatement connector used to pad explanations.  _e.g._ "To put it another way, less is more."
+- 🟠 **To put this into perspective** _(phrase)_ — Overused AI framing phrase before offering a comparison.  _e.g._ "To put this into perspective, that's twice the size."
+- 🟠 **To rephrase the idea** _(phrase)_ — Mechanical AI restatement connector.  _e.g._ "To rephrase the idea, it's about balance."
+- 🟠 **What's more** _(phrase)_ — A stock additive connective the models overuse to stack claims.  _e.g._ "What's more, the results were remarkable."
+- 🟠 **With that being said** _(phrase)_ — Overused pivot phrase AI uses to switch direction.  _e.g._ "With that being said, there are exceptions."
+- 🟠 **With this in mind** _(phrase)_ — Filler transition AI uses to bridge paragraphs.  _e.g._ "With this in mind, let's move forward."
+- 🟠 **Without further ado** _(phrase)_ — Cliche filler phrase AI uses to move into the main content.  _e.g._ "Without further ado, let's dive in."
+- 🟡 **In a similar fashion** _(phrase)_ — Stiff transitional phrase AI uses instead of natural connectors.  _e.g._ "In a similar fashion, we can optimize the pipeline."
+- 🟡 **In the same vein** _(phrase)_ — Formulaic AI transition phrase linking parallel points.  _e.g._ "In the same vein, marketing benefits from AI."
+- 🟡 **On the contrary** _(phrase)_ — Formal AI-favored contrast connective.  _e.g._ "On the contrary, results improved."
+- 🟡 **To be fair** _(phrase)_ — Conversational hedge AI overuses to introduce balance.  _e.g._ "To be fair, both sides have a point."
+- 🟡 **To begin with** _(opener)_ — Formulaic sequencing opener AI uses to start enumeration.  _e.g._ "To begin with, consider the cost."
+- 🟡 **To that end** _(phrase)_ — Overused AI transition connecting purpose to action.  _e.g._ "To that end, we built a tool."
+- 🟡 **What sets this apart** _(phrase)_ — Formulaic differentiation transition common in AI marketing copy.  _e.g._ "What sets this apart is the design."
+
+## transition cliche  (2)
+
+- 🔴 **Paving the way** _(phrase)_ — Very common AI progress-metaphor phrase.  _e.g._ "paving the way for future breakthroughs"
+- 🔴 **Paving the way for enhanced performance** _(phrase)_ — Compounded AI progress cliche stacked with buzzwords.  _e.g._ "paving the way for enhanced performance"
+
+## transition phrase  (1)
+
+- 🟡 **As a result** _(phrase)_ — Common connective LLMs overuse to signal cause and effect.  _e.g._ "As a result, sales grew."
+
+## transition word  (9)
+
+- 🟠 **Firstly** _(word)_ — AI overuses the stiff enumerator 'Firstly' to open list items.  _e.g._ "Firstly, we must consider the data."
+- 🟡 **Accordingly** _(word)_ — Formal connective LLMs use to signal logical consequence.  _e.g._ "Accordingly, we adjusted the plan."
+- 🟡 **Alternatively** _(word)_ — Formal connective AI uses to present options in listy prose.  _e.g._ "Alternatively, you could try"
+- 🟡 **Consequently** _(word)_ — Formal connective LLMs overuse to chain sentences in a mechanically logical flow.  _e.g._ "Consequently, the results improved."
+- 🟡 **Conversely** _(word)_ — Formal transition word AI over-relies on to structure contrasts.  _e.g._ "Conversely, some argue the opposite."
+- 🟡 **Hence** _(word)_ — Formal connective LLMs favor for concluding a point.  _e.g._ "Hence, the conclusion follows."
+- 🟡 **Nevertheless** _(word)_ — Formal contrast connective LLMs favor over plainer alternatives.  _e.g._ "Nevertheless, challenges remain."
+- 🟡 **Nonetheless** _(word)_ — Formal contrast connective LLMs prefer over plainer words.  _e.g._ "Nonetheless, progress was made."
+- 🟡 **Subsequently** _(word)_ — Formal sequencing connective LLMs favor over 'then'.  _e.g._ "Subsequently, we deployed it."
+
+## trend framing  (2)
+
+- 🟠 **The industry is waking up to** _(phrase)_ — A cliche AI opener that personifies an industry to signal an emerging trend.  _e.g._ "The industry is waking up to this shift."
+- 🟠 **the next frontier** _(phrase)_ — An overused AI metaphor for the next big thing.  _e.g._ "AI is the next frontier in medicine."
+
 ## triadic negation  (1)
 
 - 🔴 **Not X. Not Y. Just Z.** _(structure)_ — A compressed negative-parallelism variant from tropes.fyi using staccato negation fragments for manufactured impact; the rhythmic three-beat denial is over-represented in LLM marketing output.  _e.g._ "Not flashy. Not complicated. Just effective."
@@ -5431,6 +6748,11 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## trial/endurance  (1)
 
 - 🟠 **walking through the fire / dancing in the flames** _(trope)_ — Fire as a trial-to-survive is a top AI elemental default; 'walk through fire' arrives as an idiom-block signaling endurance with no specific ordeal attached.  _e.g._ "I walked through fire just to find my way"
+
+## triple-negation-opener  (2)
+
+- 🔴 **No X. No Y. Just Z.** _(template)_ — The staccato triple 'No X. No Y. Just Z.' opener is a recognizable AI/LinkedIn hook pattern.  _e.g._ "No fluff. No filler. Just results."
+- 🟠 **Not a prototype. Not a demo. Production-ready** _(template)_ — The 'Not X. Not Y. Z.' rhetorical triple is a formulaic AI hype opener.  _e.g._ "Not a prototype. Not a demo. Production-ready."
 
 ## triumph  (2)
 
@@ -5458,6 +6780,10 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **two hearts beating as one** _(trope)_ — Fossilized unity metaphor; its appearance signals the model picked the single most-clichéd image for togetherness instead of a specific shared moment.  _e.g._ "Two hearts beating as one tonight"
 
+## unsourced-authority  (1)
+
+- 🟠 **widely recognized** _(phrase)_ — Vague appeal to consensus AI uses without a source.  _e.g._ "It is widely recognized as the best approach."
+
 ## uplift verb  (1)
 
 - 🔴 **soar / rise above** _(phrase)_ — Explicitly cited Suno clichés; 'rise above' and 'soar' are the model's default empowerment payoff in choruses, nearly universal in AI uplift songs.  _e.g._ "We will rise above it all"
@@ -5480,13 +6806,45 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **You and me against the world** _(phrase)_ — Stock defiant-couple trope; the model uses it as a ready-made 'our love is strong' beat. Its abstractness (no actual adversary named) marks it as generated.  _e.g._ "It's you and me against the world tonight"
 
+## vague abstraction  (1)
+
+- 🟡 **The complexities of** _(phrase)_ — Vague abstraction AI uses to gesture at depth without specifics.  _e.g._ "the complexities of modern life"
+
+## vague attribution  (2)
+
+- 🟠 **growing recognition** _(phrase)_ — Vague AI framing that asserts a trend without a source.  _e.g._ "There is growing recognition that..."
+- 🟡 **Some people say** _(opener)_ — Weasel-word opener AI uses to introduce claims without a source.  _e.g._ "Some people say this is the future."
+
+## vague intensifier  (1)
+
+- 🟡 **considerable** _(word)_ — Vague quantifier AI uses to imply magnitude without data.  _e.g._ "a considerable amount of effort"
+
+## vague quantifier  (1)
+
+- 🟡 **a wide range of** _(phrase)_ — Filler quantifier LLMs use to gesture at breadth without specifics.  _e.g._ "offers a wide range of options"
+
+## vague verb  (2)
+
+- 🟠 **Explore** _(word)_ — AI's go-to vague verb for 'look at' in intros and headings.  _e.g._ "Let's explore the possibilities."
+- 🟡 **Contribute to** _(phrase)_ — Vague AI hedging verb used to imply impact without specifics.  _e.g._ "This can contribute to better outcomes."
+
 ## vague-attribution opener  (1)
 
 - 🟠 **They say / Some say** _(opener)_ — Anonymous-authority opener that injects fake folk-wisdom gravitas; AI loves unattributed 'they say' because it's a high-frequency proverb frame requiring no real source or specificity.  _e.g._ "They say that time will heal it all"
 
+## vague-context-setter  (1)
+
+- 🟠 **In the world of** _(opener)_ — Vague topic-framing opener AI leans on to introduce a subject.  _e.g._ "In the world of finance, timing is everything."
+
 ## value/emotion  (1)
 
 - 🟠 **gold/soul** _(rhyme_pair)_ — Near/slant rhyme AI treats as perfect, used to assert worth ('heart of gold / ancient soul'); the pairing leans on two value-loaded abstractions and is a staple of generated 'inspirational' lyrics.  _e.g._ "Your heart is gold / an old, old soul"
+
+## vocab-tell  (3)
+
+- 🟠 **myriad of options** _(phrase)_ — 'A myriad of' is an overused AI construction that also misuses 'myriad'.  _e.g._ "a myriad of options to choose from"
+- 🟠 **Nascent** _(word)_ — 'Nascent' is a stock AI vocabulary word rarely used in casual human writing.  _e.g._ "the nascent field of AI ethics"
+- 🟡 **Nexus** _(word)_ — AI favors 'nexus' as an elevated synonym for connection/hub.  _e.g._ "the nexus of art and technology"
 
 ## vulnerability  (1)
 
@@ -5515,6 +6873,17 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## wikipedia AI tell  (1)
 
 - 🔴 **a testament to** _(phrase)_ — Wikipedia AI-cleanup signature phrase.
+
+## wordy connector  (2)
+
+- 🟡 **In light of the fact that** _(phrase)_ — Verbose padding AI uses instead of a simple 'because'.  _e.g._ "In light of the fact that costs rose..."
+- 🟡 **In spite of the fact that** _(phrase)_ — Verbose padding AI uses in place of 'although'.  _e.g._ "In spite of the fact that it was late..."
+
+## wordy filler  (3)
+
+- 🟠 **Due to the fact that** _(phrase)_ — Wordy padding AI uses instead of 'because'.  _e.g._ "Due to the fact that demand rose."
+- 🟡 **Enable you to** _(phrase)_ — Wordy construction AI prefers over 'let you'.  _e.g._ "This feature enables you to save time."
+- 🟡 **Ensure that** _(phrase)_ — Formal connective AI overuses in instructional prose.  _e.g._ "Ensure that you save your work."
 
 ## working-folk imagery  (1)
 
@@ -5597,8 +6966,8 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 ## adverb  (4)
 
+- 🔴 **additionally** _(word)_ — Flagged by Wikipedia and the excess-vocabulary set as an AI connector. Models open paragraphs with 'Additionally/Moreover/Furthermore' far more than human authors, a mechanical-transition tell tied to their list-like structure.  _e.g._ "Additionally, the method scales to large inputs."
 - 🔴 **meticulously** _(word)_ — Adverb form of the same marker; flagged separately in the excess-vocabulary list because LLMs prepend it to process verbs ('meticulously curated/designed') as filler praise. Spiked alongside 'meticulous' with no topical driver.  _e.g._ "The dataset was meticulously curated for this study."
-- 🟠 **additionally** _(word)_ — Flagged by Wikipedia and the excess-vocabulary set as an AI connector. Models open paragraphs with 'Additionally/Moreover/Furthermore' far more than human authors, a mechanical-transition tell tied to their list-like structure.  _e.g._ "Additionally, the method scales to large inputs."
 - 🟠 **notably** _(word)_ — Identified as an excess style adverb. AI sprinkles 'notably/importantly/significantly' as discourse-glue at sentence starts; its over-rate signals the model's templated transition habit rather than genuine emphasis.  _e.g._ "Notably, the effect persisted over time."
 - 🟡 **particularly** _(word)_ — Flagged excess adverb ('particularly in areas of'). Models use it as a soft-focusing hedge to seem precise; its elevated frequency reflects discourse-glue habits rather than genuine specification.  _e.g._ "This is relevant, particularly in clinical settings."
 
@@ -6127,7 +7496,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 ## hypothetical-scene opener  (1)
 
-- 🟠 **Imagine a world where...** _(opener)_ — Inviting the reader into an imagined scenario is a default AI intro hook. The 'Imagine...' opener signals the generic persuasive template rather than a specific concrete lead.  _e.g._ "Imagine a world where your inbox manages itself."
+- 🔴 **Imagine a world where...** _(opener)_ — Inviting the reader into an imagined scenario is a default AI intro hook. The 'Imagine...' opener signals the generic persuasive template rather than a specific concrete lead.  _e.g._ "Imagine a world where your inbox manages itself."
 
 ## importance assertion  (1)
 
@@ -6712,6 +8081,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **showcase** _(word)_ — Base form of the same marker; flagged because AI substitutes it for plain 'show'/'demonstrate.' Wikipedia lists it among current-generation tells, distinct from older 'delve.' Its rise tracks model output, not any disciplinary trend.  _e.g._ "The study showcases the benefits of the approach."
 - 🔴 **showcasing** _(word)_ — Excess-vocabulary ratio r=9.2, one of the top markers, and noted by Wikipedia as a newer-generation favorite. Models use the -ing form to glue clauses ('..., showcasing its versatility'), a syntactic crutch that spiked without any subject-matter cause.  _e.g._ "The model achieved high accuracy, showcasing its versatility."
 - 🔴 **underscore** _(word)_ — In PubMed full text, the share of papers using it 6+ times rose over 10,000% (the largest spike measured), and overall ~1,000%. It is the model's default verb for 'this matters,' replacing plain 'show'/'highlight,' so its surge is a near-pure stylistic signal.  _e.g._ "This underscores the need for action."
+- 🔴 **utilize** _(word)_ — Listed as an AI-preferred bloated substitute for 'use.' Editors note models default to the longer Latinate form to sound formal; its over-rate relative to 'use' is a low-cost stylistic tell.  _e.g._ "Utilize available resources effectively."
 - 🟠 **boast** _(word)_ — Listed by Wikipedia ('boasts'). Copula-avoidance verb: 'the city boasts a rich history' instead of 'has'. Promotional framing.  _e.g._ "The hotel boasts stunning views."
 - 🟠 **elevate** _(word)_ — Focal-word member ('elevate the discussion/experience'). A promotional verb out of place in neutral exposition; its post-ChatGPT spike reflects marketing register bleeding into academic text.  _e.g._ "Elevate your everyday routine."
 - 🟠 **embark** _(word)_ — On Plus AI / Wikipedia lists. 'Embark on a journey' is a stock AI opener; flowery verb for 'start' that humans rarely use literally.  _e.g._ "Embark on a journey of discovery."
@@ -6721,15 +8091,14 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **harness** _(word)_ — Grouped with leverage/foster/utilize as an abstract action verb ('harness the power of'). The fixed phrase 'harness the power/potential of' is templated and content-free, a recognized AI register marker.  _e.g._ "Harness the power of data."
 - 🟠 **leverage** _(word)_ — Flagged as a top abstract verb LLMs use instead of plain 'use.' It is corporate register imported into academic prose; detector lists single it out because it signals elevated-but-empty phrasing rather than the simpler word a human would pick.  _e.g._ "Leverage cutting-edge technology to drive results."
 - 🟠 **navigate** _(word)_ — Focal-word member; the metaphor 'navigate the complexities/challenges of' is an AI staple. It substitutes for plain 'handle/address,' and its templated collocation with 'complexities' makes it a recognizable cluster tell.  _e.g._ "Navigate the complexities of modern life."
+- 🟠 **streamline** _(word)_ — Business-jargon verb for 'simplify' ('streamline your workflow'). Default AI productivity-copy vocabulary.  _e.g._ "Streamline your business processes."
 - 🟠 **surpass** _(word)_ — Focal-word member. Models favor 'surpass' over 'exceed/beat' when reporting results; its elevated rate is stylistic, since the underlying claim (outperforming) didn't suddenly become more common in 2023.  _e.g._ "Our model surpasses prior baselines."
-- 🟠 **utilize** _(word)_ — Listed as an AI-preferred bloated substitute for 'use.' Editors note models default to the longer Latinate form to sound formal; its over-rate relative to 'use' is a low-cost stylistic tell.  _e.g._ "Utilize available resources effectively."
+- 🟠 **unlock** _(word)_ — Marketing verb paired with 'potential/value/insights' ('unlock the power of'). AI's default aspirational call-to-action vocabulary.  _e.g._ "Unlock the full potential of your data."
 - 🟡 **bolster** _(word)_ — Wikipedia-listed ('bolstered by'). An elevated synonym for 'support/strengthen' that AI inserts to sound authoritative; flagged because its frequency rose as register dressing, not from any topical need.  _e.g._ "This conclusion is bolstered by the new data."
 - 🟡 **encompass** _(word)_ — Flagged excess marker; AI uses 'encompasses a wide range of' as a comprehensiveness claim. A Latinate substitute for 'includes/covers' whose inflated rate signals the model's generic completeness habit.  _e.g._ "The framework encompasses a wide range of cases."
 - 🟡 **exhibited** _(word)_ — Listed excess style verb; AI prefers 'exhibited' over plain 'showed.' Its over-rate in results sections is a register choice — the same observation reported in a more formal-sounding word — making it a quiet stylistic tell.  _e.g._ "The samples exhibited increased activity."
 - 🟡 **facilitate** _(word)_ — Named among the abstract verbs that 'float above any real action.' Models use it to vaguely assert enabling without naming the mechanism; its inflated rate signals hedged, actionless prose.  _e.g._ "This tool facilitates collaboration."
 - 🟡 **garner** _(word)_ — Wikipedia-listed AI verb ('garner attention/support'). A fancy substitute for 'gain/get' that models favor for register; its over-rate relative to plainer verbs is a low-burstiness tell.  _e.g._ "The study garnered significant attention."
-- 🟡 **streamline** _(word)_ — Business-jargon verb for 'simplify' ('streamline your workflow'). Default AI productivity-copy vocabulary.  _e.g._ "Streamline your business processes."
-- 🟡 **unlock** _(word)_ — Marketing verb paired with 'potential/value/insights' ('unlock the power of'). AI's default aspirational call-to-action vocabulary.  _e.g._ "Unlock the full potential of your data."
 
 ## verb inflation  (1)
 

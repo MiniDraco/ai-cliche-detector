@@ -1,6 +1,6 @@
 ﻿# AI Cliché Detection Suite
 
-**Spot AI-written text and lyrics — offline, on your own machine.** A suite of tools backed by a 4,000+ entry database of AI "tells" (overused words, phrases, rhyme-pairs, tropes, and pattern-detectors), plus an optional local language model for the deep signals.
+**Spot AI-written text and lyrics — offline, on your own machine.** A suite of tools backed by a 4,800+ entry database of AI "tells" (overused words, phrases, rhyme-pairs, tropes, and pattern-detectors), plus an optional local language model for the deep signals.
 
 > Estimators, not proof. These measure style patterns that *correlate* with AI writing — they can't know who wrote anything. Polished or non-native human writing can read high; carefully edited AI can read low. Treat every result as a lead, not a verdict.
 

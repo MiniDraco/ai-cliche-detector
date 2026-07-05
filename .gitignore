@@ -12,6 +12,10 @@ build/claudeslop_raw.yaml
 build/antislop_raw.json
 ai-cliche-megadb.full.json
 
+# census intermediates (regenerable from the mass_search corpus)
+build/census_batches/
+build/census_candidates.json
+
 # misc
 __pycache__/
 *.pyc
