@@ -1,7 +1,7 @@
 {
   "name": "ai-cliche-suite",
   "productName": "AI Cliche Detection Suite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Offline AI-text / lyric detection suite with a bundled local model.",
   "main": "main.js",
   "scripts": {
