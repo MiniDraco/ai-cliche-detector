@@ -10,6 +10,7 @@ build/wordlists_tells.json
 build/extra_tells.json
 build/claudeslop_raw.yaml
 build/antislop_raw.json
+build/wave5_research.json
 ai-cliche-megadb.full.json
 
 # census intermediates (regenerable from the mass_search corpus)

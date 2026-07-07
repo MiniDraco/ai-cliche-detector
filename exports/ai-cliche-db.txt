@@ -1,4 +1,4 @@
-AI-CLICHE DETECTION DB  -  4856 entries
+AI-CLICHE DETECTION DB  -  4988 entries
 format: [severity] domain/type | category | TERM :: why
 ==============================================================================
 
@@ -18,6 +18,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/closer | hype punch | And that's just the beginning :: Formulaic teaser closer promising more, typical of AI hype prose.
 [medium] both/closer | hype punch | And we're just getting started :: Stock momentum-building line AI tacks onto sections.
 [medium] both/closer | resolution | at the end of the day :: The model's compulsion to wrap up (mirroring its prose 'In conclusion') leaks into songs as 'in the end' / 'at the end of the day' summary lines. A reflective summarizing closer is structurally un-rap (rap ends on a punchline) and betrays essay-trained habits.
+[medium] both/closer | abstract-boilerplate | Challenges and Future Prospects :: A generic LLM template heading/closing for academic abstracts; signals formulaic AI-generated structure.
 [medium] both/closer | chatbot sign-off | Feel free to reach out if you have questions! :: Stock helpful-assistant closing line that AI appends to messages and posts.
 [medium] both/closer | resolution | in the end / through it all :: The model's default summarizing outro phrases; 'in the end' / 'through it all' wrap a song with generic resolution, a high-probability closer that signals templated structure.
 [medium] both/closer | conclusion marker | In the final analysis :: Formal summing-up phrase AI uses to signal a conclusion.
@@ -32,6 +33,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/closer | engagement bait | What do you think? Drop your take below :: Social-media engagement-bait sign-off AI generates for posts.
 [medium] both/closer | engagement bait | What would you add to this list? :: Canned engagement-bait closer AI appends to listicles.
 [medium] both/closer | conclusion | With that, we conclude :: Formulaic sign-off that mechanically announces the ending.
+[low   ] both/closer | conversational-leak | Does this help? :: Engagement-seeking validation close ('Does this help? What are your thoughts?') characteristic of assistant turns, not human documents.
 [low   ] both/closer | summary transition | Overall :: Common AI summary-opener that signals a formulaic wrap-up.
 [low   ] both/closer | formulaic closer | Stay tuned :: Stock sign-off AI appends to end sections.
 [low   ] both/closer | section header | Your questions, answered :: Formulaic FAQ/section header AI content generators default to.
@@ -71,6 +73,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/opener | chatbot compliance opener | Of course! Let me :: Signature chatbot eager-compliance reply opener.
 [high  ] both/opener | essayistic AI opener | One cannot help but notice :: Stilted impersonal-observer construction characteristic of AI prose.
 [high  ] both/opener | opener | raised on :: Formulaic origin-story opener ('Raised on dirt roads and Sunday church'). AI loves it because it lets it list genre tokens in apposition without building a scene; the construction is a known template head.
+[high  ] both/opener | generic-topic-sentence | There are several important factors to consider :: Predictable five-paragraph-essay opener; distinctive templated topic sentence favored by LLMs.
 [high  ] both/opener | essay-scaffold | This article explores :: Classic AI article opener announcing the topic instead of getting into it.
 [high  ] both/opener | opener | Today, we're going to dive into :: Classic AI blog/tutorial opener that announces the topic.
 [high  ] both/opener | formulaic opener | Welcome to our comprehensive guide :: Boilerplate AI article opener announcing a 'comprehensive guide'.
@@ -82,6 +85,8 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/opener | social-media hook | Everyone's sleeping on this :: Formulaic AI-generated social hook framing content as an overlooked secret.
 [medium] both/opener | filler transition | First and foremost :: Formulaic enumerating opener LLMs lean on to start a point.
 [medium] both/opener | love-at-first/narrative | From the very first time I saw you :: Flagged by human cliché guides ('when I first saw you / walked into the room'); AI defaults to this narrative-origin opener to start a love story on autopilot.
+[medium] both/opener | validation-before-answer | I appreciate your question :: Formulaic validation softener that precedes the actual answer; assistant-voice politeness tic rare in human writing.
+[medium] both/opener | refusal-template | I cannot provide :: Canonical refusal opener followed by a safety/values rationale; a direct assistant-alignment leak.
 [medium] both/opener | love/revelation | I never knew love could feel like this :: A revelation-opener formula ('I never knew...') the model uses to fake emotional discovery; the construction is so templated it appears across unrelated AI songs.
 [medium] both/opener | fake personal hook | I've been sitting on this for weeks :: Manufactured LinkedIn-style vulnerability hook AI uses to open posts.
 [medium] both/opener | fake personal hook | I've never said this publicly before :: Fabricated confession hook common in AI-written social posts.
@@ -102,6 +107,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/opener | cliche opener | It stands to reason that :: Pseudo-logical AI connector used to assert conclusions.
 [medium] both/opener | cliche opener | It's commonly understood that :: Vague consensus opener characteristic of AI prose.
 [medium] both/opener | conversational filler | Let me be clear :: Emphatic hedge-opener AI uses before restating a point.
+[medium] both/opener | reasoning-leak | Let me break this down :: Assistant-voice preamble announcing performative step-by-step structure before answering; rare in native human prose.
 [medium] both/opener | conversational filler | Let me break this down for you :: Classic chatbot framing phrase before an explanation.
 [medium] both/opener | conversational filler | Let us break this down :: Formal variant of the chatbot 'break this down' explainer opener.
 [medium] both/opener | dive family | Let's dive into the topic :: 'Dive into' opener AI uses to launch a section.
@@ -112,6 +118,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/opener | vague-attribution opener | They say / Some say :: Anonymous-authority opener that injects fake folk-wisdom gravitas; AI loves unattributed 'they say' because it's a high-frequency proverb frame requiring no real source or specificity.
 [medium] both/opener | essay-scaffold | This aims to explore :: Generic academic-style opener AI uses to state intent.
 [medium] both/opener | dedication | This is my story / this one's for the ones :: The model opens with a self-narrating thesis ('this is my story', 'this one's for the dreamers') the way it opens essays with a framing sentence. Announcing the song's theme instead of dramatizing it is an essay-trained habit alien to how rappers start verses.
+[medium] both/opener | hyperbolic-hook | This is the only thing you need to know :: Absolute-claim hook formula; distinctive AI marketing default for manufactured value.
 [medium] both/opener | essay-scaffold | This paper aims to :: Boilerplate academic intent-statement opener AI reproduces.
 [medium] both/opener | essay-scaffold | This study focuses on :: Formulaic academic opener scoping the topic.
 [medium] both/opener | opener | To kick things off :: Formulaic AI casual opener to begin a section.
@@ -122,6 +129,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/opener | topic-framing | When discussing :: Formulaic essay-style topic frame that AI uses to introduce a subject.
 [medium] both/opener | topic-framing | When examining :: Formulaic analytical opener AI uses to lead into a point.
 [medium] both/opener | topic-framing | When exploring :: Formulaic exploratory frame AI uses to introduce a topic.
+[medium] both/opener | viral-hook-formula | Why doesn't anyone talk about :: Curiosity-gap hook formula common in AI marketing copy; distinctive templated opener.
 [medium] both/opener | topic-framing | With the advent of :: Formulaic tech-history opener AI uses to introduce something new.
 [low   ] both/opener | hype transition | Buckle up :: A cheap-thrill engagement insert AI uses to fake excitement before mundane content; the forced adrenaline tonally clashes with the calm prose that follows.
 [low   ] both/opener | time-setter | In the not-too-distant future :: Stock speculative-future opener common in AI narrative and blog intros.
@@ -130,13 +138,17 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/opener | conversational filler | Let's examine this further :: Formulaic AI transition to continue analysis.
 [low   ] both/opener | conversational filler | Let's look into this idea :: Generic AI lead-in to elaboration.
 [low   ] both/opener | conversational filler | Let's talk about :: Casual AI section-opener before introducing a topic.
+[low   ] both/opener | transition-overuse | moreover :: Formal transition sentence-opener overused by ChatGPT; recognizable as a formulaic connector though humans use it in formal prose too, hence low severity.
 [low   ] both/opener | vague attribution | Some people say :: Weasel-word opener AI uses to introduce claims without a source.
 [low   ] both/opener | formulaic opener | The benefits of :: Generic listicle-style opener common in AI content.
 [low   ] both/opener | transition | To begin with :: Formulaic sequencing opener AI uses to start enumeration.
 [low   ] both/opener | topic-framing | When looking at :: Common AI lead-in phrase that hedges into analysis.
+[high  ] both/phrase | prompt-quality-marker | 8k masterpiece :: Ubiquitous stacked quality descriptor in AI art prompts; near-zero use in ordinary human writing, so very low false-positive risk.
 [high  ] both/phrase | antislop (open-model slop) | a dance of :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | ornate filler | A plethora of :: Distinctively AI ornate phrasing for 'many'.
 [high  ] both/phrase | antislop (open-model slop) | a reminder :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | body-language-beat | a shiver ran down her spine :: Ubiquitous AI fiction emotion-beat; heavily overrepresented in model outputs versus human text.
+[high  ] both/phrase | body-language-beat | a smile that didn't reach her eyes :: Long-flagged romance cliche heavily perpetuated by AI trained on genre fiction; near-diagnostic when used straight.
 [high  ] both/phrase | purple metaphor | A symphony of :: 'A symphony of X' is a classic overwrought AI metaphor pattern.
 [high  ] both/phrase | purple metaphor | A tapestry of :: 'Tapestry' metaphor is a strong, well-known signature of AI-generated prose.
 [high  ] both/phrase | wikipedia AI tell | a testament to :: Wikipedia AI-cleanup signature phrase.
@@ -146,6 +158,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | corporate verb | Aims to democratize :: Buzzword-laden mission phrasing strongly associated with AI marketing copy.
 [high  ] both/phrase | corporate boilerplate | Aims to foster innovation and collaboration :: Empty buzzword cluster that reads as pure AI mission-statement filler.
 [high  ] both/phrase | antislop (open-model slop) | air was filled with anticipation :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | caption-opener | an image of :: Near-universal vision-model/alt-text caption opener; highly specific to auto-generated image descriptions.
 [high  ] both/phrase | purple prose | An intricate interplay :: Ornate abstraction AI overuses to sound sophisticated.
 [high  ] both/phrase | antislop (open-model slop) | and robust :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | as a professional :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
@@ -159,9 +172,12 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | mortality imagery | bones and dust :: AI's reflexive 'deep/mortal' image — gestures at death and time with zero specificity. It reads as gravitas-by-default because the model equates 'bones'+'dust' with profundity.
 [high  ] both/phrase | antislop (open-model slop) | bore silent witness to :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | liberation | breaking free :: The generic verb-phrase AI attaches to any escape; without an object it's pure liberation-signaling, which is why it saturates AI empowerment hooks.
+[high  ] both/phrase | body-language-beat | breath caught in her throat :: Characteristic AI respiratory reaction-beat; overused to signal shock or attraction.
+[high  ] both/phrase | emotional-cliche | breath hitched :: Formulaic AI stock reaction for surprise/arousal; heavily recycled across roleplay outputs and flagged in RP-slop detectors.
 [high  ] both/phrase | corporate buzzword | Bridge the gap :: Extremely common AI transitional cliche for connecting two ideas.
 [high  ] both/phrase | grand conclusion | Bringing us closer to a future :: Sweeping AI closer that gestures at an inspiring future.
 [high  ] both/phrase | passion/heat | Burning desire :: A redundant heat-metaphor pairing the model defaults to for 'passion'; 'burning' + 'desire' is a fixed collocation it has over-learned, signalling generated lyrics by its airless, abstract quality.
+[high  ] both/phrase | sensory-cliché | butterflies danced in her stomach :: Overused AI nervous-emotion metaphor for romance/anxiety; a stock cliche in generated prose.
 [high  ] both/phrase | tech buzzword | By harnessing the power :: Overused AI framing for leveraging a technology's capabilities.
 [high  ] both/phrase | dependence | Can't live without you :: Maximal-dependency cliché flagged across songwriting guides; the model treats it as the default 'I love you strongly' statement, a clear unedited tell.
 [high  ] both/phrase | theme | chasing dreams :: 'Chasing dreams / leaving this small town' is AI's default narrative arc when given a country prompt. The aspiration cliché is theme-as-placeholder; it fits any song and therefore distinguishes none.
@@ -172,6 +188,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | antislop (open-model slop) | chuckles darkly :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | urban light | city lights :: Per the Medium 'cringey' analysis, given 'neon' Suno's likeliest continuation is 'city/lights'; 'city lights' is the stock urban-loneliness backdrop, interchangeable across genres.
 [high  ] both/phrase | antislop (open-model slop) | cold and calculating :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | cliche-phrase | complex and multifaceted :: Appears ~700x more frequently in AI writing than human text per Pangram; an extreme excess ratio and a near-unmistakable stock hedge.
 [high  ] both/phrase | urban setting | concrete jungle :: A decades-old dead metaphor the model reaches for as its default urban-setting image; it signals the model is describing 'a city' from training data rather than a specific place the narrator knows, the missing-local-texture tell.
 [high  ] both/phrase | marketing buzzword | Cutting-edge solution :: Stock AI marketing filler with no concrete meaning.
 [high  ] both/phrase | marketing buzzword | cutting-edge technology :: Empty superlative AI attaches to any product description.
@@ -196,6 +213,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | light-decay imagery | fading light / dying light :: Named in AI-lyric cliché lists; light is perpetually 'fading' as a catch-all for loss, day's end, or mortality.
 [high  ] both/phrase | antislop (open-model slop) | feels like an electric shock :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | fiery red hair :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | cliffhanger-bait | Follow for Part 2 :: Artificial-cliffhanger CTA withholding content to force a follow; distinctive formulaic engagement-bait.
 [high  ] both/phrase | antislop (open-model slop) | for now, that was enough :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | for now, that's enough :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | for what seemed like an eternity :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
@@ -208,6 +226,8 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | purple prose | hair like a waterfall of night :: Overwrought AI simile.
 [high  ] both/phrase | opener | Have come a long way in recent years :: Formulaic AI opener asserting progress over time.
 [high  ] both/phrase | lyric cliche | heart on fire, stars align, forever and always :: Stock AI-generated love-song lyric imagery.
+[high  ] both/phrase | body-language-beat | heart skipped a beat :: Archetypal emotion-to-body cliche; extremely frequent in untuned AI romance/fiction.
+[high  ] both/phrase | body-language-beat | her voice barely above a whisper :: Extremely overrepresented AI dialogue tag/emotion-beat; strong tell in generated fiction.
 [high  ] both/phrase | opener | Here's a comprehensive overview :: Formulaic AI opener promising exhaustive coverage.
 [high  ] both/phrase | embrace/clinging | Hold me close (and never let me go) :: Flagged by human songwriting guides as a top overused love line; AI doubles down on it because 'hold me close' + 'never let go' is a deeply grooved training pattern.
 [high  ] both/phrase | therapy-speak | holding space :: Therapy-register AI phrase.
@@ -215,11 +235,13 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | soul/feeling | I feel it in my soul :: 'Soul' is one of the most AI-inflated words in lyrics; 'feel it in my soul' is its catch-all intensifier, asserting depth without earning it through specifics.
 [high  ] both/phrase | assistant boilerplate | I'd be glad to help with that :: Classic chatbot acknowledgment that betrays an AI assistant persona.
 [high  ] both/phrase | object/prop | ice-cold beer :: The 'beer beer' half of the viral 'Beer Beer Truck Truck' parody. The adjective 'ice-cold' is the tell: AI adds the obvious sensory modifier to pad syllables, and beer appears as a mood-prop rather than a plot point.
+[high  ] both/phrase | multilingual translationese | Il est essentiel de comprendre que :: French 'it is essential to understand that' — AI emphasis-opener formula recurring across models.
 [high  ] both/phrase | antislop (open-model slop) | in conclusion :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | in summary :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | in the world of :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | in today's digital era :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | refuge/love | In your arms I'm home :: The 'you are home' metaphor is one of the most over-trained intimacy lines; the model maps belonging onto it reflexively, with no specific home detail.
+[high  ] both/phrase | cliche-phrase | intricate interplay :: A stock AI collocation appearing roughly 100x more frequently in AI content than human text; flagged by Pangram as a core marker.
 [high  ] both/phrase | inflated-emphasis | It cannot be overstated that :: Hedged hyperbole construction strongly signature of AI prose.
 [high  ] both/phrase | antislop (open-model slop) | it is advisable :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | hedging filler | It is crucial to recognize :: Formulaic AI hedging preamble that adds no information before a claim.
@@ -265,10 +287,12 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | transition cliche | Paving the way :: Very common AI progress-metaphor phrase.
 [high  ] both/phrase | transition cliche | Paving the way for enhanced performance :: Compounded AI progress cliche stacked with buzzwords.
 [high  ] both/phrase | antislop (open-model slop) | perhaps, just perhaps :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | purple-prose | petal-soft lips :: Dense stacked romance cliche ('petal-soft' + honeyed/nectar) that AI produces at implausible concentration; rare in edited human prose.
 [high  ] both/phrase | recovery | picking up the pieces :: Aftermath cliché the model deploys for any 'recovering from hardship' prompt. It's vague to the point of meaninglessness (pieces of what?) and pairs almost automatically with 'starting over' / 'I'm not broken' lines, a tell-tale AI cluster.
 [high  ] both/phrase | corporate cliche | Pioneer new frontiers :: A grandiose exploration metaphor that AI uses to inflate ordinary innovation.
 [high  ] both/phrase | filler phrase | Play a crucial role in :: A formulaic importance-signaling construction AI uses constantly.
 [high  ] both/phrase | filler phrase | Play a pivotal role in :: A near-identical AI stock phrase asserting importance without evidence.
+[high  ] both/phrase | cliche-phrase | played a crucial role :: Occurs ~70x more frequently in AI content per Pangram; a formulaic overused collocation.
 [high  ] both/phrase | hype phrase | Potentially revolutionizing the way :: A speculative transformation cliche AI deploys to hype technology.
 [high  ] both/phrase | antislop (open-model slop) | practiced ease :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | corporate cliche | Propel your success :: A motivational marketing phrase typical of AI-generated business copy.
@@ -284,6 +308,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | hype phrase | Revolutionize the way you :: Classic AI marketing template promising transformation of everyday tasks.
 [high  ] both/phrase | hype | Revolutionizing the field :: Grandiose AI framing rarely used by humans in ordinary prose.
 [high  ] both/phrase | hype | Revolutionizing the way :: Stock AI hype template introducing any product or idea.
+[high  ] both/phrase | overused-metaphor | rich tapestry :: Signature AI metaphor repeated across outputs without genuine specificity; strong tell.
 [high  ] both/phrase | triumph | rise above :: Explicitly named on the Suno Wiki cliché list as a top AI tell. It's an abstract triumph verb with no object — you 'rise above' nothing in particular — and shows up in nearly every model-generated empowerment chorus.
 [high  ] both/phrase | phoenix/triumph trope | Rise from the ashes / Rise above :: Phoenix-rebirth imagery is one of the most flagged AI clichés; 'ashes' and 'rise' co-occur because resurrection-from-defeat is the corpus's default triumph arc. Even prompted to avoid it, models swap to 'embers' and 'from the dust'.
 [high  ] both/phrase | empowerment | rising above it all :: Named explicitly in Suno cliché guides; 'rise above' is a frictionless, content-free transcendence move the model defaults to when resolving conflict.
@@ -295,8 +320,11 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | darkness | shadows dance :: Classic AI personification cliché: an inanimate atmospheric noun given a graceful verb. The 'dance' verb is the model's default motion word, so shadows, flames, and lights all 'dance'.
 [high  ] both/phrase | personified shadow | shadows dance / shadows fall :: Forum users cite 'shadows' + dancing/falling as a top AI tell; the verb personifies darkness automatically, a hallmark of high-probability filler imagery.
 [high  ] both/phrase | hype | Shape the future :: Grandiose aspirational AI closer/filler with no concrete meaning.
+[high  ] both/phrase | engagement-bait-closer | Share if you relate :: Share-metric-gaming engagement bait; distinctive formulaic closer common in AI social copy.
 [high  ] both/phrase | brokenness cluster | Shattered dreams :: Named in multiple AI-cliché lists; 'shattered' + 'dreams' is a fixed collocation the model defaults to for disappointment, with no fresher synonym ever surfacing.
+[high  ] both/phrase | body-language-beat | she released the breath she didn't know she was holding :: Notorious hyperbolic emotion-beat AI overuses despite its obviousness as cliche; near-diagnostic.
 [high  ] both/phrase | antislop (open-model slop) | shiver down :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | physical-sensation | shiver down spine :: AI go-to physical response for attraction or fear; one of the most recycled RP-slop sensation markers.
 [high  ] both/phrase | antislop (open-model slop) | shiver up :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | shivers down :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | antislop (open-model slop) | shivers up :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
@@ -307,10 +335,14 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | antislop (open-model slop) | sounds unheard :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | poetry tell | space between words :: Negative-space abstraction.
 [high  ] both/phrase | poetry tell | static in the silence :: AI sensory-oxymoron.
+[high  ] both/phrase | engagement-bait-prompt | Tag a friend who :: Long-flagged engagement-bait vector; distinctive multiword social CTA common in AI-generated posts.
 [high  ] both/phrase | antislop (open-model slop) | take a dive into :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
+[high  ] both/phrase | multilingual translationese | Tauchen wir ein in :: German 'let's dive into' — one of the clearest German AI opening markers (equivalent of 'delve into').
 [high  ] both/phrase | antislop (open-model slop) | that was enough :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/phrase | poetry tell | the architecture of grief :: '[science] of [feeling]' AI tell.
 [high  ] both/phrase | poetry tell | the geometry of loss :: '[science] of [feeling]' AI tell.
+[high  ] both/phrase | caption-opener | the image depicts :: Standard structured caption opener across GPT and Claude vision output; 'depicts' plus 'the image' is nearly diagnostic of machine captioning.
+[high  ] both/phrase | caption-opener | the image shows :: Extremely common vision-model caption starter; flagged across AI image-description tools as a standard template opener.
 [high  ] both/phrase | hope/perseverance | the night is darkest before the dawn :: A whole proverb dropped in verbatim, often misattributed as profound. Quoting the full adage unaltered is a classic AI move — it borrows the idiom's authority instead of earning the sentiment.
 [high  ] both/phrase | reframe construction | The question isn't whether, but when :: A signature AI rhetorical reframe implying inevitability.
 [high  ] both/phrase | fiction tell | the scent of ozone :: AI's go-to 'ozone' smell.
@@ -366,6 +398,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/phrase | love/survival | You're the air that I breathe :: A survival-dependency cliché the model defaults to for 'I need you'; the breathing metaphor is so canonical it functions as a tell of unedited generation.
 [high  ] both/phrase | light/dark | You're the light in my darkness :: Default light-vs-dark salvation trope; the model maps 'you saved me' onto the most over-trained binary in lyric data, producing an abstract, placeless line.
 [high  ] both/phrase | completion | You're the missing piece (of my puzzle) :: A puzzle/completion metaphor the model reaches for as a variant of 'you complete me'; the jigsaw image is so worn it signals template-filling.
+[high  ] both/phrase | multilingual translationese | À l'ère de :: French 'in the era of' — content-empty AI opening cliche.
 [medium] both/phrase | literary AI tell | 3am on the curb :: AI's edgy-specific 'liminal' image.
 [medium] both/phrase | hype opener | [X] just changed the game forever :: Formulaic hype hook common in AI-generated social/marketing posts.
 [medium] both/phrase | hype claim | [X] will never be the same :: Grandiose transformation claim typical of AI-written promotional copy.
@@ -376,6 +409,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | inflated praise | a transformative :: 'Transformative' is a signature AI hype adjective for ordinary things.
 [medium] both/phrase | purple metaphor | a web of insights :: Ornate 'web of' metaphor typical of AI-inflated prose.
 [medium] both/phrase | prompt leakage | act as a genius marketing expert :: Role-play prompt instruction that leaks into or signals AI-generated marketing copy.
+[medium] both/phrase | physical-cliche | Adam's apple bobbing :: AI stock nervous/tension marker; overused physical beat flagged in RP lists.
 [medium] both/phrase | hollow directive | adjust your strategy accordingly :: Formulaic empty advice-closer typical of AI how-to content.
 [medium] both/phrase | corporate verb | Aims to bridge :: Corporate-speak construction AI defaults to for mission statements.
 [medium] both/phrase | corporate verb | Aims to elevate :: Inflated corporate verb phrase AI favors over plain wording.
@@ -395,6 +429,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | self-reference | As we've seen :: Formulaic recap phrase LLMs use to reference prior points.
 [medium] both/phrase | reader presumption | As you are likely aware :: AI hedge that presumes reader knowledge.
 [medium] both/phrase | reader presumption | As you may know :: AI hedge that presumes reader knowledge.
+[medium] both/phrase | structural-marker | At its core :: Overused AI bridge phrase into explanation; distinctive multiword opener though humans use it sometimes.
 [medium] both/phrase | buzzword phrase | At the forefront of :: Overused promotional phrase positioning a subject as a leader.
 [medium] both/phrase | prestige metaphor | beacon of hope :: Decorative prestige-metaphor collocation ('a beacon of hope/innovation'). Near-poetic register that reads as generated filler in neutral prose.
 [medium] both/phrase | filler phrase | Becomes increasingly evident :: Inflated formulaic phrase LLMs use to assert conclusions.
@@ -421,11 +456,14 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | motivational filler | chasing dreams / hold on to your dreams :: Generic motivational payoff the model loves; 'dreams' as a goal-object is abstract aspiration with no stakes named.
 [medium] both/phrase | corporate jargon | Circle back :: Office-speak idiom AI reproduces in workplace prose.
 [medium] both/phrase | city set-dressing cliché | city that never sleeps :: Borrowed stock idiom the model inserts for urban atmosphere; flags AI because it's a ready-made phrase used instead of an observed detail of an actual place.
+[medium] both/phrase | narrative-cliche | clicked into place :: Templatic AI phrase for sudden realization/understanding; a low-effort filler beat that recurs across models.
 [medium] both/phrase | weather imagery | cold wind / the wind it howls :: Default hardship-weather; AI uses a cold or howling wind as ambient adversity, often with archaic 'it howls' inversion that doubles the tell.
 [medium] both/phrase | stock idiom | come what may :: Dead idiom the model drops in for determination themes; it reads as borrowed greeting-card language rather than a written choice.
 [medium] both/phrase | business jargon | competitive landscape :: Stock business-metaphor phrase heavily favored by AI writing.
 [medium] both/phrase | business hype | Comprehensive solution :: Vague AI-favored marketing descriptor with no concrete meaning.
+[medium] both/phrase | descriptor | conveys a feeling of :: Formulaic interpretive framing common in AI image captions; projects emotion onto visual content in a templated way.
 [medium] both/phrase | business jargon | core competency :: Corporate buzzphrase AI leans on to sound authoritative.
+[medium] both/phrase | narrative-hedging | couldn't help but :: AI default construction for stripping character agency from a reaction; recurs heavily across outputs.
 [medium] both/phrase | filler | couldn't help but notice :: AI hedge.
 [medium] both/phrase | inflated emphasis | Crucial insight :: AI padding that labels a point as profound instead of just stating it.
 [medium] both/phrase | poetry cliche | crystal tears :: Stock tear image.
@@ -444,11 +482,13 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | corporate buzzword | digital transformation :: Corporate buzzword AI leans on for tech/business copy.
 [medium] both/phrase | business jargon | Disrupting the industry :: Overused startup/marketing cliche that AI reaches for to sound innovative.
 [medium] both/phrase | business jargon | Disruptive innovation :: Buzzword pairing AI overuses when describing tech or business ideas.
+[medium] both/phrase | engagement-bait-prompt | Double-tap if you agree :: Formulaic like-bait CTA common in AI social copy; specific enough to flag.
 [medium] both/phrase | business jargon | Drive meaningful impact :: Empty impact-language AI reaches for in corporate copy.
 [medium] both/phrase | business jargon | Drive sustainable growth :: Vague corporate-growth cliche typical of AI marketing prose.
 [medium] both/phrase | business jargon | Driving innovation :: Buzzword phrase AI uses to signal forward-thinking.
 [medium] both/phrase | wordy filler | Due to the fact that :: Wordy padding AI uses instead of 'because'.
 [medium] both/phrase | claude fiction tell | dust motes :: 'Dust motes dancing in sunlight' — AI scene-dressing fixation.
+[medium] both/phrase | model-distinctive collocation | dust motes dancing :: Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
 [medium] both/phrase | business jargon | Ecosystem of :: Overused metaphor AI applies to any collection of tools or partners.
 [medium] both/phrase | synthwave imagery | electric dreams / electric nights :: Synthwave/retro-EDM coded phrase the model attaches 'electric' to any dreamy noun; co-occurs with neon/city for a complete generic-retrowave aesthetic.
 [medium] both/phrase | marketing cliche | Elevate your game :: Motivational marketing cliche common in AI-generated copy.
@@ -456,6 +496,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | emotion | embrace the pain :: 'Embrace' was named among Suno's most overused words; it's the model's abstract emotional-acceptance verb ('embrace the pain/journey/night'). Real speech rarely uses 'embrace' literally, so its frequency in lyrics is a direct lexical fingerprint of LLM phrasing.
 [medium] both/phrase | recovery | emerge stronger on the other side :: Coaching-deck phrasing ('emerge stronger,' 'the other side') that asserts a triumphant outcome abstractly. The model appends it to hardship narratives as a guaranteed-uplift resolution.
 [medium] both/phrase | business jargon | Empower your team :: Corporate empowerment cliche typical of AI marketing.
+[medium] both/phrase | multilingual translationese | Es ist wichtig zu betonen, dass :: German 'it is important to stress that' — direct calque of the AI 'it is important to note' emphasis formula.
 [medium] both/phrase | editorializing | Especially noteworthy :: AI hedge-emphasis phrase used to signpost the reader.
 [medium] both/phrase | editorializing | Essential to understand the nuances :: Formulaic AI framing that flatters complexity without adding content.
 [medium] both/phrase | heart-intensifier filler | every beat of my heart :: Heartbeat-as-devotion-meter is a stock intensifier; AI reaches for it to quantify love, and it recurs identically because 'heart/beat' is a dense token cluster.
@@ -466,6 +507,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | hype | Exciting possibilities :: Vague forward-looking AI enthusiasm filler.
 [medium] both/phrase | hype | Exploring new frontiers :: Cliche metaphor AI uses for any new development.
 [medium] both/phrase | transition | Exploring this avenue :: AI's stiff metaphorical transition for pursuing an idea.
+[medium] both/phrase | physical-description | eyes sparkle :: Overused AI eye-description cliché recycled across characters and perspectives; flagged in RP banned-token lists.
 [medium] both/phrase | fire/decay imagery | fading embers / dying embers :: AI's default image for waning love or memory; embers are always 'fading/dying' because the model uses fire-decay as a one-size metaphor for emotional endings.
 [medium] both/phrase | imagery | fading photographs :: Stock AI nostalgia object (alongside 'faded memories'). The decaying-keepsake image is a ready-made melancholy trigger AI reuses verbatim; no specific photo is ever described.
 [medium] both/phrase | love/depth | Falling deeper (in love with you) :: The 'falling' + 'deeper' depth metaphor is a frictionless next-token path; AI uses it to assert escalating love without any concrete development.
@@ -489,6 +531,9 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | vague attribution | growing recognition :: Vague AI framing that asserts a trend without a source.
 [medium] both/phrase | transition | Having said that :: Stock AI pivot transition into a qualification.
 [medium] both/phrase | vulnerability | Heart on my sleeve :: A dead-idiom for openness the model emits verbatim; its status as a frozen expression (not fresh imagery) flags unedited generation.
+[medium] both/phrase | body-language-beat | her chest tightened :: Generic internalized-emotion default; AI reaches for thoracic/respiratory reactions over character-specific beats.
+[medium] both/phrase | body-language-beat | her knees went weak :: AI romance cliche conveying attraction/shock via involuntary physical response; avoids specificity.
+[medium] both/phrase | body-language-beat | her walls crumbled down :: AI romance emotional-barrier cliche; documented repeating dozens of times within a single generated novel.
 [medium] both/phrase | opener | Here's the deal :: Faux-casual AI hook used to feign directness.
 [medium] both/phrase | pseudo-section | Here's why: :: AI pseudo-section intro that pretends to justify a claim.
 [medium] both/phrase | hype | Highly empowering :: Hollow AI praise phrase pairing an intensifier with a buzzword.
@@ -498,6 +543,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | internet cliche | hits different :: Worn internet phrase.
 [medium] both/phrase | corporate buzzword | Holistic framework :: Empty consulting jargon pairing AI overuses.
 [medium] both/phrase | home idiom | home is where the heart is / find my way home :: AI leans on home-idioms as instant emotional resolution; 'find my way home' resolves any song without naming where home is.
+[medium] both/phrase | dialogue-marker | husky voice :: Overused AI sensual voice descriptor recycled across intimate scenes; flagged in banned-token lists.
 [medium] both/phrase | therapy-speak | I see you :: Therapy-register validation phrase.
 [medium] both/phrase | sacrifice/distance | I'd cross the ocean(s) for you :: A grand-gesture distance cliché; the model proves love with a stock geographic hyperbole (oceans/mountains/miles) rather than any concrete sacrifice.
 [medium] both/phrase | false candor | I'll be honest :: AI often uses this faux-confessional framing to feign authenticity before a generic point.
@@ -512,6 +558,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | explainer transition | In simpler terms :: Textbook restatement cue AI inserts to re-explain a point.
 [medium] both/phrase | darkness | in the dark :: All-purpose mood/rhyme anchor ('dark' rhymes with heart/spark/mark); the model leans on it to set intimacy cheaply, so it co-occurs with the heart/spark cluster.
 [medium] both/phrase | time-of-night | in the night :: High-frequency line-filler that supplies an easy rhyme ('night/light/right') and a vague setting; the model's default temporal anchor when none is specified.
+[medium] both/phrase | caption-opener | in this image :: Common auto-generated alt-text/caption opener; recognizable marker in AI description tools.
 [medium] both/phrase | inflated-emphasis | Incredibly significant :: Redundant intensifier stack typical of AI's inflated emphasis.
 [medium] both/phrase | corporate-filler | industry best practices :: Vague corporate authority phrase AI inserts without specifics.
 [medium] both/phrase | buzzword | Innovative approach :: Empty marketing buzzphrase AI reaches for to signal novelty.
@@ -532,6 +579,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | temporal abstraction | lost in time :: Listed AI cliché; a vague temporal-dislocation phrase used to manufacture wistfulness with no specific then-and-now.
 [medium] both/phrase | dissolution cliché | Lost in time / Lost in a moment :: Listed on AI-cliché lists as generic nostalgia/confusion filler; 'lost in ___' is one of the model's most-used frames and 'time' is its most probable object.
 [medium] both/phrase | dependence/longing | Lost without you :: Explicitly named in human overused-love-line lists; AI emits 'lost without you' as a default ache statement, an idiom rather than felt detail.
+[medium] both/phrase | novel AI cliché | love is electric :: Emerging AI-specific metaphor recurring across Suno outputs; documented as a novel model-driven cliché.
 [medium] both/phrase | love/uniqueness | Love like this only comes once :: A once-in-a-lifetime cliché the model uses to inflate stakes; the abstract uniqueness claim, with no supporting specifics, is characteristic AI filler.
 [medium] both/phrase | embrace/clinging | Love me like you'll never let me go :: Recombines the over-trained 'love me' + 'never let go' units; the model assembles intimacy lines from these grooved fragments, producing predictable output.
 [medium] both/phrase | hope/love | Love will find a way :: A platitude-grade reassurance the model emits as a chorus-closer; it personifies love as a problem-solver, a stored optimism cliché.
@@ -557,9 +605,11 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | corporate-cliche | new heights :: 'To new heights' is a formulaic AI aspirational closer.
 [medium] both/phrase | engagement-bait | Nobody's talking about this :: 'Nobody's talking about this' is a stock AI social-post hook.
 [medium] both/phrase | filler-transition | Now here's the thing :: 'Now here's the thing' is a conversational AI pivot phrase used to feign insight.
+[medium] both/phrase | sensory-cliché | obsidian eyes / velvet voice :: AI character-description pattern using gemstone/fabric metaphors in place of actual features.
 [medium] both/phrase | presumptive filler | Of course, you already know :: AI flattering-presumption filler that pads without adding content.
 [medium] both/phrase | corporate filler | offer a comprehensive :: Stock AI marketing collocation.
 [medium] both/phrase | tech buzzphrase | on the cutting edge :: Overused AI innovation cliche.
+[medium] both/phrase | hedging-language | One could argue :: AI hedging phrase that pads while avoiding a definitive stance; distinctive multiword formula.
 [medium] both/phrase | academic hedge | One could argue that :: AI false-balance hedging phrase.
 [medium] both/phrase | listicle scaffolding | One key benefit is :: Formulaic AI benefit-enumeration phrase.
 [medium] both/phrase | academic hedge | One might argue that :: AI impersonal hedging opener for counterpoints.
@@ -572,6 +622,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | motion verb / imagery | paint (paint the sky / paint a picture) :: Default sensory metaphor verb; 'paint the sky' / 'colors paint my world' are packaged images the model emits instead of literal description, a soft generated tell.
 [medium] both/phrase | filler phrase | Plan accordingly :: A hollow advisory closer AI appends to how-to sections.
 [medium] both/phrase | dead metaphor | playing with fire :: Dead metaphor.
+[medium] both/phrase | multilingual translationese | Plongeons dans :: French 'let's dive into' — templated AI transition phrase, French analogue of 'delve into'.
 [medium] both/phrase | hype phrase | Powerful tool :: A generic capability descriptor AI overuses for products and methods.
 [medium] both/phrase | corporate cliche | Push the envelope :: A stale idiom AI recycles to signal ambition.
 [medium] both/phrase | transition | Put differently :: A restatement transition AI inserts to pad and re-explain.
@@ -583,12 +634,15 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | hype phrase | Redefine the future :: Grandiose AI-marketing cliche about transformation.
 [medium] both/phrase | hype phrase | Remarkable breakthrough :: AI over-hypes developments as remarkable breakthroughs.
 [medium] both/phrase | hype phrase | Represent a major milestone :: Variant of the AI milestone framing cliche.
+[medium] both/phrase | weasel-words | researchers have noted :: Vague unsourced attribution ('experts argue', 'some critics', 'researchers have noted') AI uses to fabricate authority.
 [medium] both/phrase | reassurance filler | Rest assured :: Stock reassuring transition AI inserts to sound confident and helpful.
 [medium] both/phrase | corporate | Roadmap towards :: Business-jargon transition favored by LLMs framing next steps.
 [medium] both/phrase | corporate | Robust framework :: Overused AI adjective-noun pairing signaling generic authority.
 [medium] both/phrase | corporate | Robust solution :: Formulaic AI product/marketing phrasing.
 [medium] both/phrase | time cliché | sands of time / the hands of time :: Frozen time-idiom the model treats as poetic; 'sands/hands of time' is exactly the worn phrase human writers avoid, so its presence flags generation.
 [medium] both/phrase | corporate | Scalable solution :: Stock AI business-speak pairing common in generated copy.
+[medium] both/phrase | verb-substitution | serves as :: AI substitutes 'serves as / stands as / boasts' for plain 'is' to sound engaging; recognizable inflated-copula tell.
+[medium] both/phrase | lexical-substitution | serves as / stands as :: AI systematically upgrades the copula 'is' to 'serves as'/'stands as' to sound weighty; noticeable when repeated.
 [medium] both/phrase | sunset imagery | setting sun / sun sinks low :: Default closing/melancholy image; AI ends verses with a sunset to signal endings, a near-reflexive scene-setter.
 [medium] both/phrase | poetry cliche | shadows and light :: Generic chiaroscuro.
 [medium] both/phrase | theme | she's my whole world :: Maximal-but-empty devotion statement. AI escalates to absolute terms ('whole world,' 'everything') instead of a specific gesture, because superlatives are cheap and image-building is hard.
@@ -604,13 +658,16 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | poetry cliche | silver moonbeams :: Stock moon image.
 [medium] both/phrase | lyric imagery | silver moonlight, golden sunsets, crystal clear :: Stacked generic nature-beauty modifiers are a hallmark of AI-generated song lyrics.
 [medium] both/phrase | filler transition | Simply put :: Stock discourse marker AI uses to signal a restatement.
+[medium] both/phrase | metaphor-cliche | siren's call :: AI default metaphor for irresistible seduction/temptation; banned in RP slop lists.
 [medium] both/phrase | engagement filler | Sit with that for a second :: Faux-reflective conversational aside AI inserts to feign gravitas.
 [medium] both/phrase | ambition/aspiration | Sky's the limit :: Dead-idiom ambition filler; though Biggie used it ironically, AI deploys it straight as a generic aspiration cap, an instantly recognizable greeting-card phrase.
+[medium] both/phrase | body-language-beat | something shifted between them :: Vague relational cliche AI uses to imply romantic tension without concrete action or dialogue.
 [medium] both/phrase | literary AI tell | something uniquely yours :: Empty personalization.
 [medium] both/phrase | poetry tell | space between us :: Negative-space abstraction.
 [medium] both/phrase | attraction cliché | sparks fly :: Frozen attraction idiom; flags AI because it's the most-probable way to describe sudden chemistry, used in place of an actual observed reaction.
 [medium] both/phrase | corporate buzz | Spearhead the movement :: Grandiose business cliche typical of AI marketing copy.
 [medium] both/phrase | freedom | spread my wings and fly :: Songwriting forums specifically call out 'learning to fly / mending damaged wings' as clichés that should die; AI reproduces the wings-and-flight freedom metaphor faithfully as a default liberation image.
+[medium] both/phrase | uncertainty marker | Stacked hedges (könnte möglicherweise eventuell) :: Piling multiple hedges in one clause ('could possibly perhaps'; könnte möglicherweise eventuell) to avoid commitment; distinctive because natural writing rarely triple-hedges a single claim.
 [medium] both/phrase | defiance | stand tall :: Posture-as-pride cliché that the model pairs reflexively with 'won't back down' and 'face the world.' It's a generic empowerment gesture with no specific stake, a frequent filler in AI bridge sections.
 [medium] both/phrase | resilience | standing tall / never fall :: 'Standing tall' and 'never fall' are the model's default resilience images, paired so often they're a unit. Both are dead postural metaphors with no specific adversity; the relentless uplift reflects RLHF positivity bias inappropriate to much of rap's register.
 [medium] both/phrase | fate/cosmos | Stars align (when I'm with you) :: A cosmic-fate cliché paired with romance; 'stars align' is a stored destiny-idiom the model uses to make a couple feel preordained without any real reason.
@@ -620,14 +677,17 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | corporate buzz-phrase | Strategic alignment :: Empty business jargon collocation typical of AI corporate output.
 [medium] both/phrase | corporate buzz | Streamlined processes :: Hollow efficiency cliche characteristic of AI business writing.
 [medium] both/phrase | resilience | stronger than I've ever been :: Comparative-growth tag that asserts improvement without evidence. It's a frozen payoff line the model appends to any recovery narrative to signal arc-completion.
+[medium] both/phrase | weasel-wording | studies show / experts argue / research suggests :: Unattributed authority appeals with no author, journal, or date; AI leans on these placeholders.
 [medium] both/phrase | stock transition | Suffice it to say :: Formal filler transition characteristic of AI prose.
 [medium] both/phrase | setting/scene | Sunday morning church :: Stock faith-signifier AI adds for small-town wholesomeness. Pairs reflexively with 'Saturday night' as a sin/redemption couplet; the neat dichotomy is a template, not lived detail.
 [medium] both/phrase | resilience | survivor / I'm a survivor :: Self-labeling as 'survivor' states the theme outright rather than showing survival. The model leans on identity-declaration lines because they're unambiguous empowerment, which makes them read as canned.
 [medium] both/phrase | object/prop | sweet tea :: Stock Southern-authenticity prop. AI sprinkles 'sweet tea' (often with 'front porch' and 'mama') as regional flavoring; the cluster of all three is a template fingerprint.
 [medium] both/phrase | stock transition | Switching gears :: Conversational transition AI leans on to pivot topics.
+[medium] both/phrase | purple-prose | symphony of :: AI purple-prose metaphor template ('a symphony of X') for elevating mundane description; auto-flagged by anti-slop samplers.
 [medium] both/phrase | corporate jargon | Synergize your efforts :: Empty business buzzphrase typical of AI-generated advice.
 [medium] both/phrase | escape/together | Take my hand (and we'll fly away) :: Stock escape-with-me gesture; 'take my hand' + flying/running away is a grooved AI pattern for 'let's be together' that names no real destination.
 [medium] both/phrase | cliche metaphor | tap into :: Overused AI metaphor for accessing a resource or potential.
+[medium] both/phrase | deepseek-signature | tasted of copper :: DeepSeek R1 and reasoning models default to a metallic/copper sensory metaphor for atmosphere; recurs across model-comparison tests.
 [medium] both/phrase | sorrow | tears I've cried / tears in the rain :: Pairs the cliché rain/pain water-imagery with crying; forums flag rain/pain as among the most overused rhymes. AI merges them into a single soggy sorrow image that signals borrowed emotion.
 [medium] both/phrase | imagery | tears in my beer :: AI fuses two clichés (crying + beer) into one prefab heartbreak image. It's a recycled honky-tonk trope deployed without the specificity that made the original work; the mashup is a generation signature.
 [medium] both/phrase | poetry tell | tender as :: Soft-simile opener.
@@ -651,6 +711,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | empty emphasis | The transformative power of :: An inflated AI phrase pairing two buzzwords to hype impact.
 [medium] both/phrase | poetry tell | the weight of :: 'the weight of [abstraction]' filler.
 [medium] both/phrase | empty emphasis | There is no doubt that :: A confident-sounding AI filler that asserts certainty without support.
+[medium] both/phrase | atmospheric-cliche | thick with tension :: AI's default atmospheric filler for dramatic/romantic scenes; recurs as low-effort mood-setting.
 [medium] both/phrase | cliche-idiom | Think outside the box :: Stock creativity cliche AI overuses in place of concrete suggestions.
 [medium] both/phrase | transition | This begs the question :: Overused rhetorical connective AI inserts to pivot to a question.
 [medium] both/phrase | hedge | This is not an exhaustive list :: Stock hedging disclaimer AI appends to lists.
@@ -675,10 +736,12 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/phrase | filler | truth be told :: Filler opener.
 [medium] both/phrase | narrative cliche | Turning point :: A stock pivotal-moment phrase AI overuses to signal significance.
 [medium] both/phrase | setting/place | two-lane highway :: Stock 'open road' image, a recommended-keyword cliché AI treats as mandatory road-trip scenery. Interchangeable with 'dirt road'/'back roads'; its job is genre-signaling, not navigation.
+[medium] both/phrase | prompt-quality-marker | ultra detailed :: Cliched quality amplifier characteristic of AI prompt templates; distinctive as a stacked prompt modifier though it can appear in normal prose.
 [medium] both/phrase | cliché metaphor | uncharted waters :: Stock exploration metaphor AI leans on for novelty.
 [medium] both/phrase | hype phrase | Uncover hidden trends :: Formulaic AI benefit phrasing about revealing insights.
 [medium] both/phrase | hype phrase | Unprecedented opportunity :: Overused AI superlative framing of opportunity.
 [medium] both/phrase | sorrow imagery | unseen tears / silent tears :: In AI-cliché lists; the oxymoronic 'unseen/silent tears' is a trained poeticism signaling hidden grief without depicting it.
+[medium] both/phrase | attribution marker | Vague appeals to authority (experts say / studies show) :: Cross-language unsourced authority hedges (Experten sagen / Estudios muestran / Les chercheurs affirment / 'studies show') with no citation; a recognized Wikipedia AI-writing sign, distinctive because it names authority without a source.
 [medium] both/phrase | engagement bait | Wait, it gets better :: Manufactured-enthusiasm transition AI inserts to hype the next point.
 [medium] both/phrase | sea imagery | waves crashing / crashing waves :: Named in cliché guides; the model's default emotional-turbulence image, plugged in regardless of any actual coastal setting.
 [medium] both/phrase | empowerment trope | we were born to / born to run/fly/be free :: Destiny-anthem template; 'born to ___' is a high-frequency empowerment frame AI fills with the most generic verb. The 'be free' completion is itself a cliché.
@@ -735,6 +798,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | filler transition | Another option is :: Formulaic hedging phrase LLMs use to enumerate alternatives.
 [low   ] both/phrase | slop-forensics collocation | anything ever :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | slop-forensics collocation | anything ever seen :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
+[low   ] both/phrase | qualifier | appears to be :: Vision/analysis hedging phrase Claude and GPT-4V repeat to signal visual uncertainty. Common in careful human writing, so low severity.
 [low   ] both/phrase | model-distinctive collocation | arms crossed :: Top repetitive n-gram in qwq-32b output (slop-forensics).
 [low   ] both/phrase | model-distinctive collocation | around eyes :: Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
 [low   ] both/phrase | slop-forensics collocation | around room :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
@@ -819,6 +883,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | model-distinctive collocation | continues evolve :: Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
 [low   ] both/phrase | corporate filler | continuous improvement :: Management-speak cliche AI defaults to in professional prose.
 [low   ] both/phrase | vague verb | Contribute to :: Vague AI hedging verb used to imply impact without specifics.
+[low   ] both/phrase | phrasing | Copula avoidance (serves as / acts as / functions as instead of "is") :: AI substitutes formal periphrasis for the plain copula ('serves as a wrapper' vs 'is a wrapper'), a recognizable AI register even inside code comments.
 [low   ] both/phrase | imagery | cornfields / fields of gold :: Default rural-scenery filler. AI paints generic agricultural backdrop (cornfields, wheat, 'fields of gold') to look pastoral; the landscape is wallpaper, never tied to a person or event.
 [low   ] both/phrase | model-distinctive collocation | corporate social responsibility :: Top repetitive n-gram in gpt-4.1-nano output (slop-forensics).
 [low   ] both/phrase | business jargon | cost optimization :: Corporate buzzphrase AI inserts to sound results-oriented.
@@ -868,7 +933,6 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | model-distinctive collocation | dropping conspiratorial whisper :: Top repetitive n-gram in gemma-2-9b-it output (slop-forensics).
 [low   ] both/phrase | model-distinctive collocation | dry leaves skittering :: Top repetitive n-gram in gemma-2-Ifable-9B output (slop-forensics).
 [low   ] both/phrase | slop-forensics collocation | dust motes danced :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
-[low   ] both/phrase | model-distinctive collocation | dust motes dancing :: Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
 [low   ] both/phrase | business jargon | Dynamic environment :: Vague corporate descriptor AI overuses.
 [low   ] both/phrase | model-distinctive collocation | e g :: Top repetitive n-gram in gpt-oss-20b output (slop-forensics).
 [low   ] both/phrase | model-distinctive collocation | early th century :: Top repetitive n-gram in grok-4-fast output (slop-forensics).
@@ -965,6 +1029,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | seasonal imagery | frost / frost-covered / winter's chill :: AI default for hardship/aging via season; winter imagery ('frost,' 'chill') is applied as mood-coding rather than an observed season.
 [low   ] both/phrase | AI-tool marketing | Fully undetectable :: Marketing claim used by AI humanizer tools, itself a formulaic hype phrase.
 [low   ] both/phrase | model-distinctive collocation | gain deeper understanding :: Top repetitive n-gram in llama-4-scout output (slop-forensics).
+[low   ] both/phrase | body-language-beat | gasped in surprise :: Redundant AI emotion beat ('gasp' already implies surprise); recurs as a filler reaction across scenes.
 [low   ] both/phrase | slop-forensics collocation | gaze fixed :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | slop-forensics collocation | gaze sweeping across :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | model-distinctive collocation | gestured vaguely :: Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).
@@ -1178,6 +1243,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | model-distinctive collocation | post world war :: Top repetitive n-gram in grok-4-fast output (slop-forensics).
 [low   ] both/phrase | slop-forensics collocation | pounding chest :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | model-distinctive collocation | problem solving :: Top repetitive n-gram in gemini-2.5-flash-lite output (slop-forensics).
+[low   ] both/phrase | functional-descriptor | provides shelter and hiding spots :: Vision-model tic of appending unprompted functional analysis to a pure image description; distinctive enough to flag.
 [low   ] both/phrase | model-distinctive collocation | psychological evaluation :: Top repetitive n-gram in claude-3.5-haiku-20241022 output (slop-forensics).
 [low   ] both/phrase | model-distinctive collocation | public health :: Top repetitive n-gram in gpt-4o-mini output (slop-forensics).
 [low   ] both/phrase | model-distinctive collocation | pulse hammered throat :: Top repetitive n-gram in deepseek-chat-v3-0324 output (slop-forensics).
@@ -1333,6 +1399,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | vague abstraction | The complexities of :: Vague abstraction AI uses to gesture at depth without specifics.
 [low   ] both/phrase | filler | The fact that :: A wordy AI-favored construction that pads sentences instead of stating the point directly.
 [low   ] both/phrase | filler | The importance of :: A generic AI framing that announces a topic's significance rather than demonstrating it.
+[low   ] both/phrase | qualifier | the overall composition :: Filler analytic phrase AI vision models use to hedge interpretive statements about images; distinctive stock lead-in.
 [low   ] both/phrase | filler | The potential of :: A generic AI framing hyping unrealized possibility.
 [low   ] both/phrase | filler | The power of :: An overused AI framing that inflates a topic's significance.
 [low   ] both/phrase | individuality | the road less traveled :: A borrowed literary cliché (via Frost) AI inserts to signal nonconformity; quoting it whole is a tell of pattern-reuse over original imagery.
@@ -1441,6 +1508,7 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] both/phrase | slop-forensics collocation | would never forget :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | slop-forensics collocation | years ago :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | hedging | You could consider :: Tentative hedging phrase AI assistants overuse when offering suggestions.
+[low   ] both/phrase | dialogue-cliché | you're going to be the death of me :: Recurring AI roleplay/dialogue catchphrase that surfaces context-blind across scenes; distinctive stock line.
 [low   ] both/phrase | slop-forensics collocation | young man :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | slop-forensics collocation | young woman :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
 [low   ] both/phrase | slop-forensics collocation | young woman named :: Cross-model repetitive collocation (slop-forensics; stopwords stripped — words may appear with function words between).
@@ -1509,14 +1577,24 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/template | poetry tell | 'the architecture/geometry of [abstraction]' :: Pretentious 'the [science] of [feeling]' — a strong AI essay/poetry tell.
 [high  ] both/template | poetry tell | 'what remains unspoken / what we carry' :: Abstract 'what we carry' gravitas filler.
 [high  ] both/template | fake credentials | As someone who [credentials], I can confirm :: AI fabricates lived-experience authority via a fill-in-the-blank credential claim.
+[high  ] both/template | formatting | bold-first bullets :: Every list item begins with a bolded lead-in phrase followed by a colon; heavy Claude/ChatGPT markdown habit, rare in hand-written lists.
+[high  ] both/template | fire/burning imagery cluster | burning [bridges/desire/fire/passion] :: Fire imagery cluster overrepresented in AI lyric training data as a default metaphor.
 [high  ] both/template | paste artifact | ChatGPT turn0search / turn0news citation token :: Internal source IDs (turn0search1, turn0news5) that ChatGPT's browsing tool emits around citations. They are meaningless to a reader and only appear when raw browsing output is pasted verbatim.
+[high  ] both/template | engagement-bait-prompt | Comment X to receive Y :: Explicit transaction engagement-bait pattern heavily produced by AI social copy; distinctive templated CTA.
 [high  ] both/template | paste artifact | contentReference[oaicite] citation artifact :: ChatGPT web-search leaves a 'contentReference[oaicite:N]{index=N}' citation stub in its answer; if it survives into pasted text it is near-proof the passage was copied straight out of ChatGPT unedited.
+[high  ] both/template | overused modifier | endless [night/road/way] :: AI repeatedly pairs 'endless' with time/journey nouns as a default intensifier.
+[high  ] both/template | overused metaphor | fading [light/away/memories/dreams] :: Predictable AI phrase for loss/decline in generated lyrics.
 [high  ] both/template | mad-lib opener | From X to Y, [main statement] :: The 'From X to Y' framing is a signature AI sentence template used to imply sweeping range.
+[high  ] both/template | deepseek-signature | guilt curdled in [noun] :: DeepSeek R1 signature emotion-as-physical metaphor; 'curdled' as an emotional verb is distinctive and rare in human prose.
+[high  ] both/template | body-language-beat | heart hammered against her ribs :: Cardinal AI fiction tell; the 'heart hammered ribs' construction is massively overrepresented in model outputs.
 [high  ] both/template | hypophora template | Imagine a world where X :: Mad-lib hypothetical opener AI uses to hook readers with an imagined scenario.
 [high  ] both/template | epoch template | In an era where X :: Fill-in-the-blank era opener that reliably flags AI-generated intros.
 [high  ] both/template | epoch template | In the ever-changing world of X :: Templated 'ever-changing world of [domain]' opener characteristic of AI writing.
 [high  ] both/template | antithesis template | It is not just about X, it is also about Y :: Formulaic AI antithesis construction contrasting two ideas for false depth.
+[high  ] both/template | negation-contrast | It's not X, it's Y :: Contrastive binary structure LLMs default to for perceived sophistication; distinctive multiword shape, not a bare common word.
+[high  ] both/template | narrative-cliche | little did (he|she|they) know :: Formulaic AI foreshadowing device signaling low-effort plotting; a strong narrative tell.
 [high  ] both/template | prose structure | negative parallelism 'not X, but Y' :: AI's signature rhetorical frame — defines a thing by what it isn't to sound profound.
+[high  ] both/template | multilingual translationese | Nicht nur X, sondern auch Y :: German 'not just X, but also Y' — LLM-favored negative-parallelism structure mirrored across languages.
 [high  ] both/template | triple-negation-opener | No X. No Y. Just Z. :: The staccato triple 'No X. No Y. Just Z.' opener is a recognizable AI/LinkedIn hook pattern.
 [high  ] both/template | mad-lib-contrast | Not just X but Y :: The 'not just X, but Y' escalation is a strong AI stylistic tell.
 [high  ] both/template | prose structure | self-posed question, instant answer ('The result? Devastating.') :: Asks a tiny rhetorical question and answers it in one punchy word for fake drama.
@@ -1528,10 +1606,13 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/template | antithesis | This isn't a tactics problem. It's a positioning problem :: Instance of the AI negation-reframe formula swapping X for Y.
 [high  ] both/template | antithesis | This isn't a X. It's a Y :: Signature AI negation-reframe template used for dramatic contrast.
 [high  ] both/template | poetry tell | triadic abstract list ('the grief, the silence, the forgetting') :: Three abstract nouns as 'the X, the Y, the Z' — a top AI-poetry tic.
+[high  ] both/template | amplified-modifiers | truly novel / highly innovative / completely unique :: Intensifier + hype-adjective stacking; distinctive gratuitous-embellishment pattern.
 [high  ] both/template | formulaic opener | Understanding [topic] is essential for :: Mad-lib sentence stem AI uses to open explanatory sections.
 [high  ] both/template | mad-lib opener | Whether X or Y, [main statement] :: 'Whether X or Y' is a formulaic AI hedging opener that manufactures false balance.
 [high  ] both/template | cover-everyone-opener | Whether you're a X or Y :: Mad-lib inclusive opener AI uses to address every reader at once.
 [high  ] both/template | mad-lib emphasis | X is not just A, but B :: The 'not just A but B' escalation template is one of the strongest AI-writing tells.
+[high  ] both/template | clichéd love-song formula | you light up my [world/heart/night] :: Near-verbatim training-data love-song formula appearing with identical structure across AI songs.
+[high  ] both/template | Russian parallelism | Не просто X, а Y :: Russian negative-parallelism formula ('not just a tool, but a partner'); the direct RU analogue of the English 'not just X, it's Y' AI tell, and equally formulaic.
 [medium] both/template | prose opener | '(there is) a particular kind of' :: Essayistic throat-clearing opener.
 [medium] both/template | prose filler | 'at the end of the day' :: Dead-metaphor summarizer.
 [medium] both/template | prose template | 'for a (long) moment' :: Temporal hedge that signals 'feel something here'.
@@ -1547,21 +1628,32 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | prose template | 'somewhere between [x] and [y]' :: Liminal-positioning cliché.
 [medium] both/template | prose structure | 'the kind of [noun] that [verb]' :: Vague-specific framing that sounds insightful while committing to nothing.
 [medium] both/template | poetry tell | 'the way [x] [does something]' opener :: Reverent 'the way light falls / silence holds' opener — pure mood, no content.
+[medium] both/template | deepseek-signature | [quote], he barked :: DeepSeek R1 overuses 'barked' as a dialogue tag far above human baseline rates.
+[medium] both/template | damage/breakage cliché | broken [chains/heart/dreams/promises] :: AI favors 'broken' as damage descriptor, producing predictable freedom/loss metaphors.
 [medium] both/template | formulaic advice | By doing X, you can achieve Y :: Mad-lib cause-effect promise structure AI overuses in how-to prose.
 [medium] both/template | engagement hook | Can we talk about [X] for a second? :: Formulaic social-post opener AI uses to feign conversational intimacy.
+[medium] both/template | imagery cliché set | cosmic/elemental imagery cluster :: AI lyric models default disproportionately to grand cosmic/elemental scales drawn from training-data cliché; dense clustering of these terms flags generated lyrics.
+[medium] both/template | sensory-cliché | crested like a wave :: Purple-prose water/wave metaphor AI reaches for during intimacy or emotional peaks instead of concrete sensation.
 [medium] both/template | social CTA template | Follow for more X content :: Generic AI-written social-media call to action.
 [medium] both/template | contrast template | Forget X. Focus on Y :: Punchy dismiss-then-redirect pattern AI uses for engagement copy.
 [medium] both/template | mad-lib-range | From X to Y :: The 'from X to Y' range template is a signature AI listing device.
 [medium] both/template | clickbait template | From zero to X in 48 hours :: Formulaic growth-hype headline pattern common in AI marketing copy.
 [medium] both/template | hedging pattern | Granted, [obvious counterpoint] :: Formulaic concession opener AI uses to stage a fake counterargument.
 [medium] both/template | closer | Happy [doing task]! :: Cheery AI sign-off template like 'Happy coding!' or 'Happy writing!'.
+[medium] both/template | overused-metaphor | landscape of X :: AI default metaphor for domain/industry framing; templated and distinctive though humans occasionally use it.
 [medium] both/template | contrarian-hook | Most people think it's X. It's actually Y :: 'Most people think X, it's actually Y' is a stock AI/social contrarian hook.
 [medium] both/template | triple-negation-opener | Not a prototype. Not a demo. Production-ready :: The 'Not X. Not Y. Z.' rhetorical triple is a formulaic AI hype opener.
+[medium] both/template | sentence-structure | not X, but Y :: AI's signature binary-contrast rhetorical structure; over-detected by anti-slop samplers as a hallmark of generated text.
+[medium] both/template | sentence-structure | not X, not Y, just Z :: Signature AI staccato-negation rhythm that manufactures a false beat before an emotional reveal; distinctive triple structure.
 [medium] both/template | hedging template | Now, I'm not saying X, but :: AI hedging construction that raises a point while disclaiming it.
 [medium] both/template | prose opener | rhetorical hook opener :: Manufactured engagement opener; AI defaults to a rhetorical question to feign a hook.
+[medium] both/template | sensory-cliché | set her skin ablaze :: Temperature/fire metaphor overused in AI intimacy writing to signal desire without describing actual sensation.
+[medium] both/template | synonym cliché rotation | silhouettes for shadows; embers for fire; whispers for echoes :: When told to avoid clichés, AI lyric generators swap in near-synonyms rather than genuinely original imagery; this synonym-rotation cluster is a distinctive AI tell.
 [medium] both/template | prose structure | single-word sentence for gravity ('…tired. Hollow.') :: A lone word as a full sentence for emphasis.
+[medium] both/template | claude-signature | some argue X while others contend Y :: Claude constitutional training presents balanced perspectives without resolving the tension; recurring both-sides framing.
 [medium] both/template | reframe template | Stop thinking of it as X. Start thinking of it as Y :: The 'stop thinking / start thinking' reframe is a formulaic AI persuasion pattern.
 [medium] both/template | listicle template | The 3 pillars of :: Formulaic 'N pillars of X' listicle framing AI overuses.
+[medium] both/template | sensory-cliché | the air was thick with :: Generic atmospheric cliche; AI anthropomorphizes the air instead of grounding emotion in concrete detail.
 [medium] both/template | contrarian hook | The bottleneck isn't X. It's Y :: Formulaic LinkedIn-style contrarian reveal template.
 [medium] both/template | clickbait opener | The ultimate list of [X]: :: A listicle AI hook overselling comprehensiveness.
 [medium] both/template | section header | What This Means for X :: Formulaic AI section header that pivots to implications.
@@ -1569,19 +1661,28 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | empty elaboration | X is more than just Y :: Stock 'more than just' construction used to inflate a claim without adding substance, a hallmark of AI filler.
 [medium] both/template | cliche reframing | X is the new Y :: Overused reframing cliche frequently produced by AI to sound punchy.
 [medium] both/template | hype framing | X isn't the future. Y is :: Provocative dichotomy template typical of AI-generated hype and LinkedIn-style posts.
+[high  ] both/trope | vocal realism gap | absent breath sounds between phrases :: Real singers audibly breathe; AI vocals frequently lack any breath, gulp, or intake between phrases.
 [high  ] both/trope | theme | all-uplift motivational verse (no scene) :: Whole verses of 'believe in yourself / never give up / chase your dreams / stay strong' reflect the RLHF positivity bias; rap thrives on conflict, specificity, and edge, so a relentlessly wholesome motivational verse with no concrete image strongly indicates generated text.
 [high  ] both/trope | vulnerability/connection | breaking down the walls I built :: Emotional guardedness is almost always rendered by AI as a literal wall to be torn down; the architectural metaphor is the path of least resistance for 'opening up.'
 [high  ] both/trope | liberation/freedom | breaking the chains :: Suno/Udio's single most-flagged freedom image; LLMs reach for 'chains' as the default metaphor for any constraint, so a literal 'breaking free from the chains' appears in a huge share of AI empowerment lyrics regardless of subject.
 [high  ] both/trope | recovery/resilience | broken wings that learn to fly again :: The 'damaged-then-healed flight' beat pairs two clichés (broken wings + flying again) into a self-contained recovery arc AI reuses verbatim across unrelated songs.
 [high  ] both/trope | moving on | casting away the shadows of my past :: AI personifies the past as 'shadows' that follow and must be shed; the shadow-past pairing is a reflexive image for letting go with no concrete memory named.
+[high  ] both/trope | error-handling | Catch-and-return-default (.catch(() => null)) :: AI swallows errors by returning a silent default (Promise.catch(() => null); except: return None), masking failures; distinctive defensive-swallow signature.
 [high  ] both/trope | aspiration | chasing my dreams :: The most generic possible aspiration image; AI uses 'chase my dreams' as a placeholder for any goal because it commits to nothing concrete.
 [high  ] both/trope | ambition/aspiration | Climb to the top / reach for the stars :: Inspirational-poster ambition imagery; AI's positivity bias imports motivational-speaker metaphors (climb, stars, sky's the limit) that are tonally off for rap and signal generation.
+[high  ] both/trope | vocal synthesis artifact | digital wobble on sustained vowels :: Fluttery micro-pitch modulation on notes held past ~1.5s is an inhuman synthesis artifact exclusive to AI vocals.
 [high  ] both/trope | memory/atmosphere | echoes in the silence / whispers in the wind :: 'Echoes' and 'whispers' are top-flagged Suno tells; AI uses them as atmospheric filler to imply lingering memory or mystery without content.
+[high  ] both/trope | punctuation | em-dash overuse :: LLMs use 3-5x more em-dashes than human writers; a well-documented and strong statistical tell, especially the unspaced em-dash in casual contexts.
+[high  ] both/trope | formatting | emoji as list markers :: One decorative emoji leading each bullet point across a whole list; strong ChatGPT/Gemini formatting tell rarely seen in careful human prose.
+[high  ] both/trope | documentation | Excessive docstrings on trivial functions :: AI emits full textbook Args/Returns docstrings even for one-line self-explanatory helpers; humans rarely document trivial internal functions this exhaustively.
+[high  ] both/trope | unverified-attribution | Experts agree :: Vague authority claim naming no actual experts; AI default for manufactured credibility.
 [high  ] both/trope | inner struggle | fighting my demons :: AI renders all internal conflict as a literal externalized battle with 'demons,' a vague abstraction that lets the model gesture at depth without naming a real, specific struggle.
 [high  ] both/trope | hope | finding the light in the darkness :: Light-vs-dark is AI's master moral binary; 'a light in the darkness' is the default hope-beat and appears so universally that it carries no song-specific meaning.
 [high  ] both/trope | resilience/growth | flower/rose blooming through concrete :: A hyper-specific yet endlessly recycled 'beauty surviving hardship' image; AI deploys it as a stock visual shorthand for resilience, so its appearance signals pattern-fill rather than a chosen, situated metaphor.
+[high  ] both/trope | imports | Hallucinated imports from non-existent packages :: AI imports plausible-sounding but non-existent or unused packages (slopsquatting risk); a strong, verifiable AI tell distinct from ordinary unused imports.
 [high  ] both/trope | theme | hometown glory / leaving this town :: The complete AI country narrative skeleton: small-town kid torn between leaving and roots. AI reaches for this arc by default because it's the modal country storyline in its training data, so the whole shape is a tell.
 [high  ] both/trope | AI rhetorical pattern | it's not just X, it's Y :: The defining AI antithesis structure ('not just a lipstick, an attitude'). Bleeds into both ad-copy and lyrics; its repeated negate-then-elevate shape is one of the most recognizable AI cadences.
+[high  ] both/trope | mistakes | Language-cross-pollination (JS methods in Python, etc.) :: AI leaks idioms across languages (Array.find/.filter or camelCase conventions inside Python); a high-confidence tell since a fluent human in that language wouldn't make the slip.
 [high  ] both/trope | hope | light-vs-darkness binary :: Resolving every emotional arc as light overcoming dark is the model's default moral geometry. It's flagged across AI-lyric communities because it substitutes an abstract dichotomy for concrete imagery.
 [high  ] both/trope | rebirth | phoenix rising :: The explicit mythological name AI attaches to any comeback; invoking 'phoenix' by name is the laziest form of the ashes-rebirth beat.
 [high  ] both/trope | aspiration | reaching for the stars :: Top cosmic-imagery default flagged in Suno guides; 'reach for the stars' is ambition-by-cliché, a borrowed grandeur with no specific aim.
@@ -1589,17 +1690,25 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/trope | phoenix/rebirth | rise from the ashes :: The phoenix-rebirth arc is the single most predictable 'triumph' resolution; AI reaches for it to close songs because it's a culturally pre-approved redemption beat that needs no setup.
 [high  ] both/trope | rebirth/resilience | rising from the ashes :: The phoenix beat is the statistically 'safest' resilience arc, so AI defaults to it for any comeback theme; the full ashes-to-rebirth image arrives pre-assembled rather than earned by the song's specifics.
 [high  ] both/trope | empowerment | rising up / we will rise :: Community-confirmed as a top Suno tell ('rise' / 'rise above'); the upward-motion verb is AI's reflexive empowerment closer, applied to any theme without grounding.
+[high  ] both/trope | structure | Rule of Three overuse :: AI compulsively groups ideas in threes (adjective, adjective, and adjective) even when unwarranted; a single tricolon is fine but back-to-back triads are a signature.
 [high  ] both/trope | resilience | scars that made me stronger :: The 'scars = strength/proof of survival' equation is AI's reflexive way to make pain redemptive; the wounds are never specific, just generic badges.
 [high  ] both/trope | loss/recovery | shattered dreams / picking up the pieces :: Flagged in AI lyric guides as a default loss image; the 'shatter then gather the pieces' beat is a complete prefab arc requiring no specific loss to be named.
+[high  ] both/trope | error-handling | Silent/bare catch blocks (except: pass) :: AI generates bare except / catch-and-swallow handlers that hide failures instead of surfacing them; a recognized AI-slop code pattern.
 [high  ] both/trope | synonym-evasion tell | silhouettes / embers / whispers (anti-cliché swaps) :: When prompted to avoid clichés the model substitutes the next-nearest token: silhouettes for shadows, embers for fire, whispers for echoes. The presence of this specific swap-set is itself a documented AI fingerprint.
 [high  ] both/trope | freedom/growth | spreading my wings / learning to fly :: Flight as liberation is a top-frequency AI image; 'spread my wings and fly' arrives as a complete unit, signaling the model filled an empowerment slot rather than building a fresh image.
 [high  ] both/trope | resilience | standing tall against the storm :: Combines two AI defaults (the adversity-as-weather 'storm' and the posture-of-defiance 'stand tall') into one prefab beat that resolves any conflict without specifics.
 [high  ] both/trope | adversity | storm-as-hardship / weathering metaphor :: The model's single most reflexive adversity metaphor: any difficulty becomes a storm to survive (rain, thunder, weathering, eye of the storm). Its sheer frequency across AI outputs makes the whole storm frame a giveaway.
+[high  ] both/trope | unverified-attribution | Studies have shown :: Vague attribution with no citation; classic AI move to sound authoritative without a source.
 [high  ] both/trope | defiance | the world tried to break me but I'm still standing :: A complete prefab defiance arc (world-as-antagonist + 'still standing' survival proof) that AI drops in verbatim as a triumphant bridge.
 [high  ] both/trope | unity cliché | two hearts beating as one :: Fossilized unity metaphor; its appearance signals the model picked the single most-clichéd image for togetherness instead of a specific shared moment.
 [high  ] both/trope | struggle/identity | warrior / soldier going to battle :: AI casts ordinary perseverance as literal warfare, calling the singer a warrior/soldier; the militarized self-image is grandiose pattern-fill for 'I keep going.'
 [high  ] both/trope | agency | writing my own story / rewriting the ending :: The meta 'life-as-a-book' agency image is an AI favorite because it's flattering and theme-agnostic; 'rewrite the ending' is a self-contained empowerment cliché.
 [high  ] both/trope | fate cliché | written in the stars :: Astrological-fate cliché; a strong tell because it's a complete pre-packaged metaphor the model deploys whole, often beside 'meant to be' / 'destiny'.
+[medium] both/trope | art-prompt-cliche | a beautiful woman with long hair :: Overused image-gen prompt archetype yielding stereotypical over-symmetrical results; documented generative-art trope.
+[medium] both/trope | art-prompt-cliche | a futuristic city at night :: Top AI-art prompt cliche producing bland neon cyberpunk skylines across image models; recognizable generative-art trope.
+[medium] both/trope | art-prompt-cliche | a majestic castle on a hill :: Documented overused AI-art prompt archetype producing generic fantasy output. Kept as an image-gen prompt trope; severity lowered as it's a prompt cliche not an output detector.
+[medium] both/trope | art-prompt-cliche | a mysterious figure in a cloak :: Common overused image-gen prompt producing faceless silhouettes; recognizable generative-art cliche.
+[medium] both/trope | art-prompt-cliche | a peaceful landscape with mountains :: Top-tier overused AI art prompt producing generic postcard imagery; distinctive as a recurring prompt/output pattern.
 [medium] both/trope | AI trope | Appeals to unnamed authority :: Vague authority citations ('experts say', 'studies show') are a hallmark of AI-generated persuasion.
 [medium] both/trope | renewal | breaking dawn / a new day rising :: Sunrise = fresh start is AI's most overworked renewal cue; 'a new day rising / breaking dawn' closes empowerment songs as a default hopeful image.
 [medium] both/trope | change/growth | breaking the cycle :: AI's go-to abstraction for ending a bad pattern; the 'cycle' is never specified, so it functions as content-free growth-signaling.
@@ -1613,23 +1722,37 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/trope | struggle/achievement | climbing the mountain / reaching the summit :: AI's default 'struggle as physical ascent' arc; the mountain stands in for any goal, so the climb is generic effort with no real terrain.
 [medium] both/trope | joy-through-pain | dancing in the rain :: The 'finding joy amid hardship' image AI reuses constantly; rain (sorrow) + dancing (joy) is a tidy paradox the model loves because it reads as wisdom.
 [medium] both/trope | grief | drowning in my sorrows / tears :: AI literalizes sadness as drowning so reflexively that 'drowning in tears/sorrow' is the default grief image, devoid of any specific cause.
+[medium] both/trope | claude-signature | em-dash chains (2+ per sentence) :: Claude structurally overuses em dashes; multiple dashes stacked in a single sentence/paragraph forms a statistical fingerprint above human baseline.
+[medium] both/trope | over-rhyming | every line ends on a rhyme :: AI defaults to rhyming every line-end, producing mechanical, predictable structure that lacks narrative flow.
 [medium] both/trope | narrative tell | Everyone Is the Same Person :: Named AI-fiction tell where every character speaks in the same voice.
 [medium] both/trope | courage | facing my fears head-on :: Generic courage beat with the stock intensifier 'head-on'; the fear is left abstract, which is what marks it as model-generated bravado.
 [medium] both/trope | self-actualization | finding my voice :: AI's stock metaphor for self-expression/empowerment; the abstract 'voice' lets the model claim a growth arc without dramatizing any actual change.
 [medium] both/trope | belonging/return | finding my way back home :: The 'journey home' as resolution is an AI structural default; 'home' is an abstract emotional destination, never a specific place, signaling generic closure.
+[medium] both/trope | structure | fractal summaries :: Restating the same points at multiple nested levels (section recap, then overall summary, then conclusion) producing redundancy rather than added clarity.
+[medium] both/trope | anti-patterns | Generic status envelope ({success, data}) :: AI reflexively wraps returns in {status/success/data} envelopes even where a plain return suffices; a repetitive pattern over-represented in training data.
 [medium] both/trope | hedging pattern | Hedging before making a point :: AI habit of qualifying a claim before stating it.
 [medium] both/trope | self-protection | holding up my shield / armor on :: AI literalizes emotional defense as medieval combat gear (shield/armor), a grandiose physicalization of a feeling that real lyricists would render through behavior or scene.
+[medium] both/trope | structural repetition | identical chorus repeated with no variation :: AI songs repeat the chorus verbatim without dynamic development, energy build, or lyric variation between repeats.
+[medium] both/trope | documentation | Inflated docstrings with enterprise buzzwords :: AI pads docs with grandiose jargon ('leverage robust integration for decentralized orchestration') wildly out of proportion to trivial code; distinctive mismatch of register vs complexity.
 [medium] both/trope | growth | journey-as-life trope :: Framing struggle as 'my journey / the road I've walked / this path' is the model's go-to growth metaphor (note 'navigate' is a flagged ChatGPT focal word). The road/journey abstraction lets it gesture at growth without depicting any.
 [medium] both/trope | theme | light/dark binary as whole theme :: The model structures emotion as light-vs-dark (out of darkness into light, fighting the dark, chasing the light). 'Endless Night' and 'Fading Light' were named in AI-lyric cliché lists; leaning the whole song on this binary with no specific imagery is generic-poetic default.
+[medium] both/trope | comments | Line-by-line comments restating obvious code :: AI narrates self-evident lines (# Get the length / length = len(array)); a strong tell because experienced humans comment intent, not mechanics.
+[medium] both/trope | vocal synthesis artifact | metallic sibilance :: S and T consonants have a bright, crystalline, copy-pasted quality lacking natural timbral variation in AI vocals.
 [medium] both/trope | completeness trope | missing piece / completes me :: The 'you complete me' template; AI gravitates to it because it's the canonical way to express need, making the sentiment feel borrowed rather than felt.
+[medium] both/trope | anti-patterns | Mutable default arguments (items=[]) :: AI reproduces the classic Python mutable-default footgun that experienced devs avoid; concrete and checkable anti-pattern.
+[medium] both/trope | anti-patterns | Over-defensive nested guards for no real reason :: AI stacks redundant null/length/isinstance checks (if items is not None: if len>0: if items[0] is not None) where one guard suffices; distinctive over-cautious nesting.
 [medium] both/trope | rebirth | phoenix rebirth trope :: Whenever a prompt mentions recovery or comeback, AI reaches for the phoenix/ashes myth. It's an overdetermined symbol doing the emotional lifting, which marks the writing as borrowed rather than felt.
 [medium] both/trope | triumph | phoenix/wings/soar comeback imagery :: The model's default comeback imagery is flight — phoenix from ashes, spreading wings, learning to fly, soaring above. 'Soar' and 'rise' topped Suno cliché lists; clustering flight metaphors for any success story is borrowed grandeur with no grounded detail.
 [medium] both/trope | defiance | raising my fist to the sky :: A stock gesture AI inserts as visual shorthand for defiance/triumph; the raised-fist image is a prefab body-pose that stands in for an actual triumphant moment.
 [medium] both/trope | passion | setting my soul on fire / heart ablaze :: Passion-as-literal-fire is an over-default; 'soul on fire / heart ablaze' is reached for whenever intensity is needed, with no specific spark depicted.
+[medium] both/trope | narrative-structure | spelling out the moral :: AI stories disproportionately end by stating the lesson explicitly rather than trusting the reader; measurable structural tell.
+[medium] both/trope | multilingual vocabulary pattern | Synonym carousel :: AI rotates near-synonyms (компания/организация/предприятие; company/organization/enterprise) to dodge repetition, producing unnatural referential drift a human wouldn't use for the same entity.
 [medium] both/trope | determination | the fire inside / flame that won't die out :: An inner 'fire/flame that never dies' is AI's reflexive symbol for unkillable determination; the elemental image substitutes for showing actual persistence.
 [medium] both/trope | framing metaphor | the journey / this journey :: The model frames any topic as 'a journey'; this default narrative scaffold ('it's not the destination, it's the journey') is an over-used framing tell across prose and lyrics.
 [medium] both/trope | authenticity | the masks we wear / taking off the mask :: Hidden-self-as-mask is AI's default authenticity metaphor; 'take off the mask to show the real me' is a complete prefab reveal beat.
+[medium] both/trope | capitalization | Title Case In Section Headers :: AI defaults to Title Case where nearly every word is capitalized in headings, departing from sentence-case norms of Wikipedia and modern editorial style.
 [medium] both/trope | resilience | unbreakable / can't be broken :: AI's blunt resilience assertion; declaring oneself 'unbreakable' tells rather than shows toughness, a hallmark of generated empowerment lyrics.
+[medium] both/trope | ai-burstiness | uniform sentence length (low burstiness) :: AI clusters sentences at similar lengths; humans vary short declaratives against long complex sentences. Low burstiness is one of the strongest structural detection signals.
 [medium] both/trope | empowerment | unstoppable / nothing can stop me now :: A blunt declarative AI uses to cap empowerment songs; asserting 'unstoppable / nothing can stop me' tells dominance rather than dramatizing it.
 [medium] both/trope | narrative trope | Venture into the unknown :: Grandiose adventure framing AI adds to make mundane topics feel epic.
 [medium] both/trope | trial/endurance | walking through the fire / dancing in the flames :: Fire as a trial-to-survive is a top AI elemental default; 'walk through fire' arrives as an idiom-block signaling endurance with no specific ordeal attached.
@@ -1637,12 +1760,14 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/trope | imagery | weather-emotion mapping (storm/sunshine/rain) :: The model maps feelings onto weather by default — storms for hardship, sunshine after rain for relief, thunder for power. 'Waves Crashing' was named in cliché lists; this pathetic-fallacy reflex with stock weather images is a cross-genre AI-lyric fingerprint.
 [medium] both/trope | adversity | weathering the storm :: AI almost always renders hardship as literal weather (storm/rain/thunder) because it's the most generic, emotionally-legible metaphor available; the storm is never tied to a concrete event.
 [medium] both/trope | inner struggle | win the war within :: Internal conflict rendered as a literal 'war within' or 'battlefield in my mind'; the war metaphor is AI's default for any psychological tension.
+[medium] both/trope | Russian grammatical marker | осуществление внедрения (bureaucratic nominalization / канцелярит) :: AI Russian converts verbs to noun-chains (осуществление внедрения rather than внедрили), the classic канцелярит register; distinctive and checkable in RU output.
 [low   ] both/trope | theme | American-flag / red-white-and-blue patriotism tag :: AI bolts on flag/freedom imagery to certify mainstream country identity. It arrives as a decorative value-signal divorced from any story, the same way 'God, family, country' does, and clusters with 'small town' and 'mama.'
 [low   ] both/trope | individuality | breaking the mold :: AI's default nonconformity idiom; 'break the mold' asserts uniqueness via a worn phrase, ironically proving the lyric's conformity to pattern.
 [low   ] both/trope | tonal tell | Excessive enthusiasm :: Named AI tell describing unwarranted upbeat tone throughout a piece.
 [low   ] both/trope | self-expression | painting the sky with my colors / true colors :: AI's stock self-expression image conflates identity with 'colors'; 'show my true colors' / 'paint the sky' is generic individuality-signaling.
 [low   ] both/trope | optimism | silver lining in the clouds :: A proverb-cliché AI deploys for forced optimism; quoting the idiom whole replaces any specific reason for hope.
 [low   ] both/trope | perseverance | the journey of a thousand miles :: A proverb AI quotes whole to frame effort; importing the famous maxim signals reliance on stored aphorisms rather than depicting the actual path.
+[low   ] both/trope | formatting | thematic breaks before headings :: Decorative horizontal rules (---) inserted before section headings unnecessarily; a specific markdown-generation quirk against standard conventions.
 [high  ] both/word | model-distinctive slop | aaker :: Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 759; appears in 1/44 model top-lists).
 [high  ] both/word | antislop (open-model slop) | aback :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.089). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/word | antislop (open-model slop) | abernathy :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.076). Open-model slop that distills into most fine-tunes/wrappers.
@@ -2095,6 +2220,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/word | model-distinctive slop | uneasily :: Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 966; appears in 1/44 model top-lists).
 [high  ] both/word | antislop (open-model slop) | unforeseen :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.093). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/word | motion verb / release | unleash :: Topped ChatGPT 'superhero-movie verb' lists ('unleash your power'); the model uses it to manufacture intensity, and it reads as marketing-copy energy dropped into a song.
+[high  ] both/word | marketing hyperbole | Unparalleled :: Superlative hype adjective AI overuses in promotional prose.
 [high  ] both/word | antislop (open-model slop) | unshed :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.064). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/word | antislop (open-model slop) | user1 :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.092). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/word | texture/luxe | velvet :: Explicitly listed in the zoetic Suno analysis as an auto-repeated word ('velvet, souls, night, haze, shadows'). Applied to skies/nights/voices as a default luxury-texture modifier.
@@ -2434,6 +2560,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | model-distinctive slop | demonstrable :: Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 445; appears in 1/44 model top-lists).
 [medium] both/word | model-distinctive slop | demonstrably :: Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 301; appears in 2/44 model top-lists).
 [medium] both/word | model-distinctive slop | demotivation :: Statistically over-represented in gemini-2.5-flash-lite output vs human baseline (slop-forensics profile, score 378; appears in 2/44 model top-lists).
+[medium] both/word | caption-opener | depicts :: Formal caption-launching verb characteristic of AI vision output; humans rarely open descriptions with 'depicts'. Medium since it also appears in art criticism.
 [medium] both/word | abstract-noun | depths/depth :: AI's reflexive interiority word ('the depths of my soul / plumbing the depths'). Signals profundity-by-assertion; almost always paired with another abstraction like soul/heart/despair.
 [medium] both/word | slop-forensics canonical | desolate :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | slop-forensics canonical | destructo :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
@@ -2536,6 +2663,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | model-distinctive slop | enriches :: Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 309; appears in 2/44 model top-lists).
 [medium] both/word | slop-forensics canonical | enslavers :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | model-distinctive slop | entanglement :: Statistically over-represented in claude-3.5-haiku-20241022 output vs human baseline (slop-forensics profile, score 326; appears in 1/44 model top-lists).
+[medium] both/word | vocabulary | Enterprise vocab in comments/docstrings (leverage, robust, seamless, utilize) :: Marketing-register words appear inside code comments where humans almost never write them; distinctive because context (source code) makes them stand out sharply.
 [medium] both/word | antislop (open-model slop) | enthusiast :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.103). Open-model slop that distills into most fine-tunes/wrappers.
 [medium] both/word | model-distinctive slop | entrenching :: Statistically over-represented in gpt-4o-mini output vs human baseline (slop-forensics profile, score 233; appears in 2/44 model top-lists).
 [medium] both/word | abstract/poetic | entwined :: Overlaps the documented ChatGPT/Gemini overused-word lists ('focal words' like delve, tapestry, realm, testament, resonate, symphony, kaleidoscope) and bleeds into 'poetic' AI lyrics; the same statistical-middle preference drives prose and lyrics. 'Tapestry' is the most notorious general AI tell.
@@ -2558,6 +2686,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | slop-forensics canonical | evelyn :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | model-distinctive slop | exacerbates :: Statistically over-represented in gemma-3-4b-it output vs human baseline (slop-forensics profile, score 230; appears in 5/44 model top-lists).
 [medium] both/word | model-distinctive slop | exasperation :: Statistically over-represented in gemma-3-12b-it output vs human baseline (slop-forensics profile, score 316; appears in 1/44 model top-lists).
+[medium] both/word | Korean punctuation pattern | Excessive comma usage (Korean) :: Measured: AI uses commas ~61% of sentences vs ~26% in native Korean essays; over-comma-ing is a concrete, checkable statistical tell in Korean text.
 [medium] both/word | editorializing | Excitingly :: AI-favored sentence-opening adverb that injects manufactured enthusiasm.
 [medium] both/word | booster | Exemplary :: Formal praise adjective AI overuses to describe quality.
 [medium] both/word | model-distinctive slop | exemplifies :: Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 582; appears in 5/44 model top-lists).
@@ -2861,6 +2990,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | model-distinctive slop | lazily :: Statistically over-represented in gpt-4.5-preview output vs human baseline (slop-forensics profile, score 591; appears in 3/44 model top-lists).
 [medium] both/word | model-distinctive slop | lena :: Statistically over-represented in llama-3.2-3b-instruct output vs human baseline (slop-forensics profile, score 287; appears in 3/44 model top-lists).
 [medium] both/word | model-distinctive slop | lengel :: Statistically over-represented in glm-4.6 output vs human baseline (slop-forensics profile, score 497; appears in 2/44 model top-lists).
+[medium] both/word | excess-verb | leveraging :: Documented in the PubMed excess-word list; strongly overused by ChatGPT where 'using' would read naturally. Distinctive gerund business-verb tell.
 [medium] both/word | model-distinctive slop | liam :: Statistically over-represented in Gemma-3-Starshine-12B output vs human baseline (slop-forensics profile, score 121; appears in 3/44 model top-lists).
 [medium] both/word | antislop (open-model slop) | lila :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.113). Open-model slop that distills into most fine-tunes/wrappers.
 [medium] both/word | antislop (open-model slop) | lily :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.112). Open-model slop that distills into most fine-tunes/wrappers.
@@ -3138,6 +3268,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | prose vocabulary | reverberate :: LLM-overused verb.
 [medium] both/word | slop-forensics canonical | reverberating :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | abstract-noun | reverie :: Upscale literary word for daydream AI inserts to signal sophistication. 'Lost in reverie' is a default elegance flourish that reads as machine-borrowed vocabulary.
+[medium] both/word | hyperbolic-adjectives | revolutionary :: Hype adjective LLMs reach for gratuitously in promotional copy; medium since humans do use it, but density is a tell.
 [medium] both/word | model-distinctive slop | rhea :: Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 147; appears in 1/44 model top-lists).
 [medium] both/word | slop-forensics canonical | rhythmic :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | model-distinctive slop | rimmed :: Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 224; appears in 1/44 model top-lists).
@@ -3431,6 +3562,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | model-distinctive slop | underpin :: Statistically over-represented in gpt-4.1-nano output vs human baseline (slop-forensics profile, score 304; appears in 1/44 model top-lists).
 [medium] both/word | model-distinctive slop | underrepresentation :: Statistically over-represented in llama-4-scout output vs human baseline (slop-forensics profile, score 356; appears in 3/44 model top-lists).
 [medium] both/word | antislop (open-model slop) | underscored :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.103). Open-model slop that distills into most fine-tunes/wrappers.
+[medium] both/word | diction | underscores (figurative) :: Used figuratively to mean 'emphasize'; 13.8x excess ratio in biomedical abstracts post-2022. Distinctive when it appears as a rhetorical verb.
 [medium] both/word | antislop (open-model slop) | unexpected :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.105). Open-model slop that distills into most fine-tunes/wrappers.
 [medium] both/word | slop-forensics canonical | unfazed :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | abstract verb | unfold :: Default AI verb for things happening ('let it unfold,' 'as the story unfolds'). Flagged because it's an abstract, agentless way to describe events — the model avoids concrete action verbs.
@@ -3442,7 +3574,6 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | model-distinctive slop | unnaturally :: Statistically over-represented in claude-3.7-sonnet output vs human baseline (slop-forensics profile, score 432; appears in 3/44 model top-lists).
 [medium] both/word | slop-forensics canonical | unnerving :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | slop-forensics canonical | unnervingly :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
-[medium] both/word | marketing hyperbole | Unparalleled :: Superlative hype adjective AI overuses in promotional prose.
 [medium] both/word | model-distinctive slop | unpredictable :: Statistically over-represented in mistral-small-24b-instruct-2501 output vs human baseline (slop-forensics profile, score 136; appears in 3/44 model top-lists).
 [medium] both/word | prose vocabulary | unravel :: LLM-overused verb.
 [medium] both/word | motion verb / undoing | unravel / unraveling :: On ChatGPT 'superhero-verb' lists; the model uses 'unravel' for both mystery and breakdown, a tell-tale literary-inflation verb dropped into lyrics.
@@ -3516,6 +3647,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/word | praise word | well-crafted :: Signature AI compliment applied to prose, tools, and strategies alike.
 [medium] both/word | slop-forensics canonical | wheezed :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | slop-forensics canonical | whimpered :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
+[medium] both/word | descriptor | whimsical :: Claude-signature aesthetic descriptor applied indiscriminately to visual content; distinctive tell though less frequent than 'vibrant'.
 [medium] both/word | slop-forensics canonical | whir :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | slop-forensics canonical | whirled :: Over-represented across many LLMs vs human baseline (slop-forensics canonical word list).
 [medium] both/word | antislop (open-model slop) | whirred :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.104). Open-model slop that distills into most fine-tunes/wrappers.

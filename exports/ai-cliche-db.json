@@ -10,17 +10,17 @@
       "Claude",
       "general"
     ],
-    "rawCount": 5209,
-    "uniqueCount": 4856,
+    "rawCount": 5362,
+    "uniqueCount": 4988,
     "byType": {
-      "word": 2282,
+      "word": 2289,
       "structure": 135,
-      "trope": 161,
-      "phrase": 1788,
+      "trope": 197,
+      "phrase": 1859,
       "rhyme_pair": 170,
-      "opener": 174,
-      "closer": 75,
-      "template": 132
+      "opener": 181,
+      "closer": 77,
+      "template": 162
     },
     "builtBy": "26-agent workflow + compass + pattern-detectors + extra-tells",
     "note": "Public build: the NSFW-detection category is excluded here; it remains in the local/full build and inside the installer."
@@ -178,6 +178,7 @@
         "arxiv 2406.07016",
         "chatgpt",
         "claude",
+        "gemini",
         "general",
         "matthewvollmer.substack.com",
         "shared"
@@ -1302,9 +1303,11 @@
       "why": "Named in multiple AI-cliché lists; 'shattered' + 'dreams' is a fixed collocation the model defaults to for disappointment, with no fresher synonym ever surfacing.",
       "severity": "high",
       "platforms": [
+        "ChatGPT",
         "Suno",
         "Udio",
-        "ChatGPT"
+        "suno",
+        "udio"
       ],
       "example": "Standing in the ruins of my shattered dreams",
       "source": "lyric:openers-closers",
@@ -3853,7 +3856,11 @@
       "example": "I love you with every fiber of my being",
       "platforms": [
         "ChatGPT",
-        "Suno"
+        "Suno",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
       ],
       "source": "lyric:verbs",
       "sources": [
@@ -6774,7 +6781,9 @@
       "platforms": [
         "Suno",
         "Udio",
-        "shared"
+        "shared",
+        "suno",
+        "udio"
       ],
       "source": "lyric:atmosphere",
       "sources": [
@@ -7373,9 +7382,13 @@
       "severity": "medium",
       "example": "When our lips met, time stood still",
       "platforms": [
+        "ChatGPT",
         "Suno",
         "Udio",
-        "ChatGPT"
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
       ],
       "source": "lyric:phrases-love",
       "sources": [
@@ -7429,11 +7442,13 @@
       "severity": "high",
       "example": "We will rise above the pain",
       "platforms": [
-        "Suno",
-        "Udio",
         "ChatGPT",
+        "Suno",
+        "Suno Wiki",
+        "Udio",
         "r/SunoAI",
-        "Suno Wiki"
+        "suno",
+        "udio"
       ],
       "source": "lyric:atmosphere",
       "sources": [
@@ -16558,11 +16573,14 @@
       "example": "This played a pivotal role in shaping history.",
       "source": "prose:chatgpt-words",
       "platforms": [
-        "Gemini",
         "ChatGPT",
-        "arxiv 2406.07016",
+        "Gemini",
+        "Grammarly",
         "Wikipedia",
-        "Grammarly"
+        "arxiv 2406.07016",
+        "chatgpt",
+        "claude",
+        "general"
       ],
       "sources": [
         "prose:chatgpt-words",
@@ -16656,6 +16674,10 @@
       "source": "prose:chatgpt-words",
       "platforms": [
         "Wikipedia",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general",
         "quotablecopy.com"
       ],
       "sources": [
@@ -16691,10 +16713,13 @@
       "example": "A multifaceted approach to the problem.",
       "source": "prose:chatgpt-words",
       "platforms": [
-        "Gemini",
         "ChatGPT",
+        "Gemini",
         "Grammarly",
+        "chatgpt",
+        "claude",
         "embryo.com",
+        "gemini",
         "kraabel.net"
       ],
       "sources": [
@@ -16712,7 +16737,11 @@
       "severity": "medium",
       "example": "A nuanced understanding of the issue.",
       "source": "prose:chatgpt-words",
-      "platforms": [],
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
       "sources": [
         "prose:chatgpt-words"
       ]
@@ -16772,6 +16801,9 @@
       "platforms": [
         "Grammarly",
         "HumanizeMyAI",
+        "chatgpt",
+        "claude",
+        "gemini",
         "kraabel.net"
       ],
       "sources": [
@@ -16971,9 +17003,12 @@
       "example": "A meticulously crafted experience.",
       "source": "prose:chatgpt-words",
       "platforms": [
-        "arxiv 2406.07016",
         "PubMed study",
-        "Wikipedia"
+        "Wikipedia",
+        "arxiv 2406.07016",
+        "chatgpt",
+        "claude",
+        "general"
       ],
       "sources": [
         "prose:chatgpt-words",
@@ -17192,6 +17227,9 @@
         "Wikipedia",
         "arXiv study",
         "arxiv 2406.07016",
+        "chatgpt",
+        "claude",
+        "general",
         "shared"
       ],
       "source": "suno:giveaways",
@@ -17276,6 +17314,9 @@
       "example": "As an AI language model, I don't have personal opinions, but...",
       "platforms": [
         "Originality.AI",
+        "chatgpt",
+        "claude",
+        "gemini",
         "r/ChatGPT",
         "shared"
       ],
@@ -17706,8 +17747,10 @@
       "category": "compliance lead-in",
       "domain": "prose",
       "platforms": [
+        "ChatGPT",
         "Gemini",
-        "ChatGPT"
+        "chatgpt",
+        "gemini"
       ],
       "severity": "high",
       "why": "Gemini prepends an enthusiastic one-word affirmation before fulfilling almost any request; TechRadar found it survives even when models are told to be brief. Humans rarely open a written answer with a standalone 'Certainly!'",
@@ -17746,7 +17789,9 @@
         "Gemini",
         "blogs",
         "chatgpt",
+        "claude",
         "essays",
+        "gemini",
         "general"
       ],
       "sources": [
@@ -17838,7 +17883,9 @@
       "severity": "medium",
       "platforms": [
         "ChatGPT",
-        "Gemini"
+        "Gemini",
+        "chatgpt",
+        "gemini"
       ],
       "source": "prose:transitions",
       "sources": [
@@ -17996,6 +18043,7 @@
       "platforms": [
         "About pages",
         "LinkedIn",
+        "general",
         "press"
       ],
       "source": "prose:marketing",
@@ -18749,7 +18797,10 @@
       "platforms": [
         "ChatGPT",
         "Claude",
-        "Gemini"
+        "Gemini",
+        "chatgpt",
+        "claude",
+        "gemini"
       ],
       "source": "prose:transitions",
       "sources": [
@@ -19261,13 +19312,16 @@
       "source": "prose:chatgpt-words",
       "platforms": [
         "ChatGPT",
-        "Gemini",
         "Florida Realtors",
-        "Wandering Educators",
-        "r/ChatGPT",
-        "SEO blogs",
+        "Gemini",
         "LinkedIn",
-        "newsletters"
+        "SEO blogs",
+        "Wandering Educators",
+        "chatgpt",
+        "gemini",
+        "general",
+        "newsletters",
+        "r/ChatGPT"
       ],
       "sources": [
         "prose:chatgpt-words",
@@ -21011,7 +21065,9 @@
         "ChatGPT",
         "Claude",
         "Gemini",
-        "claude"
+        "chatgpt",
+        "claude",
+        "gemini"
       ],
       "severity": "high",
       "why": "A Stanford sycophancy study put Gemini highest at 62.47%; models emit agreement even when no factual claim was made. Reflexive validation regardless of correctness is a hallmark of preference-tuned chat models.",
@@ -21298,8 +21354,9 @@
       "severity": "high",
       "example": "The model achieved high accuracy, showcasing its versatility.",
       "platforms": [
+        "Wikipedia",
         "arxiv 2406.07016",
-        "Wikipedia"
+        "general"
       ],
       "source": "prose:academic",
       "sources": [
@@ -21462,8 +21519,11 @@
         "Grammarly",
         "HumanizeMyAI",
         "LinkedIn",
+        "chatgpt",
+        "claude",
         "decks",
         "fastcompany.com",
+        "gemini",
         "general"
       ],
       "sources": [
@@ -23830,6 +23890,7 @@
       "platforms": [
         "chatgpt",
         "gemini",
+        "general",
         "suno",
         "udio"
       ],
@@ -25339,8 +25400,9 @@
       "domain": "prose",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
-        "claude"
+        "general"
       ],
       "why": "Wikipedia AI-cleanup overused word.",
       "example": "",
@@ -25412,6 +25474,7 @@
       "platforms": [
         "chatgpt",
         "gemini",
+        "general",
         "suno",
         "udio"
       ],
@@ -25838,8 +25901,9 @@
       "domain": "prose",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
-        "claude"
+        "general"
       ],
       "why": "LLM-overused verb.",
       "example": "",
@@ -26456,8 +26520,9 @@
       "domain": "prose",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
-        "claude"
+        "general"
       ],
       "why": "Marketing-AI buzzword.",
       "example": "",
@@ -26673,8 +26738,9 @@
       "domain": "prose",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
-        "claude"
+        "general"
       ],
       "why": "Notorious AI-fiction/RP word.",
       "example": "",
@@ -26709,8 +26775,9 @@
       "domain": "prose",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
-        "claude"
+        "general"
       ],
       "why": "Top AI-fiction phrase.",
       "example": "",
@@ -26745,8 +26812,9 @@
       "domain": "prose",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
-        "claude"
+        "general"
       ],
       "why": "Stock AI atmosphere line.",
       "example": "",
@@ -27075,6 +27143,7 @@
         "chatgpt",
         "claude",
         "g",
+        "gemini",
         "h",
         "p",
         "t"
@@ -27378,6 +27447,7 @@
         "chatgpt",
         "claude",
         "gemini",
+        "general",
         "shared",
         "suno",
         "udio"
@@ -28340,10 +28410,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -28583,10 +28654,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -28863,10 +28935,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -29590,6 +29663,7 @@
         "claude",
         "gemini",
         "general",
+        "gpt",
         "suno",
         "udio"
       ],
@@ -30010,10 +30084,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -30030,10 +30105,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -30050,10 +30126,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -30070,10 +30147,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -30170,10 +30248,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -30210,10 +30289,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -30760,10 +30840,11 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
         "gemini",
+        "general",
         "suno",
-        "udio",
-        "claude"
+        "udio"
       ],
       "why": "Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.04). Open-model slop that distills into most fine-tunes/wrappers.",
       "example": "",
@@ -64096,11 +64177,12 @@
       "domain": "both",
       "platforms": [
         "gemini",
-        "gemini-2.5-pro-exp-03-25"
+        "gemini-2.5-pro-exp-03-25",
+        "general"
       ],
       "why": "Top repetitive n-gram in gemini-2.5-pro-exp-03-25 output (slop-forensics).",
       "example": "",
-      "severity": "low",
+      "severity": "medium",
       "sources": [
         "wave2:slop-forensics"
       ],
@@ -72322,11 +72404,14 @@
       "category": "marketing hyperbole",
       "domain": "both",
       "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
         "general"
       ],
       "why": "Superlative hype adjective AI overuses in promotional prose.",
       "example": "unparalleled quality",
-      "severity": "medium",
+      "severity": "high",
       "sources": [
         "wave4-census"
       ],
@@ -72610,6 +72695,8 @@
       "category": "ornate filler",
       "domain": "both",
       "platforms": [
+        "chatgpt",
+        "claude",
         "general"
       ],
       "why": "Distinctively AI ornate phrasing for 'many'.",
@@ -72899,6 +72986,8 @@
       "domain": "both",
       "platforms": [
         "chatgpt",
+        "claude",
+        "gemini",
         "general"
       ],
       "why": "Classic AI meta-commentary filler flagged as a near-signature tell.",
@@ -79340,6 +79429,8 @@
       "platforms": [
         "chatgpt",
         "claude",
+        "deepseek",
+        "gemini",
         "general"
       ],
       "why": "The 'not just X, but Y' escalation is a strong AI stylistic tell.",
@@ -83776,6 +83867,2436 @@
         "wave4-census"
       ],
       "source": "wave4-census"
+    },
+    {
+      "term": "guilt curdled in [noun]",
+      "type": "template",
+      "category": "deepseek-signature",
+      "domain": "both",
+      "platforms": [
+        "deepseek"
+      ],
+      "why": "DeepSeek R1 signature emotion-as-physical metaphor; 'curdled' as an emotional verb is distinctive and rare in human prose.",
+      "example": "Guilt curdled in his stomach.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(?:guilt|dread|shame|fear|anger)\\s+curdled\\s+in\\s+(?:his|her|their|my)\\s+\\w+",
+      "flags": "gi"
+    },
+    {
+      "term": "tasted of copper",
+      "type": "phrase",
+      "category": "deepseek-signature",
+      "domain": "both",
+      "platforms": [
+        "deepseek"
+      ],
+      "why": "DeepSeek R1 and reasoning models default to a metallic/copper sensory metaphor for atmosphere; recurs across model-comparison tests.",
+      "example": "The air tasted of stale copper.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "[quote], he barked",
+      "type": "template",
+      "category": "deepseek-signature",
+      "domain": "both",
+      "platforms": [
+        "deepseek"
+      ],
+      "why": "DeepSeek R1 overuses 'barked' as a dialogue tag far above human baseline rates.",
+      "example": "'Stop it!' he barked.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "[\"'].+?[\"'],?\\s+(?:he|she|they)\\s+barked",
+      "flags": "gi"
+    },
+    {
+      "term": "em-dash chains (2+ per sentence)",
+      "type": "trope",
+      "category": "claude-signature",
+      "domain": "both",
+      "platforms": [
+        "claude"
+      ],
+      "why": "Claude structurally overuses em dashes; multiple dashes stacked in a single sentence/paragraph forms a statistical fingerprint above human baseline.",
+      "example": "Context matters—all of it—and drives behavior—each case distinct.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "uniform sentence length (low burstiness)",
+      "type": "trope",
+      "category": "ai-burstiness",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI clusters sentences at similar lengths; humans vary short declaratives against long complex sentences. Low burstiness is one of the strongest structural detection signals.",
+      "example": "Every sentence in the passage runs 15 to 25 words with almost no variation.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "some argue X while others contend Y",
+      "type": "template",
+      "category": "claude-signature",
+      "domain": "both",
+      "platforms": [
+        "claude"
+      ],
+      "why": "Claude constitutional training presents balanced perspectives without resolving the tension; recurring both-sides framing.",
+      "example": "Some argue this is valid, while others contend the opposite has merit.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(?:Some|Many|Critics|Proponents)\\s+argue\\s+.+?(?:while|whereas)\\s+(?:others|proponents|critics)\\s+(?:contend|argue|maintain)",
+      "flags": "gi"
+    },
+    {
+      "term": "you light up my [world/heart/night]",
+      "type": "template",
+      "category": "clichéd love-song formula",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "Near-verbatim training-data love-song formula appearing with identical structure across AI songs.",
+      "example": "You light up my world, you make my heart unfurl",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "light(?:s|ing)?\\s+up\\s+my\\s+(?:world|heart|night|life|sky)",
+      "flags": "gi"
+    },
+    {
+      "term": "endless [night/road/way]",
+      "type": "template",
+      "category": "overused modifier",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "AI repeatedly pairs 'endless' with time/journey nouns as a default intensifier.",
+      "example": "walking down an endless road",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "endless\\s+(?:night|road|way|time|sky|road|journey)",
+      "flags": "gi"
+    },
+    {
+      "term": "fading [light/away/memories/dreams]",
+      "type": "template",
+      "category": "overused metaphor",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "Predictable AI phrase for loss/decline in generated lyrics.",
+      "example": "fading light at the end of the day",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "fading\\s+(?:light|away|memor(?:y|ies)|dreams?)",
+      "flags": "gi"
+    },
+    {
+      "term": "burning [bridges/desire/fire/passion]",
+      "type": "template",
+      "category": "fire/burning imagery cluster",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "Fire imagery cluster overrepresented in AI lyric training data as a default metaphor.",
+      "example": "burning bridges with you",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "burning\\s+(?:bridges?|desire|fire|passion|love)",
+      "flags": "gi"
+    },
+    {
+      "term": "broken [chains/heart/dreams/promises]",
+      "type": "template",
+      "category": "damage/breakage cliché",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "AI favors 'broken' as damage descriptor, producing predictable freedom/loss metaphors.",
+      "example": "breaking free from broken chains",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "broken\\s+(?:chains?|hearts?|dreams?|promises?)",
+      "flags": "gi"
+    },
+    {
+      "term": "every line ends on a rhyme",
+      "type": "trope",
+      "category": "over-rhyming",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "AI defaults to rhyming every line-end, producing mechanical, predictable structure that lacks narrative flow.",
+      "example": "I love you so / can't let you go / heart is aglow / watch it grow",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "identical chorus repeated with no variation",
+      "type": "trope",
+      "category": "structural repetition",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "AI songs repeat the chorus verbatim without dynamic development, energy build, or lyric variation between repeats.",
+      "example": "The chorus after verse 2 is word-for-word identical to the one after verse 1, with no build.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "absent breath sounds between phrases",
+      "type": "trope",
+      "category": "vocal realism gap",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "Real singers audibly breathe; AI vocals frequently lack any breath, gulp, or intake between phrases.",
+      "example": "Complete silence between sung phrases with no audible breaths.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "digital wobble on sustained vowels",
+      "type": "trope",
+      "category": "vocal synthesis artifact",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "Fluttery micro-pitch modulation on notes held past ~1.5s is an inhuman synthesis artifact exclusive to AI vocals.",
+      "example": "A held 'loooove' with audible fluttery micro-pitch variation.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "metallic sibilance",
+      "type": "trope",
+      "category": "vocal synthesis artifact",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "S and T consonants have a bright, crystalline, copy-pasted quality lacking natural timbral variation in AI vocals.",
+      "example": "Bright, metallic 'sss' sounds on every sibilant.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "love is electric",
+      "type": "phrase",
+      "category": "novel AI cliché",
+      "domain": "both",
+      "platforms": [
+        "suno"
+      ],
+      "why": "Emerging AI-specific metaphor recurring across Suno outputs; documented as a novel model-driven cliché.",
+      "example": "love is electric",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "silhouettes for shadows; embers for fire; whispers for echoes",
+      "type": "template",
+      "category": "synonym cliché rotation",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "When told to avoid clichés, AI lyric generators swap in near-synonyms rather than genuinely original imagery; this synonym-rotation cluster is a distinctive AI tell.",
+      "example": "using 'embers' after being told 'fire' is overused",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(silhouettes|embers|whispers)",
+      "flags": "gi"
+    },
+    {
+      "term": "cosmic/elemental imagery cluster",
+      "type": "template",
+      "category": "imagery cliché set",
+      "domain": "both",
+      "platforms": [
+        "suno",
+        "udio"
+      ],
+      "why": "AI lyric models default disproportionately to grand cosmic/elemental scales drawn from training-data cliché; dense clustering of these terms flags generated lyrics.",
+      "example": "dancing with the stars, burning bright, lost in heaven",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(stars|fire|sky|rain|light|heaven|abyss|infinity)",
+      "flags": "gi"
+    },
+    {
+      "term": "breath hitched",
+      "type": "phrase",
+      "category": "emotional-cliche",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Formulaic AI stock reaction for surprise/arousal; heavily recycled across roleplay outputs and flagged in RP-slop detectors.",
+      "example": "Her breath hitched as she realized what was happening.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "clicked into place",
+      "type": "phrase",
+      "category": "narrative-cliche",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "deepseek",
+        "gemini",
+        "general"
+      ],
+      "why": "Templatic AI phrase for sudden realization/understanding; a low-effort filler beat that recurs across models.",
+      "example": "Then everything clicked into place.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "eyes sparkle",
+      "type": "phrase",
+      "category": "physical-description",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "Overused AI eye-description cliché recycled across characters and perspectives; flagged in RP banned-token lists.",
+      "example": "Her eyes sparkle with mischief.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "siren's call",
+      "type": "phrase",
+      "category": "metaphor-cliche",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI default metaphor for irresistible seduction/temptation; banned in RP slop lists.",
+      "example": "She answered the siren's call without hesitation.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "husky voice",
+      "type": "phrase",
+      "category": "dialogue-marker",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "Overused AI sensual voice descriptor recycled across intimate scenes; flagged in banned-token lists.",
+      "example": "He spoke in a husky voice that made her knees weak.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "shiver down spine",
+      "type": "phrase",
+      "category": "physical-sensation",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI go-to physical response for attraction or fear; one of the most recycled RP-slop sensation markers.",
+      "example": "A shiver ran down her spine at his touch.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "little did (he|she|they) know",
+      "type": "template",
+      "category": "narrative-cliche",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "Formulaic AI foreshadowing device signaling low-effort plotting; a strong narrative tell.",
+      "example": "Little did she know, he was watching from the shadows.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "little did (he|she|they) know",
+      "flags": "gi"
+    },
+    {
+      "term": "not X, but Y",
+      "type": "template",
+      "category": "sentence-structure",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI's signature binary-contrast rhetorical structure; over-detected by anti-slop samplers as a hallmark of generated text.",
+      "example": "This wasn't just love, but obsession.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "\\bnot (only )?[^,]+,? but\\b",
+      "flags": "gi"
+    },
+    {
+      "term": "couldn't help but",
+      "type": "phrase",
+      "category": "narrative-hedging",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI default construction for stripping character agency from a reaction; recurs heavily across outputs.",
+      "example": "She couldn't help but smile at his words.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Adam's apple bobbing",
+      "type": "phrase",
+      "category": "physical-cliche",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI stock nervous/tension marker; overused physical beat flagged in RP lists.",
+      "example": "His Adam's apple bobbed as he swallowed hard.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "thick with tension",
+      "type": "phrase",
+      "category": "atmospheric-cliche",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI's default atmospheric filler for dramatic/romantic scenes; recurs as low-effort mood-setting.",
+      "example": "The room was thick with tension.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "symphony of",
+      "type": "phrase",
+      "category": "purple-prose",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "AI purple-prose metaphor template ('a symphony of X') for elevating mundane description; auto-flagged by anti-slop samplers.",
+      "example": "Her performance was a symphony of grace.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "serves as / stands as",
+      "type": "phrase",
+      "category": "lexical-substitution",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI systematically upgrades the copula 'is' to 'serves as'/'stands as' to sound weighty; noticeable when repeated.",
+      "example": "The program serves as an innovative solution.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "studies show / experts argue / research suggests",
+      "type": "phrase",
+      "category": "weasel-wording",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Unattributed authority appeals with no author, journal, or date; AI leans on these placeholders.",
+      "example": "Studies show that... (no actual citation provided)",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "a shiver ran down her spine",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Ubiquitous AI fiction emotion-beat; heavily overrepresented in model outputs versus human text.",
+      "example": "A shiver ran down her spine when their eyes met.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "heart skipped a beat",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Archetypal emotion-to-body cliche; extremely frequent in untuned AI romance/fiction.",
+      "example": "Her heart skipped a beat at the sight of him.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "breath caught in her throat",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Characteristic AI respiratory reaction-beat; overused to signal shock or attraction.",
+      "example": "Her breath caught in her throat at his sudden confession.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "heart hammered against her ribs",
+      "type": "template",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Cardinal AI fiction tell; the 'heart hammered ribs' construction is massively overrepresented in model outputs.",
+      "example": "Her heart hammered against her ribs as fear flooded through her.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "heart\\s+(hammered|pounded|raced|thundered)\\s+(in|against|through)",
+      "flags": "gi"
+    },
+    {
+      "term": "butterflies danced in her stomach",
+      "type": "phrase",
+      "category": "sensory-cliché",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Overused AI nervous-emotion metaphor for romance/anxiety; a stock cliche in generated prose.",
+      "example": "Butterflies danced in her stomach as she waited for his response.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "her knees went weak",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI romance cliche conveying attraction/shock via involuntary physical response; avoids specificity.",
+      "example": "Her knees went weak when he touched her arm.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "the air was thick with",
+      "type": "template",
+      "category": "sensory-cliché",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Generic atmospheric cliche; AI anthropomorphizes the air instead of grounding emotion in concrete detail.",
+      "example": "The air was thick with unspoken tension between them.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "the air\\s+(was|grew|became)?\\s*(thick|heavy|charged|electric|tense)\\s+with",
+      "flags": "gi"
+    },
+    {
+      "term": "a smile that didn't reach her eyes",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Long-flagged romance cliche heavily perpetuated by AI trained on genre fiction; near-diagnostic when used straight.",
+      "example": "She offered him a smile that didn't reach her eyes.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "obsidian eyes / velvet voice",
+      "type": "phrase",
+      "category": "sensory-cliché",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI character-description pattern using gemstone/fabric metaphors in place of actual features.",
+      "example": "He fixed her with his obsidian eyes, his velvet voice sending shivers through her.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "something shifted between them",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Vague relational cliche AI uses to imply romantic tension without concrete action or dialogue.",
+      "example": "Something shifted between them in that moment.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "she released the breath she didn't know she was holding",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Notorious hyperbolic emotion-beat AI overuses despite its obviousness as cliche; near-diagnostic.",
+      "example": "She released the breath she didn't realize she was holding.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "her chest tightened",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Generic internalized-emotion default; AI reaches for thoracic/respiratory reactions over character-specific beats.",
+      "example": "Her chest tightened with emotion as she read the letter.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "her walls crumbled down",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI romance emotional-barrier cliche; documented repeating dozens of times within a single generated novel.",
+      "example": "Her carefully constructed walls crumbled down when he looked at her that way.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "her voice barely above a whisper",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Extremely overrepresented AI dialogue tag/emotion-beat; strong tell in generated fiction.",
+      "example": "Her voice was barely above a whisper when she confessed.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "crested like a wave",
+      "type": "template",
+      "category": "sensory-cliché",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Purple-prose water/wave metaphor AI reaches for during intimacy or emotional peaks instead of concrete sensation.",
+      "example": "Passion crested like a wave between them, pulling them under.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(passion|desire|emotion|pleasure)\\s+(crested|crashed|surged|washed)\\s+(over|like)\\s+(a\\s+)?wave",
+      "flags": "gi"
+    },
+    {
+      "term": "petal-soft lips",
+      "type": "phrase",
+      "category": "purple-prose",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Dense stacked romance cliche ('petal-soft' + honeyed/nectar) that AI produces at implausible concentration; rare in edited human prose.",
+      "example": "Her petal-soft lips tasted of honeyed nectar as he kissed her.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "set her skin ablaze",
+      "type": "template",
+      "category": "sensory-cliché",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Temperature/fire metaphor overused in AI intimacy writing to signal desire without describing actual sensation.",
+      "example": "His touch set her skin ablaze with desire.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(set\\s+\\w+\\s+skin\\s+ablaze|(ablaze|molten|searing|scorching)\\s+(touch|caress|kiss))",
+      "flags": "gi"
+    },
+    {
+      "term": "you're going to be the death of me",
+      "type": "phrase",
+      "category": "dialogue-cliché",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Recurring AI roleplay/dialogue catchphrase that surfaces context-blind across scenes; distinctive stock line.",
+      "example": "You're going to be the death of me, the way you look at me.",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "not X, not Y, just Z",
+      "type": "template",
+      "category": "sentence-structure",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Signature AI staccato-negation rhythm that manufactures a false beat before an emotional reveal; distinctive triple structure.",
+      "example": "Not anger. Not fear. Just him, standing in her doorway.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "[Nn]ot\\s+[^.,]+[.,]\\s*[Nn]ot\\s+[^.,]+[.,]\\s*[Jj]ust\\s+",
+      "flags": "gi"
+    },
+    {
+      "term": "gasped in surprise",
+      "type": "phrase",
+      "category": "body-language-beat",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Redundant AI emotion beat ('gasp' already implies surprise); recurs as a filler reaction across scenes.",
+      "example": "She gasped in surprise at his sudden appearance.",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "spelling out the moral",
+      "type": "trope",
+      "category": "narrative-structure",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI stories disproportionately end by stating the lesson explicitly rather than trusting the reader; measurable structural tell.",
+      "example": "And so she learned that love requires vulnerability, a lesson she'd carry forever.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "I appreciate your question",
+      "type": "opener",
+      "category": "validation-before-answer",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Formulaic validation softener that precedes the actual answer; assistant-voice politeness tic rare in human writing.",
+      "example": "I appreciate your question - it's a nuanced topic.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Let me break this down",
+      "type": "opener",
+      "category": "reasoning-leak",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Assistant-voice preamble announcing performative step-by-step structure before answering; rare in native human prose.",
+      "example": "Let me break this down for you: there are several key points.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "I cannot provide",
+      "type": "opener",
+      "category": "refusal-template",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Canonical refusal opener followed by a safety/values rationale; a direct assistant-alignment leak.",
+      "example": "I cannot provide that information as it could be used to cause harm.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "serves as",
+      "type": "phrase",
+      "category": "verb-substitution",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "AI substitutes 'serves as / stands as / boasts' for plain 'is' to sound engaging; recognizable inflated-copula tell.",
+      "example": "Claude serves as a sophisticated language model.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "researchers have noted",
+      "type": "phrase",
+      "category": "weasel-words",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Vague unsourced attribution ('experts argue', 'some critics', 'researchers have noted') AI uses to fabricate authority.",
+      "example": "Researchers have noted that this represents a significant shift.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Does this help?",
+      "type": "closer",
+      "category": "conversational-leak",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Engagement-seeking validation close ('Does this help? What are your thoughts?') characteristic of assistant turns, not human documents.",
+      "example": "Does this explanation help clarify the topic? What are your thoughts?",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "It's not X, it's Y",
+      "type": "template",
+      "category": "negation-contrast",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general",
+        "grok"
+      ],
+      "why": "Contrastive binary structure LLMs default to for perceived sophistication; distinctive multiword shape, not a bare common word.",
+      "example": "We're not just building a product, we're creating an experience",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "It'?s not (?:just )?([^,]+), it'?s ([^.!?]+)",
+      "flags": "gi"
+    },
+    {
+      "term": "revolutionary",
+      "type": "word",
+      "category": "hyperbolic-adjectives",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general",
+        "grok"
+      ],
+      "why": "Hype adjective LLMs reach for gratuitously in promotional copy; medium since humans do use it, but density is a tell.",
+      "example": "Our revolutionary AI approach",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Comment X to receive Y",
+      "type": "template",
+      "category": "engagement-bait-prompt",
+      "domain": "both",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "linkedin"
+      ],
+      "why": "Explicit transaction engagement-bait pattern heavily produced by AI social copy; distinctive templated CTA.",
+      "example": "Comment YES to receive the PDF",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "[Cc]omment \\w+ to (?:receive|get|unlock)",
+      "flags": "gi"
+    },
+    {
+      "term": "Tag a friend who",
+      "type": "phrase",
+      "category": "engagement-bait-prompt",
+      "domain": "both",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "linkedin",
+        "twitter"
+      ],
+      "why": "Long-flagged engagement-bait vector; distinctive multiword social CTA common in AI-generated posts.",
+      "example": "Tag a friend who needs this advice",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Double-tap if you agree",
+      "type": "phrase",
+      "category": "engagement-bait-prompt",
+      "domain": "both",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "twitter"
+      ],
+      "why": "Formulaic like-bait CTA common in AI social copy; specific enough to flag.",
+      "example": "Double-tap if you believe in this",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Follow for Part 2",
+      "type": "phrase",
+      "category": "cliffhanger-bait",
+      "domain": "both",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "linkedin",
+        "twitter"
+      ],
+      "why": "Artificial-cliffhanger CTA withholding content to force a follow; distinctive formulaic engagement-bait.",
+      "example": "Follow for Part 2 coming next week",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "There are several important factors to consider",
+      "type": "opener",
+      "category": "generic-topic-sentence",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Predictable five-paragraph-essay opener; distinctive templated topic sentence favored by LLMs.",
+      "example": "There are several important factors to consider before making this decision",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "rich tapestry",
+      "type": "phrase",
+      "category": "overused-metaphor",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Signature AI metaphor repeated across outputs without genuine specificity; strong tell.",
+      "example": "A rich tapestry of innovations",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "landscape of X",
+      "type": "template",
+      "category": "overused-metaphor",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI default metaphor for domain/industry framing; templated and distinctive though humans occasionally use it.",
+      "example": "The landscape of artificial intelligence",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "[Ll]andscape of [A-Za-z\\s]+",
+      "flags": "gi"
+    },
+    {
+      "term": "At its core",
+      "type": "phrase",
+      "category": "structural-marker",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Overused AI bridge phrase into explanation; distinctive multiword opener though humans use it sometimes.",
+      "example": "At its core, the solution relies on machine learning",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "One could argue",
+      "type": "phrase",
+      "category": "hedging-language",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI hedging phrase that pads while avoiding a definitive stance; distinctive multiword formula.",
+      "example": "One could argue that this represents progress",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Why doesn't anyone talk about",
+      "type": "opener",
+      "category": "viral-hook-formula",
+      "domain": "both",
+      "platforms": [
+        "general",
+        "linkedin",
+        "twitter"
+      ],
+      "why": "Curiosity-gap hook formula common in AI marketing copy; distinctive templated opener.",
+      "example": "Why doesn't anyone talk about this approach to pricing?",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "This is the only thing you need to know",
+      "type": "opener",
+      "category": "hyperbolic-hook",
+      "domain": "both",
+      "platforms": [
+        "general",
+        "linkedin",
+        "twitter"
+      ],
+      "why": "Absolute-claim hook formula; distinctive AI marketing default for manufactured value.",
+      "example": "This is the only thing you need to know about conversions",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Share if you relate",
+      "type": "phrase",
+      "category": "engagement-bait-closer",
+      "domain": "both",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "twitter"
+      ],
+      "why": "Share-metric-gaming engagement bait; distinctive formulaic closer common in AI social copy.",
+      "example": "Have you experienced this? Share if you relate",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Studies have shown",
+      "type": "trope",
+      "category": "unverified-attribution",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Vague attribution with no citation; classic AI move to sound authoritative without a source.",
+      "example": "Studies have shown that this method works",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Experts agree",
+      "type": "trope",
+      "category": "unverified-attribution",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Vague authority claim naming no actual experts; AI default for manufactured credibility.",
+      "example": "Experts agree this is the best approach",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "truly novel / highly innovative / completely unique",
+      "type": "template",
+      "category": "amplified-modifiers",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Intensifier + hype-adjective stacking; distinctive gratuitous-embellishment pattern.",
+      "example": "A truly novel and innovative solution",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "(?:truly|highly|completely) (?:novel|innovative|unique)",
+      "flags": "gi"
+    },
+    {
+      "term": "Tauchen wir ein in",
+      "type": "phrase",
+      "category": "multilingual translationese",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "deepseek",
+        "gemini"
+      ],
+      "why": "German 'let's dive into' — one of the clearest German AI opening markers (equivalent of 'delve into').",
+      "example": "Tauchen wir ein in die Welt der künstlichen Intelligenz.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Nicht nur X, sondern auch Y",
+      "type": "template",
+      "category": "multilingual translationese",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grok"
+      ],
+      "why": "German 'not just X, but also Y' — LLM-favored negative-parallelism structure mirrored across languages.",
+      "example": "Nicht nur schnell, sondern auch zuverlässig.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "nicht nur .{1,40}, sondern auch .{1,40}",
+      "flags": "gi"
+    },
+    {
+      "term": "Es ist wichtig zu betonen, dass",
+      "type": "phrase",
+      "category": "multilingual translationese",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude"
+      ],
+      "why": "German 'it is important to stress that' — direct calque of the AI 'it is important to note' emphasis formula.",
+      "example": "Es ist wichtig zu betonen, dass die Digitalisierung entscheidend ist.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "À l'ère de",
+      "type": "phrase",
+      "category": "multilingual translationese",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "French 'in the era of' — content-empty AI opening cliche.",
+      "example": "À l'ère de la numérisation, il est essentiel de comprendre.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Il est essentiel de comprendre que",
+      "type": "phrase",
+      "category": "multilingual translationese",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude"
+      ],
+      "why": "French 'it is essential to understand that' — AI emphasis-opener formula recurring across models.",
+      "example": "Il est essentiel de comprendre que cette transformation n'est pas simple.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Plongeons dans",
+      "type": "phrase",
+      "category": "multilingual translationese",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude"
+      ],
+      "why": "French 'let's dive into' — templated AI transition phrase, French analogue of 'delve into'.",
+      "example": "Plongeons dans l'analyse des données disponibles.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Excessive comma usage (Korean)",
+      "type": "word",
+      "category": "Korean punctuation pattern",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude"
+      ],
+      "why": "Measured: AI uses commas ~61% of sentences vs ~26% in native Korean essays; over-comma-ing is a concrete, checkable statistical tell in Korean text.",
+      "example": "이것은, 한국어 문장입니다, 쉼표가 많습니다.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Synonym carousel",
+      "type": "trope",
+      "category": "multilingual vocabulary pattern",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "AI rotates near-synonyms (компания/организация/предприятие; company/organization/enterprise) to dodge repetition, producing unnatural referential drift a human wouldn't use for the same entity.",
+      "example": "The company launched. The organization expanded. The enterprise invested.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "осуществление внедрения (bureaucratic nominalization / канцелярит)",
+      "type": "trope",
+      "category": "Russian grammatical marker",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude"
+      ],
+      "why": "AI Russian converts verbs to noun-chains (осуществление внедрения rather than внедрили), the classic канцелярит register; distinctive and checkable in RU output.",
+      "example": "осуществление внедрения новых технологий (вместо: они внедрили)",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Не просто X, а Y",
+      "type": "template",
+      "category": "Russian parallelism",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Russian negative-parallelism formula ('not just a tool, but a partner'); the direct RU analogue of the English 'not just X, it's Y' AI tell, and equally formulaic.",
+      "example": "Это не просто инструмент, а надёжный партнёр.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "[Нн]е просто .{1,30}, а .{1,30}",
+      "flags": "gi"
+    },
+    {
+      "term": "Vague appeals to authority (experts say / studies show)",
+      "type": "phrase",
+      "category": "attribution marker",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini"
+      ],
+      "why": "Cross-language unsourced authority hedges (Experten sagen / Estudios muestran / Les chercheurs affirment / 'studies show') with no citation; a recognized Wikipedia AI-writing sign, distinctive because it names authority without a source.",
+      "example": "Experts say. Studies show. Researchers affirm.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Stacked hedges (könnte möglicherweise eventuell)",
+      "type": "phrase",
+      "category": "uncertainty marker",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "Piling multiple hedges in one clause ('could possibly perhaps'; könnte möglicherweise eventuell) to avoid commitment; distinctive because natural writing rarely triple-hedges a single claim.",
+      "example": "This could possibly perhaps contribute to some improvement.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Excessive docstrings on trivial functions",
+      "type": "trope",
+      "category": "documentation",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "deepseek",
+        "gemini"
+      ],
+      "why": "AI emits full textbook Args/Returns docstrings even for one-line self-explanatory helpers; humans rarely document trivial internal functions this exhaustively.",
+      "example": "def add(x, y):\n    \"\"\"Add two numbers together.\n    Args:\n        x (int): First number\n        y (int): Second number\n    Returns:\n        int: Sum of x and y\"\"\"",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Line-by-line comments restating obvious code",
+      "type": "trope",
+      "category": "comments",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini"
+      ],
+      "why": "AI narrates self-evident lines (# Get the length / length = len(array)); a strong tell because experienced humans comment intent, not mechanics.",
+      "example": "# Get the length\nlength = len(array)\n# Loop through array\nfor i in range(length):",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Inflated docstrings with enterprise buzzwords",
+      "type": "trope",
+      "category": "documentation",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "AI pads docs with grandiose jargon ('leverage robust integration for decentralized orchestration') wildly out of proportion to trivial code; distinctive mismatch of register vs complexity.",
+      "example": "\"\"\"Leverage robust integration mechanisms for decentralized compute orchestration.\"\"\"  # function just opens a file",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Silent/bare catch blocks (except: pass)",
+      "type": "trope",
+      "category": "error-handling",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini"
+      ],
+      "why": "AI generates bare except / catch-and-swallow handlers that hide failures instead of surfacing them; a recognized AI-slop code pattern.",
+      "example": "except:\n    pass\n# or\nexcept Exception as e:\n    log.info(e)",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Catch-and-return-default (.catch(() => null))",
+      "type": "trope",
+      "category": "error-handling",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot"
+      ],
+      "why": "AI swallows errors by returning a silent default (Promise.catch(() => null); except: return None), masking failures; distinctive defensive-swallow signature.",
+      "example": ".catch(() => null)\n# or\nexcept: return None",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Mutable default arguments (items=[])",
+      "type": "trope",
+      "category": "anti-patterns",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "deepseek"
+      ],
+      "why": "AI reproduces the classic Python mutable-default footgun that experienced devs avoid; concrete and checkable anti-pattern.",
+      "example": "def add_to_list(item, items=[]):",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Generic status envelope ({success, data})",
+      "type": "trope",
+      "category": "anti-patterns",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot"
+      ],
+      "why": "AI reflexively wraps returns in {status/success/data} envelopes even where a plain return suffices; a repetitive pattern over-represented in training data.",
+      "example": "return {\"status\": 200, \"success\": True, \"data\": result}",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Language-cross-pollination (JS methods in Python, etc.)",
+      "type": "trope",
+      "category": "mistakes",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "deepseek",
+        "gemini"
+      ],
+      "why": "AI leaks idioms across languages (Array.find/.filter or camelCase conventions inside Python); a high-confidence tell since a fluent human in that language wouldn't make the slip.",
+      "example": "# In a Python file: items.find(lambda x: x.id == 5)",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Hallucinated imports from non-existent packages",
+      "type": "trope",
+      "category": "imports",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini"
+      ],
+      "why": "AI imports plausible-sounding but non-existent or unused packages (slopsquatting risk); a strong, verifiable AI tell distinct from ordinary unused imports.",
+      "example": "import nonexistent_library  # package does not exist",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Enterprise vocab in comments/docstrings (leverage, robust, seamless, utilize)",
+      "type": "word",
+      "category": "vocabulary",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini"
+      ],
+      "why": "Marketing-register words appear inside code comments where humans almost never write them; distinctive because context (source code) makes them stand out sharply.",
+      "example": "# Leverage robust validation to ensure seamless data flow",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Copula avoidance (serves as / acts as / functions as instead of \"is\")",
+      "type": "phrase",
+      "category": "phrasing",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "why": "AI substitutes formal periphrasis for the plain copula ('serves as a wrapper' vs 'is a wrapper'), a recognizable AI register even inside code comments.",
+      "example": "# This class serves as a wrapper for database operations",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Over-defensive nested guards for no real reason",
+      "type": "trope",
+      "category": "anti-patterns",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "copilot"
+      ],
+      "why": "AI stacks redundant null/length/isinstance checks (if items is not None: if len>0: if items[0] is not None) where one guard suffices; distinctive over-cautious nesting.",
+      "example": "if items is not None:\n    if len(items) > 0:\n        if items[0] is not None:",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "em-dash overuse",
+      "type": "trope",
+      "category": "punctuation",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "LLMs use 3-5x more em-dashes than human writers; a well-documented and strong statistical tell, especially the unspaced em-dash in casual contexts.",
+      "example": "The problem—and this is crucial—requires attention.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "bold-first bullets",
+      "type": "template",
+      "category": "formatting",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "Every list item begins with a bolded lead-in phrase followed by a colon; heavy Claude/ChatGPT markdown habit, rare in hand-written lists.",
+      "example": "**Key Point:** Description. **Another:** More details.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research",
+      "pattern": "^\\s*[-*]\\s*\\*\\*[^*]+\\*\\*:\\s",
+      "flags": "gi"
+    },
+    {
+      "term": "Title Case In Section Headers",
+      "type": "trope",
+      "category": "capitalization",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI defaults to Title Case where nearly every word is capitalized in headings, departing from sentence-case norms of Wikipedia and modern editorial style.",
+      "example": "## Introduction And Background",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Rule of Three overuse",
+      "type": "trope",
+      "category": "structure",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "AI compulsively groups ideas in threes (adjective, adjective, and adjective) even when unwarranted; a single tricolon is fine but back-to-back triads are a signature.",
+      "example": "This is creative, smart, and funny. The approach is methodical, thorough, and precise.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "emoji as list markers",
+      "type": "trope",
+      "category": "formatting",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "One decorative emoji leading each bullet point across a whole list; strong ChatGPT/Gemini formatting tell rarely seen in careful human prose.",
+      "example": "Rocket Launch quickly. Target Hit the mark. Star Excel consistently.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "fractal summaries",
+      "type": "trope",
+      "category": "structure",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Restating the same points at multiple nested levels (section recap, then overall summary, then conclusion) producing redundancy rather than added clarity.",
+      "example": "In summary... To recap... Overall... In conclusion...",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "thematic breaks before headings",
+      "type": "trope",
+      "category": "formatting",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "Decorative horizontal rules (---) inserted before section headings unnecessarily; a specific markdown-generation quirk against standard conventions.",
+      "example": "--- then ## Section Title",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "underscores (figurative)",
+      "type": "word",
+      "category": "diction",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "Used figuratively to mean 'emphasize'; 13.8x excess ratio in biomedical abstracts post-2022. Distinctive when it appears as a rhetorical verb.",
+      "example": "This finding underscores the importance of early intervention.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "intricate interplay",
+      "type": "phrase",
+      "category": "cliche-phrase",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "A stock AI collocation appearing roughly 100x more frequently in AI content than human text; flagged by Pangram as a core marker.",
+      "example": "the intricate interplay of biological mechanisms",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "complex and multifaceted",
+      "type": "phrase",
+      "category": "cliche-phrase",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "Appears ~700x more frequently in AI writing than human text per Pangram; an extreme excess ratio and a near-unmistakable stock hedge.",
+      "example": "This complex and multifaceted problem requires careful analysis.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "played a crucial role",
+      "type": "phrase",
+      "category": "cliche-phrase",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "Occurs ~70x more frequently in AI content per Pangram; a formulaic overused collocation.",
+      "example": "Environmental factors played a crucial role in the findings.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "Challenges and Future Prospects",
+      "type": "closer",
+      "category": "abstract-boilerplate",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "general"
+      ],
+      "why": "A generic LLM template heading/closing for academic abstracts; signals formulaic AI-generated structure.",
+      "example": "[Abstract ends with a section titled] Challenges and Future Prospects",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "leveraging",
+      "type": "word",
+      "category": "excess-verb",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "general"
+      ],
+      "why": "Documented in the PubMed excess-word list; strongly overused by ChatGPT where 'using' would read naturally. Distinctive gerund business-verb tell.",
+      "example": "leveraging advanced statistical methods",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "moreover",
+      "type": "opener",
+      "category": "transition-overuse",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "general"
+      ],
+      "why": "Formal transition sentence-opener overused by ChatGPT; recognizable as a formulaic connector though humans use it in formal prose too, hence low severity.",
+      "example": "Moreover, the evidence suggests...",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "appears to be",
+      "type": "phrase",
+      "category": "qualifier",
+      "domain": "both",
+      "platforms": [
+        "claude",
+        "general",
+        "gpt4v"
+      ],
+      "why": "Vision/analysis hedging phrase Claude and GPT-4V repeat to signal visual uncertainty. Common in careful human writing, so low severity.",
+      "example": "The creature appears to be a fantastical animal, possibly a llama.",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "an image of",
+      "type": "phrase",
+      "category": "caption-opener",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general",
+        "grok"
+      ],
+      "why": "Near-universal vision-model/alt-text caption opener; highly specific to auto-generated image descriptions.",
+      "example": "An image of a woman standing in front of a building.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "the image shows",
+      "type": "phrase",
+      "category": "caption-opener",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general"
+      ],
+      "why": "Extremely common vision-model caption starter; flagged across AI image-description tools as a standard template opener.",
+      "example": "The image shows a close-up of a freshly baked pizza.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "the image depicts",
+      "type": "phrase",
+      "category": "caption-opener",
+      "domain": "both",
+      "platforms": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "general",
+        "gpt4v"
+      ],
+      "why": "Standard structured caption opener across GPT and Claude vision output; 'depicts' plus 'the image' is nearly diagnostic of machine captioning.",
+      "example": "The image depicts a modern cityscape with tall skyscrapers.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "depicts",
+      "type": "word",
+      "category": "caption-opener",
+      "domain": "both",
+      "platforms": [
+        "claude",
+        "general",
+        "gpt4v"
+      ],
+      "why": "Formal caption-launching verb characteristic of AI vision output; humans rarely open descriptions with 'depicts'. Medium since it also appears in art criticism.",
+      "example": "This image depicts a total solar eclipse.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "in this image",
+      "type": "phrase",
+      "category": "caption-opener",
+      "domain": "both",
+      "platforms": [
+        "general"
+      ],
+      "why": "Common auto-generated alt-text/caption opener; recognizable marker in AI description tools.",
+      "example": "In this image we can see a group of people outdoors.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "the overall composition",
+      "type": "phrase",
+      "category": "qualifier",
+      "domain": "both",
+      "platforms": [
+        "claude",
+        "general"
+      ],
+      "why": "Filler analytic phrase AI vision models use to hedge interpretive statements about images; distinctive stock lead-in.",
+      "example": "The overall composition suggests a peaceful atmosphere.",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "whimsical",
+      "type": "word",
+      "category": "descriptor",
+      "domain": "both",
+      "platforms": [
+        "claude",
+        "general"
+      ],
+      "why": "Claude-signature aesthetic descriptor applied indiscriminately to visual content; distinctive tell though less frequent than 'vibrant'.",
+      "example": "a whimsical and visually striking quality",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "a majestic castle on a hill",
+      "type": "trope",
+      "category": "art-prompt-cliche",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "general",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Documented overused AI-art prompt archetype producing generic fantasy output. Kept as an image-gen prompt trope; severity lowered as it's a prompt cliche not an output detector.",
+      "example": "A majestic castle on a hill, high detail, 8k.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "a futuristic city at night",
+      "type": "trope",
+      "category": "art-prompt-cliche",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "general",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Top AI-art prompt cliche producing bland neon cyberpunk skylines across image models; recognizable generative-art trope.",
+      "example": "A futuristic city at night with neon lights, cyberpunk style.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "a beautiful woman with long hair",
+      "type": "trope",
+      "category": "art-prompt-cliche",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "general",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Overused image-gen prompt archetype yielding stereotypical over-symmetrical results; documented generative-art trope.",
+      "example": "A beautiful woman with long hair, 8k masterpiece, ultra detailed.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "a mysterious figure in a cloak",
+      "type": "trope",
+      "category": "art-prompt-cliche",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Common overused image-gen prompt producing faceless silhouettes; recognizable generative-art cliche.",
+      "example": "A mysterious figure in a cloak standing in a dark forest.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "8k masterpiece",
+      "type": "phrase",
+      "category": "prompt-quality-marker",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "general",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Ubiquitous stacked quality descriptor in AI art prompts; near-zero use in ordinary human writing, so very low false-positive risk.",
+      "example": "A portrait of a person, 8k masterpiece, ultra detailed, high quality.",
+      "severity": "high",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "ultra detailed",
+      "type": "phrase",
+      "category": "prompt-quality-marker",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Cliched quality amplifier characteristic of AI prompt templates; distinctive as a stacked prompt modifier though it can appear in normal prose.",
+      "example": "A landscape, ultra detailed, 8k, high quality.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "conveys a feeling of",
+      "type": "phrase",
+      "category": "descriptor",
+      "domain": "both",
+      "platforms": [
+        "claude",
+        "general"
+      ],
+      "why": "Formulaic interpretive framing common in AI image captions; projects emotion onto visual content in a templated way.",
+      "example": "The image conveys a feeling of playfulness, indulgence, and simple joys.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "provides shelter and hiding spots",
+      "type": "phrase",
+      "category": "functional-descriptor",
+      "domain": "both",
+      "platforms": [
+        "general",
+        "llava"
+      ],
+      "why": "Vision-model tic of appending unprompted functional analysis to a pure image description; distinctive enough to flag.",
+      "example": "These plants provide shelter and hiding spots for small creatures.",
+      "severity": "low",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
+    },
+    {
+      "term": "a peaceful landscape with mountains",
+      "type": "trope",
+      "category": "art-prompt-cliche",
+      "domain": "both",
+      "platforms": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "why": "Top-tier overused AI art prompt producing generic postcard imagery; distinctive as a recurring prompt/output pattern.",
+      "example": "A peaceful landscape with mountains at sunset, high quality.",
+      "severity": "medium",
+      "sources": [
+        "wave5-research"
+      ],
+      "source": "wave5-research"
     }
   ]
 }
