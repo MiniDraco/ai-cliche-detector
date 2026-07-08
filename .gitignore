@@ -13,9 +13,12 @@ build/antislop_raw.json
 build/wave5_research.json
 ai-cliche-megadb.full.json
 
-# census intermediates (regenerable from the mass_search corpus)
+# census / cycle intermediates (regenerable from the mass_search corpus)
 build/census_batches/
 build/census_candidates.json
+build/pool_batches/
+build/pool_candidates.json
+build/w_cycle.json
 
 # misc
 __pycache__/
