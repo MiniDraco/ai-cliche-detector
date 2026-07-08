@@ -1,17 +1,17 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**20767 unique entries** (deduped from 21146 raw findings by a 26-agent research sweep).
+**20681 unique entries** (deduped from 21146 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 3983 | structure: 135 | trope: 224 | phrase: 13898 | rhyme_pair: 170 | opener: 1087 | closer: 81 | template: 1271
+**By type:** word: 3976 | structure: 128 | trope: 213 | phrase: 13858 | template: 1266 | opener: 1075 | closer: 77 | rhyme_pair: 170
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
 ---
 
-# DOMAIN: LYRICS  (538)
+# DOMAIN: LYRICS  (531)
 
 ## abandon/release trope  (3)
 
@@ -447,10 +447,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **night/fight** _(rhyme_pair)_ — The default metal/rock anthem rhyme; pairs the genre's two most generic nouns. Its appearance signals the AI rhymed by probability rather than meaning ('tonight we fight through the night').  _e.g._ "We stand and fight into the night"
 
-## freedom trope  (1)
-
-- 🟠 **broken chains** _(phrase)_ — Specifically called clichéd 'especially about freedom/release.' The model's default liberation image, abstract and over-deployed on any empowerment theme.  _e.g._ "Breaking free from these broken chains"
-
 ## grandeur  (1)
 
 - 🟠 **world/unfurled** _(rhyme_pair)_ — AI reaches for the archaic 'unfurled' to rhyme 'world,' a register spike in a pop lyric that exposes vocabulary-driven, meaning-blind generation.  _e.g._ "The whole world / before us unfurled"
@@ -767,18 +763,13 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **spread my wings** _(phrase)_ — A dead-metaphor flight cliché the model emits whole; co-occurs with 'fly', 'free', 'soar', forming a self-reinforcing AI empowerment cluster.  _e.g._ "I'll spread my wings and learn to fly"
 - 🟠 **fly / I will fly** _(word)_ — Part of the soar/fly/wings elevation triad; the model resolves uplift choruses on literal flight verbs, an over-represented pattern versus human lyrics.  _e.g._ "Spread my wings and I will fly"
 
-## motion verb / liberation  (2)
+## motion verb / liberation  (1)
 
 - 🔴 **break free** _(phrase)_ — The model's default escape line; pairs automatically with 'chains', 'cage', or 'free'. Its sheer ubiquity in generated choruses makes it a reliable tell.  _e.g._ "It's time to break free and spread my wings"
-- 🔴 **break the chains** _(phrase)_ — A frozen liberation cliché that shows up verbatim across AI empowerment songs (documented in Voices AI corpora); emitted as one high-probability chunk, signalling templated freedom imagery.  _e.g._ "I've broken the chains that bound me"
 
 ## motion verb / light  (1)
 
 - 🟠 **shine** _(word)_ — High-frequency in AI choruses because 'shine/light/bright' is a tight statistical cluster; the model defaults to 'let your light shine' as a uplift line, making it a soft but pervasive tell.  _e.g._ "Let your light shine through the night"
-
-## motion verb / phoenix trope  (1)
-
-- 🔴 **rise from the ashes** _(phrase)_ — 'Rise' was explicitly named among Suno's most overused words; the phoenix 'rise from the ashes' is the model's default triumph image. The phoenix metaphor is a borrowed-grandeur cliché the model applies to ordinary comeback narratives.  _e.g._ "I'll rise from the ashes where the healing begins"
 
 ## motion verb / pursuit  (1)
 
@@ -804,9 +795,8 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **Every step I take / Every move I make** _(opener)_ — 'Every ___ I ___' devotion frame; the model fills the slots with the most common body/motion words. The Police already owned this, so AI reproducing it reads as uncredited pastiche of the corpus.  _e.g._ "Every step I take leads back to you"
 
-## motivational metaphor  (2)
+## motivational metaphor  (1)
 
-- 🔴 **phoenix rising from the ashes** _(trope)_ — The model's default rebirth/comeback metaphor, noted even in American Songwriter's look at AI lyrics. So overused it instantly reads as generated empowerment content.
 - 🟠 **break these chains / breaking free** _(phrase)_ — Stock liberation imagery Suno reaches for in any defiance/freedom theme; abstract chains-as-oppression is a model reflex rather than a specific image.
 
 ## motivational uplift  (1)
@@ -821,10 +811,9 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **let the music play** _(phrase)_ — Empty meta-line that gestures at the song itself; a tell because it's a frictionless way to fill a bar that adds no narrative and recurs across genres.  _e.g._ "Turn it up, let the music play"
 
-## narrative/action trope  (11)
+## narrative/action trope  (10)
 
 - 🔴 **breaking chains** _(trope)_ — Flagged by American Songwriter, songwriting blogs and Suno community discussion as a canonical AI uplift/empowerment trope (the Suno wiki cites 'especially rise above'; American Songwriter cites 'phoenix rising from the ashes').
-- 🔴 **never let you go** _(phrase)_ — Flagged by American Songwriter, songwriting blogs and Suno community discussion as a canonical AI uplift/empowerment trope (the Suno wiki cites 'especially rise above'; American Songwriter cites 'phoenix rising from the ashes').
 - 🔴 **rise above** _(trope)_ — Flagged by American Songwriter, songwriting blogs and Suno community discussion as a canonical AI uplift/empowerment trope (the Suno wiki cites 'especially rise above'; American Songwriter cites 'phoenix rising from the ashes').
 - 🟠 **broken chains** _(trope)_ — Flagged by American Songwriter, songwriting blogs and Suno community discussion as a canonical AI uplift/empowerment trope (the Suno wiki cites 'especially rise above'; American Songwriter cites 'phoenix rising from the ashes').
 - 🟠 **broken heart** _(phrase)_ — Flagged by American Songwriter, songwriting blogs and Suno community discussion as a canonical AI uplift/empowerment trope (the Suno wiki cites 'especially rise above'; American Songwriter cites 'phoenix rising from the ashes').
@@ -1043,10 +1032,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## resilience/time  (1)
 
 - 🟠 **strong/long** _(rhyme_pair)_ — Default empowerment-anthem rhyme ('stay strong / all along'); AI's go-to for motivational verses, generic and uplift-by-numbers.  _e.g._ "I have to stay strong / I knew it all along"
-
-## resolution filler  (1)
-
-- 🟡 **in the end** _(opener)_ — A throwaway summative phrase AI uses to begin a 'lesson learned' line; signals a generic moral wrap-up without earning it, common in AI-written bridges.  _e.g._ "In the end we're all the same"
 
 ## reversal opener  (1)
 
@@ -1369,10 +1354,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🔴 **empowerment-anthem default genre** _(trope)_ — Given a vague prompt, Suno collapses toward triumphant empowerment pop (rise/soar/dreams/phoenix). This thematic mode-collapse — the model defaulting to the most average uplifting song — is itself a giveaway noted across r/SunoAI.
 
-## time inflation  (1)
-
-- 🟡 **forever and always / forever more** _(phrase)_ — Maximal-duration cliché AI uses to inflate emotional stakes; the 'forever' register is a reflexive way to sound epic without specifics.  _e.g._ "I'll love you forever and always"
-
 ## time/absolutes  (1)
 
 - 🔴 **forever/never** _(rhyme_pair)_ — AI traffics in absolutes; these two near-rhymed superlatives appear together constantly to signal eternal stakes with zero specificity. Flagged in pop-cliché guides.  _e.g._ "I'll love you forever / I will leave you never"
@@ -1523,7 +1504,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **tears fall like rain** _(phrase)_ — Stock simile combining two model crutches (tears + rain). The pat weather-equals-sadness metaphor flags formulaic emotional writing.
 
-# DOMAIN: BOTH  (19655)
+# DOMAIN: BOTH  (19602)
 
 ## abstract metaphor  (1)
 
@@ -1545,10 +1526,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **intertwined** _(word)_ — Overlaps the documented ChatGPT/Gemini overused-word lists ('focal words' like delve, tapestry, realm, testament, resonate, symphony, kaleidoscope) and bleeds into 'poetic' AI lyrics; the same statistical-middle preference drives prose and lyrics. 'Tapestry' is the most notorious general AI tell.
 - 🟠 **silhouette** _(word)_ — Overlaps the documented ChatGPT/Gemini overused-word lists ('focal words' like delve, tapestry, realm, testament, resonate, symphony, kaleidoscope) and bleeds into 'poetic' AI lyrics; the same statistical-middle preference drives prose and lyrics. 'Tapestry' is the most notorious general AI tell.
 - 🟠 **timeless** _(word)_ — Overlaps the documented ChatGPT/Gemini overused-word lists ('focal words' like delve, tapestry, realm, testament, resonate, symphony, kaleidoscope) and bleeds into 'poetic' AI lyrics; the same statistical-middle preference drives prose and lyrics. 'Tapestry' is the most notorious general AI tell.
-
-## abstract-boilerplate  (1)
-
-- 🟠 **Challenges and Future Prospects** _(closer)_ — A generic LLM template heading/closing for academic abstracts; signals formulaic AI-generated structure.  _e.g._ "[Abstract ends with a section titled] Challenges and Future Prospects"
 
 ## abstraction  (2)
 
@@ -1592,7 +1569,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **yearning** _(word)_ — Naming-the-longing tell. AI states 'yearning' as an abstract noun for desire instead of dramatizing want; high-frequency in machine love lyrics as a label.  _e.g._ "a yearning deep within my restless heart"
 - 🟡 **ephemera** _(word)_ — AI loves the fleeting/transient theme; 'ephemera' and 'the ephemeral' are upscale abstractions for impermanence it reaches for to sound deep without a concrete passing thing.  _e.g._ "we are ephemera, here then gone"
 
-## academic census  (148)
+## academic census  (147)
 
 - 🟠 **$15 / mo** _(template)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
 - 🟠 **+10-15% early citations** _(phrase)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
@@ -1611,7 +1588,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **Best ChatGPT Prompts** _(phrase)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
 - 🟠 **BY FIELDCitation Leaders by Research Field (2025)** _(opener)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
 - 🟠 **ChatPDF / Elicit** _(template)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
-- 🟠 **ChatPDF/Elicit** _(template)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
 - 🟠 **Chomczynski & Sacchi** _(phrase)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
 - 🟠 **COMPARISONSide-by-Side Feature Comparison** _(phrase)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
 - 🟠 **Continue to advance** _(phrase)_ — Overused AI term catalogued from the 'academic' census sweep (source count 1).
@@ -1793,9 +1769,8 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **I hope this answers your question!** _(closer)_ — Classic chatbot sign-off appended to responses, strong AI tell.  _e.g._ "...I hope this answers your question!"
 - 🔴 **I hope you found this helpful** _(closer)_ — Formulaic assistant wrap-up line rarely used by human writers.  _e.g._ "...I hope you found this helpful!"
 
-## AI rhetorical pattern  (2)
+## AI rhetorical pattern  (1)
 
-- 🔴 **it's not just X, it's Y** _(trope)_ — The defining AI antithesis structure ('not just a lipstick, an attitude'). Bleeds into both ad-copy and lyrics; its repeated negate-then-elevate shape is one of the most recognizable AI cadences.  _e.g._ "It's not just a song, it's a feeling"
 - 🟠 **rule of three (forced third item)** _(structure)_ — AI compulsively completes lists to three even when two suffice, and stacks adjective-adjective-adjective. The mechanical triple — in prose lists or lyric lines — is a structural fingerprint independent of vocabulary.  _e.g._ "It's bold, beautiful, and unforgettable"
 
 ## AI trope  (1)
@@ -1807,10 +1782,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **resonate / resonates** _(word)_ — Directly identified in the 'Why does ChatGPT delve so much' focal-word study; bleeds into lyrics as 'let it resonate,' an academic-register word that exposes the model's training accent.  _e.g._ "Let the silence resonate within"
 - 🔴 **whisper / whispers** _(word)_ — Explicitly cited by AI-lyric critics as imagery that 'appears in every song.' AI uses whisper as a soft-dynamic contrast word that sounds poetic but is now an instant generator fingerprint.  _e.g._ "I hear the whispers calling out my name"
 - 🟠 **embrace the / embrace** _(word)_ — AI's favorite uplifting transitive verb (embrace the pain/darkness/light); flagged in overused-word lists. In lyrics it pairs with an abstract noun to fake a resolution.  _e.g._ "Embrace the darkness, let it set you free"
-
-## ai-burstiness  (1)
-
-- 🟠 **uniform sentence length (low burstiness)** _(trope)_ — AI clusters sentences at similar lengths; humans vary short declaratives against long complex sentences. Low burstiness is one of the strongest structural detection signals.  _e.g._ "Every sentence in the passage runs 15 to 25 words with almost no variation."
 
 ## AI-favored adjective  (2)
 
@@ -1859,7 +1830,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
     if len(items) > 0:
         if items[0] is not None:"
 
-## antislop (open-model slop)  (465)
+## antislop (open-model slop)  (464)
 
 - 🔴 **a dance of** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🔴 **a reminder** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
@@ -2034,7 +2005,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **hometown** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.097). Open-model slop that distills into most fine-tunes/wrappers.
 - 🔴 **humble abode** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🔴 **immersing** _(word)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.083). Open-model slop that distills into most fine-tunes/wrappers.
-- 🔴 **in conclusion** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🔴 **in summary** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🔴 **in the world of** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
 - 🔴 **in today's digital era** _(phrase)_ — Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.031). Open-model slop that distills into most fine-tunes/wrappers.
@@ -2341,10 +2311,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🔴 **This isn't a tactics problem. It's a positioning problem** _(template)_ — Instance of the AI negation-reframe formula swapping X for Y.  _e.g._ "This isn't a tactics problem. It's a positioning problem."
 - 🔴 **This isn't a X. It's a Y** _(template)_ — Signature AI negation-reframe template used for dramatic contrast.  _e.g._ "This isn't a bug. It's a feature."
 
-## antithesis scaffold  (1)
-
-- 🔴 **it's not just X, it's Y** _(structure)_ — Identified on tropes.fyi and Hacker News as the single most common AI tell: a contrast template that creates false profundity by framing every point as a surprising reframe. People did not write this at scale before LLMs; likely reinforced by RLHF/RLVR reward shaping.  _e.g._ "It's not just a song, it's a feeling"
-
 ## antithesis template  (1)
 
 - 🔴 **It is not just about X, it is also about Y** _(template)_ — Formulaic AI antithesis construction contrasting two ideas for false depth.  _e.g._ "It is not just about speed, it is also about accuracy."
@@ -2361,10 +2327,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## archaic-formality  (1)
 
 - 🟡 **prior to** _(phrase)_ — AI overuses this formal connector where 'before' is natural; a recognizable register tell.  _e.g._ "Prior to the statute's enactment, the jurisdiction..."
-
-## arousal-marker  (1)
-
-- 🔴 **heat pooled in her belly** _(phrase)_ — Overused arousal metaphor flagged in detection guides as marking AI-generated intimate scenes.  _e.g._ "Heat pooled in the base of her belly as he leaned closer"
 
 ## artificial closure  (1)
 
@@ -2386,10 +2348,9 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 - 🟠 **high/sky** _(rhyme_pair)_ — Companion to sky/fly — 'reaching so high / touching the sky' is AI's elevation cliché. Two near-identical vowel sounds with no concrete payoff, pure motivational filler.  _e.g._ "I'm reaching up so high / I can touch the sky"
 - 🟠 **reach for the stars** _(phrase)_ — Greeting-card ambition idiom. The model treats it as a synonym for 'aim high' with no fresh image; its predictability is precisely why it surfaces in nearly every AI motivational chorus.  _e.g._ "Reach for the stars and never look back"
 
-## aspiration cliché  (2)
+## aspiration cliché  (1)
 
 - 🟠 **Chasing dreams / Chasing the horizon** _(phrase)_ — 'Chasing ___' aspiration frame is the model's default forward-motion image; 'dreams' and 'horizon' are the highest-probability objects, making the whole construction formulaic.  _e.g._ "Chasing dreams across the open sky"
-- 🟠 **reaching for the stars** _(phrase)_ — Dead-metaphor aspiration line; AI reaches for it as a safe uplift gesture, and it tends to drag in 'sky's the limit' / 'shoot for the moon' neighbors.  _e.g._ "We're reaching for the stars tonight"
 
 ## assistant boilerplate  (4)
 
@@ -2520,10 +2481,6 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## boilerplate-framing  (1)
 
 - 🔴 **In a world where / In an era characterized by** _(opener)_ — Stock templated opening formula; strong AI/journalism tell.  _e.g._ "In a world where artificial intelligence is rapidly advancing, businesses must adapt."
-
-## boilerplate-opener  (1)
-
-- 🔴 **in today's fast-paced world** _(phrase)_ — Textbook AI slop opener; formulaic scene-setting with no informational content.  _e.g._ "In today's fast-paced digital world, artificial intelligence is transforming..."
 
 ## boilerplate-subheading  (1)
 
@@ -3918,10 +3875,9 @@ for i in range(length):"
 - 🟠 **[quote], he barked** _(template)_ — DeepSeek R1 overuses 'barked' as a dialogue tag far above human baseline rates.  _e.g._ "'Stop it!' he barked."
 - 🟠 **tasted of copper** _(phrase)_ — DeepSeek R1 and reasoning models default to a metallic/copper sensory metaphor for atmosphere; recurs across model-comparison tests.  _e.g._ "The air tasted of stale copper."
 
-## defiance  (6)
+## defiance  (5)
 
 - 🔴 **the world tried to break me but I'm still standing** _(phrase)_ — Personifies 'the world' as a vague antagonist and resolves with the stock 'still standing' tag. It packs two clichés (faceless oppressor + survivor pose) into one line, a dense AI tell.  _e.g._ "The world tried to break me but I'm still standing tall"
-- 🔴 **the world tried to break me but I'm still standing** _(trope)_ — A complete prefab defiance arc (world-as-antagonist + 'still standing' survival proof) that AI drops in verbatim as a triumphant bridge.  _e.g._ "You tried to break me but I'm still standing tall"
 - 🟠 **can't keep me down / you can't break me** _(phrase)_ — Direct-address defiance aimed at an unnamed 'you.' It's a content-free taunt the model deploys as instant attitude; the vagueness of the antagonist is the tell.  _e.g._ "Go ahead and try, you can't break me down"
 - 🟠 **raising my fist to the sky** _(trope)_ — A stock gesture AI inserts as visual shorthand for defiance/triumph; the raised-fist image is a prefab body-pose that stands in for an actual triumphant moment.  _e.g._ "I raise my fist up to the sky and scream"
 - 🟠 **stand tall** _(phrase)_ — Posture-as-pride cliché that the model pairs reflexively with 'won't back down' and 'face the world.' It's a generic empowerment gesture with no specific stake, a frequent filler in AI bridge sections.  _e.g._ "I'll stand tall and face it all on my own"
@@ -6203,10 +6159,6 @@ for i in range(length):"
 - 🟡 **Undoubtedly important** _(phrase)_ — Redundant intensifier pairing AI uses to assert significance.  _e.g._ "This factor is undoubtedly important."
 - 🟡 **Unquestionably** _(word)_ — Overconfident AI adverb asserting certainty.  _e.g._ "This is unquestionably the best option."
 
-## endings/conflict  (1)
-
-- 🟠 **burning bridges** _(trope)_ — Explicitly named in AI lyric cliché lists; the idiom is reached for as the stock image for cutting ties, replacing a concrete depiction of the falling-out.  _e.g._ "Burning bridges as I walk away"
-
 ## endurance  (4)
 
 - 🔴 **weather the storm** _(phrase)_ — Storm-as-hardship is the model's reflex metaphor for adversity; 'weather the storm' is its most frozen idiomatic form. It signals the writer borrowed an idiom wholesale instead of building a fresh image of the actual struggle.  _e.g._ "Together we can weather any storm that comes our way"
@@ -6248,11 +6200,10 @@ for i in range(length):"
 
 - 🔴 **Share if you relate** _(phrase)_ — Share-metric-gaming engagement bait; distinctive formulaic closer common in AI social copy.  _e.g._ "Have you experienced this? Share if you relate"
 
-## engagement-bait-prompt  (3)
+## engagement-bait-prompt  (2)
 
 - 🔴 **Comment X to receive Y** _(template)_ — Explicit transaction engagement-bait pattern heavily produced by AI social copy; distinctive templated CTA.  _e.g._ "Comment YES to receive the PDF"
 - 🔴 **Tag a friend who** _(phrase)_ — Long-flagged engagement-bait vector; distinctive multiword social CTA common in AI-generated posts.  _e.g._ "Tag a friend who needs this advice"
-- 🟠 **Double-tap if you agree** _(phrase)_ — Formulaic like-bait CTA common in AI social copy; specific enough to flag.  _e.g._ "Double-tap if you believe in this"
 
 ## enumeration pattern  (1)
 
@@ -6374,7 +6325,7 @@ except Exception as e:
 - 🔴 **mama** _(word)_ — AI's instant 'authenticity' lever in country: the sainted mother invoked for emotional weight with zero biographical detail. Real country names a specific memory; AI just says 'mama' to trigger sentiment.  _e.g._ "My mama always told me to pray"
 - 🟠 **momma raised me right** _(phrase)_ — Compresses the 'mama' authenticity lever and a values claim into one stock line. AI asserts good upbringing as a slogan; it co-occurs with 'God,' 'dirt,' and 'church' as a values bundle.  _e.g._ "My momma raised me right on faith and hard work"
 
-## fantasy fiction census  (592)
+## fantasy fiction census  (591)
 
 - 🟠 **# of Conversations** _(phrase)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟠 **% of Fiction Subset** _(phrase)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
@@ -6720,7 +6671,6 @@ except Exception as e:
 - 🟡 **Faeries** _(word)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟡 **Fairy godmother** _(phrase)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟡 **Fairy tale** _(phrase)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
-- 🟡 **Fairytale** _(word)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟡 **Fairytale fantasy** _(phrase)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟡 **Familiars** _(word)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟡 **Fandom** _(word)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
@@ -6969,9 +6919,8 @@ except Exception as e:
 - 🟡 **Zombie apocalypse** _(phrase)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 - 🟡 **Zombies** _(word)_ — Overused AI term catalogued from the 'fantasy fiction' census sweep (source count 1).
 
-## fate cliché  (2)
+## fate cliché  (1)
 
-- 🔴 **written in the stars** _(trope)_ — Astrological-fate cliché; a strong tell because it's a complete pre-packaged metaphor the model deploys whole, often beside 'meant to be' / 'destiny'.  _e.g._ "Our love was written in the stars"
 - 🟠 **meant to be** _(phrase)_ — Default destiny phrase that rhymes with me/free/eternity; AI uses it as a turnkey justification for the relationship, recurring across choruses unchanged.  _e.g._ "Baby we were meant to be"
 
 ## fate/cosmos  (1)
@@ -7068,10 +7017,9 @@ except Exception as e:
 - 🟡 **Similarly** _(word)_ — Parallel-structure connective AI overuses between points.  _e.g._ "Similarly, the second approach fails."
 - 🟡 **Take a look at** _(phrase)_ — Generic filler directive common in AI walkthroughs.  _e.g._ "Take a look at the example below."
 
-## filler verb  (4)
+## filler verb  (3)
 
 - 🔴 **Dive deep into** _(phrase)_ — Signature ChatGPT phrase for introducing a topic; strong AI tell.  _e.g._ "Let's dive deep into the details."
-- 🔴 **Let's dive in** _(phrase)_ — Classic AI transition phrase used to launch into content.  _e.g._ "Ready? Let's dive in."
 - 🟡 **Cater to** _(phrase)_ — Generic AI verb for serving an audience or need.  _e.g._ "designed to cater to every user"
 - 🟡 **Center around** _(phrase)_ — Common AI phrasing for what something focuses on.  _e.g._ "The debate centers around cost."
 
@@ -7112,7 +7060,7 @@ except Exception as e:
 - 🔴 **embers** _(word)_ — The 'sophisticated' substitute the model swaps in when avoiding 'fire' — but it's equally a tell. Its presence shows the model rotating within the same tiny semantic cluster instead of finding new imagery.  _e.g._ "The embers of our love grow cold"
 - 🟠 **flame** _(word)_ — Default passion metaphor and notorious rhyme bait. 'Flame' exists largely to rhyme with 'name/same/game/blame' — its presence often signals a rhyme-driven (machine) line.  _e.g._ "You're the flame to my name"
 
-## fitness wellness census  (629)
+## fitness wellness census  (628)
 
 - 🟠 **A 10-minute breathwork session** _(opener)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 - 🟠 **A good first step** _(opener)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
@@ -7553,7 +7501,6 @@ except Exception as e:
 - 🟡 **Fasting patterns** _(phrase)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 - 🟡 **FeelGood** _(word)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 - 🟡 **Fit.AI** _(word)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
-- 🟡 **Fitbit (Google)** _(phrase)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 - 🟡 **Fitbit AI** _(phrase)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 - 🟡 **Fitbit.google** _(word)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 - 🟡 **Fitbod** _(word)_ — Overused AI term catalogued from the 'fitness wellness' census sweep (source count 2).
@@ -7838,10 +7785,6 @@ except Exception as e:
 
 - 🟠 **from inception to execution** _(phrase)_ — Stock full-lifecycle flourish AI adds to sound comprehensive.  _e.g._ "we handle it from inception to execution"
 
-## formulaic transition  (1)
-
-- 🟠 **The bottom line is** _(opener)_ — Formulaic summary lead-in AI uses to close or pivot.  _e.g._ "The bottom line is, it works."
-
 ## formulaic_closings  (2)
 
 - 🟠 **in conclusione** _(phrase)_ — Stereotyped Italian closing formula ('in conclusion') appearing mechanically in AI text  _e.g._ "In conclusione, l'intelligenza artificiale è fondamentale per il futuro."
@@ -7856,9 +7799,8 @@ except Exception as e:
 
 - 🟠 **maintain an active social media presence** _(phrase)_ — Idiosyncratic phrasing documented as an AI tell.  _e.g._ "The brand maintains an active social media presence."
 
-## framing  (2)
+## framing  (1)
 
-- 🔴 **In a world where...** _(opener)_ — Movie-trailer scene-setter the model uses to launch struggle narratives. It frames a grand abstract backdrop instead of a concrete moment, a recognizable AI opening gambit.  _e.g._ "In a world where dreams come alive"
 - 🔴 **on the one hand... on the other hand** _(phrase)_ — Strong both-sides framing tell; formulaic and specific.  _e.g._ "On one hand, this has merit... On the other hand, there are considerations that..."
 
 ## framing metaphor  (1)
@@ -8081,10 +8023,6 @@ except Exception as e:
 
 - 🟠 **One could argue** _(phrase)_ — AI hedging phrase that pads while avoiding a definitive stance; distinctive multiword formula.  _e.g._ "One could argue that this represents progress"
 
-## hedging-marker  (1)
-
-- 🔴 **It's important to note that** _(opener)_ — Well-documented AI hedging/editorial-padding phrase. Wikipedia's Signs of AI writing lists it as inserted editorial commentary that breaks neutral tone.  _e.g._ "It's important to note that this may vary by individual."
-
 ## hip-hop  (1)
 
 - 🟠 **every single struggle built me ten feet tall** _(phrase)_ — Hyperbolic growth-metaphor payoff line frequently generated in AI rap.  _e.g._ "Every single struggle built me ten feet tall"
@@ -8104,10 +8042,9 @@ except Exception as e:
 - 🟠 **Stop what you're doing** _(opener)_ — Attention-grabbing imperative hook AI uses to open social copy.  _e.g._ "Stop what you're doing and read this."
 - 🟠 **We need to talk about** _(opener)_ — Formulaic confrontational hook AI uses to open a topic dramatically.  _e.g._ "We need to talk about your data."
 
-## hope  (3)
+## hope  (2)
 
 - 🔴 **finding the light in the darkness** _(trope)_ — Light-vs-dark is AI's master moral binary; 'a light in the darkness' is the default hope-beat and appears so universally that it carries no song-specific meaning.  _e.g._ "In the darkness I will find the light"
-- 🔴 **light in the darkness** _(phrase)_ — Default hope metaphor with zero specificity — the model uses it whenever a prompt asks for uplift. The light/dark binary is so generic it carries no image; community lists flag the bare light/dark contrast as a hallmark of machine-written uplift.  _e.g._ "You were my light in the darkness when I lost my way"
 - 🔴 **light-vs-darkness binary** _(trope)_ — Resolving every emotional arc as light overcoming dark is the model's default moral geometry. It's flagged across AI-lyric communities because it substitutes an abstract dichotomy for concrete imagery.  _e.g._ "The darkness fades when your light breaks through"
 
 ## hope/love  (1)
@@ -8218,10 +8155,9 @@ except Exception as e:
 - 🟠 **And that's just the beginning** _(closer)_ — Formulaic teaser closer promising more, typical of AI hype prose.  _e.g._ "And that's just the beginning."
 - 🟠 **And we're just getting started** _(closer)_ — Stock momentum-building line AI tacks onto sections.  _e.g._ "And we're just getting started."
 
-## hype transition  (2)
+## hype transition  (1)
 
 - 🟠 **It's a game-changer** _(phrase)_ — Hyperbolic stock praise the model defaults to when asked to sound enthusiastic; its indiscriminate application to trivial features marks generated marketing copy.  _e.g._ "This feature is a real game-changer."
-- 🟡 **Buckle up** _(opener)_ — A cheap-thrill engagement insert AI uses to fake excitement before mundane content; the forced adrenaline tonally clashes with the calm prose that follows.  _e.g._ "Buckle up — this gets wild."
 
 ## hype trope  (1)
 
@@ -8310,7 +8246,7 @@ except Exception as e:
 
 - 🟠 **It serves as a stepping stone towards the realization** _(phrase)_ — Grandiose AI phrasing that inflates a mundane point.  _e.g._ "It serves as a stepping stone towards the realization of goals."
 
-## inflated adjective  (13)
+## inflated adjective  (12)
 
 - 🟠 **A revolutionary** _(word)_ — Hype adjective AI applies liberally to describe products and ideas.  _e.g._ "a revolutionary new approach"
 - 🟠 **A robust** _(word)_ — 'Robust' is a signature LLM adjective for systems and solutions.  _e.g._ "a robust framework"
@@ -8318,7 +8254,6 @@ except Exception as e:
 - 🟠 **All-encompassing** _(word)_ — Grandiose adjective AI overuses to describe scope.  _e.g._ "an all-encompassing solution"
 - 🟠 **Awe-inspiring** _(word)_ — Inflated descriptive adjective LLMs overuse for emphasis.  _e.g._ "An awe-inspiring vista."
 - 🟠 **Breathtaking** _(word)_ — Overwrought superlative AI overuses to describe results or scenery.  _e.g._ "a breathtaking transformation"
-- 🟠 **World-class** _(word)_ — Empty superlative AI leans on to signal quality without evidence.  _e.g._ "our world-class team"
 - 🟡 **A crucial** _(word)_ — 'Crucial' is one of the emphasis adjectives LLMs overuse to mark importance.  _e.g._ "a crucial step in the process"
 - 🟡 **A pivotal** _(word)_ — 'Pivotal' is a favored AI emphasis word for marking turning points.  _e.g._ "a pivotal moment in history"
 - 🟡 **arduous** _(word)_ — Elevated adjective LLMs overuse where 'hard' would do.  _e.g._ "An arduous journey."
@@ -8399,10 +8334,6 @@ except Exception as e:
 - 🟡 **vastly** _(word)_ — Overused hedging intensifier common in AI prose.  _e.g._ "This vastly improves your workflow."
 - 🟡 **Without a doubt** _(phrase)_ — Empty emphatic AI uses to assert confidence without evidence.  _e.g._ "Without a doubt, this is the best choice."
 
-## intensifier construction  (1)
-
-- 🔴 **Not just X, but Y** _(structure)_ — On 35+-banned-phrase lists; the 'it's not just A, it's B' escalation is an AI cadence used to manufacture profundity. Appears in both Gemini prose and AI lyrics.
-
 ## intensity cliché  (1)
 
 - 🟠 **every fiber of my being** _(phrase)_ — A frozen total-commitment idiom the model reproduces verbatim for emphasis; melodramatic and over-precise, it's a clear marker of inflated AI sincerity.  _e.g._ "I love you with every fiber of my being"
@@ -8455,10 +8386,6 @@ except Exception as e:
 - 🔴 **Embark on this transformative journey** _(phrase)_ — Signature AI journey-metaphor phrasing bundling 'embark' and 'transformative'.  _e.g._ "Embark on this transformative journey with us."
 - 🔴 **Embarking on a journey** _(phrase)_ — Very common AI opener framing any task as an epic journey.  _e.g._ "Embarking on a journey to better health."
 - 🟠 **Embark on a voyage** _(phrase)_ — Grandiose journey metaphor AI favors for openers.  _e.g._ "Embark on a voyage of discovery."
-
-## joy-through-pain  (1)
-
-- 🟠 **dancing in the rain** _(trope)_ — The 'finding joy amid hardship' image AI reuses constantly; rain (sorrow) + dancing (joy) is a tidy paradox the model loves because it reads as wisdom.  _e.g._ "Learning to dance in the pouring rain"
 
 ## Korean punctuation pattern  (1)
 
@@ -9664,7 +9591,7 @@ except Exception as e:
 - 🔴 **Cutting-edge solution** _(phrase)_ — Stock AI marketing filler with no concrete meaning.  _e.g._ "Our cutting-edge solution transforms your workflow."
 - 🔴 **cutting-edge technology** _(phrase)_ — Empty superlative AI attaches to any product description.  _e.g._ "Powered by cutting-edge technology."
 
-## marketing census  (859)
+## marketing census  (858)
 
 - 🟠 **~50% above organic search (relative)** _(phrase)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
 - 🟠 **~8x sessions YoY** _(phrase)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
@@ -10113,7 +10040,6 @@ except Exception as e:
 - 🟠 **Rachel Leist Updated 9/16/25** _(template)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
 - 🟠 **Rachel Nicholson Updated 6/10/26** _(template)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
 - 🟠 **RAG(Retrieval Augmented Generation)** _(phrase)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
-- 🟠 **RAG: Retrieval-Augmented Generation** _(phrase)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
 - 🟠 **Rami El-Abidin Updated 10/15/24** _(template)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
 - 🟠 **Rami El-Abidin Updated 9/9/25** _(template)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
 - 🟠 **Ramona Sukhraj Updated 1/20/26** _(template)_ — Overused AI term catalogued from the 'marketing' census sweep (source count 1).
@@ -11519,7 +11445,7 @@ except Exception as e:
 
 - 🟠 **You're the melody to my heart / my favorite song** _(phrase)_ — A self-referential music metaphor the model overuses in songs about love; comparing the partner to a song/melody is a grooved AI pattern that feels canned.  _e.g._ "You're the melody to my heart, my favorite song"
 
-## mystery thriller census  (332)
+## mystery thriller census  (331)
 
 - 🟠 **$47.00 Add to cart** _(phrase)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
 - 🟠 **…Then everything exploded in a flash** _(opener)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
@@ -11673,7 +11599,6 @@ except Exception as e:
 - 🟠 **Near-monochromatic (black/white with minimal color)** _(template)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
 - 🟠 **New Releases (17)** _(phrase)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 2).
 - 🟠 **Night-vision green for military/creature crossover** _(template)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
-- 🟠 **Noir / Hardboiled** _(template)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
 - 🟠 **Noir/Hardboiled** _(template)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 4).
 - 🟠 **Often all-caps for author names** _(phrase)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
 - 🟠 **Often integrated with illustrations** _(phrase)_ — Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
@@ -11922,16 +11847,15 @@ except Exception as e:
 
 - 🔴 **It's not X, it's Y** _(template)_ — Contrastive binary structure LLMs default to for perceived sophistication; distinctive multiword shape, not a bare common word.  _e.g._ "We're not just building a product, we're creating an experience"
 
-## negative parallelism  (2)
+## negative parallelism  (1)
 
-- 🔴 **It's not about X. It's about Y.** _(structure)_ — A two-sentence variant of negative parallelism using a hard period for drama; the manufactured reveal cadence is statistically over-represented in LLM output and reads as canned punchiness.  _e.g._ "It's not about speed. It's about precision."
 - 🟠 **not just X, but Y / not only… but** _(structure)_ — Wikipedia-documented AI tell ('not X but Y'); this rhetorical antithesis is a ChatGPT staple that surfaces in AI lyric lines and reframes.  _e.g._ "Not just a song, but a prayer"
 
 ## negative-phrasing  (1)
 
 - 🟠 **no drama** _(phrase)_ — Common dating-profile red-flag phrase that ironically signals past drama; AI amplifies this negative framing.  _e.g._ "No drama please, looking for something real"
 
-## news journalism census  (2330)
+## news journalism census  (2327)
 
 - 🟠 **$0.25/min** _(template)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **$1.2M/year** _(template)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
@@ -12207,7 +12131,6 @@ except Exception as e:
 - 🟠 **Average Stories Seen/Day** _(template)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Average story delivery** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Average time to publish (minutes)** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 4).
-- 🟠 **Average time-to-publish (minutes)** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Avg. article quality** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Avg. error rate** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Avg. speed to publish** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
@@ -12329,7 +12252,6 @@ except Exception as e:
 - 🟠 **Common failures and cautionary tales** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Common misconceptions about AI news software** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Common misconceptions and uncomfortable questions** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
-- 🟠 **Common mistakes and how to avoid them** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Common mistakes when adopting AI-powered news** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Common mistakes—and how to avoid them** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟠 **Community engagement tools (Q&A, polls)** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
@@ -14215,7 +14137,6 @@ except Exception as e:
 - 🟡 **Threat** _(word)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟡 **Tiered** _(word)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟡 **Timely, accurate** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
-- 🟡 **Time-to-publish** _(word)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟡 **Trade publications** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟡 **Traditional** _(word)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 - 🟡 **Traffic (daily)** _(phrase)_ — Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
@@ -14390,10 +14311,6 @@ except Exception as e:
 
 - 🟠 **partner in crime** _(phrase)_ — Long-running dating-app cliche for an adventurous partner; AI generators default to it in place of specificity.  _e.g._ "Looking for a partner in crime to explore the city"
 
-## overused-intensifier  (1)
-
-- 🟠 **game-changer** _(word)_ — Statistically probable AI intensifier; overused in generated news as a default superlative.  _e.g._ "This breakthrough technology is a game-changer for the industry."
-
 ## overused-metaphor  (2)
 
 - 🔴 **rich tapestry** _(phrase)_ — Signature AI metaphor repeated across outputs without genuine specificity; strong tell.  _e.g._ "A rich tapestry of innovations"
@@ -14407,11 +14324,9 @@ except Exception as e:
 
 - 🟠 **unlock / unleash / elevate / revolutionize** _(word)_ — Cluster of high-impact action verbs AI overuses in marketing copy.  _e.g._ "Unlock your potential and elevate your brand."
 
-## overused-vocabulary  (3)
+## overused-vocabulary  (1)
 
 - 🔴 **delve into** _(phrase)_ — The canonical AI signature word; unnaturally formal, reliably frequent in LLM outputs across models.  _e.g._ "Let me delve into the specifics of your question."
-- 🟠 **tapestry** _(phrase)_ — Documented AI metaphorical tic; 'rich tapestry of' is a well-known LLM flourish.  _e.g._ "The rich tapestry of human experience demonstrates..."
-- 🟡 **nuanced** _(phrase)_ — Real overused AI filler word signaling manufactured complexity, though common enough in human writing to be a soft tell.  _e.g._ "That's a nuanced topic that requires careful consideration."
 
 ## overused-word  (1)
 
@@ -14490,10 +14405,6 @@ except Exception as e:
 
 - 🟠 **claim a reward** _(phrase)_ — Common AI-generated phishing lure directing users to malicious sites.  _e.g._ "'Claim your free crypto reward' via direct message."
 - 🟠 **verify your account** _(phrase)_ — Documented phishing phrase used by AI-generated messages to extract credentials.  _e.g._ "Emails linking to cloned exchanges."
-
-## phoenix/rebirth  (1)
-
-- 🔴 **rise from the ashes** _(trope)_ — The phoenix-rebirth arc is the single most predictable 'triumph' resolution; AI reaches for it to close songs because it's a culturally pre-approved redemption beat that needs no setup.  _e.g._ "From the ashes I will rise again"
 
 ## phoenix/triumph trope  (1)
 
@@ -14832,12 +14743,6 @@ except Exception as e:
 
 - 🟠 **Here's why:** _(phrase)_ — AI pseudo-section intro that pretends to justify a claim.  _e.g._ "It matters. Here's why:"
 
-## punctuation  (3)
-
-- 🔴 **em dash overuse** _(trope)_ — AI inserts em dashes at far higher density than typical human writing; a well-documented stylistic tell.  _e.g._ "This practice—rooted in ancient wisdom—will transform your life."
-- 🔴 **em-dash overuse** _(phrase)_ — Heavy em-dash density is one of the best-known modern AI punctuation tells.  _e.g._ "This approach has merit — though it requires — careful implementation."
-- 🔴 **em-dash overuse** _(trope)_ — LLMs use 3-5x more em-dashes than human writers; a well-documented and strong statistical tell, especially the unspaced em-dash in casual contexts.  _e.g._ "The problem—and this is crucial—requires attention."
-
 ## punctuation fingerprint  (1)
 
 - 🟠 **Em dash overuse (— mid-sentence asides)** _(structure)_ — Models lean on the em dash for parenthetical asides at a density well above typical human writing; widely cited as a punctuation fingerprint of AI prose. The consistent —like this— cadence stacks up across a piece.
@@ -14903,7 +14808,7 @@ except Exception as e:
 - 🟡 **perfect for young professionals** _(phrase)_ — Formulaic demographic-targeting phrase common in generated listings.  _e.g._ "Perfect for young professionals seeking urban living."
 - 🟡 **the perfect home** _(phrase)_ — Vague absolute-claim cliche common in AI listing copy.  _e.g._ "The perfect home for your family."
 
-## real estate census  (1246)
+## real estate census  (1244)
 
 - 🟠 **️ Virtual Renovations** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟠 **️ Virtual Staging** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
@@ -15920,7 +15825,6 @@ except Exception as e:
 - 🟡 **• Accessible** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **• Artisanal** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **• Cleared** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
-- 🟡 **• Climate-controlled** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **• Commissioned** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **• Concierge** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **• Convenient** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
@@ -16086,7 +15990,6 @@ except Exception as e:
 - 🟡 **Neutral phrasing** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **New construction** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **Off-grid mountain** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
-- 🟡 **Open concept** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **Opus** _(word)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **Our rating** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 - 🟡 **Our recommendation** _(phrase)_ — Overused AI term catalogued from the 'real estate' census sweep (source count 1).
@@ -16656,9 +16559,8 @@ except Exception as e:
 
 - 🔴 **flower/rose blooming through concrete** _(trope)_ — A hyper-specific yet endlessly recycled 'beauty surviving hardship' image; AI deploys it as a stock visual shorthand for resilience, so its appearance signals pattern-fill rather than a chosen, situated metaphor.  _e.g._ "Like a flower blooming through the concrete"
 
-## resolution  (2)
+## resolution  (1)
 
-- 🟠 **at the end of the day** _(closer)_ — The model's compulsion to wrap up (mirroring its prose 'In conclusion') leaks into songs as 'in the end' / 'at the end of the day' summary lines. A reflective summarizing closer is structurally un-rap (rap ends on a punchline) and betrays essay-trained habits.  _e.g._ "At the end of the day, I'm still standing tall"
 - 🟠 **in the end / through it all** _(closer)_ — The model's default summarizing outro phrases; 'in the end' / 'through it all' wrap a song with generic resolution, a high-probability closer that signals templated structure.  _e.g._ "Through it all, we'll find our way"
 
 ## resolution formula  (1)
@@ -16689,7 +16591,7 @@ except Exception as e:
 
 - 🟠 **shivers down spine** _(phrase)_ — Stock sensation.
 
-## romance fiction census  (801)
+## romance fiction census  (800)
 
 - 🟠 **$10–$25/month subscription** _(template)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
 - 🟠 **$5/month discount on any paid plan** _(template)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
@@ -17411,7 +17313,6 @@ except Exception as e:
 - 🟡 **Engineering-problem survival** _(phrase)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
 - 🟡 **Epic world-building** _(phrase)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
 - 🟡 **Example phrases** _(phrase)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
-- 🟡 **Fade-to-Black** _(word)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 2).
 - 🟡 **Fiction-aware flagging** _(phrase)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
 - 🟡 **Free tier** _(phrase)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
 - 🟡 **Genre-Specific Overuse** _(phrase)_ — Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
@@ -17549,7 +17450,7 @@ except Exception as e:
 
 - 🟠 **Imagine this / Picture this** _(opener)_ — A staged second-person hook AI defaults to for engagement; harmless once, but its repetition as a go-to opener across pieces exposes low originality, per tell-list editors.  _e.g._ "Picture this: you wake up to zero emails."
 
-## scifi horror census  (1012)
+## scifi horror census  (1009)
 
 - 🟠 **#30 in Teen & Young Adult Scientific Discoveries** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **#42 in Teen & Young Adult History of Science** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
@@ -18071,9 +17972,7 @@ except Exception as e:
 - 🟠 **Past Blogathons and Events** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Please provide a link back to the original** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Point of Dreams** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
-- 🟠 **Post category:Movies / Writing / Youtube** _(template)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 3).
 - 🟠 **Post category:Movies/Writing/Youtube** _(template)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 5).
-- 🟠 **Post category:Writing / Youtube** _(template)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Post category:Writing/Youtube** _(template)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Post published:December 6, 2025** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 6).
 - 🟠 **Post published:July 2, 2026** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
@@ -18129,7 +18028,6 @@ except Exception as e:
 - 🟠 **Sell on AmazonStart a Selling Account** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Sets and technology** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Sex and sexuality** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 2).
-- 🟠 **Sex and sexuality in speculative fiction** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 - 🟠 **Sex and sexuality inspeculative fiction** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 2).
 - 🟠 **Sex in space** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 2).
 - 🟠 **Sexuality in Star Trek** _(phrase)_ — Overused AI term catalogued from the 'scifi horror' census sweep (source count 2).
@@ -18628,10 +18526,6 @@ except Exception as e:
 
 - 🔴 **not X, but Y** _(template)_ — AI's signature binary-contrast rhetorical structure; over-detected by anti-slop samplers as a hallmark of generated text.  _e.g._ "This wasn't just love, but obsession."
 - 🟠 **not X, not Y, just Z** _(template)_ — Signature AI staccato-negation rhythm that manufactures a false beat before an emotional reveal; distinctive triple structure.  _e.g._ "Not anger. Not fear. Just him, standing in her doorway."
-
-## setting/night  (1)
-
-- 🟠 **In the moonlight** _(opener)_ — Default romantic stage-setting opener; the model establishes 'romantic scene' with the cheapest available lighting cue, recurring across unrelated AI songs as a line-one crutch.  _e.g._ "In the moonlight, I see your face"
 
 ## setting/place  (8)
 
@@ -19925,7 +19819,7 @@ except Exception as e:
 
 - 🟠 **Follow for more X content** _(template)_ — Generic AI-written social-media call to action.  _e.g._ "Follow for more marketing content"
 
-## social media census  (2452)
+## social media census  (2451)
 
 - 🟠 **$100+/mo** _(template)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
 - 🟠 **$10-14/mo** _(template)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
@@ -22148,7 +22042,6 @@ except Exception as e:
 - 🟡 **LinkedIn, Facebook** _(phrase)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
 - 🟡 **LinkedIn-first** _(word)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
 - 🟡 **Linkin.bio included** _(phrase)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
-- 🟡 **Link-in-bio tool** _(phrase)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
 - 🟡 **Local discovery** _(phrase)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
 - 🟡 **Logo** _(word)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
 - 🟡 **Long-form Posts** _(phrase)_ — Overused AI term catalogued from the 'social media' census sweep (source count 1).
@@ -22655,11 +22548,10 @@ except Exception as e:
 - 🟠 **in the night** _(phrase)_ — High-frequency line-filler that supplies an easy rhyme ('night/light/right') and a vague setting; the model's default temporal anchor when none is specified.  _e.g._ "I call your name in the night"
 - 🟠 **twilight** _(word)_ — On Suno cliche-checker lists alongside dusk/dawn. AI's preferred 'pretty in-between time' setting because it's evocative-by-default and demands no specific detail.  _e.g._ "In the twilight of our days"
 
-## time-setter  (5)
+## time-setter  (4)
 
 - 🔴 **in today's modern age** _(opener)_ — Redundant 'today's modern age' is a strong AI intro tell.  _e.g._ "In today's modern age, we rely on smartphones."
 - 🟠 **in the modern era** _(opener)_ — Vague temporal scene-setter AI uses to open essays and intros.  _e.g._ "In the modern era, technology shapes everything."
-- 🟠 **in this day and age** _(opener)_ — Cliche temporal opener AI overuses to signal contemporary relevance.  _e.g._ "In this day and age, privacy matters more than ever."
 - 🟠 **In today's world** _(opener)_ — Generic contemporary scene-setter AI defaults to for intros.  _e.g._ "In today's world, connectivity is constant."
 - 🟡 **In the not-too-distant future** _(opener)_ — Stock speculative-future opener common in AI narrative and blog intros.  _e.g._ "In the not-too-distant future, cars will drive themselves."
 
@@ -22746,11 +22638,7 @@ except Exception as e:
 
 - 🟠 **à cet égard** _(phrase)_ — Formal connector signaling AI-typical rigid paragraph structuring  _e.g._ "Cette question est complexe. À cet égard, il faut considérer plusieurs facteurs."
 
-## transition-overuse  (1)
-
-- 🟡 **moreover** _(opener)_ — Formal transition sentence-opener overused by ChatGPT; recognizable as a formulaic connector though humans use it in formal prose too, hence low severity.  _e.g._ "Moreover, the evidence suggests..."
-
-## travel census  (626)
+## travel census  (625)
 
 - 🟠 **+10-15% discount on top** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
 - 🟠 **+USD 8.33B (2024-2029)** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
@@ -22848,7 +22736,6 @@ except Exception as e:
 - 🟠 **Characteristics of Your App** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
 - 🟠 **Chatbots and Virtual Assistants for Seamless Support** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
 - 🟠 **Chatbots deliver 24/7 traveler support** _(template)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
-- 🟠 **ChatGPT / Claude** _(template)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
 - 🟠 **Clearly answer the main query** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
 - 🟠 **Combine them with other types of recommendations** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
 - 🟠 **Comparing fares across airlines and flexible dates** _(phrase)_ — Overused AI term catalogued from the 'travel' census sweep (source count 1).
@@ -23384,10 +23271,6 @@ except Exception as e:
 - 🟠 **The industry is waking up to** _(phrase)_ — A cliche AI opener that personifies an industry to signal an emerging trend.  _e.g._ "The industry is waking up to this shift."
 - 🟠 **the next frontier** _(phrase)_ — An overused AI metaphor for the next big thing.  _e.g._ "AI is the next frontier in medicine."
 
-## triadic negation  (1)
-
-- 🔴 **Not X. Not Y. Just Z.** _(structure)_ — A compressed negative-parallelism variant from tropes.fyi using staccato negation fragments for manufactured impact; the rhythmic three-beat denial is over-represented in LLM marketing output.  _e.g._ "Not flashy. Not complicated. Just effective."
-
 ## trial/endurance  (1)
 
 - 🟠 **walking through the fire / dancing in the flames** _(trope)_ — Fire as a trial-to-survive is a top AI elemental default; 'walk through fire' arrives as an idiom-block signaling endurance with no specific ordeal attached.  _e.g._ "I walked through fire just to find my way"
@@ -23397,9 +23280,8 @@ except Exception as e:
 - 🔴 **No X. No Y. Just Z.** _(template)_ — The staccato triple 'No X. No Y. Just Z.' opener is a recognizable AI/LinkedIn hook pattern.  _e.g._ "No fluff. No filler. Just results."
 - 🟠 **Not a prototype. Not a demo. Production-ready** _(template)_ — The 'Not X. Not Y. Z.' rhetorical triple is a formulaic AI hype opener.  _e.g._ "Not a prototype. Not a demo. Production-ready."
 
-## triumph  (2)
+## triumph  (1)
 
-- 🔴 **rise above** _(phrase)_ — Explicitly named on the Suno Wiki cliché list as a top AI tell. It's an abstract triumph verb with no object — you 'rise above' nothing in particular — and shows up in nearly every model-generated empowerment chorus.  _e.g._ "We will rise above the pain"
 - 🟠 **phoenix/wings/soar comeback imagery** _(trope)_ — The model's default comeback imagery is flight — phoenix from ashes, spreading wings, learning to fly, soaring above. 'Soar' and 'rise' topped Suno cliché lists; clustering flight metaphors for any success story is borrowed grandeur with no grounded detail.  _e.g._ "Spread my wings, rise up and soar"
 
 ## triumph/narrative  (1)
@@ -23426,10 +23308,6 @@ except Exception as e:
 ## uncertainty marker  (1)
 
 - 🟠 **Stacked hedges (könnte möglicherweise eventuell)** _(phrase)_ — Piling multiple hedges in one clause ('could possibly perhaps'; könnte möglicherweise eventuell) to avoid commitment; distinctive because natural writing rarely triple-hedges a single claim.  _e.g._ "This could possibly perhaps contribute to some improvement."
-
-## unity cliché  (1)
-
-- 🔴 **two hearts beating as one** _(trope)_ — Fossilized unity metaphor; its appearance signals the model picked the single most-clichéd image for togetherness instead of a specific shared moment.  _e.g._ "Two hearts beating as one tonight"
 
 ## unsourced-authority  (1)
 
@@ -23504,10 +23382,6 @@ except Exception as e:
 ## vague-attribution opener  (1)
 
 - 🟠 **They say / Some say** _(opener)_ — Anonymous-authority opener that injects fake folk-wisdom gravitas; AI loves unattributed 'they say' because it's a high-frequency proverb frame requiring no real source or specificity.  _e.g._ "They say that time will heal it all"
-
-## vague-context-setter  (1)
-
-- 🟠 **In the world of** _(opener)_ — Vague topic-framing opener AI leans on to introduce a subject.  _e.g._ "In the world of finance, timing is everything."
 
 ## vague-filler  (1)
 
@@ -23657,7 +23531,7 @@ except Exception as e:
 
 - 🟡 **sky/why** _(rhyme_pair)_ — Skyward-questioning rhyme ('staring at the sky / asking God why'); AI's stock for an existential bridge. The unanswered 'why' aimed at the heavens is a generated-melancholy hallmark.  _e.g._ "I look up at the sky / and I ask the heavens why"
 
-# DOMAIN: PROSE  (574)
+# DOMAIN: PROSE  (548)
 
 ## abstract noun  (1)
 
@@ -23680,19 +23554,9 @@ except Exception as e:
 - 🟠 **odyssey** _(word)_ — Tapestry-noun cluster. AI inflates any process or trip into 'a journey/odyssey of...' for epic flavor. Stakes-inflation with a literary veneer.  _e.g._ "an odyssey of self-discovery through the void"
 - 🟡 **bedrock** _(word)_ — Tapestry-noun cluster, pairs with cornerstone/foundation. AI's importance-marker for 'the basic thing everything rests on,' deployed without any specific structure in view.  _e.g._ "honesty is the bedrock of who we are"
 
-## abundance metaphor  (1)
-
-- 🔴 **tapestry / rich tapestry** _(phrase)_ — Flagged by editors as the smoking gun: 'I no longer believe there's a way to innocently use the word tapestry.' One of the 21 focal words; signals AI almost unconditionally.  _e.g._ "A rich tapestry of cultural influences."
-
 ## academic-AI crossover  (1)
 
 - 🟠 **testament / a testament to** _(phrase)_ — Documented ChatGPT word-spike; 'a testament to' is promotional LLM phrasing that bleeds into AI lyric bridges as faux-profundity.  _e.g._ "A testament to all we've lost"
-
-## additive transition  (3)
-
-- 🟠 **Additionally** _(phrase)_ — Starts a high fraction of AI paragraphs/sentences as a default 'and then'; humans vary their connectors, so a string of paragraph-initial 'Additionally' reads mechanical.  _e.g._ "Additionally, support is included."
-- 🟠 **Furthermore** _(phrase)_ — AI massively over-uses formal additive connectors, stacking 'Furthermore/Moreover/Additionally' where a human would let ideas stand alone; the density and uniformity of these connectors is the tell, not any single use.  _e.g._ "Furthermore, the data supports this."
-- 🟠 **Moreover** _(phrase)_ — A formal additive connector flagged in the Kobak excess-vocabulary study as over-represented post-ChatGPT; clusters with 'furthermore' and 'additionally' to give text an essay-bot rhythm.  _e.g._ "Moreover, costs declined."
 
 ## adjective  (19)
 
@@ -23768,10 +23632,6 @@ except Exception as e:
 
 - 🟡 **"Let's dive in" / "buckle up"** _(opener)_ — Faux-conversational hype openers ChatGPT prepends to lists/explainers. Recognized engagement filler that signals a generated blog or caption.
 
-## AI-prose punctuation  (1)
-
-- 🟠 **em-dash overuse (—)** _(structure)_ — The 'ChatGPT em-dash' became the most-discussed punctuation tell of 2025 — dense em-dashes replacing commas/parentheses signal LLM output. Less load-bearing in sung lyrics but a major prose giveaway.  _e.g._ "The result — surprisingly — changed everything"
-
 ## AI-prose structure  (1)
 
 - 🟠 **"In conclusion" / "In summary" / "Overall" wrap-up** _(closer)_ — Formulaic summary closer ChatGPT appends even to short text. Wikipedia lists these tidy wrap-ups as a structural sign of generated writing.
@@ -23782,10 +23642,6 @@ except Exception as e:
 - 🟠 **meticulous / meticulously** _(word)_ — Documented post-2022 surge word; the model's default intensifier for care/detail, overused to the point of being a fingerprint in scientific writing.
 - 🟠 **underscore / underscores** _(word)_ — Spiked in 15M+ PubMed abstracts post-ChatGPT. Used as a transition-emphasis verb ('this underscores the importance'), a hallmark of generated academic prose.
 - 🟡 **navigate / navigating** _(word)_ — Spiked focal word used metaphorically ('navigating challenges'); the model's default verb for dealing-with, a recognizable corporate-AI tic.
-
-## antithesis / negation reveal  (1)
-
-- 🔴 **It's not X, it's Y** _(structure)_ — The single most-cited AI tell. LLMs use this antithesis-by-negation formula constantly and evenly spaced; a NYT/Sam Kriss observation made it infamous. Humans use it sparingly for one dramatic beat, AI deploys it reflexively to fake depth without earning it.  _e.g._ "It's not a tool, it's a revolution."
 
 ## assistant tell  (1)
 
@@ -23811,12 +23667,11 @@ except Exception as e:
 - 🟠 **I'd be happy to help / Happy to help!** _(phrase)_ — Synthetic eagerness rewarded during instruction tuning; it injects a service-desk persona into text that has no reason to address a customer.  _e.g._ "I'd be happy to help you with that!"
 - 🟡 **By following these steps, you'll be able to...** _(closer)_ — A reassurance-payoff sign-off promising the reader capability; it addresses a 'you' on a how-to journey, betraying the instructional-assistant frame.  _e.g._ "By following these steps, you'll be well on your way to success."
 
-## assistant-voice leak  (8)
+## assistant-voice leak  (7)
 
 - 🔴 **as of my last knowledge update** _(phrase)_ — Knowledge-cutoff disclaimer leak (Wikipedia signs).
 - 🔴 **Here's a revised version** _(phrase)_ — Edit-loop artifact left in final text.
 - 🔴 **I apologize for the confusion** _(phrase)_ — Apology-loop artifact.
-- 🔴 **I hope this helps** _(phrase)_ — Assistant closer leaked into documents; Wikipedia AI-cleanup flags it.
 - 🔴 **I've incorporated your feedback** _(phrase)_ — Edit-loop artifact.
 - 🔴 **Let me know if you'd like** _(phrase)_ — Collaborative-offer closer leak.
 - 🔴 **That's a really insightful question** _(phrase)_ — Sycophancy opener leak from chat context.
@@ -23858,10 +23713,9 @@ except Exception as e:
 
 - 🟡 **X, Y, and everything in between** _(closer)_ — The 'and everything in between' tag manufactures false comprehensiveness on top of a rule-of-three. AI tacks it on to imply total coverage without specifics.  _e.g._ "From startups, enterprises, and everything in between."
 
-## causal negative parallelism  (2)
+## causal negative parallelism  (1)
 
 - 🟠 **Negation cluster: not because X, but because Y** _(structure)_ — Causal variant of 'not X but Y' applied to reasons. The denied-then-asserted cause is the same antithesis reflex, and AI applies it to explanations far more than humans do.  _e.g._ "It matters not because it's new, but because it's true."
-- 🟠 **not because X, but because Y** _(structure)_ — The causal form of negative parallelism where every explanation is staged as a surprise; flagged on tropes.fyi as a marker because real writers rarely frame routine causes as reveals.  _e.g._ "It works not because it's complex, but because it's simple."
 
 ## challenges-and-legacy formula  (1)
 
@@ -23927,10 +23781,9 @@ except Exception as e:
 - 🔴 **Certainly!** _(opener)_ — Gemini prepends an enthusiastic one-word affirmation before fulfilling almost any request; TechRadar found it survives even when models are told to be brief. Humans rarely open a written answer with a standalone 'Certainly!'
 - 🟠 **Of course!** _(opener)_ — Reflexive servile agreement opener trained by preference data; signals the model is performing helpfulness rather than answering. Pairs with the request being echoed back.
 
-## conclusion cliché  (2)
+## conclusion cliché  (1)
 
 - 🔴 **in conclusion** _(closer)_ — A five-paragraph-essay marker the model reflexively appends; human web/blog writers almost never literally write 'In conclusion', so its presence strongly signals templated machine structure.  _e.g._ "In conclusion, the benefits are clear."
-- 🟠 **in summary** _(closer)_ — A schoolroom wrap-up tag AI uses to signpost a recap it was instructed to provide; over-signposting where a human would just stop is a hallmark of generated structure.  _e.g._ "In summary, we've covered the key points."
 
 ## context opener  (1)
 
@@ -23999,11 +23852,10 @@ except Exception as e:
 
 - 🟠 **'X. Full stop.' emphasis** _(template)_ — AI hard-stop emphasis beat.
 
-## emphasis transition  (3)
+## emphasis transition  (2)
 
 - 🟠 **At the heart of** _(phrase)_ — A faux-profundity connective used to frame any topic as having a central essence; it sounds insightful but is a template the model drops in to elevate mundane points, appearing far more often than in human prose.  _e.g._ "At the heart of the issue lies trust."
 - 🟠 **Importantly** _(opener)_ — A sentence-initial signpost telling the reader to care, used by AI in place of actually making the point matter; its frequency as a paragraph opener is a documented excess-vocabulary spike.  _e.g._ "Importantly, this changes everything."
-- 🟠 **Notably** _(opener)_ — An emphasis adverb the model sprinkles to feign editorial judgment about what matters; spiked in the Kobak academic-abstract analysis as an excess word, marking machine-flavored emphasis.  _e.g._ "Notably, sales rose 12%."
 
 ## empowerment close  (1)
 
@@ -24098,9 +23950,8 @@ except Exception as e:
 - 🟡 **a beat** _(phrase)_ — 'a beat' as a pause stage-direction.
 - 🟡 **the architect** _(phrase)_ — Portentous AI title.
 
-## filler  (2)
+## filler  (1)
 
-- 🟠 **at the end of the day** _(phrase)_ — A conversational crutch the model inserts in formal contexts to sound grounded; the tonal mismatch (folksy idiom in otherwise polished prose) flags it as a borrowed AI filler.  _e.g._ "At the end of the day, it's about results."
 - 🟠 **if you will** _(phrase)_ — Verbal-tic filler.
 
 ## filler frame  (1)
@@ -24213,11 +24064,6 @@ except Exception as e:
 - 🟠 **It's worth mentioning** _(phrase)_ — Yet another interchangeable 'note this' hedge; the model owns a whole rotating family of these (note/mention/should be noted/bear in mind) and cycling through them is the giveaway.  _e.g._ "It's worth mentioning the cost."
 - 🟡 **Generally speaking** _(phrase)_ — A vagueness-hedge AI prepends to avoid committing; it pairs with 'in many cases' and 'depending on the context' as a hedging cluster that signals the model dodging specificity.  _e.g._ "Generally speaking, more is better."
 
-## hype  (2)
-
-- 🟡 **cutting-edge** _(phrase)_ — Tech marketing cliché AI defaults to for anything modern. Empty novelty signal.  _e.g._ "Cutting-edge technology powers the platform."
-- 🟡 **game changer / game-changing** _(phrase)_ — Flagged on overused lists. Hype cliché AI applies to any improvement; signals promotional auto-generation.  _e.g._ "This is a real game changer for the industry."
-
 ## hype cliche  (7)
 
 - 🔴 **look no further** _(phrase)_ — Infomercial-register CTA AI loves ('looking for X? look no further'); a tired direct-response cliche that flags templated, non-original copy.  _e.g._ "Looking for better leads? Look no further."
@@ -24231,10 +24077,6 @@ except Exception as e:
 ## hype compound  (1)
 
 - 🟡 **need-to-know / must-have / game-winning** _(phrase)_ — Hyphenated urgency compounds AI stacks in headlines ('5 must-have tools', 'need-to-know tips'); the dense compound-modifier style is a listicle-AI tell.  _e.g._ "7 must-have tools you need to know."
-
-## hype noun/adjective  (1)
-
-- 🔴 **game-changer / game-changing** _(word)_ — Vague superlative that asserts impact without specifics; LLMs default to it for any product because it sounds enthusiastic while committing to nothing measurable. Top-tier marketing-AI tell.  _e.g._ "This game-changing platform redefines how teams collaborate."
 
 ## hype transition  (2)
 
@@ -24455,14 +24297,10 @@ except Exception as e:
 - 🔴 **That being said** _(phrase)_ — A 'balance pivot' the model reaches for to manufacture both-sides nuance between paragraphs; humans use it occasionally, AI uses it formulaically at nearly every contrast, creating rigid see-saw pacing.  _e.g._ "The plan is solid. That being said, there are risks."
 - 🟠 **With that in mind** _(phrase)_ — A connective that pretends prior context determines what follows; AI uses it as filler glue between sections, over-signposting transitions a human would leave implicit.  _e.g._ "With that in mind, let's continue."
 
-## platform tell: chatgpt  (6)
+## platform tell: chatgpt  (2)
 
-- 🔴 **great question** _(phrase)_ — ChatGPT flattery opener.
-- 🟠 **absolutely!** _(phrase)_ — ChatGPT enthusiastic affirmation.
-- 🟠 **certainly!** _(phrase)_ — ChatGPT affirmation opener.
 - 🟠 **here's the thing** _(phrase)_ — ChatGPT conversational pivot.
 - 🟠 **i'd be happy to help** _(phrase)_ — Assistant-voice ChatGPT tell.
-- 🟠 **let's break it down** _(phrase)_ — ChatGPT explainer pivot.
 
 ## platform tell: claude  (7)
 
@@ -24592,10 +24430,6 @@ except Exception as e:
 - 🟡 **a myriad of** _(phrase)_ — AI's preferred ornate substitute for 'many'; the elevated register applied to plain counts is a small but reliable lexical tell, often co-occurring with 'plethora' and 'array'.  _e.g._ "A myriad of options await."
 - 🟡 **a treasure trove of** _(phrase)_ — An inflating metaphor AI applies to ordinary collections of information; the stock decorative phrasing recurs verbatim across generated content.  _e.g._ "A treasure trove of insights."
 
-## range transition  (1)
-
-- 🟡 **From X to Y, ...** _(opener)_ — A 'spectrum' opener AI uses to imply comprehensiveness without specifics; its predictable 'From A to B' scaffolding to launch a sentence is a stock generated structure.  _e.g._ "From startups to enterprises, everyone benefits."
-
 ## reasoning leak  (3)
 
 - 🔴 **Wait, let me reconsider** _(phrase)_ — Chain-of-thought leak from reasoning models (R1 visible-thinking era).
@@ -24610,10 +24444,6 @@ except Exception as e:
 
 - 🟠 **'It's less about X and more about Y'** _(template)_ — AI insight-reframe scaffold.
 - 🟠 **'What makes X special isn't Y'** _(template)_ — AI differentiation scaffold.
-
-## reframe transition  (1)
-
-- 🔴 **More than just** _(phrase)_ — The lead-in to negative parallelism ('not just X but Y'); the model uses it to manufacture a surprise-reframe and inflate significance, a structure that exploded in frequency only after LLMs.  _e.g._ "It's more than just a phone, it's a lifestyle."
 
 ## refusal boilerplate  (1)
 
@@ -24667,12 +24497,11 @@ except Exception as e:
 
 - 🟠 **rule of three (adjective triplets)** _(structure)_ — Wikipedia-flagged: AI compulsively groups things in threes ('fast, simple, and powerful'; triplet adjectives) for rhythm, producing an unnaturally regular cadence across a whole piece.  _e.g._ "Engage, convert, and retain your audience."
 
-## rp fiction tell  (4)
+## rp fiction tell  (3)
 
 - 🔴 **mischievous glint** _(phrase)_ — RP slop-list staple ('a mischievous glint in her eyes').
 - 🔴 **unspoken bond** _(phrase)_ — RP/fiction connection cliche.
 - 🟠 **eyes darkening** _(phrase)_ — RP mood-shift cliche (SFW register).
-- 🟠 **for now** _(closer)_ — Ominous two-word paragraph closer ('...she was safe. For now.') — RP slop lists.
 
 ## scene opener  (1)
 
@@ -24723,9 +24552,8 @@ except Exception as e:
 - 🟠 **Key Takeaways / TL;DR section** _(structure)_ — Gemini auto-appends a 'Key Takeaways' or 'TL;DR' block even on short answers, an artifact of its comprehensiveness-and-pedagogy training. Humans don't summarize a few paragraphs of their own writing.
 - 🟡 **Let me explain.** _(opener)_ — Pedagogical lead-in announcing the explanation before giving it, part of Gemini's instructor-like signposting habit. Adds a beat of throat-clearing humans usually skip in writing.
 
-## sourcing  (2)
+## sourcing  (1)
 
-- 🟠 **Vague authority attribution (studies show / experts agree)** _(phrase)_ — Models assert 'research indicates' or 'experts agree' with no citation because they're pattern-completing credibility, not citing; the unsourced appeal is a fabrication tell.  _e.g._ "Studies show that 90% of users prefer this."
 - 🟡 **Our team of experts** _(phrase)_ — An authority claim with no names or credentials; the model invents an institutional 'we' to borrow trust it can't substantiate.  _e.g._ "Our team of experts has carefully curated..."
 
 ## spatial metaphor  (1)
@@ -24806,10 +24634,6 @@ except Exception as e:
 - 🟠 **as we all know** _(phrase)_ — Chinese-model English translationese connector.
 - 🟠 **it is worth mentioning that** _(phrase)_ — Formal-connector translationese elevated in Chinese-model English.
 
-## travel-copy opener  (1)
-
-- 🔴 **Nestled in** _(opener)_ — AI travel/description default opener ('Nestled in the heart of').
-
 ## travel-copy tell  (1)
 
 - 🟠 **in the heart of** _(phrase)_ — AI location-copy formula.
@@ -24822,11 +24646,10 @@ except Exception as e:
 
 - 🔴 **Rule of three / tricolon crescendo** _(structure)_ — LLMs deploy triplets compulsively, often with three roughly-synonymous adjectives, because the rule of three is deep in Western rhetoric. The tell is saturation: every list lands on exactly three, dulling the device into a tic.  _e.g._ "It's fast, reliable, and effective."
 
-## vague attribution  (5)
+## vague attribution  (4)
 
 - 🔴 **industry reports suggest** _(phrase)_ — Wikipedia signs: vague attribution formula.
 - 🔴 **observers have noted** _(phrase)_ — Wikipedia signs: phantom-observer attribution.
-- 🟠 **experts agree** _(phrase)_ — Uncited consensus claim.
 - 🟠 **experts argue / observers have noted** _(phrase)_ — Wikipedia's vague-attribution cluster ('experts argue', 'observers have cited'). Conjures unnamed authority to launder unsupported claims.  _e.g._ "Experts argue this trend will continue."
 - 🟠 **studies show that** _(phrase)_ — Uncited authority claim — Wikipedia signs: vague attributions.
 
@@ -24860,21 +24683,19 @@ except Exception as e:
 
 - 🟠 **copula avoidance (serves as / boasts / features)** _(structure)_ — Wikipedia notes AI replaces plain 'is/are' with 'serves as / marks / features / offers / boasts' to sound dynamic. A consistent stylistic fingerprint.  _e.g._ "The museum serves as a hub for art."
 
-## verb phrase  (2)
+## verb phrase  (1)
 
 - 🔴 **underscores the importance of** _(phrase)_ — Not just the verb but the fixed frame: AI consistently closes paragraphs with 'underscores the importance/need for.' The collocation is a low-burstiness template, which is why detectors and editors treat the whole phrase as a giveaway, not just the word.  _e.g._ "This underscores the importance of further research."
-- 🟡 **align with** _(word)_ — Wikipedia-flagged ('align/resonate with'). Models use 'aligns with' as a vague consistency claim instead of stating a concrete relationship; its templated, hedging quality marks generated analysis.  _e.g._ "These results align with previous findings."
 
 ## verb tic  (1)
 
 - 🔴 **delve** _(word)_ — The single most-cited AI tell. In the Kobak/Liang excess-vocabulary study its frequency ratio hit r=25 (a ~28-fold / ~1,500% jump in PubMed abstracts after ChatGPT) with no real-world topic to explain it — a pure stylistic fingerprint, not content-driven.  _e.g._ "Let's delve into the intricacies of..."
 
-## vocabulary spike  (4)
+## vocabulary spike  (3)
 
 - 🔴 **navigate the complexities of** _(phrase)_ — Stock AI collocation pairing the metaphor 'navigate' with the spike-word 'complexities.' Appears on over-used-phrase lists; humans simply say 'deal with' or 'handle.'
 - 🟠 **leverage (as a verb)** _(word)_ — Top slop-list verb; the model says 'leverage' where a human says 'use.' Corporate-register substitution that signals generated text.
 - 🟡 **foster a sense of** _(phrase)_ — 'Foster' + abstract noun ('a sense of community/belonging') is a recurring AI collocation flagged on slop lists. The vague, warm institutional register marks generated text.
-- 🟡 **in the realm of** _(phrase)_ — Grandiose topic-framing phrase on slop-phrase lists ('in the realm of finance'). Models use it as a register-elevating substitute for 'in.'
 
 ## weasel attribution  (1)
 
