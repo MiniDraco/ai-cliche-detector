@@ -1,11 +1,11 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**20707 unique entries** (deduped from 21172 raw findings by a 26-agent research sweep).
+**20743 unique entries** (deduped from 21209 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 3976 | structure: 128 | trope: 221 | phrase: 13858 | template: 1284 | opener: 1075 | closer: 77 | rhyme_pair: 170
+**By type:** word: 3976 | structure: 128 | trope: 221 | phrase: 13888 | template: 1290 | opener: 1075 | closer: 77 | rhyme_pair: 170
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
@@ -23560,7 +23560,7 @@ except Exception as e:
 
 - 🟡 **sky/why** _(rhyme_pair)_ — Skyward-questioning rhyme ('staring at the sky / asking God why'); AI's stock for an existential bridge. The unanswered 'why' aimed at the heavens is a generated-melancholy hallmark.  _e.g._ "I look up at the sky / and I ask the heavens why"
 
-# DOMAIN: PROSE  (548)
+# DOMAIN: PROSE  (584)
 
 ## abstract noun  (1)
 
@@ -24223,6 +24223,45 @@ except Exception as e:
 ## mechanical transitions  (1)
 
 - 🟠 **Moreover, / Furthermore, / Additionally, (every paragraph)** _(structure)_ — Over-tidy uniform transitions opening successive paragraphs. The lifeless regularity — every point bridged by the same formal connective — marks template-generated structure over organic flow.  _e.g._ "Moreover, the system is scalable. Furthermore, it is secure."
+
+## meta-discourse register  (36)
+
+- 🔴 **It bears mentioning** _(phrase)_ — Stiff AI qualifier; a human says 'worth saying' or just states it.  _e.g._ "It bears mentioning that costs rose."
+- 🔴 **One caveat worth stating** _(phrase)_ — AI's formal caveat frame; a human says 'quick heads up' or 'I should mention'.  _e.g._ "One caveat worth stating: results vary."
+- 🔴 **one/a caveat: framing** _(template)_ — Any 'caveat' framing is a strong AI meta-discourse tell; a casual human rarely labels a caveat as such.  _e.g._ "The one caveat: it needs power."
+- 🔴 **please do not hesitate to** _(template)_ — Boilerplate customer-service AI closer; a human says 'just ask' or 'lmk'.  _e.g._ "Please don't hesitate to reach out."
+- 🔴 **should you have any questions** _(template)_ — Ultra-formal AI service register; a human says 'any questions, ask'.  _e.g._ "Should you have any questions, contact us."
+- 🔴 **you raise a good/important point** _(template)_ — Sycophantic assistant acknowledgment; a human says 'true' or 'fair'.  _e.g._ "You raise a good point about cost."
+- 🟠 **A quick caveat** _(phrase)_ — Softened AI caveat opener; a human just says 'but' or 'that said'.  _e.g._ "A quick caveat before we start."
+- 🟠 **A word of caution** _(phrase)_ — AI's cautionary preamble; a human says 'careful though' or 'heads up'.  _e.g._ "A word of caution before you proceed."
+- 🟠 **At a high level** _(phrase)_ — AI's abstraction frame; a human says 'basically' or 'broadly'.  _e.g._ "At a high level, it works like this."
+- 🟠 **at this point in time** _(phrase)_ — AI padding for 'now'; a human says 'now' or 'right now'.  _e.g._ "At this point in time, we can't."
+- 🟠 **Great catch** _(phrase)_ — Assistant-style praise of the reader; rare in ordinary prose.  _e.g._ "Great catch on that bug."
+- 🟠 **I would recommend** _(phrase)_ — Formal AI rec; a human says 'I'd go with' or 'I'd say'.  _e.g._ "I would recommend the annual plan."
+- 🟠 **I'd be happy to** _(phrase)_ — Assistant-service register; a human says 'sure' or 'happy to'.  _e.g._ "I'd be happy to walk you through it."
+- 🟠 **In other words** _(phrase)_ — AI restates itself formally; a human says 'basically' or 'so'.  _e.g._ "In other words, it failed."
+- 🟠 **It bears repeating** _(phrase)_ — Formal AI emphasis frame; a human says 'again,' or 'like I said'.  _e.g._ "It bears repeating: back up your data."
+- 🟠 **It may be worth** _(phrase)_ — AI hedged recommendation; a human says 'might be worth' or 'try'.  _e.g._ "It may be worth checking first."
+- 🟠 **It's generally advisable** _(phrase)_ — Stiff AI advice register; a human says 'usually best to'.  _e.g._ "It's generally advisable to test first."
+- 🟠 **It's worth emphasizing** _(phrase)_ — AI emphasis frame; a human says 'the main thing is'.  _e.g._ "It's worth emphasizing this point."
+- 🟠 **One approach would be** _(phrase)_ — AI's optioning frame; a human says 'you could' or 'one way'.  _e.g._ "One approach would be to cache it."
+- 🟠 **That brings us to** _(phrase)_ — AI's guided-tour transition; a human says 'so,' or 'next'.  _e.g._ "That brings us to pricing."
+- 🟠 **That's a fair point** _(phrase)_ — AI's validating acknowledgment; a human says 'fair' or 'true'.  _e.g._ "That's a fair point."
+- 🟠 **That's not to say** _(phrase)_ — AI's both-sides concession frame; a human says 'but that doesn't mean'.  _e.g._ "That's not to say it's perfect."
+- 🟠 **The key takeaway here** _(phrase)_ — AI's summary label; a human just says the point.  _e.g._ "The key takeaway here is simple."
+- 🟠 **The key thing to understand** _(phrase)_ — AI's teaching frame; a human says 'the main thing is'.  _e.g._ "The key thing to understand is timing."
+- 🟠 **The reality is** _(phrase)_ — AI truth-frame; a human says 'honestly' or just states it.  _e.g._ "The reality is it costs more."
+- 🟠 **The truth is** _(phrase)_ — AI's revelatory frame; a human says 'honestly' or 'look'.  _e.g._ "The truth is nobody knows."
+- 🟠 **there are a few things** _(template)_ — AI's list-preamble; a human just lists them or says 'a couple things'.  _e.g._ "There are a few things to consider."
+- 🟠 **this raises the question** _(template)_ — AI's rhetorical pivot; a human just asks the question.  _e.g._ "Which raises the question: why bother?"
+- 🟠 **worth flagging** _(phrase)_ — AI hedge-flag; a human says 'just so you know' or 'FYI'.  _e.g._ "One thing worth flagging here."
+- 🟠 **You might consider** _(phrase)_ — AI's deferential suggestion; a human says 'you could try' or 'maybe'.  _e.g._ "You might consider a smaller size."
+- 🟡 **a number of** _(phrase)_ — AI's vague quantifier; a human says 'some' or 'several'.  _e.g._ "A number of factors apply."
+- 🟡 **For what it's worth** _(phrase)_ — AI's hedged-opinion frame; common in humans too but AI overuses it to soften.  _e.g._ "For what it's worth, I'd wait."
+- 🟡 **I'd suggest** _(phrase)_ — Softened AI rec; common but AI-leaning in formal contexts.  _e.g._ "I'd suggest starting small."
+- 🟡 **in order to** _(phrase)_ — AI's padded infinitive; a human just writes 'to'.  _e.g._ "In order to save time, batch it."
+- 🟡 **The bad news is** _(phrase)_ — Paired AI pivot with 'the good news is'.  _e.g._ "The bad news is it's slow."
+- 🟡 **The good news is** _(phrase)_ — AI's balanced good/bad frame; overused as an upbeat pivot.  _e.g._ "The good news is it's fixable."
 
 ## meta-navigation filler  (1)
 

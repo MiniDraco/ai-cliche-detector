@@ -1,0 +1,577 @@
+{
+ "result": {
+  "entries": [
+   {
+    "term": "One caveat worth stating",
+    "type": "phrase",
+    "severity": "high",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's formal caveat frame; a human says 'quick heads up' or 'I should mention'.",
+    "example": "One caveat worth stating: results vary.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "A quick caveat",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Softened AI caveat opener; a human just says 'but' or 'that said'.",
+    "example": "A quick caveat before we start.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "It bears mentioning",
+    "type": "phrase",
+    "severity": "high",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Stiff AI qualifier; a human says 'worth saying' or just states it.",
+    "example": "It bears mentioning that costs rose.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "It bears repeating",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Formal AI emphasis frame; a human says 'again,' or 'like I said'.",
+    "example": "It bears repeating: back up your data.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "A word of caution",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's cautionary preamble; a human says 'careful though' or 'heads up'.",
+    "example": "A word of caution before you proceed.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "worth flagging",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI hedge-flag; a human says 'just so you know' or 'FYI'.",
+    "example": "One thing worth flagging here.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "That's not to say",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's both-sides concession frame; a human says 'but that doesn't mean'.",
+    "example": "That's not to say it's perfect.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "It's worth emphasizing",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI emphasis frame; a human says 'the main thing is'.",
+    "example": "It's worth emphasizing this point.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "It's important to remember",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI reminder frame; a human says 'just remember' or 'don't forget'.",
+    "example": "It's important to remember the basics.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "For what it's worth",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's hedged-opinion frame; common in humans too but AI overuses it to soften.",
+    "example": "For what it's worth, I'd wait.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "one/a caveat: framing",
+    "type": "template",
+    "severity": "high",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Any 'caveat' framing is a strong AI meta-discourse tell; a casual human rarely labels a caveat as such.",
+    "example": "The one caveat: it needs power.",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\b(?:one|a|another|the one) caveat\\b",
+    "flags": "gi",
+    "source": "register-curated"
+   },
+   {
+    "term": "In other words",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI restates itself formally; a human says 'basically' or 'so'.",
+    "example": "In other words, it failed.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "To put it another way",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's re-framing device; a human says 'or,' or 'basically'.",
+    "example": "To put it another way, slow down.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "At a high level",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's abstraction frame; a human says 'basically' or 'broadly'.",
+    "example": "At a high level, it works like this.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "Let me be clear",
+    "type": "opener",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI emphasis opener; a human says 'look,' or 'honestly'.",
+    "example": "Let me be clear about this.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "Here's the deal",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's casual-frame attempt; overused as a transition into an explanation.",
+    "example": "Here's the deal with pricing.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "The reality is",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI truth-frame; a human says 'honestly' or just states it.",
+    "example": "The reality is it costs more.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "The truth is",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's revelatory frame; a human says 'honestly' or 'look'.",
+    "example": "The truth is nobody knows.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "this raises the question",
+    "type": "template",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's rhetorical pivot; a human just asks the question.",
+    "example": "Which raises the question: why bother?",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\b(?:which|this|that) raises the question\\b",
+    "flags": "gi",
+    "source": "register-curated"
+   },
+   {
+    "term": "That brings us to",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's guided-tour transition; a human says 'so,' or 'next'.",
+    "example": "That brings us to pricing.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "The key takeaway here",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's summary label; a human just says the point.",
+    "example": "The key takeaway here is simple.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "The key thing to understand",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's teaching frame; a human says 'the main thing is'.",
+    "example": "The key thing to understand is timing.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "The good news is",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's balanced good/bad frame; overused as an upbeat pivot.",
+    "example": "The good news is it's fixable.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "The bad news is",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Paired AI pivot with 'the good news is'.",
+    "example": "The bad news is it's slow.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "there are a few things",
+    "type": "template",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's list-preamble; a human just lists them or says 'a couple things'.",
+    "example": "There are a few things to consider.",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\bthere are (?:a few|several|some|a number of|a couple of) (?:things|factors|reasons|points|considerations)\\b",
+    "flags": "gi",
+    "source": "register-curated"
+   },
+   {
+    "term": "you raise a good/important point",
+    "type": "template",
+    "severity": "high",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Sycophantic assistant acknowledgment; a human says 'true' or 'fair'.",
+    "example": "You raise a good point about cost.",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\byou (?:raise|make) (?:a|an) (?:good|great|valid|important|fair|excellent) point\\b",
+    "flags": "gi",
+    "source": "register-curated"
+   },
+   {
+    "term": "That's a fair point",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's validating acknowledgment; a human says 'fair' or 'true'.",
+    "example": "That's a fair point.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "Great catch",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Assistant-style praise of the reader; rare in ordinary prose.",
+    "example": "Great catch on that bug.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "You might consider",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's deferential suggestion; a human says 'you could try' or 'maybe'.",
+    "example": "You might consider a smaller size.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "It may be worth",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI hedged recommendation; a human says 'might be worth' or 'try'.",
+    "example": "It may be worth checking first.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "One approach would be",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's optioning frame; a human says 'you could' or 'one way'.",
+    "example": "One approach would be to cache it.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "I would recommend",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Formal AI rec; a human says 'I'd go with' or 'I'd say'.",
+    "example": "I would recommend the annual plan.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "I'd suggest",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Softened AI rec; common but AI-leaning in formal contexts.",
+    "example": "I'd suggest starting small.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "It's generally advisable",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Stiff AI advice register; a human says 'usually best to'.",
+    "example": "It's generally advisable to test first.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "I'd be happy to",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Assistant-service register; a human says 'sure' or 'happy to'.",
+    "example": "I'd be happy to walk you through it.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "please do not hesitate to",
+    "type": "template",
+    "severity": "high",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Boilerplate customer-service AI closer; a human says 'just ask' or 'lmk'.",
+    "example": "Please don't hesitate to reach out.",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\bplease (?:do not|don'?t) hesitate to\\b",
+    "flags": "gi",
+    "source": "register-curated"
+   },
+   {
+    "term": "should you have any questions",
+    "type": "template",
+    "severity": "high",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "Ultra-formal AI service register; a human says 'any questions, ask'.",
+    "example": "Should you have any questions, contact us.",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\bshould you (?:have|require) any (?:questions|concerns|further)\\b",
+    "flags": "gi",
+    "source": "register-curated"
+   },
+   {
+    "term": "in order to",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's padded infinitive; a human just writes 'to'.",
+    "example": "In order to save time, batch it.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "a number of",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's vague quantifier; a human says 'some' or 'several'.",
+    "example": "A number of factors apply.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "prior to",
+    "type": "phrase",
+    "severity": "low",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's Latinate 'before'; a human says 'before'.",
+    "example": "Prior to launch, we tested.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "in the event that",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI's legalistic 'if'; a human says 'if'.",
+    "example": "In the event that it fails, retry.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "at this point in time",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI padding for 'now'; a human says 'now' or 'right now'.",
+    "example": "At this point in time, we can't.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   },
+   {
+    "term": "due to the fact that",
+    "type": "phrase",
+    "severity": "medium",
+    "category": "meta-discourse register",
+    "domain": "prose",
+    "why": "AI padding for 'because'; a human says 'because' or 'since'.",
+    "example": "Due to the fact that it rained, we stopped.",
+    "platforms": [
+     "general"
+    ],
+    "source": "register-curated"
+   }
+  ]
+ }
+}

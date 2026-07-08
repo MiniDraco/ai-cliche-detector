@@ -1,4 +1,4 @@
-AI-CLICHE DETECTION DB  -  20707 entries
+AI-CLICHE DETECTION DB  -  20743 entries
 format: [severity] domain/type | category | TERM :: why
 ==============================================================================
 
@@ -20260,6 +20260,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] prose/phrase | assistant-voice leak | I've incorporated your feedback :: Edit-loop artifact.
 [high  ] prose/phrase | fiction tell | in one fluid motion :: AI action-beat cliche.
 [high  ] prose/phrase | vague attribution | industry reports suggest :: Wikipedia signs: vague attribution formula.
+[high  ] prose/phrase | meta-discourse register | It bears mentioning :: Stiff AI qualifier; a human says 'worth saying' or just states it.
 [high  ] prose/phrase | hedge | It depends on the context. :: Detection sites found Gemini hedges with 'it depends on context' / 'there are various perspectives' at rates far above human writing. Even-handed non-answer that avoids committing to a position.
 [high  ] prose/phrase | significance transition | It serves as a testament to :: 'Testament' is a Kobak focal spike-word and 'serves as' is the tropes.fyi 'serves-as dodge': a templated way to assert significance without demonstrating it.
 [high  ] prose/phrase | filler hedge | it's important to note that :: A content-free hedge ChatGPT inserts before almost any claim regardless of topic; it adds no information and signals the model padding toward 'safe' balance. Repeatedly flagged as the single most common AI hedge in copywriter tell-lists.
@@ -20277,6 +20278,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] prose/phrase | journey-metaphor transition | Navigating the complexities of :: 'Navigate' as a metaphor is one of the Kobak study's 21 focal spike-words; paired with 'complexities/landscape' it's a clichéd faux-sophistication frame that signals generated business/tech copy.
 [high  ] prose/phrase | tourism puffery | nestled in the heart of :: Wikipedia's tourism-puffery cluster ('nestled', 'in the heart of'). Travel-brochure cliché AI applies to any location.
 [high  ] prose/phrase | vague attribution | observers have noted :: Wikipedia signs: phantom-observer attribution.
+[high  ] prose/phrase | meta-discourse register | One caveat worth stating :: AI's formal caveat frame; a human says 'quick heads up' or 'I should mention'.
 [high  ] prose/phrase | wikipedia AI tell | plays a crucial role :: Wikipedia AI-cleanup signature phrase.
 [high  ] prose/phrase | wikipedia AI tell | plays a vital role :: Wikipedia AI-cleanup signature phrase.
 [high  ] prose/phrase | AI phrase scaffold | plays a vital/crucial role in :: A canonical LLM filler clause asserting importance without evidence. Listed on Wikipedia's signs-of-AI phrase set; co-occurs with 'pivotal,' 'underscore,' etc., so it rarely appears alone.
@@ -20321,14 +20323,18 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | character-ai rp tell | *smirks* :: Asterisk-action RP convention; AI over-uses smirk specifically.
 [medium] prose/phrase | claude fiction tell | a beat passes :: Stage-direction pacing tic in AI fiction.
 [medium] prose/phrase | claude prose tell | a few things worth noting :: Claude list-preamble habit.
+[medium] prose/phrase | meta-discourse register | A quick caveat :: Softened AI caveat opener; a human just says 'but' or 'that said'.
 [medium] prose/phrase | significance transition | a testament to the power of :: Stacks two AI tells ('testament', 'the power of') into a single significance template; the formula recurs verbatim across unrelated topics, betraying generation.
+[medium] prose/phrase | meta-discourse register | A word of caution :: AI's cautionary preamble; a human says 'careful though' or 'heads up'.
 [medium] prose/phrase | grok tell | Ah, the classic :: Grok's smug-recognition opener.
 [medium] prose/phrase | deepseek fiction tell | and somewhere, :: R1's 'and somewhere, X did Y' dramatic-cutaway formula.
 [medium] prose/phrase | assistant-voice | Apologetic hedging (I'm sorry, but / Unfortunately, I cannot) :: Synthetic empathy and refusal framing ('I'm sorry, but I can't help with that') are RLHF safety artifacts; the apology-as-substitute-for-substance is distinctly chatbot.
 [medium] prose/phrase | fake-anecdote tell | As a busy mom :: Fabricated-persona opener in AI content-farm posts.
 [medium] prose/phrase | translationese tell | as we all know :: Chinese-model English translationese connector.
+[medium] prose/phrase | meta-discourse register | At a high level :: AI's abstraction frame; a human says 'basically' or 'broadly'.
 [medium] prose/phrase | transition | At its core / In essence / Ultimately :: False-simplification connectors that signal a profound summary is coming but deliver vagueness; they're filler the model uses to feign synthesis.
 [medium] prose/phrase | emphasis transition | At the heart of :: A faux-profundity connective used to frame any topic as having a central essence; it sounds insightful but is a template the model drops in to elevate mundane points, appearing far more often than in human prose.
+[medium] prose/phrase | meta-discourse register | at this point in time :: AI padding for 'now'; a human says 'now' or 'right now'.
 [medium] prose/phrase | hype cliche | buckle up :: Forced-energy intro AI uses to fake excitement before a list; a conversational tic that reads as canned hype when generated at scale.
 [medium] prose/phrase | gpt-4o casual tell | chef's kiss :: 4o-era hype interjection.
 [medium] prose/phrase | diction | Comprehensive overview / comprehensive guide :: Models announce 'a comprehensive overview' when prefacing structure; the self-congratulatory completeness claim is a stock framing line that recurs across topics.
@@ -20341,6 +20347,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | vague attribution | experts argue / observers have noted :: Wikipedia's vague-attribution cluster ('experts argue', 'observers have cited'). Conjures unnamed authority to launder unsupported claims.
 [medium] prose/phrase | rp fiction tell | eyes darkening :: RP mood-shift cliche (SFW register).
 [medium] prose/phrase | corporate verb | foster / drive / unlock + meaningful/tangible results :: AI pairs an action verb with a vague outcome noun ('drive tangible results', 'deliver meaningful impact'); the noun is unmeasurable, making the whole claim hollow corporate-speak.
+[medium] prose/phrase | meta-discourse register | Great catch :: Assistant-style praise of the reader; rare in ordinary prose.
 [medium] prose/phrase | hype transition | Harness the potential of :: 'Harness/leverage/unlock' form an AI verb-cluster for vague empowerment; the grandiose overstatement attached to ordinary actions flags machine boosterism.
 [medium] prose/phrase | manufactured significance | has sparked debate / prompted reflection :: Wikipedia flags 'has generated debate about / prompted reflection on' as fabricated-discourse markers asserting impact that isn't shown.
 [medium] prose/phrase | fiction tell | held his gaze :: AI eye-contact beat.
@@ -20350,21 +20357,28 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | reasoning leak | Hmm, but :: R1 thinking-token leak.
 [medium] prose/phrase | fiction tell | how pedestrian :: AI haughty-character line.
 [medium] prose/phrase | platform tell: claude | i appreciate your :: Claude polite opener.
+[medium] prose/phrase | meta-discourse register | I would recommend :: Formal AI rec; a human says 'I'd go with' or 'I'd say'.
+[medium] prose/phrase | meta-discourse register | I'd be happy to :: Assistant-service register; a human says 'sure' or 'happy to'.
 [medium] prose/phrase | platform tell: chatgpt | i'd be happy to help :: Assistant-voice ChatGPT tell.
 [medium] prose/phrase | assistant-voice | I'd be happy to help / Happy to help! :: Synthetic eagerness rewarded during instruction tuning; it injects a service-desk persona into text that has no reason to address a customer.
 [medium] prose/phrase | linkedin tell | I'm humbled to announce :: AI-LinkedIn-post staple (humble-brag formula).
 [medium] prose/phrase | refusal leak | I'm just an AI :: Llama-2 alignment-speak.
 [medium] prose/phrase | filler | if you will :: Verbal-tic filler.
 [medium] prose/phrase | claude prose tell | in essence :: Claude summarizing tic.
+[medium] prose/phrase | meta-discourse register | In other words :: AI restates itself formally; a human says 'basically' or 'so'.
 [medium] prose/phrase | travel-copy tell | in the heart of :: AI location-copy formula.
 [medium] prose/phrase | hedge/transition | In today's day and age :: Redundant-era opener.
+[medium] prose/phrase | meta-discourse register | It bears repeating :: Formal AI emphasis frame; a human says 'again,' or 'like I said'.
 [medium] prose/phrase | translationese tell | it is worth mentioning that :: Formal-connector translationese elevated in Chinese-model English.
+[medium] prose/phrase | meta-discourse register | It may be worth :: AI hedged recommendation; a human says 'might be worth' or 'try'.
 [medium] prose/phrase | inflation | It's a testament to :: 'Testament' is on the Max-Planck spike list of post-ChatGPT over-used words. The phrase inflates ordinary facts into evidence of something grand.
 [medium] prose/phrase | claude prose tell | it's also worth considering :: Claude both-sides hedge.
+[medium] prose/phrase | meta-discourse register | It's generally advisable :: Stiff AI advice register; a human says 'usually best to'.
 [medium] prose/phrase | hedge | It's generally considered :: Passive, sourceless consensus-claim Gemini uses to sound balanced without attribution. Flagged as a Gemini-specific over-hedge in AI-detector analyses.
 [medium] prose/phrase | gpt-4o casual tell | It's giving :: 4o's forced-casual register (2025 sycophancy era).
 [medium] prose/phrase | platform tell: gemini | it's important to consider :: Gemini hedge.
 [medium] prose/phrase | hedge | It's important to remember that :: Sibling of 'important to note'; Pangram lists it as a Reddit-bot transition giveaway. The model reminds you of something it never told you, a sourceless authority move.
+[medium] prose/phrase | meta-discourse register | It's worth emphasizing :: AI emphasis frame; a human says 'the main thing is'.
 [medium] prose/phrase | platform tell: claude | it's worth examining :: Claude hedge.
 [medium] prose/phrase | hedging transition | It's worth mentioning :: Yet another interchangeable 'note this' hedge; the model owns a whole rotating family of these (note/mention/should be noted/bear in mind) and cycling through them is the giveaway.
 [medium] prose/phrase | hedging | It's worth noting / worth mentioning :: A sibling of 'important to note'; a contentless throat-clear that flags significance without earning it, recurring across unrelated ChatGPT outputs.
@@ -20376,6 +20390,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | fiction tell | my dear :: AI pet-name address.
 [medium] prose/phrase | diction | navigate (life's challenges) :: 'Navigate' is a quantified ChatGPT focal word, and 'navigate life's challenges/the storm' marries it to the storm trope. The corporate-coach register is a strong giveaway in adversity writing.
 [medium] prose/phrase | claude fiction tell | old books and :: 'smelled of old books and X' scent-formula.
+[medium] prose/phrase | meta-discourse register | One approach would be :: AI's optioning frame; a human says 'you could' or 'one way'.
 [medium] prose/phrase | buzzword | paradigm shift :: Corporate-hype collocation on every 2025-2026 AI-word blacklist; the model overstates ordinary change as a 'paradigm shift'.
 [medium] prose/phrase | progress transition | paving the way for :: Generic progress-metaphor connective AI uses to imply consequence; its false-revolutionary tone applied to minor developments is a documented filler tell.
 [medium] prose/phrase | editorializing | pivotal / plays a pivotal role :: Focal word 'pivotal' plus the stock frame 'plays a pivotal role in' is an AI significance-inflater that asserts importance without demonstrating it.
@@ -20393,11 +20408,18 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | claude fiction tell | smells of sandalwood :: Claude scent-palette fixation (sandalwood/jasmine/old books).
 [medium] prose/phrase | vague attribution | studies show that :: Uncited authority claim — Wikipedia signs: vague attributions.
 [medium] prose/phrase | academic-AI crossover | testament / a testament to :: Documented ChatGPT word-spike; 'a testament to' is promotional LLM phrasing that bleeds into AI lyric bridges as faux-profundity.
+[medium] prose/phrase | meta-discourse register | That brings us to :: AI's guided-tour transition; a human says 'so,' or 'next'.
 [medium] prose/phrase | claude prose tell | That said, :: Balance-pivot tic; AI-elevated rate.
 [medium] prose/phrase | pi tell | That sounds really tough :: Inflection Pi's therapist-warm validation register.
+[medium] prose/phrase | meta-discourse register | That's a fair point :: AI's validating acknowledgment; a human says 'fair' or 'true'.
+[medium] prose/phrase | meta-discourse register | That's not to say :: AI's both-sides concession frame; a human says 'but that doesn't mean'.
 [medium] prose/phrase | mechanical structure | that's where X comes in :: AI's reflex pivot from problem to product; a formulaic transition that telegraphs the templated problem-agitate-solve scaffold.
+[medium] prose/phrase | meta-discourse register | The key takeaway here :: AI's summary label; a human just says the point.
+[medium] prose/phrase | meta-discourse register | The key thing to understand :: AI's teaching frame; a human says 'the main thing is'.
 [medium] prose/phrase | false-insight frame | the key to X is Y :: AI's pseudo-wisdom formula that packages a generic statement as a secret; reduces complex topics to a single tidy 'key', a hallmark of LLM thought-leadership padding.
+[medium] prose/phrase | meta-discourse register | The reality is :: AI truth-frame; a human says 'honestly' or just states it.
 [medium] prose/phrase | false-insight frame | the secret to / here's the secret :: Curiosity-gap clickbait AI overuses to package generic advice as hidden knowledge; the 'secret' is almost always a platitude, marking templated content-marketing.
+[medium] prose/phrase | meta-discourse register | The truth is :: AI's revelatory frame; a human says 'honestly' or 'look'.
 [medium] prose/phrase | hedge | There are various perspectives on this. :: Gemini's even-handedness bias surfaces as gratuitous both-sides framing. Detection write-ups call out this encyclopedic neutrality as distinctly non-human.
 [medium] prose/phrase | prose transition | think of it as :: Slightly patronizing AI explainer.
 [medium] prose/phrase | hype cliche | this changes everything :: Apple-keynote-register hyperbole AI deploys as a standalone punchy line; classic LLM 'big reveal' filler that overpromises with no substance.
@@ -20411,22 +20433,28 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/phrase | fixated place name | Willow Creek :: AI default small-town name.
 [medium] prose/phrase | pivot transition | With that in mind :: A connective that pretends prior context determines what follows; AI uses it as filler glue between sections, over-signposting transitions a human would leave implicit.
 [medium] prose/phrase | fiction tell | without missing a beat :: AI dialogue-tag cliche.
+[medium] prose/phrase | meta-discourse register | worth flagging :: AI hedge-flag; a human says 'just so you know' or 'FYI'.
 [medium] prose/phrase | second-person tell | you might be wondering :: AI reader-mind-reading formula.
+[medium] prose/phrase | meta-discourse register | You might consider :: AI's deferential suggestion; a human says 'you could try' or 'maybe'.
 [medium] prose/phrase | fiction tell | you wound me :: Mock-wounded RP line.
 [low   ] prose/phrase | fiction tell | a beat :: 'a beat' as a pause stage-direction.
 [low   ] prose/phrase | quantity inflation | a myriad of :: AI's preferred ornate substitute for 'many'; the elevated register applied to plain counts is a small but reliable lexical tell, often co-occurring with 'plethora' and 'array'.
+[low   ] prose/phrase | meta-discourse register | a number of :: AI's vague quantifier; a human says 'some' or 'several'.
 [low   ] prose/phrase | quantity inflation | a treasure trove of :: An inflating metaphor AI applies to ordinary collections of information; the stock decorative phrasing recurs verbatim across generated content.
 [low   ] prose/phrase | filler quantifier | a wide array of / diverse array :: Wikipedia's tourism cluster includes 'diverse array'. Padded quantifier AI uses instead of plain 'many'.
 [low   ] prose/phrase | filler frame | by the numbers / let the numbers speak :: AI's stock data-section header even when numbers are vague; signals the templated 'now insert a stats block' move common in generated reports.
 [low   ] prose/phrase | youtube-script tell | don't forget to like and subscribe :: AI YouTube-script boilerplate closer.
 [low   ] prose/phrase | filler transition | Essentially / In essence :: Filler that promises distillation but precedes shallow restatement; AI uses it to sound like it's simplifying complexity it never established, a recognizable hollow-transition tell.
+[low   ] prose/phrase | meta-discourse register | For what it's worth :: AI's hedged-opinion frame; common in humans too but AI overuses it to soften.
 [low   ] prose/phrase | vocabulary spike | foster a sense of :: 'Foster' + abstract noun ('a sense of community/belonging') is a recurring AI collocation flagged on slop lists. The vague, warm institutional register marks generated text.
 [low   ] prose/phrase | rhetoric | From A to B (alliterative scope sweep) :: Sweeping 'from startups to enterprises, from novices to experts' ranges are a model device to imply total coverage; the formulaic 'from X to Y' pairs read as generated breadth-padding.
 [low   ] prose/phrase | engagement-bait tell | Fun fact: :: AI trivia-framing tic.
 [low   ] prose/phrase | hedging transition | Generally speaking :: A vagueness-hedge AI prepends to avoid committing; it pairs with 'in many cases' and 'depending on the context' as a hedging cluster that signals the model dodging specificity.
 [low   ] prose/phrase | engagement-bait tell | Hot take: :: AI opinion-framing tic.
+[low   ] prose/phrase | meta-discourse register | I'd suggest :: Softened AI rec; common but AI-leaning in formal contexts.
 [low   ] prose/phrase | pi tell | I'm here for you :: Companion-bot validation phrase.
 [low   ] prose/phrase | distillation transition | In essence, it's about :: Promises a profound distillation then delivers a platitude; the 'in essence... it's about [abstract noun]' template is a recognizable AI move to sound deep cheaply.
+[low   ] prose/phrase | meta-discourse register | in order to :: AI's padded infinitive; a human just writes 'to'.
 [low   ] prose/phrase | perspective transition | In the grand scheme of things :: Filler perspective-framing AI inserts to sound reflective even on non-grand topics; the mismatch between the lofty frame and trivial subject flags machine padding.
 [low   ] prose/phrase | hedge/transition | it goes without saying :: Self-negating AI hedge.
 [low   ] prose/phrase | recommendation transition | Look no further than :: A salesy stock recommendation-frame AI uses to make any pick sound definitive; the canned superlative setup marks generated marketing copy.
@@ -20440,6 +20468,8 @@ format: [severity] domain/type | category | TERM :: why
 [low   ] prose/phrase | engagement-bait tell | Spoiler alert: :: AI reveal-framing tic.
 [low   ] prose/phrase | transition | That being said / With that said :: A mechanical pivot connector that models over-deploy to stage a balanced counterpoint; its frequency and predictability mark automated argument construction.
 [low   ] prose/phrase | fiction tell | the architect :: Portentous AI title.
+[low   ] prose/phrase | meta-discourse register | The bad news is :: Paired AI pivot with 'the good news is'.
+[low   ] prose/phrase | meta-discourse register | The good news is :: AI's balanced good/bad frame; overused as an upbeat pivot.
 [low   ] prose/phrase | scene-setting cliche | the world of :: AI padding construct ('the world of marketing/finance') that inflates a plain field name into a vista; a low-content phrase used to ease into topics.
 [low   ] prose/phrase | setup transition | This is where X comes in :: A problem-then-solution pivot AI relies on to introduce its recommended thing; the predictable 'enter the hero' scaffolding recurs across generated explainers.
 [low   ] prose/phrase | claude prose tell | to be clear :: Claude clarification tic (elevated rate vs human).
@@ -20543,9 +20573,13 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] prose/template | assistant voice leak | Here is the revised / rewritten version :: Editing-handoff preamble the model prepends when returning a rewrite. If it appears in a finished piece, the author pasted the assistant's wrapper along with the content.
 [high  ] prose/template | assistant voice leak | knowledge-cutoff self-reference :: The model narrating its own training boundary ('as of my last knowledge update', 'my training data goes up to ...'). A human author has no knowledge cutoff; this is an unedited assistant voice leaking through.
 [high  ] prose/template | assistant voice leak | no real-time / cannot browse disclaimer :: Assistant hedge about lacking live data or web access. Never something a human writer says about their own article; a direct leak of the chatbot persona.
+[high  ] prose/template | meta-discourse register | one/a caveat: framing :: Any 'caveat' framing is a strong AI meta-discourse tell; a casual human rarely labels a caveat as such.
 [high  ] prose/template | platform tell: perplexity | Perplexity: 'According to a [year] report by' :: Perplexity's formulaic citation attribution.
 [high  ] prose/template | platform tell: perplexity | Perplexity: 'based on the search results / available information' :: Perplexity/RAG answer-opener.
+[high  ] prose/template | meta-discourse register | please do not hesitate to :: Boilerplate customer-service AI closer; a human says 'just ask' or 'lmk'.
+[high  ] prose/template | meta-discourse register | should you have any questions :: Ultra-formal AI service register; a human says 'any questions, ask'.
 [high  ] prose/template | prose structure | triadic negation 'No X. No Y. Just Z.' :: Punchy negative-parallelism the model loves for taglines.
+[high  ] prose/template | meta-discourse register | you raise a good/important point :: Sycophantic assistant acknowledgment; a human says 'true' or 'fair'.
 [medium] prose/template | fiction tell | 'a mixture/mix of [x] and [y]' :: AI's default way to describe an expression/emotion.
 [medium] prose/template | casual template | 'And honestly? X' beat :: Faux-candid pivot both Claude and 4o over-use in casual register.
 [medium] prose/template | pivot template | 'Enter: X' dramatic introduction :: AI product/character introduction beat.
@@ -20564,6 +20598,8 @@ format: [severity] domain/type | category | TERM :: why
 [medium] prose/template | marketing | game-changer / game-changing :: Inflated novelty claim.
 [medium] prose/template | prose structure | present-participle opener ('Standing there, she…') :: '-ing …, she' sentence opener used as a default cadence.
 [medium] prose/template | prose structure | summarizing present-participle tail :: Wikipedia's 'present participle endings' tell: the real clause is followed by a floating '-ing' summary that editorializes its own significance ('..., underscoring the importance of ...'). A hallmark of generated wrap-up prose.
+[medium] prose/template | meta-discourse register | there are a few things :: AI's list-preamble; a human just lists them or says 'a couple things'.
+[medium] prose/template | meta-discourse register | this raises the question :: AI's rhetorical pivot; a human just asks the question.
 [low   ] prose/template | pivot template | 'Cue the X' :: AI staged-reaction beat.
 [low   ] prose/template | prose structure | 'from X to Y,' merism opener :: Sweeping 'from A to B' range-claim that sounds comprehensive while saying little.
 [low   ] prose/template | filler template | 'the world of X' filler :: 'in the world of X' scope-filler AI over-uses.
