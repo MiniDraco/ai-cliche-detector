@@ -1,4 +1,4 @@
-AI-CLICHE DETECTION DB  -  20681 entries
+AI-CLICHE DETECTION DB  -  20707 entries
 format: [severity] domain/type | category | TERM :: why
 ==============================================================================
 
@@ -14497,11 +14497,15 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/template | fake credentials | As someone who [credentials], I can confirm :: AI fabricates lived-experience authority via a fill-in-the-blank credential claim.
 [high  ] both/template | metal | blood / fire / death keyword cluster :: Most common three-word cluster co-occurring in AI death metal lyrics.
 [high  ] both/template | formatting | bold-first bullets :: Every list item begins with a bolded lead-in phrase followed by a colon; heavy Claude/ChatGPT markdown habit, rare in hand-written lists.
+[high  ] both/template | typography / typing habit | bracketed placeholder left in (e.g. [Name], [insert]) :: A template placeholder the author forgot to fill — proof the text came from an AI/template, not hand-written.
 [high  ] both/template | fire/burning imagery cluster | burning [bridges/desire/fire/passion] :: Fire imagery cluster overrepresented in AI lyric training data as a default metaphor.
 [high  ] both/template | paste artifact | ChatGPT turn0search / turn0news citation token :: Internal source IDs (turn0search1, turn0news5) that ChatGPT's browsing tool emits around citations. They are meaningless to a reader and only appear when raw browsing output is pasted verbatim.
+[high  ] both/template | typography / typing habit | checkmark / cross glyphs (✓ ✔ ✅ ❌) :: Check/cross emoji-glyphs in text are an AI list/formatting habit; humans rarely type them inline.
 [high  ] both/template | structural-pattern | Collaborated with [X] to [enhance/improve/optimize] [Y] :: Rigid AI resume-bullet template with a vague verb and no metrics; recurs verbatim across AI-generated resumes.
 [high  ] both/template | engagement-bait-prompt | Comment X to receive Y :: Explicit transaction engagement-bait pattern heavily produced by AI social copy; distinctive templated CTA.
 [high  ] both/template | paste artifact | contentReference[oaicite] citation artifact :: ChatGPT web-search leaves a 'contentReference[oaicite:N]{index=N}' citation stub in its answer; if it survives into pasted text it is near-proof the passage was copied straight out of ChatGPT unedited.
+[high  ] both/template | typography / typing habit | curly apostrophe / single quotes (‘ ’, U+2018/9) :: Smart apostrophes/single quotes ('don\u2019t') come from AI/word-processors; a raw typist types the straight apostrophe. Strong tell in lyrics and chat.
+[high  ] both/template | typography / typing habit | curly double quotes (“ ”, U+201C/D) :: Smart/curly double quotes appear in AI and word-processor output; a human typing raw types straight quotes ". A near-proof tell in a plain-text field like a lyric box.
 [high  ] both/template | opener | Dans le paysage [X] de :: Formulaic French 'In the [X] landscape of' framing device with placeholder; signature AI introduction.
 [high  ] both/template | overused modifier | endless [night/road/way] :: AI repeatedly pairs 'endless' with time/journey nouns as a default intensifier.
 [high  ] both/template | structural-pattern | Executed effective [X] strategies to [enhance/optimize/improve] :: Rigid AI resume-bullet template with padded adjective and vague outcome; recurs across generated resumes.
@@ -14519,6 +14523,10 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/template | negation-contrast | It's not X, it's Y :: Contrastive binary structure LLMs default to for perceived sophistication; distinctive multiword shape, not a bare common word.
 [high  ] both/template | rhetorical-structure | it's not X, it's Y / not just X but Y :: Antithesis contrast frame that manufactures false profundity; measurably frequent in ChatGPT output.
 [high  ] both/template | narrative-cliche | little did (he|she|they) know :: Formulaic AI foreshadowing device signaling low-effort plotting; a strong narrative tell.
+[high  ] both/template | typography / typing habit | markdown bold in body text (**text**) :: Double-asterisk bold is markdown; if it appears in a finished piece or a plain-text field the author pasted AI output without cleaning the formatting.
+[high  ] both/template | typography / typing habit | markdown bold lead-in with colon (**Word:**) :: AI's signature bolded-term-then-colon list item; a strong structural + typography tell.
+[high  ] both/template | typography / typing habit | markdown header hashes (## Heading) :: Leading # header syntax in body text or a lyric field is un-rendered markdown pasted straight from AI.
+[high  ] both/template | typography / typing habit | markdown horizontal rule (--- / ***) :: A markdown horizontal-rule line is un-rendered AI formatting pasted verbatim.
 [high  ] both/template | hedging | may help support / could reduce [benefit] :: Conditional causation construction; asserts a claim while retaining plausible deniability via may/could hedging. Very characteristic of AI health/wellness copy.
 [high  ] both/template | general-occasion | may your [noun] be filled with [adjective/noun] :: Mad-lib greeting formula AI defaults to across occasions; the interchangeable slots are the tell.
 [high  ] both/template | signature metaphor | naviguer dans [X] :: AI-favored corporate 'navigate' metaphor used in place of a simpler verb, calqued from English
@@ -14527,6 +14535,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/template | structure | No es X, es Y :: Spanish antithetical 'not X, but Y' contrast frame overused by AI to manufacture false dichotomies.
 [high  ] both/template | triple-negation-opener | No X. No Y. Just Z. :: The staccato triple 'No X. No Y. Just Z.' opener is a recognizable AI/LinkedIn hook pattern.
 [high  ] both/template | formulaic_structures | non solo X, ma anche Y :: Stereotyped 'not only X, but also Y' construction overused by AI for artificial binary contrasts in Italian
+[high  ] both/template | typography / typing habit | non-breaking space (U+00A0) :: A non-breaking space is invisible but only appears in copied HTML / AI output — a human keyboard produces a normal space. Near-proof of paste.
 [high  ] both/template | mad-lib-contrast | Not just X but Y :: The 'not just X, but Y' escalation is a strong AI stylistic tell.
 [high  ] both/template | sentence-structure | not X, but Y :: AI's signature binary-contrast rhetorical structure; over-detected by anti-slop samplers as a hallmark of generated text.
 [high  ] both/template | formulaic_structures | questo non è X, è Y :: Repetitive 'this is not X, it is Y' correction/negation-parallelism formula characteristic of AI Italian
@@ -14550,6 +14559,7 @@ format: [severity] domain/type | category | TERM :: why
 [high  ] both/template | mad-lib emphasis | X is not just A, but B :: The 'not just A but B' escalation template is one of the strongest AI-writing tells.
 [high  ] both/template | clichéd love-song formula | you light up my [world/heart/night] :: Near-verbatim training-data love-song formula appearing with identical structure across AI songs.
 [high  ] both/template | Russian parallelism | Не просто X, а Y :: Russian negative-parallelism formula ('not just a tool, but a partner'); the direct RU analogue of the English 'not just X, it's Y' AI tell, and equally formulaic.
+[high  ] both/template | typography / typing habit | … (ellipsis character, U+2026) :: AI/word-processor output uses the single ellipsis glyph; a human typing in a plain field types three periods '...'. Strong tell in lyrics or chat.
 [high  ] both/template | enumeration pattern | ステップ1、ステップ2 :: Repetitive explicit numbered-step scaffolding; AI defaults to formulaic step-by-step frameworks lacking natural narrative flow.
 [high  ] both/template | boilerplate phrase | 近年来...引起广泛关注 :: Cliché academic-intro opener ('in recent years... has attracted wide attention') signaling AI-generated introductions.
 [medium] both/template | news journalism census | $0.25/min :: Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
@@ -14804,6 +14814,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | email copywriting census | Around $69/month :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
 [medium] both/template | email copywriting census | Around $9.99/month :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
 [medium] both/template | email copywriting census | Around $99/month :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
+[medium] both/template | typography / typing habit | arrow glyph (→ ← ⇒) :: AI uses arrow glyphs ('X → Y') where a human types '->' or writes it out. A typography tell.
 [medium] both/template | news journalism census | Articles checked/hr :: Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 [medium] both/template | news journalism census | Articles produced per reporter/day :: Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 [medium] both/template | recipe census | Articulates problems from 80/20 PDFs and generates solutions :: Overused AI term catalogued from the 'recipe' census sweep (source count 1).
@@ -14853,6 +14864,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | mystery thriller census | Brown/sepia: historical mystery, aged evidence :: Overused AI term catalogued from the 'mystery thriller' census sweep (source count 1).
 [medium] both/template | email copywriting census | Budget Shopify/Woo stores :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
 [medium] both/template | social media census | Buffer < 7 days (risky, one missed week = scramble) :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
+[medium] both/template | typography / typing habit | bullet glyph (•, U+2022) :: The bullet character in running text signals AI/markdown list output rather than hand-typed prose.
 [medium] both/template | social media census | Bundled with ChatGPT Plus / Google AI Pro :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | social media census | Burnout index > 5 (unsustainable, reduce frequency) :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | social media census | Business: $10/month per account (unlimited native AI) :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
@@ -15185,6 +15197,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | news journalism census | Impacted (2024/25) :: Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
 [medium] both/template | transition overuse | in light of / in view of / considering that :: AI overuses these introductory reasoning phrases at predictable intervals to signal analysis it doesn't actually perform.
 [medium] both/template | social media census | Included on every paid plan from $29/mo :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
+[medium] both/template | typography / typing habit | inline code backticks (`code`) :: Backtick inline-code markdown surviving into prose/lyrics signals pasted AI/markdown output.
 [medium] both/template | social media census | Instagram: 3-5 posts/week + daily Stories :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | fitness wellness census | Installed base/usage volumes :: Overused AI term catalogued from the 'fitness wellness' census sweep (source count 1).
 [medium] both/template | real estate census | Intended use: [personal, investment, blended] :: Overused AI term catalogued from the 'real estate' census sweep (source count 1).
@@ -15276,6 +15289,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | contrarian-hook | Most people think it's X. It's actually Y :: 'Most people think X, it's actually Y' is a stock AI/social contrarian hook.
 [medium] both/template | romance fiction census | Mountain / Cabin Romance :: Overused AI term catalogued from the 'romance fiction' census sweep (source count 1).
 [medium] both/template | scifi horror census | MU/TH/UR (Mother) :: Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
+[medium] both/template | typography / typing habit | multiplication sign in dimensions (×) :: AI writes dimensions with the true multiplication sign ('1920×1080'); a human types the letter 'x'.
 [medium] both/template | real estate census | My "Listing Brief → Draft → Audit" prompt template (copy/paste) :: Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 [medium] both/template | social media census | My [tool/process] stack for [outcome] :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | news journalism census | N/A :: Overused AI term catalogued from the 'news journalism' census sweep (source count 1).
@@ -15370,6 +15384,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | email copywriting census | Pricing: Lite from $11/mo, Essentials from $19/mo :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
 [medium] both/template | email copywriting census | Pricing: Lite from $12/mo, Standard from $35/mo :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
 [medium] both/template | email copywriting census | Pricing: Starter from $29/mo (1k contacts), Plus from $49/mo :: Overused AI term catalogued from the 'email copywriting' census sweep (source count 1).
+[medium] both/template | typography / typing habit | primes / smart quotes for feet-inches (′ ″) :: AI uses prime glyphs for measurements where a typist uses straight ' and ".
 [medium] both/template | real estate census | Private retreat: primary suite/bath :: Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 [medium] both/template | social media census | Pro: $100/mo or $200/mo — GPT-5.5 Pro, unlimited usage :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | social media census | Pro: $12/mo — more AI credits, premium templates :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
@@ -15671,6 +15686,8 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | social media census | ~/.config/zed/settings.json :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | social media census | ~/.cursor/mcp.json :: Overused AI term catalogued from the 'social media' census sweep (source count 1).
 [medium] both/template | corporate buzzword | écosystème de [X] :: Overused AI substitute for 'système' or 'ensemble'; corporate-speak calque
+[medium] both/template | typography / typing habit | – (en dash, U+2013) :: AI uses a proper en dash for ranges ('2020–2024'); a human typist types a hyphen. Its presence signals generated/pasted text.
+[medium] both/template | typography / typing habit | — (em dash, U+2014) :: AI reaches for the true em dash far more than a human typist, who types '-' or '--'. Em dash present in a plain-text field (lyrics box, comment) is a typography tell.
 [medium] both/template | legal medical census | • EU/GDPR international requirements :: Overused AI term catalogued from the 'legal medical' census sweep (source count 3).
 [medium] both/template | real estate census | • Number of beds/baths :: Overused AI term catalogued from the 'real estate' census sweep (source count 1).
 [medium] both/template | legal medical census | • Replace with generic placeholders ([CLIENT NAME], [DATE]) :: Overused AI term catalogued from the 'legal medical' census sweep (source count 3).
@@ -15681,6 +15698,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/template | scifi horror census | ↑ Attributed to multiple references:[34][38][58][59][60] :: Overused AI term catalogued from the 'scifi horror' census sweep (source count 1).
 [low   ] both/template | structure | present participle sentence-ending phrases :: Documented GPT stylistic tic: tacking an '-ing' clause onto sentence ends to editorialize.
 [low   ] both/template | sentence_structure | serves as, features, boasts :: AI tends to avoid the plain copula 'is' in favor of these inflated linking verbs; a documented lexical tell.
+[low   ] both/template | typography / typing habit | trademark/copyright glyphs inline (™ ® ©) :: Inline ™/®/© in casual text is a copy-paste / AI formatting habit rather than hand typing.
 [high  ] both/trope | vocal realism gap | absent breath sounds between phrases :: Real singers audibly breathe; AI vocals frequently lack any breath, gulp, or intake between phrases.
 [high  ] both/trope | theme | all-uplift motivational verse (no scene) :: Whole verses of 'believe in yourself / never give up / chase your dreams / stay strong' reflect the RLHF positivity bias; rap thrives on conflict, specificity, and edge, so a relentlessly wholesome motivational verse with no concrete image strongly indicates generated text.
 [high  ] both/trope | vulnerability/connection | breaking down the walls I built :: Emotional guardedness is almost always rendered by AI as a literal wall to be torn down; the architectural metaphor is the path of least resistance for 'opening up.'
@@ -15744,6 +15762,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/trope | research | cluster of 5-star reviews with formulaic language :: Bursts of top-rated reviews sharing formulaic phrasing signal coordinated AI generation.
 [medium] both/trope | grief | drowning in my sorrows / tears :: AI literalizes sadness as drowning so reflexively that 'drowning in tears/sorrow' is the default grief image, devoid of any specific cause.
 [medium] both/trope | claude-signature | em-dash chains (2+ per sentence) :: Claude structurally overuses em dashes; multiple dashes stacked in a single sentence/paragraph forms a statistical fingerprint above human baseline.
+[medium] both/trope | typography / typing habit | emoji as section bullets or headers :: AI decorates lists/sections with a leading emoji per item ('🚀 Fast', '💡 Smart') — a formatting habit rare in hand-typed prose.
 [medium] both/trope | over-rhyming | every line ends on a rhyme :: AI defaults to rhyming every line-end, producing mechanical, predictable structure that lacks narrative flow.
 [medium] both/trope | artificial closure | every thread resolves perfectly with no loose ends :: AI defaults to over-tidy resolutions where every question is answered, making plots feel mechanical.
 [medium] both/trope | narrative tell | Everyone Is the Same Person :: Named AI-fiction tell where every character speaks in the same voice.
@@ -15768,6 +15787,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/trope | completeness trope | missing piece / completes me :: The 'you complete me' template; AI gravitates to it because it's the canonical way to express need, making the sentiment feel borrowed rather than felt.
 [medium] both/trope | research | missing specific product details :: AI reviews avoid naming concrete features, dimensions, or materials it has no experience of.
 [medium] both/trope | anti-patterns | Mutable default arguments (items=[]) :: AI reproduces the classic Python mutable-default footgun that experienced devs avoid; concrete and checkable anti-pattern.
+[medium] both/trope | typography / typing habit | no typos, doubled letters, or keyboard slips :: AI text is free of the transpositions, doubled letters, missed spaces and autocorrect artifacts a human typist produces over any real length. Flawlessness itself is a soft tell.
 [medium] both/trope | anti-patterns | Over-defensive nested guards for no real reason :: AI stacks redundant null/length/isinstance checks (if items is not None: if len>0: if items[0] is not None) where one guard suffices; distinctive over-cautious nesting.
 [medium] both/trope | rebirth | phoenix rebirth trope :: Whenever a prompt mentions recovery or comeback, AI reaches for the phoenix/ashes myth. It's an overdetermined symbol doing the emotional lifting, which marks the writing as borrowed rather than felt.
 [medium] both/trope | triumph | phoenix/wings/soar comeback imagery :: The model's default comeback imagery is flight — phoenix from ashes, spreading wings, learning to fly, soaring above. 'Soar' and 'rise' topped Suno cliché lists; clustering flight metaphors for any success story is borrowed grandeur with no grounded detail.
@@ -15776,6 +15796,7 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/trope | structure | rule-of-three tricolon lists :: AI defaults to three-part parallel lists ('body, mind, and spirit'); frequent but also common in human rhetoric, so a supporting tell.
 [medium] both/trope | passion | setting my soul on fire / heart ablaze :: Passion-as-literal-fire is an over-default; 'soul on fire / heart ablaze' is reached for whenever intensity is needed, with no specific spark depicted.
 [medium] both/trope | narrative-structure | spelling out the moral :: AI stories disproportionately end by stating the lesson explicitly rather than trusting the reader; measurable structural tell.
+[medium] both/trope | typography / typing habit | straight apostrophe auto-converted in contractions :: Contractions render with the curly apostrophe (don\u2019t, it\u2019s) rather than the straight one a raw typist produces.
 [medium] both/trope | multilingual vocabulary pattern | Synonym carousel :: AI rotates near-synonyms (компания/организация/предприятие; company/organization/enterprise) to dodge repetition, producing unnatural referential drift a human wouldn't use for the same entity.
 [medium] both/trope | determination | the fire inside / flame that won't die out :: An inner 'fire/flame that never dies' is AI's reflexive symbol for unkillable determination; the elemental image substitutes for showing actual persistence.
 [medium] both/trope | framing metaphor | the journey / this journey :: The model frames any topic as 'a journey'; this default narrative scaffold ('it's not the destination, it's the journey') is an over-used framing tell across prose and lyrics.
@@ -15796,15 +15817,20 @@ format: [severity] domain/type | category | TERM :: why
 [medium] both/trope | punctuation-abuse | парцелляция :: Excessive sentence fragmentation for emphasis. Like. This. A structural rhythm tell in LLM Russian text
 [low   ] both/trope | theme | American-flag / red-white-and-blue patriotism tag :: AI bolts on flag/freedom imagery to certify mainstream country identity. It arrives as a decorative value-signal divorced from any story, the same way 'God, family, country' does, and clusters with 'small town' and 'mama.'
 [low   ] both/trope | individuality | breaking the mold :: AI's default nonconformity idiom; 'break the mold' asserts uniqueness via a worn phrase, ironically proving the lyric's conformity to pattern.
+[low   ] both/trope | typography / typing habit | exactly one space after every period :: AI never double-spaces after periods and never leaves a stray double space; spacing is machine-perfect.
 [low   ] both/trope | tonal tell | Excessive enthusiasm :: Named AI tell describing unwarranted upbeat tone throughout a piece.
 [low   ] both/trope | structure | higher sentence-length variance :: A real characterization of Claude prose rhythm; genuine and specific though subtle.
 [low   ] both/trope | tone | HR-friendly over-warm tone :: Documented tonal mismatch: corporate-cheerful warmth inappropriate to formal context. Recognizable ChatGPT register.
+[low   ] both/trope | typography / typing habit | internally consistent straight-OR-curly quotes (never mixed) :: AI is perfectly consistent (all curly or all straight); humans mix straight and curly quotes within one text, especially when editing.
 [low   ] both/trope | prose_style | lists of three :: Formulaic tricolon description (three stacked adjectives or clauses) is a documented AI rhythm tell; kept but low severity since single instances are natural.
 [low   ] both/trope | self-expression | painting the sky with my colors / true colors :: AI's stock self-expression image conflates identity with 'colors'; 'show my true colors' / 'paint the sky' is generic individuality-signaling.
+[low   ] both/trope | typography / typing habit | perfect capitalization and terminal punctuation :: Every sentence starts capitalized and ends with punctuation; no lowercase-i, no missing end marks a casual typist leaves.
 [low   ] both/trope | register/structure | perfect grammar with no contractions :: AI tends to avoid contractions and fragments, producing uniformly formal prose where humans vary register.
 [low   ] both/trope | optimism | silver lining in the clouds :: A proverb-cliché AI deploys for forced optimism; quoting the idiom whole replaces any specific reason for hope.
 [low   ] both/trope | perseverance | the journey of a thousand miles :: A proverb AI quotes whole to frame effort; importing the famous maxim signals reliance on stored aphorisms rather than depicting the actual path.
 [low   ] both/trope | formatting | thematic breaks before headings :: Decorative horizontal rules (---) inserted before section headings unnecessarily; a specific markdown-generation quirk against standard conventions.
+[low   ] both/trope | typography / typing habit | Title Case Headings :: AI capitalizes headings in Title Case ('How To Get Started'); casual human writing uses sentence case or lowercase.
+[low   ] both/trope | typography / typing habit | uniform double-newline paragraph spacing :: AI separates every paragraph with an identical blank line; human drafts have irregular spacing.
 [high  ] both/word | model-distinctive slop | aaker :: Statistically over-represented in mistral-nemo output vs human baseline (slop-forensics profile, score 759; appears in 1/44 model top-lists).
 [high  ] both/word | antislop (open-model slop) | aback :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.089). Open-model slop that distills into most fine-tunes/wrappers.
 [high  ] both/word | antislop (open-model slop) | abernathy :: Over-represented in LLM output vs human writing (EQ-Bench antislop list, suppression 0.076). Open-model slop that distills into most fine-tunes/wrappers.

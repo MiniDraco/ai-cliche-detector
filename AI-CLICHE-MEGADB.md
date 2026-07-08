@@ -1,11 +1,11 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**20681 unique entries** (deduped from 21146 raw findings by a 26-agent research sweep).
+**20707 unique entries** (deduped from 21172 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 3976 | structure: 128 | trope: 213 | phrase: 13858 | template: 1266 | opener: 1075 | closer: 77 | rhyme_pair: 170
+**By type:** word: 3976 | structure: 128 | trope: 221 | phrase: 13858 | template: 1284 | opener: 1075 | closer: 77 | rhyme_pair: 170
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
@@ -1504,7 +1504,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **tears fall like rain** _(phrase)_ — Stock simile combining two model crutches (tears + rain). The pat weather-equals-sadness metaphor flags formulaic emotional writing.
 
-# DOMAIN: BOTH  (19602)
+# DOMAIN: BOTH  (19628)
 
 ## abstract metaphor  (1)
 
@@ -23304,6 +23304,35 @@ except Exception as e:
 ## twee nature pairing  (1)
 
 - 🔴 **rivers and pines** _(phrase)_ — A high-probability noun-pair the model reaches for as generic 'wilderness'; rivers and pines almost never co-occur in a lived, specific landscape the way they do in AI output.  _e.g._ "Through the rivers and the pines"
+
+## typography / typing habit  (26)
+
+- 🔴 **… (ellipsis character, U+2026)** _(template)_ — AI/word-processor output uses the single ellipsis glyph; a human typing in a plain field types three periods '...'. Strong tell in lyrics or chat.  _e.g._ "waiting in the dark…"
+- 🔴 **bracketed placeholder left in (e.g. [Name], [insert])** _(template)_ — A template placeholder the author forgot to fill — proof the text came from an AI/template, not hand-written.  _e.g._ "Dear [Name], thank you for [insert reason]"
+- 🔴 **checkmark / cross glyphs (✓ ✔ ✅ ❌)** _(template)_ — Check/cross emoji-glyphs in text are an AI list/formatting habit; humans rarely type them inline.  _e.g._ "\u2705 done  \u274C skipped"
+- 🔴 **curly apostrophe / single quotes (‘ ’, U+2018/9)** _(template)_ — Smart apostrophes/single quotes ('don\u2019t') come from AI/word-processors; a raw typist types the straight apostrophe. Strong tell in lyrics and chat.  _e.g._ "don\u2019t look back"
+- 🔴 **curly double quotes (“ ”, U+201C/D)** _(template)_ — Smart/curly double quotes appear in AI and word-processor output; a human typing raw types straight quotes ". A near-proof tell in a plain-text field like a lyric box.  _e.g._ "he said \u201cnever again\u201d"
+- 🔴 **markdown bold in body text (**text**)** _(template)_ — Double-asterisk bold is markdown; if it appears in a finished piece or a plain-text field the author pasted AI output without cleaning the formatting.  _e.g._ "This is **really** important"
+- 🔴 **markdown bold lead-in with colon (**Word:**)** _(template)_ — AI's signature bolded-term-then-colon list item; a strong structural + typography tell.  _e.g._ "**Pros:** cheaper and faster"
+- 🔴 **markdown header hashes (## Heading)** _(template)_ — Leading # header syntax in body text or a lyric field is un-rendered markdown pasted straight from AI.  _e.g._ "## Key Takeaways"
+- 🔴 **markdown horizontal rule (--- / ***)** _(template)_ — A markdown horizontal-rule line is un-rendered AI formatting pasted verbatim.  _e.g._ "---"
+- 🔴 **non-breaking space (U+00A0)** _(template)_ — A non-breaking space is invisible but only appears in copied HTML / AI output — a human keyboard produces a normal space. Near-proof of paste.  _e.g._ "10\u00A0kg"
+- 🟠 **— (em dash, U+2014)** _(template)_ — AI reaches for the true em dash far more than a human typist, who types '-' or '--'. Em dash present in a plain-text field (lyrics box, comment) is a typography tell.  _e.g._ "I wanted to stay — but the road called"
+- 🟠 **– (en dash, U+2013)** _(template)_ — AI uses a proper en dash for ranges ('2020–2024'); a human typist types a hyphen. Its presence signals generated/pasted text.  _e.g._ "the 2019–2023 era"
+- 🟠 **arrow glyph (→ ← ⇒)** _(template)_ — AI uses arrow glyphs ('X → Y') where a human types '->' or writes it out. A typography tell.  _e.g._ "input → output"
+- 🟠 **bullet glyph (•, U+2022)** _(template)_ — The bullet character in running text signals AI/markdown list output rather than hand-typed prose.  _e.g._ "• first point"
+- 🟠 **emoji as section bullets or headers** _(trope)_ — AI decorates lists/sections with a leading emoji per item ('🚀 Fast', '💡 Smart') — a formatting habit rare in hand-typed prose.  _e.g._ "🚀 Speed  💡 Ideas  🔒 Security"
+- 🟠 **inline code backticks (`code`)** _(template)_ — Backtick inline-code markdown surviving into prose/lyrics signals pasted AI/markdown output.  _e.g._ "run `npm install` first"
+- 🟠 **multiplication sign in dimensions (×)** _(template)_ — AI writes dimensions with the true multiplication sign ('1920×1080'); a human types the letter 'x'.  _e.g._ "1920×1080"
+- 🟠 **no typos, doubled letters, or keyboard slips** _(trope)_ — AI text is free of the transpositions, doubled letters, missed spaces and autocorrect artifacts a human typist produces over any real length. Flawlessness itself is a soft tell.  _e.g._ "A 300-word passage with zero typos, homophone errors, or stray keystrokes."
+- 🟠 **primes / smart quotes for feet-inches (′ ″)** _(template)_ — AI uses prime glyphs for measurements where a typist uses straight ' and ".  _e.g._ "6\u2032\u2033 tall"
+- 🟠 **straight apostrophe auto-converted in contractions** _(trope)_ — Contractions render with the curly apostrophe (don\u2019t, it\u2019s) rather than the straight one a raw typist produces.  _e.g._ "can\u2019t, won\u2019t, they\u2019re — all curly"
+- 🟡 **exactly one space after every period** _(trope)_ — AI never double-spaces after periods and never leaves a stray double space; spacing is machine-perfect.  _e.g._ "Uniform single spacing after every sentence, no exceptions."
+- 🟡 **internally consistent straight-OR-curly quotes (never mixed)** _(trope)_ — AI is perfectly consistent (all curly or all straight); humans mix straight and curly quotes within one text, especially when editing.  _e.g._ "Every quote in the piece is curly; not one straight quote slipped in."
+- 🟡 **perfect capitalization and terminal punctuation** _(trope)_ — Every sentence starts capitalized and ends with punctuation; no lowercase-i, no missing end marks a casual typist leaves.  _e.g._ "No 'i' for 'I', every line properly capped and closed."
+- 🟡 **Title Case Headings** _(trope)_ — AI capitalizes headings in Title Case ('How To Get Started'); casual human writing uses sentence case or lowercase.  _e.g._ "How To Improve Your Writing"
+- 🟡 **trademark/copyright glyphs inline (™ ® ©)** _(template)_ — Inline ™/®/© in casual text is a copy-paste / AI formatting habit rather than hand typing.  _e.g._ "BrandName\u2122 is great"
+- 🟡 **uniform double-newline paragraph spacing** _(trope)_ — AI separates every paragraph with an identical blank line; human drafts have irregular spacing.  _e.g._ "Every paragraph separated by exactly one blank line throughout."
 
 ## uncertainty marker  (1)
 

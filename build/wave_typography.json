@@ -1,0 +1,380 @@
+{
+ "result": {
+  "entries": [
+   {
+    "term": "… (ellipsis character, U+2026)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI/word-processor output uses the single ellipsis glyph; a human typing in a plain field types three periods '...'. Strong tell in lyrics or chat.",
+    "example": "waiting in the dark…",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "…",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "— (em dash, U+2014)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI reaches for the true em dash far more than a human typist, who types '-' or '--'. Em dash present in a plain-text field (lyrics box, comment) is a typography tell.",
+    "example": "I wanted to stay — but the road called",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "—",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "– (en dash, U+2013)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI uses a proper en dash for ranges ('2020–2024'); a human typist types a hyphen. Its presence signals generated/pasted text.",
+    "example": "the 2019–2023 era",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "–",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "curly double quotes (“ ”, U+201C/D)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Smart/curly double quotes appear in AI and word-processor output; a human typing raw types straight quotes \". A near-proof tell in a plain-text field like a lyric box.",
+    "example": "he said \\u201cnever again\\u201d",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "[\\u201C\\u201D]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "curly apostrophe / single quotes (‘ ’, U+2018/9)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Smart apostrophes/single quotes ('don\\u2019t') come from AI/word-processors; a raw typist types the straight apostrophe. Strong tell in lyrics and chat.",
+    "example": "don\\u2019t look back",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "[\\u2018\\u2019]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "non-breaking space (U+00A0)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "A non-breaking space is invisible but only appears in copied HTML / AI output — a human keyboard produces a normal space. Near-proof of paste.",
+    "example": "10\\u00A0kg",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\u00A0",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "bullet glyph (•, U+2022)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "The bullet character in running text signals AI/markdown list output rather than hand-typed prose.",
+    "example": "• first point",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "•",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "arrow glyph (→ ← ⇒)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI uses arrow glyphs ('X → Y') where a human types '->' or writes it out. A typography tell.",
+    "example": "input → output",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "[\\u2190\\u2192\\u2194\\u21D2\\u21D0]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "checkmark / cross glyphs (✓ ✔ ✅ ❌)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Check/cross emoji-glyphs in text are an AI list/formatting habit; humans rarely type them inline.",
+    "example": "\\u2705 done  \\u274C skipped",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "[\\u2713\\u2714\\u2705\\u274C\\u2717]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "multiplication sign in dimensions (×)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI writes dimensions with the true multiplication sign ('1920×1080'); a human types the letter 'x'.",
+    "example": "1920×1080",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\d\\s*×\\s*\\d",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "primes / smart quotes for feet-inches (′ ″)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI uses prime glyphs for measurements where a typist uses straight ' and \".",
+    "example": "6\\u2032\\u2033 tall",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "[\\u2032\\u2033]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "trademark/copyright glyphs inline (™ ® ©)",
+    "type": "template",
+    "severity": "low",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Inline ™/®/© in casual text is a copy-paste / AI formatting habit rather than hand typing.",
+    "example": "BrandName\\u2122 is great",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "[\\u2122\\u00AE\\u00A9]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "markdown bold in body text (**text**)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Double-asterisk bold is markdown; if it appears in a finished piece or a plain-text field the author pasted AI output without cleaning the formatting.",
+    "example": "This is **really** important",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\*\\*[^*\\n]{1,60}\\*\\*",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "markdown bold lead-in with colon (**Word:**)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI's signature bolded-term-then-colon list item; a strong structural + typography tell.",
+    "example": "**Pros:** cheaper and faster",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\*\\*[^*\\n]{1,40}:\\*\\*",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "markdown header hashes (## Heading)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Leading # header syntax in body text or a lyric field is un-rendered markdown pasted straight from AI.",
+    "example": "## Key Takeaways",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "^#{1,6}\\s+\\S",
+    "flags": "gim",
+    "source": "typography-curated"
+   },
+   {
+    "term": "inline code backticks (`code`)",
+    "type": "template",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Backtick inline-code markdown surviving into prose/lyrics signals pasted AI/markdown output.",
+    "example": "run `npm install` first",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "`[^`\\n]{1,40}`",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "markdown horizontal rule (--- / ***)",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "A markdown horizontal-rule line is un-rendered AI formatting pasted verbatim.",
+    "example": "---",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "^\\s*(?:---|\\*\\*\\*|___)\\s*$",
+    "flags": "gim",
+    "source": "typography-curated"
+   },
+   {
+    "term": "bracketed placeholder left in (e.g. [Name], [insert])",
+    "type": "template",
+    "severity": "high",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "A template placeholder the author forgot to fill — proof the text came from an AI/template, not hand-written.",
+    "example": "Dear [Name], thank you for [insert reason]",
+    "platforms": [
+     "general"
+    ],
+    "pattern": "\\[(?:name|insert[^\\]]*|your [^\\]]*|company|date|topic|x)\\]",
+    "flags": "gi",
+    "source": "typography-curated"
+   },
+   {
+    "term": "no typos, doubled letters, or keyboard slips",
+    "type": "trope",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI text is free of the transpositions, doubled letters, missed spaces and autocorrect artifacts a human typist produces over any real length. Flawlessness itself is a soft tell.",
+    "example": "A 300-word passage with zero typos, homophone errors, or stray keystrokes.",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "internally consistent straight-OR-curly quotes (never mixed)",
+    "type": "trope",
+    "severity": "low",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI is perfectly consistent (all curly or all straight); humans mix straight and curly quotes within one text, especially when editing.",
+    "example": "Every quote in the piece is curly; not one straight quote slipped in.",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "exactly one space after every period",
+    "type": "trope",
+    "severity": "low",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI never double-spaces after periods and never leaves a stray double space; spacing is machine-perfect.",
+    "example": "Uniform single spacing after every sentence, no exceptions.",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "perfect capitalization and terminal punctuation",
+    "type": "trope",
+    "severity": "low",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Every sentence starts capitalized and ends with punctuation; no lowercase-i, no missing end marks a casual typist leaves.",
+    "example": "No 'i' for 'I', every line properly capped and closed.",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "Title Case Headings",
+    "type": "trope",
+    "severity": "low",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI capitalizes headings in Title Case ('How To Get Started'); casual human writing uses sentence case or lowercase.",
+    "example": "How To Improve Your Writing",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "emoji as section bullets or headers",
+    "type": "trope",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI decorates lists/sections with a leading emoji per item ('🚀 Fast', '💡 Smart') — a formatting habit rare in hand-typed prose.",
+    "example": "🚀 Speed  💡 Ideas  🔒 Security",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "uniform double-newline paragraph spacing",
+    "type": "trope",
+    "severity": "low",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "AI separates every paragraph with an identical blank line; human drafts have irregular spacing.",
+    "example": "Every paragraph separated by exactly one blank line throughout.",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   },
+   {
+    "term": "straight apostrophe auto-converted in contractions",
+    "type": "trope",
+    "severity": "medium",
+    "category": "typography / typing habit",
+    "domain": "both",
+    "why": "Contractions render with the curly apostrophe (don\\u2019t, it\\u2019s) rather than the straight one a raw typist produces.",
+    "example": "can\\u2019t, won\\u2019t, they\\u2019re — all curly",
+    "platforms": [
+     "general"
+    ],
+    "source": "typography-curated"
+   }
+  ]
+ }
+}
