@@ -1,11 +1,11 @@
 ﻿# THE AI CLICHE MEGA-DATABASE
 
-**20743 unique entries** (deduped from 21209 raw findings by a 26-agent research sweep).
+**22762 unique entries** (deduped from 23240 raw findings by a 26-agent research sweep).
 Every entry is a community-flagged "dead giveaway" of AI-generated text or lyrics across ChatGPT, Gemini, Suno, and Udio.
 
 Companion file: `AI-CLICHE-BANLIST.md` (the curated, paste-ready directive). This file is the full searchable catalog.
 
-**By type:** word: 3976 | structure: 128 | trope: 221 | phrase: 13888 | template: 1290 | opener: 1075 | closer: 77 | rhyme_pair: 170
+**By type:** word: 4189 | structure: 128 | trope: 221 | phrase: 15384 | template: 1480 | opener: 1195 | closer: 77 | rhyme_pair: 170
 
 Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (Suno/Udio), **prose** (ChatGPT/Gemini), **both**.
 
@@ -1504,7 +1504,7 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 
 - 🟠 **tears fall like rain** _(phrase)_ — Stock simile combining two model crutches (tears + rain). The pat weather-equals-sadness metaphor flags formulaic emotional writing.
 
-# DOMAIN: BOTH  (19628)
+# DOMAIN: BOTH  (21647)
 
 ## abstract metaphor  (1)
 
@@ -2597,6 +2597,2028 @@ Severity: 🔴 high = instant tell, 🟠 medium, 🟡 low. Domain: **lyrics** (S
 ## city set-dressing cliché  (1)
 
 - 🟠 **city that never sleeps** _(phrase)_ — Borrowed stock idiom the model inserts for urban atmosphere; flags AI because it's a ready-made phrase used instead of an observed detail of an actual place.  _e.g._ "Lost in the city that never sleeps"
+
+## claude census  (2019)
+
+- 🟠 **— additional project details** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **- Intros. Years of** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **️ Not ideal for** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **--- paths: - "src/api/**/*.ts" --- # API conventions go here** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **— tone, vocabulary, dos and don'ts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **— version history with what changed and why** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **— your personal preferences (stays local to you)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **### 22. Generate Documentation from Code** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **### 27. Create Task Plans with Real Estimates** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **$12 per month** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **$12/mes es infinitamente mas que $0/mes** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **$19 per month** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **$69 per month** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **$9 per month** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **(b) Draft a reader promise in one sentence** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **(c) Build a 6–9 item outline with descriptive H2/H3s** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **(e) List 3–5 reputable sources and why they matter** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 ****At the end of each conversation:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 ****If Claude hedges too much:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 ****Stop the preamble:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **./CLAUDE.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **./subdir/CLAUDE.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **.agent/skills** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.agents/skills/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.claude/commands/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.claude/rules/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **.claude/settings.local.json** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **.claude/skills/blog-writing/SKILL.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.clinerules/avoid-ai-writing.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.cursor/rules/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.github/copilot-instructions.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **.windsurf/rules/avoid-ai-writing.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/add-visuals** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/autoprompt** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/avoid-ai-writing** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/blindspots** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/blog-outline** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/buildme** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/clean-ai-writing <your text>** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/clear between tasks** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/closer** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/compact** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **/compact when continuing** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/competitor-brief** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/content-review** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/debug** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/deepthink** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/eli5** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/email-draft** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/etc/claude-code/CLAUDE.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **/ghost** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/ghost [paste text you want rewritten]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/goal "Achieve 95% test coverage on the payments module** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/godmode** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/init** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **/investigate** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/layered** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/Library/Application Support/ClaudeCode/CLAUDE.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **/linkedin-post** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/mcp** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/mentor** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/mirror** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/negotiate** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/plugin marketplace update** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/polish-article** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/premortem** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/punch** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/redteam** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/render** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/repurpose-article** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/schedule** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/storysell** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/swot** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/teachme** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/trim** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/v1/skills** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/viral** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **/weekly-report** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **; this count is enforced against it in CI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[FEATURE 1]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[FEATURE 2]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[FEATURE 3]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[INSERT SOURCE]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[paste the function or module to test]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[paste the module/file]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[paste the relevant code]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[Platform-specific formatting guidance]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[POINT 1]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[POINT 2]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[POINT 3]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[POINT 4]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[TARGET AUDIENCE]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[uncategerized]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[Your Name]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **[YOUR TOPIC]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **{ "claudeMdExcludes": [ "**/other-team/.claude/rules/**" ] }** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **~/.claude/CLAUDE.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 10).
+- 🟠 **~/.claude/commands/clean-ai-writing.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **~/.claude/skills** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **> blockquote for callouts or important notes** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→“Clean ending without courtesy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→“No 'I hope this helps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→“Qualification/caveat endings** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→Leadership Communications Guide** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→LinkedIn Content with AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→See Pricing Plans** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **→Style Profiles for Executives** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•'Below is' phrasing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•'comprehensive/crucial** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Context before answer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Drama starters ('This changes everything')** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Em dash 10× increase (GPT-3.5→4o)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Flowing paragraphs over lists** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Flowing prose over bullets** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Heavy em dash usage** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•'It's not X, it's Y' patterns** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Lists/bullet points heavy** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•More italics than others** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Rule of three compulsion** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Sarcasm/humor** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Uses 'delve' constantly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Uses 'might' frequently** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•Uses 'quiet' uniquely** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **•XML tag affinity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **00_foundation/brand-voice/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **100% satisfaction guarantee** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **1M context, good accuracy, fair price** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **2,000 words of content that misses the point** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **200+ Phrase Database** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **3-5 representative emails you've written** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **8-12 content tweets** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **a [adj] step towards [adj] infrastructure** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A Complete Template for Claude Voice Setup** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A glossary of taboo phrases** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **a high-quality, well-architected, future-proof solution** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A mini-glossary of company-specific terms** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A sample “great brief** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A Simple Workflow That Keeps Things on Track** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A special offer or incentive** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A starting point that's close enough to polish** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **A stranger chose your app without personal obligation** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **About the company** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Accede a consejos exclusivos para dominar la IA** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Access Exclusive Tips on Mastering AI!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **according to a 2019 survey by Gartner** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Aceder a dicas exclusivas sobre como dominar a IA!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Acknowledge the conventional wisdom** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Action items (table format)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Action-focused (what they do)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Active or deprecated** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Adaptive and user-pleasing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Add a 5–7 step script with a verify step** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add a dated entry to CHANGELOG.md** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add a Definition of Done** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add a one-sentence ; verify every number** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add additional versions for more learners** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add more specific examples** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add or clarify a specific rule** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add social proof** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add to calendar** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Add to Claude Projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Address common objections** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Address likely objections** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Address potential technical issues** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Adjust the tone to be more [formal/casual/technical]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ADR and RFC Quality** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Advanced trickery: chaining and conditional steps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Advise full rewrite, not patching** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Agitate the problem** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI agents are just loops** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI agentsAI agents** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI at Work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **AI blew my mind** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **AI brand voice tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI Engineering with LangChain** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 6).
+- 🟠 **AI Essay Writer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI for People Who Don’t Do Tech** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI isn't the problem. The pace is** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI-assisted time: 30 minutes per article** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI-tool fingerprints & later additions (v3.5–3.8)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **AI-tool URL parameters** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **All 11 official Anthropic plugins** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **All checks pass** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Also works with ChatGPT, Gemini, and more** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Always plan non-trivial work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **An Ode to Cyanotype Printing 26 Jun 2026** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Analysis & Strategy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Analysis/Research (core section)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Analyzing sequencing data and proposing hypotheses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **And a bunch of other perks I keep adding** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **And if you use both, install everything** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **and," "also," or restructure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Annual Savings: $400-600** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **anonymized data (remove names, IDs, addresses)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Anti-patterns to avoid** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **any first achievement** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Any formulas or ranges that matter (e.g., “Green = churn < 3%”)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Any writing that exemplifies your style** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **API developers: Documentation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Appropriate spacing between emails** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Architectural inconsistencies between modules** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Architecture of the skill** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Artifacts & Creation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Artifacts: when Claude builds things for you** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Ask Claude to redraw it with one thing changed** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Ask Claude to turn the explainer into a quiz** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Ask for a format: table / checklist / step-by-step** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Ask for steps first, not instant edits** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Ask them to do one thing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Assess risks (what could go wrong?)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **async/await** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **At specific trigger points** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Attach two examples and a glossary** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Attacks your plan’s weaknesses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Audience: content writers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Audit this draft for AI tells** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Audits claims for accuracy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Author/company** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Authority builders (comprehensive guides)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Automatically pulls in your skills and connectors** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Automation. Repetitive tasks become one command** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Be specific where your instructions apply** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Be specific: name the file, module, feature, or bug** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Be vulnerable but not oversharing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Beaucoup abandonnent Rust avant d'arriver la !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Before & After: See the Difference** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Before and after: a minimal real-world example** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Before and after: what a Claude brand skill changes** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Before publishing anything** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Before we start** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Before writing comparison pages or sales material** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Before/after data** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Behind every vaccine question is a person** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Benefit-focused (what they get)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Best “default” choice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Best for productivity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Better explanation of complex legacy code** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **between unrelated tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Big promise headline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Biggest factor overall** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **blader/humanizer Claude Code skill** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Blog posts or documents in your voice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Body copy (keep it brief)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Bold for key terms on first use** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Boletim informativo VIP** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Bonuses (suggest 3 valuable additions)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **borrow checker와 싸웠다는 경험은 거의 모든 Rust 개발자의 통과의례예요!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Brand voice notes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Break it into phases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Breaking Down the Numbers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Brief description of who this is for** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Brief outline (5-7 main sections)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Bringing Claude Code and Claude Cowork to government** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Build a 14-day plan with milestones + daily tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Build a content brief + outline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Build Custom AI Agents on Your Own Data** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Build in a realistic buffer (don't give me an** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Build your Claude stack with the right team** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Building the file from scratch** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Building your own skills** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Builds a working app** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Builds you a better prompt** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Bullet lists for scannable items** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Bullet lists of bare noun phrases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Bullet points of what is included (7-10 points)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Business & Strategy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Button text (2-5 words)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Call to action button text** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Call to action suggestion** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Callout boxes for tips** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Calls to action** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Captures leadership communication patterns** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Captures technical writing standards and conventions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Case study/Proof point** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Červen 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **C'est enorme !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **C'est fantastique !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **C'est un vrai jour de fondateur aujourd'hui !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Chat with Type to spark ideas** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Chatbot citation markup** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ChatGPT Custom GPTs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ChatGPT Gets Even Smarter — Now with Memory Upgrade** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ChatGPT might actually be worth talking to now** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ChatGPT Plus: $20/month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ChatGPT Problem-Solving Strategies** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **ChatGPT: Flattery, Fine-Tuning, and Feedback Loops** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Che emozione incredibile!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Che traguardo fantastico!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Check Our Blog created with the help of AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Check that the user is authenticated** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Check your content for typos and grammar** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Checklists where helpful** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Chinese (52 phrases)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Chunk -- SubSkill chunk exists for SkillStreaming** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **cited in NYT, BBC, and Wired** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Clarify scope (what are we actually building?)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude 3.7 Sonnet** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude apps: User Guide & Help Center** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Artifacts, the feature most people ignore** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude capabilities and settings to turn on** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Code CLI (the terminal)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Code Docker: Running AI Agents in Containers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Claude Code for EnterpriseClaude Code for Enterprise** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Code in Docker** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Claude Code: Documentation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Code: from user to builder** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude CodeClaude Code** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude counts tokens, not messages** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Cowork — install as a plugin** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Cowork is coming to mobile and web** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Cowork: from chatbot to co-worker** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude CoworkClaude Cowork** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude DesignClaude Design** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Fable 5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Claude Fable 5 Review: Our Verdict for Writers, 4/5 (2026)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Claude Fable 5 vs Sonnet 5: opposite prompting rules** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Fable 5: The heavyweight that lasted 3 days** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude for ChromeClaude for Chrome** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude for Microsoft 365Claude for Microsoft 365** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Haiku 4.5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Claude in Chrome (Browser Agent)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude in Chrome: AI inside your browser** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude in Excel** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude in PowerPoint** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude loses track, outputs degrade** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Modellerine Giriş** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude on AWSClaude on AWS** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Opus 4.8** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Claude partner networkClaude partner network** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Pro: $20/month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Prompt Generator for Coding** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Prompt Generator for Data Analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Prompt Generator for Marketing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Prompt Generator for Writing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude reinvents your standards every session** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude ScienceClaude Science** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude SecurityClaude Security** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Skills in action: three mini case studies** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Skills templates you can steal** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Skills vs. ad-hoc prompts: the showdown** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude Sonnet 4.6** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Claude Sonnet 5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Claude vs ChatGPT** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Claude’s Writing Strengths** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude's memory shrinks, quality drops** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Claude's Writing Tendencies** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Clean up AI writing in this paragraph** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cleaner comms in 60 seconds** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cleans up messy code** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Clear calls to action** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Clear thesis statement** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cliché Detection vs AI Detection Tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click “New task” in the upper right** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click “Projects” in the sidebar** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click “Save”. Done** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click “Scheduled” in your Cowork sidebar** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click a button in the visual to go deeper** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click Connectors, then the + icon** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click Create apps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click Create, then Connect** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click Dispatch in the left sidebar** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click Finish setup** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Click Get API key in the left menu** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Client Emails and Renewal Follow-Ups Faster with AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Client Quote (I will get actual quote)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Closing script (last 3 minutes verbatim)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cluster by theme** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Code generation with explanations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Code modernizationCode modernization** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Codify the globally applicable processes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Coding & Development** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Coding & Product (debug, explain, document)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Coding & Technical** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Command the Room, Even Through AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Commands you should create on day one** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **commands/*.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Commands: One-Click Workflows** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Commas/periods, prose paragraphs** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Commercial intent (product/service related)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Commit the updated rulefile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Common MCP connections for non-engineering teams** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Common mistakes section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Common scenarios with example responses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Community / Multilingual** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Compare options (tools/vendors) fast** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Compelling subject lines that create urgency** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Complete slide-by-slide outline with** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Complete the style questionnaire** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Completed: [list what's done]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **concise — every extra line costs space every session** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Conclude with implication/call to think differently** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Conclusion with key takeaways** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Conclusion: Where to Go From Here** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Confirm. Done. Task scheduled** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Connecting External Tools with MCP** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Connecting too many tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Connectors in the chat** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Connectors: give Claude access to your tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **conorbronsdon/avoid-ai-writing** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Consistency score (did it follow the template?)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Constitutional AI (rules over ratings)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Constraints: cite numbers properly; flag uncertainty** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Contact salesContact sales** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **contentReference[oaicite:0]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Context windows and output limits** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Context-aware personal advice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Contrarian take/myth busting** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Conversation history organized by project** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Conversational and fast writing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Conversational-register patterns (v3.15)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Convert goals into a weekly routine** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Copy the key and store it somewhere safe** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Core chapters (5-8 major sections)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Corpus: 819 responses from Claude Sonnet 4.6** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cost per Million Tokens** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cowork limitations you should know about** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create a “next best action” plan** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create a brief: audience, intent, outline, FAQs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create a decision matrix with weighted criteria** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create a minimal one today** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create a new project** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create a project plan in minutes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create an SOP with steps + common mistakes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create Branded Carousels in Claude With One Skill** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Create checklists for recurring tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create one project per major workflow or client** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create some urgency** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Create urgency around the launch offer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Creates interactive dashboard** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Creative & Content** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Creative content with Claude’s natural voice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Creative prose, dialogue** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Creative writing and fiction** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **CRM (Attio, HubSpot)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **CTA button text** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Curiosity-based (what they discover)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Current message instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Current state of knowledge (what is established)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Current task: [what we're working on now]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cursor ile Yazılım Geliştirme** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **cursor-rules/README.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Custom Instructions persist globally** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Customer storiesCustomer stories** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Customer supportCustomer support** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Customize the Variables** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Customizing for your work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cut the guess, or replace with a sourced fact** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cut to the 2-3 that matter** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cuts fluff, keeps meaning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Cuts noise, keeps signal** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Daily Brief (planning + priorities)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Daily coding and code review** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Daily or weekly content creation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Daily productivity, long sessions, heavy documents** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Das Gefuehl mit dem Borrow Checker kenne ich gut!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Das ist ein echter Meilenstein!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Das ist fantastisch!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Das ist keine Kleinigkeit!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Data or statistics where relevant** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Data tagging, routing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Database: Supabase (PostgreSQL with RLS)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **DateOctober 16, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Dear Technology, Let's Just be Friends** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Debunking the myth: Opus 4.6 vs. Opus 4.8** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Decision-making gets faster** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Decisive, Not Diplomatic** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Decline requests for illegal or harmful content** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Declines calmly, without sounding preachy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Deep developmental editing passes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Deep Dive: Claude for Writers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Deep Dive: Google Gemini for Writers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Deep Dive: GPT-4 for Writers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Defer to conventional sources of information** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Defer to processes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Define the output format (table / JSON / checklist)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Delete the hook, state the thing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Deliver immediate value** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Department and University Information** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Deploy in Claude Projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Desarrollo de software con Cursor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Describe the specific outcome** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Describe the task** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Description -- present and reasonable length** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Description (optional, 30 characters)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Description (what this task does)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Despite challenges... continues to thrive** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Detailed comparison by criteria** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Detailed summary (500 words): All major points with** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Detect PII; redact** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **detector/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **detector/CATEGORIES.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **detector/README.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Develop believable dialogue and pacing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Developer docsDeveloper docs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **developers" (repeat the clear word)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **developers... engineers... practitioners... builders** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Développement logiciel avec Cursor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Diagnose manuscript structure and chapter order** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Dictation: talk to Claude instead of typing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Digital Detox: How to Let Go – Part 2** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Direct (second person: "your")** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Direct positive statements** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **directory and they’re available in your workspace** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Dispatch (from your phone)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Disqualify common solutions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Docs & files** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **docs/migrations.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Document summaries, extraction** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Document the mistakes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Documents (PDFs, notes, summaries)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Doing everything in one session** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Download appDownload app** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Download your profile from the AI Migrator** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Download: 67 Cowork use cases by field** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Dr. Joe's Books** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Draft an SOP / step-by-step guide** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **draft replies based on internal knowledge base** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Draft; highlight one practical tip per section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Drafting from Scratch** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **drafts you wrote yourself** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Drafts, formatting, translations, quick Q&A** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Drift, stale references, off-brand outputs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Du solltest stolz auf dich sein!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Duplicated logic that should be abstracted** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Dynamic product block description** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Each tweet must stand alone as valuable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Earlier conversation context** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Earn the emotion or cut the claim** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Economic FuturesEconomic Futures** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Editors & Reviewers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Education & Research (summaries, notes, synthesis)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Einführung in Cloude-Modelle** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Email (Instantly, Resend)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Emails from readers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Embedding -- vector exists for semantic search** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Emerging trends (what direction things are moving)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Emphasize impact and appreciation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **End with a clear, single call to action** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **End with a question or call to engagement** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **End with something shareable or actionable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **End with: “Ask me questions if anything is unclear** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Endnote/Zotero/Mendeley (RIS)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Engineering at AnthropicEngineering at Anthropic** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **English (44 phrases found)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **entry and bump the README bullet** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Error cases (invalid inputs, null/undefined, wrong types)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Error rates (numbers, names, citations)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Eso es increible!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Est. Monthly Cost*** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Estimate time (how long will this take?)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every DeepSeek AI Model Explained and Compared (Jul, 2026)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every DeepSeek model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Gemini model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Grok AI Model Explained and Compared (Jul, 2026)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Grok model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every irregularity sanded away, perfectly uniform prose** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Kimi AI Model Explained and Compared (Jul, 2026)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Kimi model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Llama AI Model Explained and Compared (Jul, 2026)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Llama model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Mistral model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every OpenAI model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every OpenAI Model Explained and Compared (Jul, 2026)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Qwen AI Model Explained and Compared (Jul, 2026)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every Qwen model explained** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Every session (full file)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Example of an CLAUDE.md that I propose** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Example rewrites (generic → our voice)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Example Skills to customize: GitHub repository** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Example: how skills work in practice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Examples/case studies** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Exclusive partner discounts on AI tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Execute in focused chunks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Execute with checkpoints** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Exklusive Tipps zur Beherrschung von AI!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Expand file tree** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Expert-level deep teaching** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Experts believe it plays a crucial role** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Explain code in plain English** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Explain why each criterion matters** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Explain why it works (the mechanism)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Explain why the conventional wisdom is wrong/incomplete** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Explaining unfamiliar code fast (so you can move on)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Explicitly forbidden from flattering** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Export your ChatGPT data from the Privacy Portal** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Exporting your data from ChatGPT** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Exporting your data from Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Exporting your data from Gemini** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Extra features & broader access (varies by plan)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Extract action items from meetings** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Extract claims and methods** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Extract jargon; translate to plain English** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fable 5 and Opus 4.8. Sonnet did not** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fable 5 raw** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fable 5 vs Sonnet with the same profile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fable 5. Sharpest line choices of the three** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **FAQ (10 questions)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **FAQ about AI writing tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fast and cheap at high volume** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fast and cheap. Not for nuanced editing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fast, cheap, high-volume simple tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fastest path to understanding** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fear-based (what they miss)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Feature/Behavior** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Featured resource/recommendation** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fewer mistakes, faster execution** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **File locations and precedence** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **File metadata and controls** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fill in the details** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Final call to action** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Final CTA section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Final pass: remove buzzwords; keep verbs active** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Financial servicesFinancial services** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Find sources or remove** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Finds and fixes bugs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Finds the 20% that matters** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Finds the highest-impact move** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Finds what you’re missing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **first organic user** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **first paying customer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **First-draft usability (green/yellow/red)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Five habits that give you more from every session** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fixes weak prompts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Fixing bugs with a clear plan (not random edits)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Flag uncertainty or potential hallucinations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Folder (where outputs go, optional)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Folders and files** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Follow the existing codebase patterns** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Follow up prompts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Following complex multi-step instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **For B2B Copywriters** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **For each phase, list specific tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **For each task: estimated time, dependencies** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **For Fiction and Storytelling** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **for the rest** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Form fields (only what is necessary)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Framework: Next.js 15 with App Router** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free / $20 per month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free / $24.99 per month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free / $4 per month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free / $6 per channel** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free / $6.99 per month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free Tier Optimization for Writers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Free vs Pro Pricing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **French (55 phrases found)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Frequently used unless asked otherwise** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Friendly, conversational, occasionally overly polite** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **From chaos to publish-ready format** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **From Prompts to Skills: The Conversion** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **from the Big Bang to dark matter** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **frontend/CLAUDE.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Full data: Available on clauded.fyi** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Full email body** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Full intelligence briefing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Full project architecture** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Full SWOT analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Full system design** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Funnel stage (awareness/consideration/decision)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Gaps in knowledge (what still needs investigation)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Gemini 3.1 Flash** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Gemini 3.1 Pro** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Gemini Advanced: $20/month** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Generate multiple headlines/hooks** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **generate snippet variants (title/meta) for CTR tests** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **generate weekly reports from raw notes + metrics** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Generating and evaluating experimental designs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **German (50 phrases found)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Get 30% off Premium before April 7** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Get confirmation (proceed or adjust?)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Get Exclusive AI Tips to Your Inbox!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Get ready-made Claude prompts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Get the Starter Pack** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Getting started with Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Gideon Okeke 4w** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **git push --force** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **git reset --hard** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Giugno 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Give Claude context** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Give me 15 headline options with different angles** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Give me 7 ideas: 3 safe/practical, 2 ambitious/unusual** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Go back to the Connectors section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Go to Customize from the left side panel** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Go to Desktop app → General** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Goes beyond surface answers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Going from zero strangers to one stranger** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Google CloudGoogle Cloud** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Googler, c'est une competence, pas une faiblesse !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **GPT-4’s Writing Strengths** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Great question!", "You're absolutely right!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Habit 1: Edit Your Prompt, Don’t Send a Follow-Up** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Habit 2: Start a Fresh Chat Every 15–20 Messages** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Habit 4: Use Projects for Recurring Files** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Habit 5: Set Up Memory and User Preferences** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Habit 7: Match the Model to the Task** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Habit 8: Spread Your Work Across the Day** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Handles multiple things at once** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Happy path (expected inputs, expected outputs)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Hardest reasoning, high stakes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Has explicit memory feature** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Hashtag set (20-30, mixed reach sizes)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **He introduced a term I hadn't heard before** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **He walked through how X works in practice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Headline (40 characters max)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Headline for the image/card** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Helpful reminder tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Here are 7 reasons why** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Here is what we are covering** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Here’s what we’ll cover** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 4).
+- 🟠 **Here’s what we’ll cover today** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Here’s what we’re covering** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Hidden from the public** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **High — unproven for agents** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **High for sensitive tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **High: the sweet spot for almost everything** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Higher (more explanation)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Higher CTR with less effort** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Highlight product benefits** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Highlight the most compelling features** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Highlight three real differentiators** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Highly autonomous over long tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **High-signal project overview** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **High-volume, lower-stakes communication** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Hook (first line that stops scrolling)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Hook tweet (must stop the scroll)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **How Skills work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **How to Cite** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Humanize in Academic Mode** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Humanizes AI text** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **I hope this helps! Let me know if** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Identify inconsistencies across long drafts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Identify the critical path — which tasks, if delayed** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Identify the key assumptions behind each option** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Identify top five competitors** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **If You Write in More Than One Language** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **If you’re using Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Ignore the squirrel and leave your wallet at home** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Implementation effort (low/medium/high)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Import to Gemini (instructions for Gemini or Gems)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Important types/interfaces: what they represent and** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In a 2024 NYT interview, she argued** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In a child folder of your repository** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In a parent folder of your repository** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In Claude, you save them as Skills** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In order to," "Due to the fact that** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In this guide** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **In this post** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **In today’s fast-paced world...” (means nothing)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **in your terminal to check and update** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Include a hook in the first line** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Include proper error handling (not just try/catch everything)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Include social proof if available** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Include specific numbers and examples** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Include the target keyword in H1 and first paragraph** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Included:Audio sample analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Context adaptation matrix** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Done-for-you sample curation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Everything in Pro** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Everything in Starter** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Extended revision period** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Master prompt document** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Personal style consultation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Works with any AI tool** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Writing DNA analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Included:Writing style analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Indice dei contenuti** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Industry 2: Legal and Professional Services** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Industry 3: Marketing and Content** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Industry 4: E-Commerce and Retail** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Industry 5: Healthcare and Medical Practices** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Industry insight or prediction** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Infomercial engagement hooks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **initials/description** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Insight (the takeaway)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Instagram carousel (visual framework)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Installation & Usage** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Instant clarity without rereading** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Instead of “make sure it’s accurate** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Integrate with Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **into the GPT's Instructions field** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **into the project's custom instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Intro text (150 words max for best engagement)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introducción a los modelos Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introduce incentive (discount/free shipping)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introduce the problem** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introduce the product as the solution** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introduce your unique solution** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introduction aux modèles Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Introduction to Claude Models** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **It cuts your editing time dramatically** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **It makes your writing more consistent** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **It works for any kind of writing** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **It’s not just about X. It’s about Y.” (every other paragraph)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Italian (38 phrases)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Iterate and Refine** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Iterating on Creative Work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **It's not X, it's Y" + hollow intensifiers + hedging** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **It's worth noting," "Interestingly," "Surprisingly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jiya K. 2w** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **juin 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jul 2, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jul 5, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jump to a section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jun 1, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jun 11, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jun 21, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jun 25, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jun 4, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Jun 7, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **June 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Junho 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Juni 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **junio 7, 2025** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Just answer directly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Just start with the point** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Keep a living glossary; prune it monthly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Keep each post between 150-300 words** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Keep it short** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Keep natural disfluency, varied rhythm** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Keep reading with a 7-day free trial** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Keep reading with a paid subscription** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Keeping the file current** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Key debates and open questions (what's contested)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Key decisions so far: [list decisions]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Key functions/methods: for each, describe params, return** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Key Prompt Engineering Skills for ChatGPT** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Known limitations or gotchas** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Korean (44 phrases)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Kỹ thuật Trí tuệ Nhân tạo với LangChain** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **La community ha parlato** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Large refactor, long agent run** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Last chance framing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Last commit date** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Last commit message** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Lead with the claim** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **leadership (array of {name, title})** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Learning & Mastery** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Legacy and retired models** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Length: 160–220 words, plus a one-line** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Less creative flair** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Less debugging time** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Less decision fatigue** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Let me think step by step," "Breaking this down** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Let the fact speak for itself** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Let's explore," "Let's break this down** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Lettre d'information VIP** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Level 1: Use Claude in conversations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Level 3: Let Claude work for you** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Leverage Claude's Strengths** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **leverage... robust... seamless... utilize** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Life sciencesLife sciences** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Limit examples to your best two or three** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Limitations of System Prompts (The Honest Truth)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Limitations you should know** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Limitations: where it falls short** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Limited usage (you may hit caps)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Limits & Privacy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **LinkedIn post (personal insight angle)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **List gaps and future work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **List items with consistent format** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **List the actual topics** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Listen to this episode with a 7-day free trial** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Lists discouraged unless specifically requested** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Lists in Replies** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Live Artifacts in Cowork** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Logical section breakdown with H2 and H3 headers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Long agentic work, big refactors, deep research** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Long-Form Article and Blog Post Writing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Long-form professional drafts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Long-form, well-structured content** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Look up contacts, enrich lead data, update records** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Main content (teaching)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Main story/insight** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Maintain a consistent tone across platforms** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Maintaining consistency across long conversations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Maintaining general consistency** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Maintaining Your Voice at Scale** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **maintains a low profile," "likely began his career** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Make a checklist + QA checks for this process** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Make a recommendation, noting any criteria where the** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Make it even easier** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Make it more concise** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Make them scroll-stopping and conversion-focused** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Makes code faster** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Makes copy more direct** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Makes your take unmissable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Managing Message Limits on Extended Writing Projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Marketing & Copywriting** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Marketing teams and campaigns** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **marking a pivotal moment in the evolution of** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Master AI in 1 hour** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Master your AI workflow** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Masterfile exists -- passed quality gate** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Match to category and severity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Matches your writing style** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Max quality output** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Maximum depth response** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **May 23, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **May 28, 2026** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Measure what matters: skill performance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Medium — test first** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **meeting notes without sensitive details** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Meeting summary (3-5 sentences)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Merge sections, use specific headers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Messages people sent when they converted to paid** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Method 1: Style by Description** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Method 2: Create a scheduled task from the sidebar** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Method 2: Style by Example** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Method 3: Style by Negation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Microsoft FoundryMicrosoft Foundry** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Mistake 3: Skipping the Style Calibration Step** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Mistake 4: Treating First Drafts as Near-Final** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Mistake 5: Not Pushing Claude to Go Further** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Mix of obvious and surprising items** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Mix short/long, fragments, questions** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Model (which Claude version, optional)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Model / Option** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Monday planning or Friday wrap-up** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **More advanced organization features** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **More AI tools and resources** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **More usage / fewer limits for consistent work** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Moreover," "Furthermore," "In today's [X]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Most powerful, worth the premium** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Most professional and creative work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Most writing: drafting, editing, restructuring** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Mostly published, but tool instructions were leaked** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **MRR $0 -> $12는 사실 무한대 성장입니다!** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **My custom writing plugin in action (with demo)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **My favorite Anthropic plugin: Marketing (with demo)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **My writing plugin in action** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **My Writing Workflow with Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Name (something you’ll actually remember)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Name it AI blew my mind** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Name the challenge and the response** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Name them directly or cut** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Narrow, repetitive word range across 200+ words** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Nas’ Note: The Prompt Is the Skill** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Natural transitions between tweets** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Natural voice, personality** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **need rapid iteration and idea generation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **nestled within the breathtaking region** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Neutral, reserved, direct** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Never clearing context** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Never provide lyrics to songs—even paraphrased** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Next step (do this in 2 minutes)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **No blank-page anxiety** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **No discount yet** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **No more “what did we decide?” loops** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **No skills installed** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Not always clear or consistent** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Not included:Multi-language support** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Now it’s your turn** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Nuanced analysis and reasoning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Numbered list inflation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Numbered lists for sequential steps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Numbers/statistics** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Objectives and KPIs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Occasional use, quick tasks, testing Claude AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Offer presentation structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Office for Science and Society** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Often explains why** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **On Fable specifically** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **One clear idea per tweet** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **One interview is data, not a verdict** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **One last thing** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **One minor issue (cosmetic)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **One more thing before we get into it** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **One task per session, use commands for consistency** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Only include instructions if they are necessary** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Only when the task is “worth the premium** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open a new chat at claude.ai** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open Claude (claude.ai)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open Claude in the desktop app** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open questions that weren't resolved** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open questions: [list unresolved items]** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open the Claude desktop app** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Open with the problem this product solves** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Opened on the personal scene** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Opening script (first 5 minutes verbatim)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Opening story/hook** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Opening/closing fixes** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Optimal send timing (days after signup)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Optimize this prompt for Fable 5 using an Amplifier** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Optimize this prompt for Sonnet 5 using an Amplifier** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Optimized for Claude Projects and Claude Code** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Optimizes for sharing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Option 2: GPT-5.4 via OpenAI Pro** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Option 3: Grok — Capable but Expensive** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Option 4: Gemini 3.1 Pro and Flash** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Option A: Add to Claude’s memory (recommended)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Option B: Add project context to Claude Projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Opus 4.8 raw** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Opus vs Sonnet** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Or skip the building: use my MCP** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Organize related conversations together** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Out of nothing, something** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Outreach, nurture sequences, announcements** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Overview of Option A** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Overview of Option B** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pain point focused** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Paraphrase your writing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Part 2: The Golden Rule of Prompting** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Part 3: Writing and Editing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Part 4: Coding and Technical Work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Part 5: Research and Analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pasaste de 'idea' a 'negocio** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **passwords, API keys, 2FA codes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Paste Your Text to Scan** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Path 1: Build your profile from scratch** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Path 1: You’re just getting started** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Path 2: Build from real data** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Path 2: You already have written pieces** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pattern interrupt (first 3 seconds)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **PCs & Components** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pengembangan Perangkat Lunak dengan Cursor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Personal (first person: "my")** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Personal facts: hobbies, lifestyle, family, wellness** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **personal IDs, banking details, medical details** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Personal story with lesson** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pick one. Each hedge cancels the next** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Placeholder notes for visuals** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Plan before you execute** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Planning becomes copy-paste simple** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Plans for failure before it happens** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Playful (if brand appropriate)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Plugins in Cowork** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **plugins/avoid-ai-writing** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Podcast talking points (if I were to discuss this)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Polished and readable, but morally tidy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Polishing and paraphrasing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Post-signup thank you page copy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Powered by ClaudePowered by Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical examples and actionable advice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical Skills for E-Commerce** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical Skills for Finance & Accounting** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical Skills for Healthcare** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical Skills for Legal Teams** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical Skills for Marketing Teams** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical Skills for Professional Services** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical tips listicle** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical way (what we do)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Practical, not theoretical** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pre-headline and headline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Present the price (anchor and reveal)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Preserves your creative identity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Previous Opus, still strong and still active** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Price in / out (per 1M)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pricing compared across the lineup** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Principles for the rulefile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Priority score (1-10)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Professional copy and editing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Professional output in minutes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Progressive disclosure and modularization** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Projects & organization** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Projects: what you’re building, active and past** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Projects: your persistent workspace** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Prompt Techniques that Actually Work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Prompts to Try Right Now** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Proposed solution/framework** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Provide evidence or reasoning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Provide specific prompts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Published in The Pythonworld** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pull campaign analytics, manage lead lists** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pull features/pricing from sources** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Pull quotes for emphasis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Punctuation and formatting conventions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Purpose and constraints** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Q&A prompts (seed questions)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Qualify the viewer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Questions & answers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Quick answer: how to make Claude sound more human** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Quick tasks: titles, meta descriptions, social copy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Quick Verdict (most people)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Quick wins (lower competition keywords)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Quote graphics (5 shareable quotes)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rank findings by impact; choose the top three** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rapid working prototype** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **raw-context/** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Read Fable 5 raw** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Read Opus 4.8 raw** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Read Sonnet 5 raw** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Read the prompt’s audience and goal** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Reads and creates files on your computer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Real/actual" adjective inflation** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Real-world use cases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Reasoning chain artifacts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rebuild the deck with a different emphasis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Receive your Style Profile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Recent stories by Ben Patterson** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **recent_challenges (array of brief descriptions)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Refactoring without breaking everything** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Refine tone and transitions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Refuse explicit material** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Regional complianceRegional compliance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Reinforcement learning from human feedback (RLHF)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Rekayasa Kecerdasan Buatan dengan LangChain** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Related use cases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Release form language** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Relies on conversation context and Projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Remove AI-isms from this post** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Repeat until outputs need minimal editing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Repeatable process, less rework** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Replace with specific facts or cut** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Repository files navigation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Repurpose old posts and content** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Request the output format: checklist / table / diff summary** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Requires more prompting** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Research & Learning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Research LabsResearch Labs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Research prospects, draft posts, check engagement** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Resolution (what changed)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Resource libraries: small, curated, and mighty** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Return typed success/error responses** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Reusable detailed prompt** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Revalidate the profile page path** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Reveal what's included** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **revenue (most recent year mentioned)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Reverse problem solving** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrite 1: Cut the fat (v5.5)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrite 2: Hunting expertise** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrite emails in your tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrite for clarity (no fluff)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrite: clearer, shorter sentences, keep my tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrite: shorter, confident, polite. Give 2 versions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewrites your opening line** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rewriting and Improving** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rhetorical question openers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rhythm and uniformity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Risk reversal (guarantee)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Risks: list unknowns; mark low confidence** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Root cause diagnosis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Rough drafts you plan to edit** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Run "regen_graphql_schema" on every commit** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Run the detector** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Run this in your own business** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Runs per scenario/language: 3** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Same usage through APIs: $15-25/month total** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Savourez le moment !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Scaling CLAUDE.md Files for Teams** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Scarcity if applicable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Scheduled tasks in Cowork** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Scope of the coding rules** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Score and tier -- present and above minimum** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Score each option against each criterion (1-10)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Screenshots or visuals** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Screenwriting and Script Writing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Scripts that survive messy inputs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **scripts/check-pattern-count.sh** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Scroll down to Not Connected** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Search intent (informational/commercial/transactional)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Secondary option (no thanks text)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Security and complianceSecurity and compliance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Security: what you need to know** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **See the Difference** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Select Add custom connector** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Select it and choose Enable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Senior developers Google constantly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sentence length: vary; average 16–20 words** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sentence structure preferences** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sequential task execution** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Service partnersService partners** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Set Authentication to OAuth** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Set it up to repeat in Cowork** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Set up your Claude profile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Setting Up a Voice Project** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Shipping is hard and you did it** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Show proof and results** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Show the weighted scores in a table** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Side-by-side with a winner** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sider.AI in the Claude Skills toolkit** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sign off memorably** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Simple form copy (name, email)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Simple yes/no question to gauge willingness** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Simple, repeated, low risk** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Simplest possible explanation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Skill 1: How to build an audience profile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Skills for Business Operations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Skills for Career & Personal Development** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Skills for Developers & Technical Teams** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Skills for Marketers & Business Owners** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Skills for Writers & Content Creators** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Skills work with every Claude product** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **skills/*/SKILL.md** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Skills: teach Claude how you work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Skim the document; identify its goal and audience** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Skipping the plan** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Slide 1: Hook/title (promise or question)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Slide 9: Summary/key takeaway** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Slide number and purpose** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Slides 2-8: One concept per slide (progressive)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Small businessSmall business** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Smarter Document Workflows Start with Nitro** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **so your team knows what's available** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Social media content and scheduling** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Social proof focused** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Social proof section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Social proof-focused (who else)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Software Development with Cursor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Softwareentwicklung mit Cursor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Something I noticed this week** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sonnet 5 raw** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Spanish (49 phrases)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Specific about what kind of feedback helps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Specific and actionable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Specific closing thought or cut** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Specific details make it real** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Speed. No more re-explaining context** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Speed: One click beats rewriting the same 12 rules** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Speed: Speed improved by** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Stack the value** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Start here if you’re not sure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Start new sessions for new projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Start with 1-2 MCP connections** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Start with 1-2 tools you use every day** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Start with one job you repeat weekly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Starting any new article** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Startup founder perspective** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **State conclusion, then evidence** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **State management: React hooks + Context API** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **State the real tradeoff** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Stay neutral in controversial topics** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Step 1: Get Claude and pick your plan** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 1: How to export your data** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 1: Install the MCP (desktop app users)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 2: Bring your context to Claude from ChatGPT** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 2: Restructure by Principle, Not Paragraph** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 2: Review the Risk Assessment** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 3: Check the Highlighted Text** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 3: Create the Skill in Claude.ai** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 3: Edit for Tone and Readability** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 3: How to import your profile into Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 3: Set up your Claude account** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 4: Edit and Rescan** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 4: Refine and Compress** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Step 5: Final Pass and Contextual Links** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Stop worrying about Turnitin flags** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Stops overthinking, starts execution** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Streamlined workflow with consistent quality** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Strengths and Weaknesses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Strict rules: one short quote max, no paraphrasing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Strip the markup token entirely** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Strong balance of speed and skill** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Strong content filtering, but case-by-case** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Structural Detection (v3.4)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Structured content, versatility** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Structured lesson format** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Structured writing and reasoning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Structured, value-driven, and fixed** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Studies show that 73%...” (no source, made up)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Subheadline (the value proposition)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Subheadline that adds credibility** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Subject line (with 2 alternatives)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Submit 3-5 writing samples** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Submit with Confidence** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Suggest 3 external sources to reference** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Suggest a reply with next step** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Suggest internal linking opportunities** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Suggest one simplification that reduces complexity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Suggest relevant hashtags (3-5)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Summarize each theme with 2–3 key papers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Summarize research into a POV** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Summary/conclusion tweet** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Superficial -ing analyses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Support centerSupport center** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Support chatbot, FAQ** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Supporting text (1-2 short sentences)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Supporting text that could appear below** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Surface to expert answer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Surfaced the author as a doctor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Surfaced the author's identity (with profile)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Sviluppo software con Cursor** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **symbolizing... reflecting... showcasing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Synthesize these into a single balanced perspective** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **System prompt (Project Instructions)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **System prompts are per-Project or per-conversation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Table des matières** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tables where comparison data is involved** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Teaching content outline (main body)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Technique 1: The "Never/Always" Framework** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tell Claude what you already understand** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tension (the struggle)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Test #1: The visuals** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Test #2: The workflow** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Test #3: The mix** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Test on three very different inputs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Test with a real writing task** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Test with three topics of different complexity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Testimonial prompts (questions to ask)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Testing and Refining Your Claude Voice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Thank them for subscribing (briefly)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **That feeling is your tired brain talking** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **That’s a very insightful observation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **That’s not quite right, try to** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **That's a real milestone!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **That's genuinely impressive!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **That's no small feat!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The “output control” prompts (these are cheat codes)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The 1Password Guide to Password Managers** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The actual finding** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **The Anatomy of a Great Voice Prompt** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Anatomy of a Skill** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Anthropic quickstart repo is a good example** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The best AI writing tools** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The blind ranking** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The catch?", "The kicker?", "Here's the thing** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The chat: how you interact with Claude** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Claude family** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The click moment is real** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The current Claude models at a glance** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The daily habits** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The default for most production work** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The desktop app (Cowork tab + Code tab)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The effort setting: A dial, not a budget** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Ethics of AI-Assisted Writing** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Explore, Plan, Execute, Verify loop we run daily** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The fun part: 3 skills born from this research** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The future looks bright," "Only time will tell** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Future of Writing With Claude** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The GIGABYTE Guide to AI Gaming Laptops** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The hardest problems** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The hardest reasoning and the highest stakes work** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The health check** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Hidden Cost Analysis: Subscription Fatigue vs. Ownership** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The inline visualizer: when Claude explains things visually** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Instruction Layer: your north star** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The lesson should be applicable to others** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The LLM trap** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Multi-Model Advantage** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The nine outputs, counted** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The official plugins from Anthropic** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Optery Guide to Personal Data Removal** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The page as a photo, scan, or PDF** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The peak-hour effect most European users miss** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Problem with Claude's Default Voice** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The problem with moving your ChatGPT data to Claude** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The quick-start checklist** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The real constraint (budget, format, audience, deadline)** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The real problem: encyclopedias, not expertise** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Resource Layer: your private cheat sheet** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The results: 332 Claude-isms in 7 languages** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Roborock Guide to Smarter Floor Cleaning** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The root of your repository** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The rulefile instruction that is proposed to be instructed** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The Script Layer: your checklist on rails** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The skill that helps you build other skills** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **The tech stack you use** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **The test setup** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The thinking toggle: Turning on the scratchpad** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The T-Mobile 5G and Fiber Home Internet Buying Guide** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The TP-Link Guide to Modern Mesh Home Wi-Fi** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **The uncomfortable part** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Thinking & Reasoning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Thinking support: turning chaos into clear steps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **This Week's Best AI Tutorials / September 29th 2024** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Thought leadership angle** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tier 3 phrases (multi-word boilerplate)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Time savings: 83% reduction** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 1: Delete your prescriptive prompts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 2: Give it the goal, not the steps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 2: Tell Claude What NOT to Do** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 3: Tell it why, not just what** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 6: Make it verify its own work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 7: Review and Update Monthly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tip 8: Use observable conditions, not soft warnings** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tips 6-11: Writing and Editing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Today I’ll walk you through** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Toggle on Developer mode** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tone: confident, plain English, no buzzword bingo** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tone: friendly, specific, no buzzwords** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Total phrases found: 332** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Total: $60/month = $720/year** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Traditional writing time: 3 hours per article** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Transform how your organization operates with Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Transformation section (before/after)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Transition to pitch (if selling)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Trending topics (timely content)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tricks, tips, and troubleshooting** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Triggering the skill** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Troubleshooting: when Claude Skills go sideways** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Trust element (guarantee, privacy, social proof)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Try Buffer for free** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Try ClaudeTry Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Try it instantly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tu peux etre fier(e) de toi !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn a doc into a slide outline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn bullet notes into a structured doc** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn feedback into a priority list** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn long docs into a 1-page brief** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn off extended thinking when you don’t need it** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn Off the #$%^ Phone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn on Browser use** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn on Keep computer awake** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **turn research into outlines, briefs, FAQs at scale** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turn this into fix now / fix next / ignore with reasons** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Turns manual tasks into scripts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tweak until the output is 90% paste-ready** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Tweet-length (under 280 characters): The single most** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Twitter thread (educational breakdown)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Two great before/after examples of summaries** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Two paths, one system** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Type /schedule** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Type all inputs and outputs — no 'any** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Unused Capacity – Paying for models you rarely use** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Update the profile in Supabase** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Upgrade if Claude is part of your daily workflow** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Upload files and pull from your tools** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Upload it to your Claude Skills library** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Upload Knowledge files that Claude can reference** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Urgency/scarcity (if applicable)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Urgency-focused (why now)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Usage policyUsage policy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use case 5. News monitoring for my niche** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use casesUse cases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use Claude's Strengths** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use line breaks for readability** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use Opus when** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use related keywords naturally throughout** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use simple language (8th grade reading level)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use Sonnet when** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Use ZeroGPT in Whatsapp and Telegram** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **use... reliable... smooth... use** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Used to over-flatter, now more balanced** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Uses up Claude's memory before you even start** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Using ChatGPT for Personal and Professional Growth** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Using Claude Projects for Persistent Voice** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Using them in your workflow** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Validate input with Zod (name: string 1-100 chars** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Value-focused (worth/price)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Variation 1: FOMO/scarcity angle** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Variation 2: Value/benefit angle** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Variation 3: Question/engagement angle** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Varied length, lead with the point** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Verify before you use it** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Version control and shared ownership** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **version: X.Y.Z** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Video testimonial guidelines (if applicable)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Visual description or design note** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Visual output in chat** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Vocabulary diversity (low TTR)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Voice: warm, practical, lightly witty, never snarky** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Warm, grateful tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **was founded in 2019 to solve X** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **We Build It for You** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Weekly premium articles** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Weight the criteria by importance (percentage)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **What Claude creates** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **What it does** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **What Noren changed** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **What this is** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **What we learned** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **When it loads** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **When it Refuses** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **When to use** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **When to use Cowork instead of regular Claude** _(opener)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Where they differ** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Which approach it uses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Which Claude Model Is Best for Writing? (2026)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Which Claude plan to choose: free, pro, or max** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Which conventions matter** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Which model should you use** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **While details are limited in available sources** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **While X has limitations, it's still remarkable** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Who contributed this, so that we can contact them** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Who Needs the API** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Who should choose Option A** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Who should choose Option B** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Who writes it** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Why choose HumanizeThisAI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Why skills matter** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Wi-Fi & Networks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Word bank (words we use vs. words we avoid)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Word choice changes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Word count target** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Word/phrase replacements (3 tiers)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **work with long docs, PDFs, meeting notes, reports** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Working instructions for Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Working title (SEO-optimized)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Works across documentation types: API, ADR, runbook** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Works for Claude, Gemini, and any AI model** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Works well with** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟠 **Works with Claude, ChatGPT, and any AI tool** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write a meta description (155 characters)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write case studies This is another test** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write in first person** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write instructions that you would want to receive** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write More of What Only You Can Write** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write precise prompts to minimize Claude token waste** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write the point directly** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write video scripts this is a test** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Write with Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Writer's block be gone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Writing & Comms (emails, rewrites, tone)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Writing & Style** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Writing & tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Writing docs + tests after the work is done** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Writing effective instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟠 **Writing Effective System Prompts for Claude** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Written by Elliot** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Written by Josh Dubowsky** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Written by Kristopher Dunham** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Written by mata** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Written by Vishwadani** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Written by Walid R** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Yes — best balance for most people** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you don’t need automation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **You may have missed** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you need the same workflow repeated 100+ times** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you prefer a simple chat workflow** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **You review and ship—instead of writing line by line** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you use Claude AI a few times per week** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you use Claude AI every day** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you use Claude AI occasionally for writing/summaries** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **you want fewer interruptions from usage limits** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **You’re absolutely right to ask that!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟠 **Your context belongs to you** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Your data stays private** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **Your pattern is waiting. Build it** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟠 **Your Voice, Amplified** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **You're asking about," "To answer your question** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟠 **YouTube Shorts/TikTok script (60 seconds)** _(template)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **## Analysis\n\n**Summary:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 ****Adjust depth:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 ****Analyze codebases:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 ****Increase confidence:**** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **.claude-plugin** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **.gitattributes** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **.github** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **.gitignore** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 10).
+- 🟡 **.mdc** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **~$1,000 (reducible)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Business tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Casual endings** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Chain-of-thought visible** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Compact output** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Corporate speak** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Creative flourishes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Definitive claims** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Flowery language** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Formal structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Hedging** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Internet slang** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Long explanations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Long intros** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Personality quirks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Shorter responses** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Simple language** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Simpler vocabulary** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Skips preambles** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Step-by-step reasoning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Straight-to-answer structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Unpredictable organization** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **•Unpredictable structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **128K** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **200K** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **2025-XX-XX** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **64K** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **A client** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ABNT** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Accessories** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Acknowledgment loops** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ACM** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ACS** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Adequate** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Advanced section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Advanced tips** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Affiliate** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **agentskills_spec** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **AI SlidesNew** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **AI tool** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **AI Translator** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **analyzeText** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **AnthropicAnthropic** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **any achievement** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **any first** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **APA** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **api-design.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **ARCHITECT** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Artifacts** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **AuthorAnthropic** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **AvailabilityAvailability** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Avoids** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Background** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **battle-plan** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **BEASTMODE** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Benefit-driven** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Best for** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Best offer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **between tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **big milestones** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **BlogBlog** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Boletín VIP** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **BrandPosts** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **brand-voice** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Budget-conscious projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Buffer AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **C:\Program Files\ClaudeCode\CLAUDE.md** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **career switches** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CareersCareers** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CategoryCowork** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CategoryEducation** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CategoryProduct announcements** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CEOMODE** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Challenge** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CHANGELOG.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Chapter title** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Chatbot artifacts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Chicago** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **citeturn0search0** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Claude API** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Claude apps** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **claude --version** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Claude.ai Projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CLAUDE.local.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Claude.md FAQs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **ClaudeClaude** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **claudeMdExcludes** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **claude-opus-4-7** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Claude-Specific Techniques** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Clear deadline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Cline** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Coding** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Coding support** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CodingCoding** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Command** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CommunityCommunity** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **company_name** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **COMPARE** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Compatibility** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **completed projects** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **completed work** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **completions** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Condition** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Confidence calibration** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Congratulazioni!** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ConnectorsConnectors** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Consensus read** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Consumer AI** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Context switching** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Contributing** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CONTRIBUTING.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Contributor** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Conventions** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Copula avoidance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Copy-Paste Prompts** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **copywriting** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Core experience** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Cost-effective** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CoursesCourses** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Creation** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Credibility establishment** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Credits** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Cross-Platform Consistency** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CTA** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CTA section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **CTA tweet** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Current landscape** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Cutoff disclaimers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Daily productivity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **DASHBOARD** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **database-migrations.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Deals** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Debugging** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **December** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Declare done** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **DeepAnalyse™ Technology** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **DeepSeek** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Default hedging** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Default verbosity** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **detect** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Different angle** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **difficult tasks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Direct quotes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Directory actions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Directory map** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **DOSSIER** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Downloads** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **EcosystemEcosystem** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **EducationEducation** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Email body** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **email-sequence** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Emotional flatline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **EnterpriseEnterprise** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Establish credibility** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **eta** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **EventsEvents** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **everything** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Excessive structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Executive** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Executive decision-making** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Expected impact** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Explore first** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Extensions** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Fable 5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **FableFable** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **FACTCHECK** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **failed interviews** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Failure cases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **False concession** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **False ranges** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Fast presentations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **feat** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Features section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **FeaturesCowork** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **FeaturesCustom visuals** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Felicitaciones!** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Felicitations !** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **File creation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Filler phrases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Final chance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **first customer** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **first hires** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **first revenue** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **first users** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Flattery** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟡 **Fork 214** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Forks** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Formulaic challenges** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **FOUNDER** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **founding_year** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Full outputs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Fundamentals section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Future-narrative closers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **GCP** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Generally precise** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Generic conclusions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Getting started** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Good question!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟡 **Google integration** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **GovernmentGovernment** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Grade** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Guarantee** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Haiku** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Haiku 3.5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Haiku 4.5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **HaikuHaiku** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **hard achievements** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Harvard** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Hashtag stuffing** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **headquarters** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **HealthcareHealthcare** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Hedge-stacked predictions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Hermes** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Hero section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Higher cost** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Hooks** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **HOOKS10** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **How-To** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Hyphenated-pair overuse** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **IEEE** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **impostor syndrome** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Included:1 language** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Included:Multi-language support** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Included:Priority generation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Indexing** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Índice** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Infographic outline** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Inhaltsübersicht** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Inline-header lists** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Inpaint** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Installing** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Instant prioritization** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Instruction following** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Instruction persistence** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Introduce yourself** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **INVERT** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **is... has** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **JavaScript 97.6%** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Job** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Journalist-mode research** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Key constraints** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **key_products (array)** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Keyword variations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Keywords** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Kimi K2.5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Koala** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Language: TypeScript** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Laptops** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Large documents** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Latest commit** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Latest publications** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **launching anything** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **learning breakthroughs** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Learning objectives** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **--legacy-peer-deps** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **LegalLegal** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Let's" constructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Limited reasoning** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **List-label periods** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **literally everything** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Llama 3.1** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Long-Form Content** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Mac OS** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Main navigation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **marketplace.json** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **MarketplaceMarketplace** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **MASTERCLASS** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Max output** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Meaning** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **MEGAPROMPT** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **MEMORY.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Messaging** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **milestones** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Minimize instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Mirko** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **MLA** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Mode** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Model ID** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Model-by-model notes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ModelOpus 4.7** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Models** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **ModelSonnet 4.6** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Model-Specific Fingerprints** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Monitors** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **More options** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Move to** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Multi-layer analysis** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **MythosMythos** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Negotiation playbook** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **NewsNews** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **No profile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **NonprofitsNonprofits** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Noren** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Noren profile** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Notability name-dropping** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Novelty inflation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **oai_citation** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Obsah** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Older model** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **On demand** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **OpenAI Codex** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Opening hook** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Optional context** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Opus 3** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Opus 4.7** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Opus 4.8** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **OpusOpus** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **OSS milestones** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **OSS stars** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Other agents** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Ottimo lavoro!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Our pick** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Over-polishing** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **OverviewOverview** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **package.json** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Packages 0** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **parent directory** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Parenthetical hedging** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PARETO** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Partners** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Pasted samples** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **pathlib** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Pattern reference** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PDF Translator** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Performance** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Performance bottlenecks** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Personality** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟡 **Personalization placeholders** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Phrase** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **plugin.json** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PluginsPlugins** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **POLARIZE** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PolicyPolicy** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Positioning** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Power features** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Prerequisites** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Preview text** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Pricing presentation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Pricing section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PricingPricing** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Primary metric** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Privacy assurance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Problem amplification** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Problem section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Problem-agitation-solution** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ProductClaude Platform** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Project overview** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Project-Level Memory** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Projects** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Promotional language** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PROMPTFIX** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Proofreading** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PROTOTYPE** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **prove-it** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **PS section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Psychographics** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **public information** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Question** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Question-led** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Quick demo** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Quick hits** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **rapid progress** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Raw** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Reading time** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Reading time5min** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **README.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Real-Time Highlighting** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Reasoning** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Rec NoteNew** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Recap-flattery opener** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Recommendations** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Recommended tier** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **REFACTOR** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Refactoring** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **regen_graphql_schema** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Releases 2** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Remedying instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Remove entirely** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Repository structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Required context** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Research mode** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ResearchResearch** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Retired** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **rewrite** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Rewrite-vs-patch threshold** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **rubber-duck** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Runtime** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Rust milestones** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Rust struggles** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Sales-optimized copy** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **score** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **scripts** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Secondary metrics** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Security concerns** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SecuritySecurity** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Self-awareness Topics** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 9).
+- 🟡 **Self-labeling significance** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Sentence structure** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SEO Approach** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SEO articles** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Set expectations** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Shell 2.4%** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **ship-it** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Significance inflation** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SKILL-DE.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SKILL-RO.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SkillsSkills** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **social-content** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Solution** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Solution introduction** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Solution section** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Sometimes loose** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Sonnet** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Sonnet 4.6** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Sonnet 5** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SonnetSonnet** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Speculative gap-filling** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SPEEDRUN** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Star 2.2k** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Start small** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **StartupsStartups** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **StatusStatus** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Step-by-step instructions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Still active** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Story-based messaging** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Strategic Follow-up** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Streaming** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Structural changes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Structural issues** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Structured Decision-Making** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Subtitle** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **SupaScore** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **Sycophantic tone** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Synonym cycling** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Target keyword** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **technical wins** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Template phrases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Test again** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Test name** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Test only** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Testimonials** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Testimonials placeholder** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **testing.md** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **The experiment** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **The numbers** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **The patterns** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **The prompt** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **The takeaway** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **The verdict** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Title page** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **To," "Because** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Tone adjustments** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Transition phrases** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **TransparencyTransparency** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **tricky fixes** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Triggered by** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Trust signals** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Tunable** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Turabian** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **TutorialsTutorials** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Uh oh!** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Unfilled placeholders** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Untested** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Urgency-based** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Usage** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Uses** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Vague attributions** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Vancouver** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Very low** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **VIPニュースレター** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Visual suggestion** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Wall-of-text replies** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Watchers** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Web CreatorNew** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Web search** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **What happens** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **What matters** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **What's inside** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 3).
+- 🟡 **What's New** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Windows** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **Wisebase** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Words** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Writing styles** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **XRAY** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **YOU MUST** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 8).
+- 🟡 **Your CEO** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Your team** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Your turn** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 2).
+- 🟡 **you-sure** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **Zpravodaj VIP** _(phrase)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
+- 🟡 **卡在一个bug上14小时，恰恰说明你没有放弃** _(word)_ — Overused AI term catalogued from the 'claude' census sweep (source count 1).
 
 ## claude fiction tell  (1)
 

@@ -109,7 +109,8 @@ def main(slug, domain=None):
     items = camp.get("items") or []
     domain = domain or slug.replace("every-", "").replace("-", " ")[:40]
     is_lyric = any(w in slug for w in ("lyric", "song", "suno", "udio", "rhyme", "chorus"))
-    plats = ["suno", "udio"] if is_lyric else ["general"]
+    is_claude = ("claude" in slug) or ("anthropic" in slug)
+    plats = ["claude"] if is_claude else (["suno", "udio"] if is_lyric else ["general"])
 
     db = json.load(open(DB, encoding="utf-8-sig"))
     ex_norm, ex_compact = set(), set()
